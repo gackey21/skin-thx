@@ -849,6 +849,53 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 }
 
+@media screen and (width: 768px) {
+	/****************/
+	/* 768pxのベタ組 */
+	/* iPad 縦持ち   */
+	/****************/
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		text-align: justify;
+	}
+	p {
+		border-style: solid;
+		border-width: 0px;
+		border-color: rgba(47, 93, 80, 0);
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	/* カラムブロック内 padding 設定 */
+	.has-2-columns .wp-block-column p {
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+	.has-3-columns .wp-block-column p {
+		padding-left: 4.66667px;
+		padding-right: 4.66667px;
+	}
+	.has-4-columns .wp-block-column p {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.has-5-columns .wp-block-column p {
+		padding-left: 6.4px;
+		padding-right: 6.4px;
+	}
+	.has-6-columns .wp-block-column p {
+		padding-left: 2.33333px;
+		padding-right: 2.33333px;
+	}
+	/* カラム表示の保持 */
+	.wp-block-columns.has-2-columns,
+	.wp-block-columns.has-3-columns,
+	.wp-block-columns.has-4-columns,
+	.wp-block-columns.has-5-columns,
+	.wp-block-columns.has-6-columns {
+		flex-wrap: nowrap;
+	}
+}
+
 @media screen and (width: 375px) {
 	/*****************/
 	/* 375pxのベタ組 */

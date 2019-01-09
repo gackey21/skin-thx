@@ -43,6 +43,11 @@
   @import "width-1024";
 }
 
+//iPad portrait · width: 768px
+@media screen and (width: 768px){
+  @import "width-768";
+}
+
 //iPhone eXpensive portrait · width: 375px
 @media screen and (width: 375px){
   @import "width-375";
