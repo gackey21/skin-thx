@@ -1,6 +1,7 @@
 // main: ../style.scss
 /*******************/
 /* 767px以下のベタ組 */
+/* iPad 縦持ち未満  */
 /*******************/
 
 // ベタ組用変数
@@ -41,4 +42,47 @@ $thx_beta_column_margin: $thx_site_font_width * 1;
       margin-right: $thx_beta_column_margin * 0;
     }
   }
+}
+
+/* ２・３カラムはカラム表示 */
+.wp-block-columns.has-2-columns,
+.wp-block-columns.has-3-columns {
+  flex-wrap: nowrap;
+}
+
+/* ４・６カラムは疑似２カラム表示 */
+.wp-block-columns.has-4-columns,
+.wp-block-columns.has-6-columns {
+  .wp-block-column {
+    flex-basis: 50%;
+    margin-left: 0px;
+		margin-right: 0px;
+    &:nth-child(odd) {
+      padding-right: $thx_site_font_width;
+    }
+    &:nth-child(even) {
+      padding-left: $thx_site_font_width;
+    }
+  }
+
+}
+
+/* ５カラムは１＋疑似２カラム表示 */
+.wp-block-columns.has-5-columns {
+  .wp-block-column {
+    flex-basis: 50%;
+    margin-left: 0px;
+		margin-right: 0px;
+    &:nth-child(even) {
+      padding-right: $thx_site_font_width;
+    }
+    &:nth-child(odd) {
+      padding-left: $thx_site_font_width;
+    }
+    &:first-child {
+      flex-basis: 100%;
+      padding-left: 0px;
+    }
+  }
+
 }

@@ -23,6 +23,11 @@
   @import "max-width-767";
 }
 
+//667px以上
+@media screen and (min-width: 667px){
+  @import "min-width-667";
+}
+
 //480px以下
 @media screen and (max-width: 480px){
   @import "max-width-480";

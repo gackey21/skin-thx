@@ -709,6 +709,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (max-width: 767px) {
 	/*******************/
 	/* 767px以下のベタ組 */
+	/* iPad 縦持ち未満  */
 	/*******************/
 	.page-body {
 		font-size: 16px;
@@ -740,6 +741,49 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.has-6-columns .wp-block-column:last-child {
 		margin-right: 0px;
 	}
+	/* ２・３カラムはカラム表示 */
+	.wp-block-columns.has-2-columns,
+	.wp-block-columns.has-3-columns {
+		flex-wrap: nowrap;
+	}
+	/* ４・６カラムは疑似２カラム表示 */
+	.wp-block-columns.has-4-columns .wp-block-column,
+	.wp-block-columns.has-6-columns .wp-block-column {
+		flex-basis: 50%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column:nth-child(odd),
+	.wp-block-columns.has-6-columns .wp-block-column:nth-child(odd) {
+		padding-right: 16px;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column:nth-child(even),
+	.wp-block-columns.has-6-columns .wp-block-column:nth-child(even) {
+		padding-left: 16px;
+	}
+	/* ５カラムは１＋疑似２カラム表示 */
+	.wp-block-columns.has-5-columns .wp-block-column {
+		flex-basis: 50%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(even) {
+		padding-right: 16px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(odd) {
+		padding-left: 16px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column:first-child {
+		flex-basis: 100%;
+		padding-left: 0px;
+	}
+}
+
+@media screen and (min-width: 667px) {
+	/*******************/
+	/* 667px以上のベタ組 */
+	/* iPhone 横持ち    */
+	/*******************/
 }
 
 @media screen and (max-width: 480px) {
@@ -758,6 +802,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.has-6-columns .wp-block-column:nth-child(even) {
 		margin-left: 0px;
 		margin-right: 0px;
+	}
+	/* ２・３カラムはラップ表示 */
+	.wp-block-columns.has-2-columns,
+	.wp-block-columns.has-3-columns {
+		flex-wrap: wrap;
 	}
 }
 
