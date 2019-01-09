@@ -23,7 +23,7 @@ body {
 
 $thx_beta_padding: thx-beta-padding(
     $thx_main_column_contents_width,
-    $thx_site_font_size,
+    $thx_site_font_width,
     $thx_beta_border_width,
     $thx_beta_column_count,
     $thx_beta_column_margin
@@ -42,7 +42,7 @@ p {
       p {
         $thx_beta_padding: thx-beta-padding(
             $thx_main_column_contents_width,
-            $thx_site_font_size,
+            $thx_site_font_width,
             $thx_beta_border_width,
             $i,
             $thx_beta_column_margin
