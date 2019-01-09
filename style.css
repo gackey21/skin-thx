@@ -631,26 +631,6 @@ a[data-slide-contents*="slide-contents"]:hover {
 /*********/
 /* ベタ組 */
 /*********/
-/* カラムブロック間マージン設定
-.has-2-columns,
-.has-3-columns,
-.has-4-columns,
-.has-5-columns,
-.has-6-columns {
-  .wp-block-column {
-    &:nth-child(odd),
-    &:nth-child(even){
-      margin-left: $thx_beta_column_margin;
-      margin-right: $thx_beta_column_margin;
-    }
-    &:first-child {
-      margin-left: $thx_beta_column_margin * 0;
-    }
-    &:last-child {
-      margin-right: $thx_beta_column_margin * 0;
-    }
-  }
-}*/
 /* カラムブロック間マージン設定 */
 .wp-block-columns.has-2-columns .wp-block-column,
 .wp-block-columns.has-3-columns .wp-block-column,
@@ -819,12 +799,9 @@ a[data-slide-contents*="slide-contents"]:hover {
 		margin-left: 0px;
 		margin-right: 0px;
 	}
-	/* カラムはラップ表示 */
+	/* ２・３カラムはラップ表示 */
 	.wp-block-columns.has-2-columns,
-	.wp-block-columns.has-3-columns,
-	.wp-block-columns.has-4-columns,
-	.wp-block-columns.has-5-columns,
-	.wp-block-columns.has-6-columns {
+	.wp-block-columns.has-3-columns {
 		flex-wrap: wrap;
 	}
 }
