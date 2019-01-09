@@ -1,0 +1,271 @@
+// main: style.scss
+/* フォント指定 */
+//基本フォントファミリー
+$thx_font_family:
+    'Hiragino Sans',
+    'Hiragino Kaku Gothic ProN',
+    Meiryo,
+    sans-serif;
+
+//デフォルト設定
+body {
+  font-family: "UD新ゴ コンデンス90 L",
+    $thx_font_family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+//アンチエイリアス効果抑制
+.sub-antialiased {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+}
+
+//サイト名
+.site-name-text {
+  font-family: $thx_font_family;
+  font-weight: 800;
+}
+
+//各ページタイトル
+.entry-title,
+.archive-title,
+h1 {
+  font-family: "新ゴ B", $thx_font_family;
+  font-weight: 700;
+}
+
+//キャッチフレーズ、各見出し、白抜き文字
+.tagline,
+h2,
+h3,
+h4,
+h5,
+h6,
+.sidebar h3,
+.widget-entry-cards.large-thumb-on .card-title,
+.cat-label {
+  font-family: "新ゴ R", $thx_font_family;
+  font-weight: 600;
+}
+
+//adminパネル
+.admin-panel {
+  font-family: sans-serif;
+}
+
+/* 白抜き影付き文字 */
+.site-name-text,
+.entry-title,
+.archive-title {
+  color: $white;
+  text-shadow: 0.075em 0.075em 0.02em rgba(0,0,0,0.21);
+  background-color: $key_color;
+}
+
+/* サイト名 */
+.site-name-text {
+	font-size: 3rem;
+	line-height: 1.5em;
+}
+
+.logo-text {
+    padding: 0;
+}
+
+/* 投稿タイトル */
+.entry-title,
+.archive-title {
+	font-size: 2rem;
+	font-feature-settings : "palt";
+	letter-spacing: 0.025em;
+	margin: 0px;
+	padding: 12px;
+}
+
+/* フッター */
+.footer {
+  padding-top: 0px;
+  background-color: $key_color;
+}
+
+.footer-bottom-logo .site-name-text {
+  font-size: 2rem;
+}
+
+.navi-footer-in a {
+  color: $white;
+}
+
+.footer-bottom-content {
+  color: $white;
+  .copyright {
+    margin-top: 2px;
+  }
+}
+
+.go-to-top-button{
+  background-color: $key_sub_color;
+}
+
+/* コード改行禁止 */
+pre {
+  word-wrap: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+  code {
+    word-wrap: normal;
+    overflow-wrap: normal;
+    font-size: 1rem;
+    line-height: 1rem;
+    span {
+      word-wrap: normal;
+      overflow-wrap: normal;
+    }
+  }
+}
+
+/* タイトルカウンター */
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  &::after {
+    position: absolute;
+    right:  4px;
+    bottom:  0px;
+    font-family: $thx_font_family;
+    font-weight: 800;
+    line-height: 1em;
+    color: fade-out($key_sub_color, 0.5);
+    transition-duration: 0.3s;
+  }
+  &:hover::after{
+    color: fade-out($key_sub_color, 1);
+    transition-duration: 0.3s;
+  }
+}
+
+.article h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+
+  counter-increment: c-h2;
+  counter-reset: c-h3;
+
+  color: $white;
+  background-color: $key_color;
+
+  &::after{
+    font-size: 4rem;
+    content: counter(c-h2) ".";
+  }
+}
+
+.article h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  counter-increment: c-h3;
+  counter-reset: c-h4;
+
+  background: linear-gradient(90deg, $h_bk_color, $white);
+  border: none;
+
+  &::after{
+    font-size: 3rem;
+    content: counter(c-h2) "-" counter(c-h3);
+  }
+}
+
+.article h4,
+.article h5,
+.article h6 {
+  border-color: $h_bk_color;
+}
+
+.article h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+
+  counter-increment: c-h4;
+  counter-reset: c-h5;
+
+  &::after{
+    font-size: 2rem;
+    content: counter(c-h2) "-" counter(c-h3) "-" counter(c-h4);
+  }
+}
+
+.article h5 {
+  counter-increment: c-h5;
+  counter-reset: c-h6;
+
+  &::after{
+    font-size: 1.25rem;
+    content: counter(c-h2) "-" counter(c-h3) "-" counter(c-h4) "-" counter(c-h5);
+  }
+}
+
+.article h6 {
+  counter-increment: c-h6;
+  counter-reset: c-h7;
+
+  &::after{
+    font-size: 1rem;
+    content: counter(c-h2) "-" counter(c-h3) "-" counter(c-h4) "-" counter(c-h5) "-" counter(c-h6);
+  }
+}
+
+/* サイドバーの文字を小さく */
+.sidebar {
+  font-size: 0.875rem;
+  line-height: 1.25em;
+}
+
+/* サイドバーウィジェット */
+.sidebar h3 {
+  color: $white;
+  background-color: $key_color;
+  padding: 0.4em;
+  margin: 0.3em 0;
+}
+
+/* スライドコンテンツ */
+.slide-contents {
+  background: $bg_color;
+  width: 100%;
+  border: $key_sub_color 1px solid;
+  margin: 0 0 10px 0;
+  padding: 1rem;
+  display: none;
+}
+
+a[data-slide-contents*="slide-contents"] {
+  text-decoration: none;
+}
+
+a[data-slide-contents*="slide-contents"]:hover {
+  transition-duration: 0.3s;
+}
+
+/* under-entry-content の並び順 */
+.under-entry-content {
+  display: flex;
+  flex-direction: column;
+  .related-entries {
+    order: 2;
+  }
+  .pager-post-navi {
+    order: -1;
+  }
+  .comment-area {
+    order: 3;
+  }
+}

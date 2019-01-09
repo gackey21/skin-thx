@@ -1,0 +1,59 @@
+// compileExpanded: ../$1.css
+/*
+  Skin Name: thx
+  Description: thx.jpにてscss勉強用に作成
+  Skin URI: https://
+  Author: がっきぃ
+  Author URI: https://thx.jp
+  Screenshot URI: https://
+  Version: 0.1.1
+  Priority: 0
+*/
+/*以下にスタイルシートを記入してください*/
+$thx_yamabukitya: hsla(41, 60%, 49%, 1.0);
+$thx_yamabukiiro: hsla(43, 100%, 48%, 1.0);
+$thx_nanohanairo: hsla(49, 100%, 45%, 1.0);
+$thx_tanpopoiro: hsla(51, 100%, 50%, 1.0);
+$thx_himawariiro: hsla(47, 100%, 49%, 1.0);
+$thx_tankou: hsla(49, 88%, 76%, 1.0);
+$thx_kihadairo: hsla(55, 98%, 69%, 1.0);
+
+$thx_ruriiro: hsla(217, 68%, 37%, 1.0);
+$thx_amairo: hsla(199, 75%, 52%, 1.0);
+$thx_mizuiro: hsla(188, 48%, 82%, 1.0);
+
+$thx_hisuiiro: #38b48b;
+$thx_biroudo: #2f5d50;
+
+
+$white: #fff;
+$sub_menu_hover_bg_color: #333;
+$border_color: #ccc;
+
+$key_color: $thx_yamabukiiro;
+$key_sub_color: $thx_yamabukitya;
+$key_color: $thx_ruriiro;
+$key_sub_color: $thx_amairo;
+//$key_color: $thx_hisuiiro;
+//$key_sub_color: $thx_biroudo;
+$bg_color: change-color($key_color, $lightness: 95%);
+$key_color_thin: fade-out($key_color, 0.95);
+$h_bk_color: lighten($key_color, 40%);
+
+//基本要素
+@import "base";
+//グローバルナビ
+@import "navi";
+//見出し
+@import "h";
+//追加
+@import "add";
+//勉強用
+@import "thx";
+@import "adjustment";
+@import "anime";
+@import "thx_betagumi";
+///////////////////////////////////////
+// メディアクエリ
+///////////////////////////////////////
+@import "breakpoints/breakpoints";
