@@ -663,40 +663,8 @@ a[data-slide-contents*="slide-contents"]:hover {
 
 @media screen and (min-width: 1025px) {
 	/********************/
-	/* 1025px以上のベタ組 */
+	/* 1025px以上のルール */
 	/********************/
-	body {
-		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-		text-align: justify;
-	}
-	p {
-		border-style: solid;
-		border-width: 0px;
-		border-color: rgba(47, 93, 80, 0);
-		padding-left: 4px;
-		padding-right: 4px;
-	}
-	/* カラムブロック内 padding 設定 */
-	.has-2-columns .wp-block-column p {
-		padding-left: 2px;
-		padding-right: 2px;
-	}
-	.has-3-columns .wp-block-column p {
-		padding-left: 4.33333px;
-		padding-right: 4.33333px;
-	}
-	.has-4-columns .wp-block-column p {
-		padding-left: 5.5px;
-		padding-right: 5.5px;
-	}
-	.has-5-columns .wp-block-column p {
-		padding-left: 2.6px;
-		padding-right: 2.6px;
-	}
-	.has-6-columns .wp-block-column p {
-		padding-left: 6.66667px;
-		padding-right: 6.66667px;
-	}
 }
 
 @media screen and (min-width: 768px) {
