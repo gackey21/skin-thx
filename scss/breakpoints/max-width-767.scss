@@ -24,17 +24,14 @@ $thx_beta_column_margin: $thx_site_font_width * 1;
 }
 
 /* カラムブロック間マージン設定 */
-.has-2-columns,
-.has-3-columns,
-.has-4-columns,
-.has-5-columns,
-.has-6-columns {
+.wp-block-columns.has-2-columns,
+.wp-block-columns.has-3-columns,
+.wp-block-columns.has-4-columns,
+.wp-block-columns.has-5-columns,
+.wp-block-columns.has-6-columns {
   .wp-block-column {
-    &:nth-child(odd),
-    &:nth-child(even){
-      margin-left: $thx_beta_column_margin;
-      margin-right: $thx_beta_column_margin;
-    }
+    margin-left: $thx_beta_column_margin;
+    margin-right: $thx_beta_column_margin;
     &:first-child {
       margin-left: $thx_beta_column_margin * 0;
     }

@@ -737,30 +737,26 @@ a[data-slide-contents*="slide-contents"]:hover {
 		font-size: 16px;
 	}
 	/* カラムブロック間マージン設定 */
-	.has-2-columns .wp-block-column:nth-child(odd), .has-2-columns .wp-block-column:nth-child(even),
-	.has-3-columns .wp-block-column:nth-child(odd),
-	.has-3-columns .wp-block-column:nth-child(even),
-	.has-4-columns .wp-block-column:nth-child(odd),
-	.has-4-columns .wp-block-column:nth-child(even),
-	.has-5-columns .wp-block-column:nth-child(odd),
-	.has-5-columns .wp-block-column:nth-child(even),
-	.has-6-columns .wp-block-column:nth-child(odd),
-	.has-6-columns .wp-block-column:nth-child(even) {
+	.wp-block-columns.has-2-columns .wp-block-column,
+	.wp-block-columns.has-3-columns .wp-block-column,
+	.wp-block-columns.has-4-columns .wp-block-column,
+	.wp-block-columns.has-5-columns .wp-block-column,
+	.wp-block-columns.has-6-columns .wp-block-column {
 		margin-left: 16px;
 		margin-right: 16px;
 	}
-	.has-2-columns .wp-block-column:first-child,
-	.has-3-columns .wp-block-column:first-child,
-	.has-4-columns .wp-block-column:first-child,
-	.has-5-columns .wp-block-column:first-child,
-	.has-6-columns .wp-block-column:first-child {
+	.wp-block-columns.has-2-columns .wp-block-column:first-child,
+	.wp-block-columns.has-3-columns .wp-block-column:first-child,
+	.wp-block-columns.has-4-columns .wp-block-column:first-child,
+	.wp-block-columns.has-5-columns .wp-block-column:first-child,
+	.wp-block-columns.has-6-columns .wp-block-column:first-child {
 		margin-left: 0px;
 	}
-	.has-2-columns .wp-block-column:last-child,
-	.has-3-columns .wp-block-column:last-child,
-	.has-4-columns .wp-block-column:last-child,
-	.has-5-columns .wp-block-column:last-child,
-	.has-6-columns .wp-block-column:last-child {
+	.wp-block-columns.has-2-columns .wp-block-column:last-child,
+	.wp-block-columns.has-3-columns .wp-block-column:last-child,
+	.wp-block-columns.has-4-columns .wp-block-column:last-child,
+	.wp-block-columns.has-5-columns .wp-block-column:last-child,
+	.wp-block-columns.has-6-columns .wp-block-column:last-child {
 		margin-right: 0px;
 	}
 	/* ２・３カラムはカラム表示 */
