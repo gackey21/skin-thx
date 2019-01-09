@@ -742,6 +742,25 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 }
 
+@media screen and (max-width: 480px) {
+	/*******************/
+	/* 480px以下のベタ組 */
+	/*******************/
+	/* カラムブロック間マージン設定 */
+	.has-2-columns .wp-block-column:nth-child(odd), .has-2-columns .wp-block-column:nth-child(even),
+	.has-3-columns .wp-block-column:nth-child(odd),
+	.has-3-columns .wp-block-column:nth-child(even),
+	.has-4-columns .wp-block-column:nth-child(odd),
+	.has-4-columns .wp-block-column:nth-child(even),
+	.has-5-columns .wp-block-column:nth-child(odd),
+	.has-5-columns .wp-block-column:nth-child(even),
+	.has-6-columns .wp-block-column:nth-child(odd),
+	.has-6-columns .wp-block-column:nth-child(even) {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
 @media screen and (width: 1024px) {
 	/****************/
 	/* 1024pxのベタ組 */
