@@ -36,3 +36,10 @@ p {
   padding-left: $thx_beta_padding;
   padding-right: $thx_beta_padding;
 }
+
+/* ４５６カラムはアジャスト解除 */
+.wp-block-columns.has-4-columns,
+.wp-block-columns.has-5-columns,
+.wp-block-columns.has-6-columns {
+  @include thx-default-text-align;
+}

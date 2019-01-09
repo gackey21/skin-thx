@@ -934,4 +934,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 		padding-left: 1.5px;
 		padding-right: 1.5px;
 	}
+	/* ４５６カラムはアジャスト解除 */
+	.wp-block-columns.has-4-columns,
+	.wp-block-columns.has-5-columns,
+	.wp-block-columns.has-6-columns {
+		text-align: start;
+	}
 }
