@@ -26,6 +26,10 @@ $thx_font_family:
     Meiryo,
     sans-serif;
 
+.page-body {
+  font-size: $thx_site_font_size;
+}
+
 //mixin設定
 @mixin thx-default-text-align {
   text-align: start;
