@@ -631,33 +631,49 @@ a[data-slide-contents*="slide-contents"]:hover {
 /*********/
 /* ベタ組 */
 /*********/
+/* カラムブロック間マージン設定
+.has-2-columns,
+.has-3-columns,
+.has-4-columns,
+.has-5-columns,
+.has-6-columns {
+  .wp-block-column {
+    &:nth-child(odd),
+    &:nth-child(even){
+      margin-left: $thx_beta_column_margin;
+      margin-right: $thx_beta_column_margin;
+    }
+    &:first-child {
+      margin-left: $thx_beta_column_margin * 0;
+    }
+    &:last-child {
+      margin-right: $thx_beta_column_margin * 0;
+    }
+  }
+}*/
 /* カラムブロック間マージン設定 */
-.has-2-columns .wp-block-column:nth-child(odd), .has-2-columns .wp-block-column:nth-child(even),
-.has-3-columns .wp-block-column:nth-child(odd),
-.has-3-columns .wp-block-column:nth-child(even),
-.has-4-columns .wp-block-column:nth-child(odd),
-.has-4-columns .wp-block-column:nth-child(even),
-.has-5-columns .wp-block-column:nth-child(odd),
-.has-5-columns .wp-block-column:nth-child(even),
-.has-6-columns .wp-block-column:nth-child(odd),
-.has-6-columns .wp-block-column:nth-child(even) {
+.wp-block-columns.has-2-columns .wp-block-column,
+.wp-block-columns.has-3-columns .wp-block-column,
+.wp-block-columns.has-4-columns .wp-block-column,
+.wp-block-columns.has-5-columns .wp-block-column,
+.wp-block-columns.has-6-columns .wp-block-column {
 	margin-left: 18px;
 	margin-right: 18px;
 }
 
-.has-2-columns .wp-block-column:first-child,
-.has-3-columns .wp-block-column:first-child,
-.has-4-columns .wp-block-column:first-child,
-.has-5-columns .wp-block-column:first-child,
-.has-6-columns .wp-block-column:first-child {
+.wp-block-columns.has-2-columns .wp-block-column:first-child,
+.wp-block-columns.has-3-columns .wp-block-column:first-child,
+.wp-block-columns.has-4-columns .wp-block-column:first-child,
+.wp-block-columns.has-5-columns .wp-block-column:first-child,
+.wp-block-columns.has-6-columns .wp-block-column:first-child {
 	margin-left: 0px;
 }
 
-.has-2-columns .wp-block-column:last-child,
-.has-3-columns .wp-block-column:last-child,
-.has-4-columns .wp-block-column:last-child,
-.has-5-columns .wp-block-column:last-child,
-.has-6-columns .wp-block-column:last-child {
+.wp-block-columns.has-2-columns .wp-block-column:last-child,
+.wp-block-columns.has-3-columns .wp-block-column:last-child,
+.wp-block-columns.has-4-columns .wp-block-column:last-child,
+.wp-block-columns.has-5-columns .wp-block-column:last-child,
+.wp-block-columns.has-6-columns .wp-block-column:last-child {
 	margin-right: 0px;
 }
 
