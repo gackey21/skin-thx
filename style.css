@@ -813,7 +813,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 		border-style: solid;
 		border-width: 0px;
 		border-color: rgba(47, 93, 80, 0);
-		padding-left: 6.5px;
-		padding-right: 6.5px;
+		padding-left: 1.5px;
+		padding-right: 1.5px;
 	}
 }
