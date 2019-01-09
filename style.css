@@ -6,12 +6,12 @@
   Author: がっきぃ
   Author URI: https://thx.jp
   Screenshot URI: https://
-  Version: 0.1.1
+  Version: 0.1.2
   Priority: 0
 */
 /*以下にスタイルシートを記入してください*/
 body {
-	background-color: #eaf0fb;
+	background-color: #ecf9f5;
 	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Arial, sans-serif;
 }
 
@@ -20,11 +20,11 @@ body {
 }
 
 .header {
-	background-color: #1e4f9f;
+	background-color: #38b48b;
 }
 
 .widget_recent_entries ul li a:hover, .widget_categories ul li a:hover, .widget_archive ul li a:hover, .widget_pages ul li a:hover, .widget_meta ul li a:hover, .widget_rss ul li a:hover, .widget_nav_menu ul li a:hover, .tagcloud a:hover, .pagination a:hover, .pager-links a:hover span, .pagination-next-link:hover, .comment-btn:hover, .comment-reply-link:hover, .navi-footer-in a:hover, .navi-footer-in a:hover {
-	background-color: rgba(30, 79, 159, 0.05);
+	background-color: rgba(56, 180, 139, 0.05);
 }
 
 .page-numbers,
@@ -34,7 +34,7 @@ body {
 .pagination-next-link,
 .comment-reply-link,
 .toc {
-	border: 1px solid #29a6e0;
+	border: 1px solid #2f5d50;
 }
 
 .toc {
@@ -44,7 +44,7 @@ body {
 .page-numbers,
 .pagination-next-link {
 	border-radius: 8px;
-	background: rgba(30, 79, 159, 0.05);
+	background: rgba(56, 180, 139, 0.05);
 }
 
 .pagination .page-numbers,
@@ -55,7 +55,7 @@ body {
 .pagination .current,
 .page-numbers.current,
 .page-numbers.dots {
-	background: #29a6e0;
+	background: #2f5d50;
 }
 
 .cat-label,
@@ -65,7 +65,7 @@ body {
 .navi-menu-content a,
 .go-to-top-button,
 #submit {
-	background-color: #1e4f9f;
+	background-color: #38b48b;
 	color: #fff;
 }
 
@@ -115,7 +115,7 @@ div.mobile-menu-buttons .menu-button:hover,
 }
 
 .post-count {
-	background-color: #9cbbec;
+	background-color: #caeee2;
 	padding: 0 8px;
 	border-radius: 6px;
 	font-size: 0.8em;
@@ -150,13 +150,13 @@ div.mobile-menu-buttons .menu-button:hover,
 
 .comment-list ul.children {
 	padding: 0.6em;
-	background-color: rgba(30, 79, 159, 0.05);
-	border-left: 2px solid #29a6e0;
+	background-color: rgba(56, 180, 139, 0.05);
+	border-left: 2px solid #2f5d50;
 }
 
 .widget-entry-cards.ranking-visible .card-thumb::before {
 	border-radius: 50%;
-	background: #1e4f9f;
+	background: #38b48b;
 	top: -10px;
 	left: -10px;
 	border: 2px solid #eee;
@@ -174,7 +174,7 @@ div.mobile-menu-buttons .menu-button:hover,
 }
 
 .navi ul .sub-menu {
-	background-color: #1e4f9f;
+	background-color: #38b48b;
 	opacity: 0.96;
 }
 
@@ -269,7 +269,7 @@ h6,
 .archive-title {
 	color: #fff;
 	text-shadow: 0.075em 0.075em 0.02em rgba(0, 0, 0, 0.21);
-	background-color: #1e4f9f;
+	background-color: #38b48b;
 }
 
 /* サイト名 */
@@ -295,7 +295,7 @@ h6,
 /* フッター */
 .footer {
 	padding-top: 0px;
-	background-color: #1e4f9f;
+	background-color: #38b48b;
 }
 
 .footer-bottom-logo .site-name-text {
@@ -315,7 +315,7 @@ h6,
 }
 
 .go-to-top-button {
-	background-color: #29a6e0;
+	background-color: #2f5d50;
 }
 
 /* コード改行禁止 */
@@ -361,7 +361,7 @@ pre code span {
 	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	font-weight: 800;
 	line-height: 1em;
-	color: rgba(41, 166, 224, 0.5);
+	color: rgba(47, 93, 80, 0.5);
 	transition-duration: 0.3s;
 }
 
@@ -370,7 +370,7 @@ pre code span {
 .article h4:hover::after,
 .article h5:hover::after,
 .article h6:hover::after {
-	color: rgba(41, 166, 224, 0);
+	color: rgba(47, 93, 80, 0);
 	transition-duration: 0.3s;
 }
 
@@ -380,7 +380,7 @@ pre code span {
 	counter-increment: c-h2;
 	counter-reset: c-h3;
 	color: #fff;
-	background-color: #1e4f9f;
+	background-color: #38b48b;
 }
 
 .article h2::after {
@@ -393,7 +393,7 @@ pre code span {
 	line-height: 2rem;
 	counter-increment: c-h3;
 	counter-reset: c-h4;
-	background: linear-gradient(90deg, #9cbbec, #fff);
+	background: linear-gradient(90deg, #caeee2, #fff);
 	border: none;
 }
 
@@ -405,7 +405,7 @@ pre code span {
 .article h4,
 .article h5,
 .article h6 {
-	border-color: #9cbbec;
+	border-color: #caeee2;
 }
 
 .article h4 {
@@ -449,16 +449,16 @@ pre code span {
 /* サイドバーウィジェット */
 .sidebar h3 {
 	color: #fff;
-	background-color: #1e4f9f;
+	background-color: #38b48b;
 	padding: 0.4em;
 	margin: 0.3em 0;
 }
 
 /* スライドコンテンツ */
 .slide-contents {
-	background: #eaf0fb;
+	background: #ecf9f5;
 	width: 100%;
-	border: #29a6e0 1px solid;
+	border: #2f5d50 1px solid;
 	margin: 0 0 10px 0;
 	padding: 1rem;
 	display: none;
@@ -631,22 +631,121 @@ a[data-slide-contents*="slide-contents"]:hover {
 /*********/
 /* ベタ組 */
 /*********/
+/* カラムブロック間マージン設定 */
+.has-2-columns .wp-block-column:nth-child(odd), .has-2-columns .wp-block-column:nth-child(even),
+.has-3-columns .wp-block-column:nth-child(odd),
+.has-3-columns .wp-block-column:nth-child(even),
+.has-4-columns .wp-block-column:nth-child(odd),
+.has-4-columns .wp-block-column:nth-child(even),
+.has-5-columns .wp-block-column:nth-child(odd),
+.has-5-columns .wp-block-column:nth-child(even),
+.has-6-columns .wp-block-column:nth-child(odd),
+.has-6-columns .wp-block-column:nth-child(even) {
+	margin-left: 18px;
+	margin-right: 18px;
+}
+
+.has-2-columns .wp-block-column:first-child,
+.has-3-columns .wp-block-column:first-child,
+.has-4-columns .wp-block-column:first-child,
+.has-5-columns .wp-block-column:first-child,
+.has-6-columns .wp-block-column:first-child {
+	margin-left: 0px;
+}
+
+.has-2-columns .wp-block-column:last-child,
+.has-3-columns .wp-block-column:last-child,
+.has-4-columns .wp-block-column:last-child,
+.has-5-columns .wp-block-column:last-child,
+.has-6-columns .wp-block-column:last-child {
+	margin-right: 0px;
+}
+
 @media screen and (min-width: 1025px) {
-	/*********/
-	/* ベタ組 */
-	/*********/
+	/********************/
+	/* 1025px以上のベタ組 */
+	/********************/
 	body {
-		font-family: "UD新ゴ コンデンス90 L", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 		text-align: justify;
 	}
 	p {
 		border-style: solid;
 		border-width: 0px;
-		border-color: rgba(41, 166, 224, 0);
-		padding-left: 3.1px;
-		padding-right: 3.1px;
+		border-color: rgba(47, 93, 80, 0);
+		padding-left: 4px;
+		padding-right: 4px;
 	}
-	/* カラムブロック基本設定 */
+	/* カラムブロック内 padding 設定 */
+	.has-2-columns .wp-block-column p {
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+	.has-3-columns .wp-block-column p {
+		padding-left: 4.33333px;
+		padding-right: 4.33333px;
+	}
+	.has-4-columns .wp-block-column p {
+		padding-left: 5.5px;
+		padding-right: 5.5px;
+	}
+	.has-5-columns .wp-block-column p {
+		padding-left: 2.6px;
+		padding-right: 2.6px;
+	}
+	.has-6-columns .wp-block-column p {
+		padding-left: 6.66667px;
+		padding-right: 6.66667px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	/*******************/
+	/* 768px以上のベタ組 */
+	/* iPad 縦持ち      */
+	/*******************/
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		text-align: justify;
+	}
+	p {
+		border-style: solid;
+		border-width: 0px;
+		border-color: rgba(47, 93, 80, 0);
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	/* カラムブロック内 padding 設定 */
+	.has-2-columns .wp-block-column p {
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+	.has-3-columns .wp-block-column p {
+		padding-left: 4.33333px;
+		padding-right: 4.33333px;
+	}
+	.has-4-columns .wp-block-column p {
+		padding-left: 5.5px;
+		padding-right: 5.5px;
+	}
+	.has-5-columns .wp-block-column p {
+		padding-left: 2.6px;
+		padding-right: 2.6px;
+	}
+	.has-6-columns .wp-block-column p {
+		padding-left: 6.66667px;
+		padding-right: 6.66667px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	/*******************/
+	/* 767px以下のベタ組 */
+	/*******************/
+	.page-body {
+		font-size: 16px;
+	}
+	/* カラムブロック間マージン設定 */
 	.has-2-columns .wp-block-column:nth-child(odd), .has-2-columns .wp-block-column:nth-child(even),
 	.has-3-columns .wp-block-column:nth-child(odd),
 	.has-3-columns .wp-block-column:nth-child(even),
@@ -656,8 +755,8 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.has-5-columns .wp-block-column:nth-child(even),
 	.has-6-columns .wp-block-column:nth-child(odd),
 	.has-6-columns .wp-block-column:nth-child(even) {
-		margin-left: 16.2px;
-		margin-right: 16.2px;
+		margin-left: 16px;
+		margin-right: 16px;
 	}
 	.has-2-columns .wp-block-column:first-child,
 	.has-3-columns .wp-block-column:first-child,
@@ -672,27 +771,6 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.has-5-columns .wp-block-column:last-child,
 	.has-6-columns .wp-block-column:last-child {
 		margin-right: 0px;
-	}
-	/* カラムブロック内 padding 設定 */
-	.has-2-columns .wp-block-column p {
-		padding-left: 5.6px;
-		padding-right: 5.6px;
-	}
-	.has-3-columns .wp-block-column p {
-		padding-left: 1.03333px;
-		padding-right: 1.03333px;
-	}
-	.has-4-columns .wp-block-column p {
-		padding-left: 6.85px;
-		padding-right: 6.85px;
-	}
-	.has-5-columns .wp-block-column p {
-		padding-left: 2.24px;
-		padding-right: 2.24px;
-	}
-	.has-6-columns .wp-block-column p {
-		padding-left: 4.56667px;
-		padding-right: 4.56667px;
 	}
 }
 
@@ -701,15 +779,15 @@ a[data-slide-contents*="slide-contents"]:hover {
 	/* ベタ組 */
 	/*********/
 	body {
-		font-family: "UD新ゴ コンデンス90 L", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 		text-align: justify;
 	}
 	p {
 		border-style: solid;
 		border-width: 0px;
-		border-color: rgba(41, 166, 224, 0);
-		padding-left: 5.24px;
-		padding-right: 5.24px;
+		border-color: rgba(47, 93, 80, 0);
+		padding-left: 7.04px;
+		padding-right: 7.04px;
 	}
 	/* カラムブロック基本設定 */
 	.has-2-columns .wp-block-column:nth-child(odd), .has-2-columns .wp-block-column:nth-child(even),
@@ -721,8 +799,8 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.has-5-columns .wp-block-column:nth-child(even),
 	.has-6-columns .wp-block-column:nth-child(odd),
 	.has-6-columns .wp-block-column:nth-child(even) {
-		margin-left: 16.2px;
-		margin-right: 16.2px;
+		margin-left: 18px;
+		margin-right: 18px;
 	}
 	.has-2-columns .wp-block-column:first-child,
 	.has-3-columns .wp-block-column:first-child,
@@ -740,40 +818,41 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 	/* カラムブロック内 padding 設定 */
 	.has-2-columns .wp-block-column p {
-		padding-left: 2.62px;
-		padding-right: 2.62px;
+		padding-left: 3.52px;
+		padding-right: 3.52px;
 	}
 	.has-3-columns .wp-block-column p {
-		padding-left: 4.44667px;
-		padding-right: 4.44667px;
+		padding-left: 2.34667px;
+		padding-right: 2.34667px;
 	}
 	.has-4-columns .wp-block-column p {
-		padding-left: 1.31px;
-		padding-right: 1.31px;
+		padding-left: 1.76px;
+		padding-right: 1.76px;
 	}
 	.has-5-columns .wp-block-column p {
-		padding-left: 1.048px;
-		padding-right: 1.048px;
+		padding-left: 3.208px;
+		padding-right: 3.208px;
 	}
 	.has-6-columns .wp-block-column p {
-		padding-left: 6.27333px;
-		padding-right: 6.27333px;
+		padding-left: 1.17333px;
+		padding-right: 1.17333px;
 	}
 }
 
 @media screen and (width: 375px) {
-	/*********/
-	/* ベタ組 */
-	/*********/
+	/*****************/
+	/* 375pxのベタ組 */
+	/* iPhone縦持ち  */
+	/*****************/
 	body {
-		font-family: "UD新ゴ コンデンス90 L", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 		text-align: justify;
 	}
 	p {
 		border-style: solid;
 		border-width: 0px;
-		border-color: rgba(41, 166, 224, 0);
-		padding-left: 4.7px;
-		padding-right: 4.7px;
+		border-color: rgba(47, 93, 80, 0);
+		padding-left: 6.5px;
+		padding-right: 6.5px;
 	}
 }

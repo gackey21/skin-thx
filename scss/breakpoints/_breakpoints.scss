@@ -8,19 +8,19 @@
   @import "min-width-1025";
 }
 
-//iPad landscape · width: 1024px
-@media screen and (width: 1024px){
-  @import "width-1024";
-}
-
 //1023px以下
 @media screen and (max-width: 1023px){
   @import "max-width-1023";
 }
 
-//768px以下
-@media screen and (max-width: 768px){
-  @import "max-width-768";
+//768px以上
+@media screen and (min-width: 768px){
+  @import "min-width-768";
+}
+
+//767px以下
+@media screen and (max-width: 767px){
+  @import "max-width-767";
 }
 
 //480px以下
@@ -31,6 +31,11 @@
 //356px以下
 @media screen and (max-width: 356px){
   @import "max-width-356";
+}
+
+//iPad landscape · width: 1024px
+@media screen and (width: 1024px){
+  @import "width-1024";
 }
 
 //iPhone eXpensive portrait · width: 375px

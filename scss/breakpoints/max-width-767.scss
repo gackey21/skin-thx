@@ -1,0 +1,43 @@
+// main: ../style.scss
+/*******************/
+/* 767px以下のベタ組 */
+/*******************/
+
+// ベタ組用変数
+//$thx_main_column_contents_width: 800px;
+$thx_site_font_size: 16px * 0.9;  //"UD新ゴ コンデンス90 L"用
+$thx_site_font_size: 16px * 1;
+
+// thx_beta_border
+//$thx_beta_border_style: solid;
+//$thx_beta_border_width: 0px;
+//$thx_beta_border_color: fade-out($key_sub_color, 1);
+
+// thx_beta_column
+$thx_beta_column_count: 1;
+$thx_beta_column_margin: $thx_site_font_size * 1;
+
+.page-body {
+	font-size: $thx_site_font_size;
+}
+
+/* カラムブロック間マージン設定 */
+.has-2-columns,
+.has-3-columns,
+.has-4-columns,
+.has-5-columns,
+.has-6-columns {
+  .wp-block-column {
+    &:nth-child(odd),
+    &:nth-child(even){
+      margin-left: $thx_beta_column_margin;
+      margin-right: $thx_beta_column_margin;
+    }
+    &:first-child {
+      margin-left: $thx_beta_column_margin * 0;
+    }
+    &:last-child {
+      margin-right: $thx_beta_column_margin * 0;
+    }
+  }
+}
