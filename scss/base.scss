@@ -12,7 +12,21 @@ body {
   background-color: $key_color;
 }
 
-.widget_recent_entries ul li a:hover, .widget_categories ul li a:hover, .widget_archive ul li a:hover, .widget_pages ul li a:hover, .widget_meta ul li a:hover, .widget_rss ul li a:hover, .widget_nav_menu ul li a:hover, .tagcloud a:hover, .pagination a:hover, .pager-links a:hover span, .pagination-next-link:hover, .comment-btn:hover, .comment-reply-link:hover, .navi-footer-in a:hover, .navi-footer-in a:hover{
+.widget_recent_entries ul li a:hover,
+.widget_categories ul li a:hover,
+.widget_archive ul li a:hover,
+.widget_pages ul li a:hover,
+.widget_meta ul li a:hover,
+.widget_rss ul li a:hover,
+.widget_nav_menu ul li a:hover,
+.tagcloud a:hover,
+.pagination a:hover,
+.pager-links a:hover span,
+.pagination-next-link:hover,
+.comment-btn:hover,
+.comment-reply-link:hover,
+.navi-footer-in a:hover,
+.navi-footer-in a:hover{
   background-color: $key_color_thin;
 }
 
@@ -83,7 +97,19 @@ div.mobile-menu-buttons .menu-button:hover,
   border-bottom-right-radius: 3px;
 }
 
-.search-edit, input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select{
+.search-edit,
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select{
   border: 1px solid $border_color;
   border-radius: 4px;
 }
