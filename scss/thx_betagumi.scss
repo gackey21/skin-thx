@@ -5,8 +5,9 @@
 
 // ベタ組用変数
 $thx_main_column_contents_width: 800px;
-$thx_site_font_size: 18px * 0.9;  //"UD新ゴ コンデンス90 L"用
-$thx_site_font_size: 18px * 1;
+$thx_site_font_size: 18px;
+$thx_site_font_width: $thx_site_font_size * 1;
+//$thx_site_font_width: $thx_site_font_size * 0.9;//"UD新ゴ コンデンス90 L"用
 
 // thx_beta_border
 $thx_beta_border_style: solid;
@@ -15,7 +16,7 @@ $thx_beta_border_color: fade-out($key_sub_color, 1);
 
 // thx_beta_column
 $thx_beta_column_count: 1;
-$thx_beta_column_margin: $thx_site_font_size * 1;
+$thx_beta_column_margin: $thx_site_font_width * 1;
 
 //基本フォントファミリー
 $thx_font_family:
@@ -39,7 +40,7 @@ $thx_font_family:
 
 @function thx-beta-padding (
   $width: $thx_main_column_contents_width,
-  $font_size: $thx_site_font_size,
+  $font_width: $thx_site_font_width,
   $border_width: $thx_beta_border_width,
   $column_count: $thx_beta_column_count,
   $column_margin: $thx_beta_column_margin
@@ -57,7 +58,7 @@ $thx_font_family:
       )
     )
     / $column_count
-    % $font_size
+    % $font_width
     / 2
   );
 }
