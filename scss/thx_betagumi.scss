@@ -27,6 +27,10 @@ $thx_font_family:
     sans-serif;
 
 //mixin設定
+@mixin thx-default-text-align {
+  text-align: start;
+}
+
 @mixin thx-beta-body {
   font-family: $thx_font_family;
   text-align: justify;
