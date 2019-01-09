@@ -743,9 +743,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 }
 
 @media screen and (width: 1024px) {
-	/*********/
-	/* ベタ組 */
-	/*********/
+	/****************/
+	/* 1024pxのベタ組 */
+	/* iPad 横持ち   */
+	/****************/
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 		text-align: justify;
@@ -756,33 +757,6 @@ a[data-slide-contents*="slide-contents"]:hover {
 		border-color: rgba(47, 93, 80, 0);
 		padding-left: 7.04px;
 		padding-right: 7.04px;
-	}
-	/* カラムブロック基本設定 */
-	.has-2-columns .wp-block-column:nth-child(odd), .has-2-columns .wp-block-column:nth-child(even),
-	.has-3-columns .wp-block-column:nth-child(odd),
-	.has-3-columns .wp-block-column:nth-child(even),
-	.has-4-columns .wp-block-column:nth-child(odd),
-	.has-4-columns .wp-block-column:nth-child(even),
-	.has-5-columns .wp-block-column:nth-child(odd),
-	.has-5-columns .wp-block-column:nth-child(even),
-	.has-6-columns .wp-block-column:nth-child(odd),
-	.has-6-columns .wp-block-column:nth-child(even) {
-		margin-left: 18px;
-		margin-right: 18px;
-	}
-	.has-2-columns .wp-block-column:first-child,
-	.has-3-columns .wp-block-column:first-child,
-	.has-4-columns .wp-block-column:first-child,
-	.has-5-columns .wp-block-column:first-child,
-	.has-6-columns .wp-block-column:first-child {
-		margin-left: 0px;
-	}
-	.has-2-columns .wp-block-column:last-child,
-	.has-3-columns .wp-block-column:last-child,
-	.has-4-columns .wp-block-column:last-child,
-	.has-5-columns .wp-block-column:last-child,
-	.has-6-columns .wp-block-column:last-child {
-		margin-right: 0px;
 	}
 	/* カラムブロック内 padding 設定 */
 	.has-2-columns .wp-block-column p {
