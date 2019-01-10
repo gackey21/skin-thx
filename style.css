@@ -11,7 +11,7 @@
 */
 /*以下にスタイルシートを記入してください*/
 body {
-	background-color: #ecf9f5;
+	background-color: #eaf0fb;
 	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Arial, sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-	background-color: #38b48b;
+	background-color: #1e4f9f;
 }
 
 .widget_recent_entries ul li a:hover,
@@ -38,7 +38,7 @@ body {
 .comment-reply-link:hover,
 .navi-footer-in a:hover,
 .navi-footer-in a:hover {
-	background-color: rgba(56, 180, 139, 0.05);
+	background-color: rgba(30, 79, 159, 0.05);
 }
 
 .page-numbers,
@@ -48,7 +48,7 @@ body {
 .pagination-next-link,
 .comment-reply-link,
 .toc {
-	border: 1px solid #2f5d50;
+	border: 1px solid #29a6e0;
 }
 
 .toc {
@@ -58,7 +58,7 @@ body {
 .page-numbers,
 .pagination-next-link {
 	border-radius: 8px;
-	background: rgba(56, 180, 139, 0.05);
+	background: rgba(30, 79, 159, 0.05);
 }
 
 .pagination .page-numbers,
@@ -69,7 +69,7 @@ body {
 .pagination .current,
 .page-numbers.current,
 .page-numbers.dots {
-	background: #2f5d50;
+	background: #29a6e0;
 }
 
 .cat-label,
@@ -79,7 +79,7 @@ body {
 .navi-menu-content a,
 .go-to-top-button,
 #submit {
-	background-color: #38b48b;
+	background-color: #1e4f9f;
 	color: #fff;
 }
 
@@ -141,7 +141,7 @@ select {
 }
 
 .post-count {
-	background-color: #caeee2;
+	background-color: #9cbbec;
 	padding: 0 8px;
 	border-radius: 6px;
 	font-size: 0.8em;
@@ -176,13 +176,13 @@ select {
 
 .comment-list ul.children {
 	padding: 0.6em;
-	background-color: rgba(56, 180, 139, 0.05);
-	border-left: 2px solid #2f5d50;
+	background-color: rgba(30, 79, 159, 0.05);
+	border-left: 2px solid #29a6e0;
 }
 
 .widget-entry-cards.ranking-visible .card-thumb::before {
 	border-radius: 50%;
-	background: #38b48b;
+	background: #1e4f9f;
 	top: -10px;
 	left: -10px;
 	border: 2px solid #eee;
@@ -200,7 +200,7 @@ select {
 }
 
 .navi ul .sub-menu {
-	background-color: #38b48b;
+	background-color: #1e4f9f;
 	opacity: 0.96;
 }
 
@@ -295,7 +295,7 @@ h6,
 .archive-title {
 	color: #fff;
 	text-shadow: 0.075em 0.075em 0.02em rgba(0, 0, 0, 0.21);
-	background-color: #38b48b;
+	background-color: #1e4f9f;
 }
 
 /* サイト名 */
@@ -321,7 +321,7 @@ h6,
 /* フッター */
 .footer {
 	padding-top: 0px;
-	background-color: #38b48b;
+	background-color: #1e4f9f;
 }
 
 .footer-bottom-logo .site-name-text {
@@ -341,7 +341,7 @@ h6,
 }
 
 .go-to-top-button {
-	background-color: #2f5d50;
+	background-color: #29a6e0;
 }
 
 /* コード改行禁止 */
@@ -387,7 +387,7 @@ pre code span {
 	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	font-weight: 800;
 	line-height: 1em;
-	color: rgba(47, 93, 80, 0.5);
+	color: rgba(41, 166, 224, 0.5);
 	transition-duration: 0.3s;
 }
 
@@ -396,7 +396,7 @@ pre code span {
 .article h4:hover::after,
 .article h5:hover::after,
 .article h6:hover::after {
-	color: rgba(47, 93, 80, 0);
+	color: rgba(41, 166, 224, 0);
 	transition-duration: 0.3s;
 }
 
@@ -406,7 +406,7 @@ pre code span {
 	counter-increment: c-h2;
 	counter-reset: c-h3;
 	color: #fff;
-	background-color: #38b48b;
+	background-color: #1e4f9f;
 }
 
 .article h2::after {
@@ -419,7 +419,7 @@ pre code span {
 	line-height: 2rem;
 	counter-increment: c-h3;
 	counter-reset: c-h4;
-	background: linear-gradient(90deg, #caeee2, #fff);
+	background: linear-gradient(90deg, #9cbbec, #fff);
 	border: none;
 }
 
@@ -431,7 +431,7 @@ pre code span {
 .article h4,
 .article h5,
 .article h6 {
-	border-color: #caeee2;
+	border-color: #9cbbec;
 }
 
 .article h4 {
@@ -475,16 +475,16 @@ pre code span {
 /* サイドバーウィジェット */
 .sidebar h3 {
 	color: #fff;
-	background-color: #38b48b;
+	background-color: #1e4f9f;
 	padding: 0.4em;
 	margin: 0.3em 0;
 }
 
 /* スライドコンテンツ */
 .slide-contents {
-	background: #ecf9f5;
+	background: #eaf0fb;
 	width: 100%;
-	border: #2f5d50 1px solid;
+	border: #29a6e0 1px solid;
 	margin: 0 0 10px 0;
 	padding: 1rem;
 	display: none;
@@ -667,8 +667,8 @@ a[data-slide-contents*="slide-contents"]:hover {
 .wp-block-columns.has-4-columns .wp-block-column,
 .wp-block-columns.has-5-columns .wp-block-column,
 .wp-block-columns.has-6-columns .wp-block-column {
-	margin-left: 18px;
-	margin-right: 18px;
+	margin-left: 16.2px;
+	margin-right: 16.2px;
 }
 
 .wp-block-columns.has-2-columns .wp-block-column:first-child,
@@ -699,36 +699,36 @@ a[data-slide-contents*="slide-contents"]:hover {
 	/* iPad 縦持ち      */
 	/*******************/
 	body {
-		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-		text-align: justify;
+		font-family: "UD新ゴ コンデンス90 L", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	}
 	p {
 		border-style: solid;
 		border-width: 0px;
-		border-color: rgba(47, 93, 80, 0);
-		padding-left: 4px;
-		padding-right: 4px;
+		border-color: rgba(41, 166, 224, 0);
+		text-align: justify;
+		padding-left: 3.1px;
+		padding-right: 3.1px;
 	}
 	/* カラムブロック内 padding 設定 */
 	.has-2-columns .wp-block-column p {
-		padding-left: 2px;
-		padding-right: 2px;
+		padding-left: 5.6px;
+		padding-right: 5.6px;
 	}
 	.has-3-columns .wp-block-column p {
-		padding-left: 4.33333px;
-		padding-right: 4.33333px;
+		padding-left: 1.03333px;
+		padding-right: 1.03333px;
 	}
 	.has-4-columns .wp-block-column p {
-		padding-left: 5.5px;
-		padding-right: 5.5px;
+		padding-left: 6.85px;
+		padding-right: 6.85px;
 	}
 	.has-5-columns .wp-block-column p {
-		padding-left: 2.6px;
-		padding-right: 2.6px;
+		padding-left: 2.24px;
+		padding-right: 2.24px;
 	}
 	.has-6-columns .wp-block-column p {
-		padding-left: 6.66667px;
-		padding-right: 6.66667px;
+		padding-left: 4.56667px;
+		padding-right: 4.56667px;
 	}
 }
 
@@ -743,8 +743,8 @@ a[data-slide-contents*="slide-contents"]:hover {
 	/* カラムブロック間マージン設定 */
 	.wp-block-columns.has-2-columns .wp-block-column,
 	.wp-block-columns.has-3-columns .wp-block-column {
-		margin-left: 16px;
-		margin-right: 16px;
+		margin-left: 14.4px;
+		margin-right: 14.4px;
 	}
 	.wp-block-columns.has-2-columns .wp-block-column:first-child,
 	.wp-block-columns.has-3-columns .wp-block-column:first-child {
@@ -768,11 +768,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 	.wp-block-columns.has-4-columns .wp-block-column:nth-child(odd),
 	.wp-block-columns.has-6-columns .wp-block-column:nth-child(odd) {
-		padding-right: 16px;
+		padding-right: 14.4px;
 	}
 	.wp-block-columns.has-4-columns .wp-block-column:nth-child(even),
 	.wp-block-columns.has-6-columns .wp-block-column:nth-child(even) {
-		padding-left: 16px;
+		padding-left: 14.4px;
 	}
 	/* ５カラムは１＋疑似２カラム表示 */
 	.wp-block-columns.has-5-columns .wp-block-column {
@@ -781,10 +781,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 		margin-right: 0px;
 	}
 	.wp-block-columns.has-5-columns .wp-block-column:nth-child(even) {
-		padding-right: 16px;
+		padding-right: 14.4px;
 	}
 	.wp-block-columns.has-5-columns .wp-block-column:nth-child(odd) {
-		padding-left: 16px;
+		padding-left: 14.4px;
 	}
 	.wp-block-columns.has-5-columns .wp-block-column:first-child {
 		flex-basis: 100%;
@@ -825,36 +825,36 @@ a[data-slide-contents*="slide-contents"]:hover {
 	/* iPad 横持ち   */
 	/****************/
 	body {
-		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-		text-align: justify;
+		font-family: "UD新ゴ コンデンス90 L", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	}
 	p {
 		border-style: solid;
 		border-width: 0px;
-		border-color: rgba(47, 93, 80, 0);
-		padding-left: 7.04px;
-		padding-right: 7.04px;
+		border-color: rgba(41, 166, 224, 0);
+		text-align: justify;
+		padding-left: 5.24px;
+		padding-right: 5.24px;
 	}
 	/* カラムブロック内 padding 設定 */
 	.has-2-columns .wp-block-column p {
-		padding-left: 3.52px;
-		padding-right: 3.52px;
+		padding-left: 2.62px;
+		padding-right: 2.62px;
 	}
 	.has-3-columns .wp-block-column p {
-		padding-left: 2.34667px;
-		padding-right: 2.34667px;
+		padding-left: 4.44667px;
+		padding-right: 4.44667px;
 	}
 	.has-4-columns .wp-block-column p {
-		padding-left: 1.76px;
-		padding-right: 1.76px;
+		padding-left: 1.31px;
+		padding-right: 1.31px;
 	}
 	.has-5-columns .wp-block-column p {
-		padding-left: 3.208px;
-		padding-right: 3.208px;
+		padding-left: 1.048px;
+		padding-right: 1.048px;
 	}
 	.has-6-columns .wp-block-column p {
-		padding-left: 1.17333px;
-		padding-right: 1.17333px;
+		padding-left: 6.27333px;
+		padding-right: 6.27333px;
 	}
 }
 
@@ -864,36 +864,36 @@ a[data-slide-contents*="slide-contents"]:hover {
 	/* iPad 縦持ち   */
 	/****************/
 	body {
-		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-		text-align: justify;
+		font-family: "UD新ゴ コンデンス90 L", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	}
 	p {
 		border-style: solid;
 		border-width: 0px;
-		border-color: rgba(47, 93, 80, 0);
-		padding-left: 5px;
-		padding-right: 5px;
+		border-color: rgba(41, 166, 224, 0);
+		text-align: justify;
+		padding-left: 1.4px;
+		padding-right: 1.4px;
 	}
 	/* カラムブロック内 padding 設定 */
 	.has-2-columns .wp-block-column p {
-		padding-left: 7px;
-		padding-right: 7px;
+		padding-left: 0.7px;
+		padding-right: 0.7px;
 	}
 	.has-3-columns .wp-block-column p {
-		padding-left: 4.66667px;
-		padding-right: 4.66667px;
+		padding-left: 0.46667px;
+		padding-right: 0.46667px;
 	}
 	.has-4-columns .wp-block-column p {
-		padding-left: 8px;
-		padding-right: 8px;
+		padding-left: 0.35px;
+		padding-right: 0.35px;
 	}
 	.has-5-columns .wp-block-column p {
-		padding-left: 6.4px;
-		padding-right: 6.4px;
+		padding-left: 5.14px;
+		padding-right: 5.14px;
 	}
 	.has-6-columns .wp-block-column p {
-		padding-left: 2.33333px;
-		padding-right: 2.33333px;
+		padding-left: 0.23333px;
+		padding-right: 0.23333px;
 	}
 	/* カラム表示の保持 */
 	.wp-block-columns.has-2-columns,
@@ -911,15 +911,15 @@ a[data-slide-contents*="slide-contents"]:hover {
 	/* iPhone縦持ち  */
 	/*****************/
 	body {
-		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-		text-align: justify;
+		font-family: "UD新ゴ コンデンス90 L", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	}
 	p {
 		border-style: solid;
 		border-width: 0px;
-		border-color: rgba(47, 93, 80, 0);
-		padding-left: 1.5px;
-		padding-right: 1.5px;
+		border-color: rgba(41, 166, 224, 0);
+		text-align: justify;
+		padding-left: 4.7px;
+		padding-right: 4.7px;
 	}
 	/* ４５６カラムはアジャスト解除 */
 	.wp-block-columns.has-4-columns,
