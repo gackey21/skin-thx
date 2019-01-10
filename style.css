@@ -740,7 +740,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.page-body {
 		font-size: 16px;
 	}
-	/* カラムブロック間マージン設定 */
+	/* ２・３カラムはカラム表示 */
+	.wp-block-columns.has-2-columns,
+	.wp-block-columns.has-3-columns {
+		flex-wrap: nowrap;
+	}
 	.wp-block-columns.has-2-columns .wp-block-column,
 	.wp-block-columns.has-3-columns .wp-block-column {
 		margin-left: 16px;
@@ -753,11 +757,6 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.wp-block-columns.has-2-columns .wp-block-column:last-child,
 	.wp-block-columns.has-3-columns .wp-block-column:last-child {
 		margin-right: 0px;
-	}
-	/* ２・３カラムはカラム表示 */
-	.wp-block-columns.has-2-columns,
-	.wp-block-columns.has-3-columns {
-		flex-wrap: nowrap;
 	}
 	/* ４・６カラムは疑似２カラム表示 */
 	.wp-block-columns.has-4-columns .wp-block-column,
@@ -774,21 +773,49 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.wp-block-columns.has-6-columns .wp-block-column:nth-child(even) {
 		padding-left: 16px;
 	}
-	/* ５カラムは１＋疑似２カラム表示 */
+	/* ５カラムは１＋疑似２カラム表示
+.wp-block-columns.has-5-columns {
+  .wp-block-column {
+    flex-basis: 50%;
+    margin-left: 0px;
+    margin-right: 0px;
+    &:nth-child(even) {
+      padding-right: $thx_site_font_width;
+    }
+    &:nth-child(odd) {
+      padding-left: $thx_site_font_width;
+    }
+    &:first-child {
+      flex-basis: 100%;
+      padding-left: 0px;
+    }
+  }
+}*/
+	/* ５カラムは２＋３カラム表示 */
 	.wp-block-columns.has-5-columns .wp-block-column {
-		flex-basis: 50%;
 		margin-left: 0px;
 		margin-right: 0px;
 	}
-	.wp-block-columns.has-5-columns .wp-block-column:nth-child(even) {
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(1) {
+		flex-basis: 50%;
 		padding-right: 16px;
 	}
-	.wp-block-columns.has-5-columns .wp-block-column:nth-child(odd) {
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(2) {
+		flex-basis: 50%;
 		padding-left: 16px;
 	}
-	.wp-block-columns.has-5-columns .wp-block-column:first-child {
-		flex-basis: 100%;
-		padding-left: 0px;
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(3) {
+		flex-basis: 33.33333%;
+		padding-right: 21.33333px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(4) {
+		flex-basis: 33.33333%;
+		padding-left: 10.66667px;
+		padding-right: 10.66667px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(5) {
+		flex-basis: 33.33333%;
+		padding-left: 21.33333px;
 	}
 }
 
@@ -803,19 +830,15 @@ a[data-slide-contents*="slide-contents"]:hover {
 	/*******************/
 	/* 480px以下のベタ組 */
 	/*******************/
-	/* カラムブロック間マージン設定 */
-	.wp-block-columns.has-2-columns .wp-block-column,
-	.wp-block-columns.has-3-columns .wp-block-column,
-	.wp-block-columns.has-4-columns .wp-block-column,
-	.wp-block-columns.has-5-columns .wp-block-column,
-	.wp-block-columns.has-6-columns .wp-block-column {
-		margin-left: 0px;
-		margin-right: 0px;
-	}
 	/* ２・３カラムはラップ表示 */
 	.wp-block-columns.has-2-columns,
 	.wp-block-columns.has-3-columns {
 		flex-wrap: wrap;
+	}
+	.wp-block-columns.has-2-columns .wp-block-column,
+	.wp-block-columns.has-3-columns .wp-block-column {
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 }
 

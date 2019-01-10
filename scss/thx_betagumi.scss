@@ -35,15 +35,15 @@ $thx_font_family:
   font-family: $thx_font_family;
 }
 
-@mixin thx-default-text-align {
-  text-align: start;
-}
-
 @mixin thx-beta-p {
   border-style: $thx_beta_border_style;
   border-width: $thx_beta_border_width;
   border-color: $thx_beta_border_color;
   text-align: justify;
+}
+
+@mixin thx-default-text-align {
+  text-align: start;
 }
 
 @mixin thx-column-margin($column_margin: $thx_beta_column_margin) {

@@ -23,18 +23,13 @@ $thx_beta_column_margin: $thx_site_font_width * 1;
 	font-size: $thx_site_font_size;
 }
 
-/* カラムブロック間マージン設定 */
-.wp-block-columns.has-2-columns,
-.wp-block-columns.has-3-columns {
-  .wp-block-column {
-    @include thx-column-margin($thx_beta_column_margin);
-  }
-}
-
 /* ２・３カラムはカラム表示 */
 .wp-block-columns.has-2-columns,
 .wp-block-columns.has-3-columns {
   flex-wrap: nowrap;
+	.wp-block-column {
+    @include thx-column-margin($thx_beta_column_margin);
+  }
 }
 
 /* ４・６カラムは疑似２カラム表示 */
@@ -43,7 +38,7 @@ $thx_beta_column_margin: $thx_site_font_width * 1;
   .wp-block-column {
     flex-basis: 50%;
     margin-left: 0px;
-		margin-right: 0px;
+    margin-right: 0px;
     &:nth-child(odd) {
       padding-right: $thx_site_font_width;
     }
@@ -53,12 +48,12 @@ $thx_beta_column_margin: $thx_site_font_width * 1;
   }
 }
 
-/* ５カラムは１＋疑似２カラム表示 */
+/* ５カラムは１＋疑似２カラム表示
 .wp-block-columns.has-5-columns {
   .wp-block-column {
     flex-basis: 50%;
     margin-left: 0px;
-		margin-right: 0px;
+    margin-right: 0px;
     &:nth-child(even) {
       padding-right: $thx_site_font_width;
     }
@@ -68,6 +63,35 @@ $thx_beta_column_margin: $thx_site_font_width * 1;
     &:first-child {
       flex-basis: 100%;
       padding-left: 0px;
+    }
+  }
+}*/
+
+/* ５カラムは２＋３カラム表示 */
+.wp-block-columns.has-5-columns {
+  .wp-block-column {
+    margin-left: 0px;
+    margin-right: 0px;
+    &:nth-child(1) {
+      flex-basis: (100%/2);
+      padding-right: $thx_site_font_width;
+    }
+    &:nth-child(2) {
+      flex-basis: (100%/2);
+      padding-left: $thx_site_font_width;
+    }
+    &:nth-child(3) {
+      flex-basis: (100%/3);
+      padding-right: $thx_site_font_width * (4/3);
+    }
+    &:nth-child(4) {
+      flex-basis: (100%/3);
+      padding-left: $thx_site_font_width * (2/3);
+      padding-right: $thx_site_font_width * (2/3);
+    }
+    &:nth-child(5) {
+      flex-basis: (100%/3);
+      padding-left: $thx_site_font_width * (4/3);
     }
   }
 }

@@ -3,19 +3,11 @@
 /* 480px以下のベタ組 */
 /*******************/
 
-/* カラムブロック間マージン設定 */
-.wp-block-columns.has-2-columns,
-.wp-block-columns.has-3-columns,
-.wp-block-columns.has-4-columns,
-.wp-block-columns.has-5-columns,
-.wp-block-columns.has-6-columns {
-  .wp-block-column {
-    @include thx-column-margin(0px);
-  }
-}
-
 /* ２・３カラムはラップ表示 */
 .wp-block-columns.has-2-columns,
 .wp-block-columns.has-3-columns {
   flex-wrap: wrap;
+  .wp-block-column {
+    @include thx-column-margin(0px);
+  }
 }
