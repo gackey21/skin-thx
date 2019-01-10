@@ -930,6 +930,9 @@ a[data-slide-contents*="slide-contents"]:hover {
 	/* 375pxのベタ組 */
 	/* iPhone縦持ち  */
 	/*****************/
+	.page-body {
+		font-size: 16px;
+	}
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	}
