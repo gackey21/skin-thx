@@ -31,19 +31,32 @@ $thx_font_family:
 }
 
 //mixin設定
-@mixin thx-default-text-align {
-  text-align: start;
-}
-
 @mixin thx-beta-body {
   font-family: $thx_font_family;
   text-align: justify;
+}
+
+@mixin thx-default-text-align {
+  text-align: start;
 }
 
 @mixin thx-beta-p {
   border-style: $thx_beta_border_style;
   border-width: $thx_beta_border_width;
   border-color: $thx_beta_border_color;
+}
+
+@mixin thx-column-margin($column_margin: $thx_beta_column_margin) {
+  margin-left: $column_margin;
+  margin-right: $column_margin;
+  @if ($column_margin / 1px) != 0 {
+    &:first-child {
+      margin-left: $column_margin * 0;
+    }
+    &:last-child {
+      margin-right: $column_margin * 0;
+    }
+  }
 }
 
 @function thx-beta-padding (
@@ -78,13 +91,6 @@ $thx_font_family:
 .wp-block-columns.has-5-columns,
 .wp-block-columns.has-6-columns {
   .wp-block-column {
-    margin-left: $thx_beta_column_margin;
-    margin-right: $thx_beta_column_margin;
-    &:first-child {
-      margin-left: $thx_beta_column_margin * 0;
-    }
-    &:last-child {
-      margin-right: $thx_beta_column_margin * 0;
-    }
+    @include thx-column-margin($thx_beta_column_margin);
   }
 }

@@ -4,17 +4,13 @@
 /*******************/
 
 /* カラムブロック間マージン設定 */
-.has-2-columns,
-.has-3-columns,
-.has-4-columns,
-.has-5-columns,
-.has-6-columns {
+.wp-block-columns.has-2-columns,
+.wp-block-columns.has-3-columns,
+.wp-block-columns.has-4-columns,
+.wp-block-columns.has-5-columns,
+.wp-block-columns.has-6-columns {
   .wp-block-column {
-    &:nth-child(odd),
-    &:nth-child(even){
-      margin-left: 0px;
-      margin-right: 0px;
-    }
+    @include thx-column-margin(0px);
   }
 }
 

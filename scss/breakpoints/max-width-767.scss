@@ -30,14 +30,7 @@ $thx_beta_column_margin: $thx_site_font_width * 1;
 .wp-block-columns.has-5-columns,
 .wp-block-columns.has-6-columns {
   .wp-block-column {
-    margin-left: $thx_beta_column_margin;
-    margin-right: $thx_beta_column_margin;
-    &:first-child {
-      margin-left: $thx_beta_column_margin * 0;
-    }
-    &:last-child {
-      margin-right: $thx_beta_column_margin * 0;
-    }
+    @include thx-column-margin($thx_beta_column_margin);
   }
 }
 
