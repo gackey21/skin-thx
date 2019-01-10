@@ -33,7 +33,6 @@ $thx_font_family:
 //mixin設定
 @mixin thx-beta-body {
   font-family: $thx_font_family;
-  text-align: justify;
 }
 
 @mixin thx-default-text-align {
@@ -44,6 +43,7 @@ $thx_font_family:
   border-style: $thx_beta_border_style;
   border-width: $thx_beta_border_width;
   border-color: $thx_beta_border_color;
+  text-align: justify;
 }
 
 @mixin thx-column-margin($column_margin: $thx_beta_column_margin) {
