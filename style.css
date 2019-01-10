@@ -657,6 +657,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 /*********/
 /* ベタ組 */
 /*********/
+.page-body {
+	font-size: 18px;
+}
+
 @media screen and (min-width: 1025px) {
 	/********************/
 	/* 1025px以上のルール */
@@ -668,9 +672,6 @@ a[data-slide-contents*="slide-contents"]:hover {
 	/* 768px以上のベタ組 */
 	/* iPad 縦持ち      */
 	/*******************/
-	.page-body {
-		font-size: 18px;
-	}
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	}
