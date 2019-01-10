@@ -742,25 +742,16 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 	/* カラムブロック間マージン設定 */
 	.wp-block-columns.has-2-columns .wp-block-column,
-	.wp-block-columns.has-3-columns .wp-block-column,
-	.wp-block-columns.has-4-columns .wp-block-column,
-	.wp-block-columns.has-5-columns .wp-block-column,
-	.wp-block-columns.has-6-columns .wp-block-column {
+	.wp-block-columns.has-3-columns .wp-block-column {
 		margin-left: 16px;
 		margin-right: 16px;
 	}
 	.wp-block-columns.has-2-columns .wp-block-column:first-child,
-	.wp-block-columns.has-3-columns .wp-block-column:first-child,
-	.wp-block-columns.has-4-columns .wp-block-column:first-child,
-	.wp-block-columns.has-5-columns .wp-block-column:first-child,
-	.wp-block-columns.has-6-columns .wp-block-column:first-child {
+	.wp-block-columns.has-3-columns .wp-block-column:first-child {
 		margin-left: 0px;
 	}
 	.wp-block-columns.has-2-columns .wp-block-column:last-child,
-	.wp-block-columns.has-3-columns .wp-block-column:last-child,
-	.wp-block-columns.has-4-columns .wp-block-column:last-child,
-	.wp-block-columns.has-5-columns .wp-block-column:last-child,
-	.wp-block-columns.has-6-columns .wp-block-column:last-child {
+	.wp-block-columns.has-3-columns .wp-block-column:last-child {
 		margin-right: 0px;
 	}
 	/* ２・３カラムはカラム表示 */

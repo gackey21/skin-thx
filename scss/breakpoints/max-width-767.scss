@@ -25,10 +25,7 @@ $thx_beta_column_margin: $thx_site_font_width * 1;
 
 /* カラムブロック間マージン設定 */
 .wp-block-columns.has-2-columns,
-.wp-block-columns.has-3-columns,
-.wp-block-columns.has-4-columns,
-.wp-block-columns.has-5-columns,
-.wp-block-columns.has-6-columns {
+.wp-block-columns.has-3-columns {
   .wp-block-column {
     @include thx-column-margin($thx_beta_column_margin);
   }
