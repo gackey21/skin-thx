@@ -6,7 +6,7 @@
   Author: がっきぃ
   Author URI: https://thx.jp
   Screenshot URI: https://
-  Version: 0.1.2
+  Version: 0.2.2
   Priority: 0
 */
 /*以下にスタイルシートを記入してください*/
@@ -659,6 +659,14 @@ a[data-slide-contents*="slide-contents"]:hover {
 /*********/
 .page-body {
 	font-size: 18px;
+}
+
+.blank-box {
+	margin-left: 0;
+	margin-right: 0;
+	border-width: 2px;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
 @media screen and (min-width: 1025px) {
