@@ -675,6 +675,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 	padding-right: 18px;
 }
 
+.secondary-box {
+	padding: 18px;
+}
+
 @media screen and (min-width: 1025px) {
 	/********************/
 	/* 1025px以上のルール */
