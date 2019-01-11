@@ -34,38 +34,19 @@ $thx_beta_padding: thx-beta-padding(
     $thx_beta_column_margin
 );
 
+$thx_main_column_contents_width:
+  $thx_main_column_contents_width - 2 * $thx_beta_padding;
+
 p {
   @include thx-beta-p;
-  padding-left: $thx_beta_padding;
-  padding-right: $thx_beta_padding;
 }
 
-/* カラムブロック内 padding 設定 */
-@for $i from 2 through 6 {
-  .has-#{$i}-columns{
-    .wp-block-column{
-      p {
-        $thx_beta_padding: thx-beta-padding(
-            $thx_main_column_contents_width,
-            $thx_site_font_width,
-            $thx_beta_border_width,
-            $i,
-            $thx_beta_column_margin
-        );
-        padding-left: $thx_beta_padding;
-        padding-right: $thx_beta_padding;
-      }
-    }
-  }
-}
 
 /* カラムブロック間マージン設定 */
-.wp-block-columns.has-2-columns,
-.wp-block-columns.has-3-columns,
-.wp-block-columns.has-4-columns,
-.wp-block-columns.has-5-columns,
-.wp-block-columns.has-6-columns {
-  .wp-block-column {
-    @include thx-column-margin($thx_beta_column_margin);
+@for $i from 2 through 6 {
+  .wp-block-columns.has-#{$i}-columns{
+    .wp-block-column{
+      @include thx-column-margin($thx_beta_column_margin,$i);
+    }
   }
 }

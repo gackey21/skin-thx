@@ -24,37 +24,10 @@ $thx_font_family:
     'Hiragino Sans',
     'Hiragino Kaku Gothic ProN',
     Meiryo,
-    sans-serif;
+    sans-serif
+;
 
-//mixin設定
-@mixin thx-beta-body {
-  font-family: $thx_font_family;
-}
-
-@mixin thx-beta-p {
-  border-style: $thx_beta_border_style;
-  border-width: $thx_beta_border_width;
-  border-color: $thx_beta_border_color;
-  text-align: justify;
-}
-
-@mixin thx-default-text-align {
-  text-align: start;
-}
-
-@mixin thx-column-margin($column_margin: $thx_beta_column_margin) {
-  margin-left: $column_margin;
-  margin-right: $column_margin;
-  @if ($column_margin / 1px) != 0 {
-    &:first-child {
-      margin-left: $column_margin * 0;
-    }
-    &:last-child {
-      margin-right: $column_margin * 0;
-    }
-  }
-}
-
+//関数設定
 @function thx-beta-padding (
   $width: $thx_main_column_contents_width,
   $font_width: $thx_site_font_width,
@@ -81,6 +54,11 @@ $thx_font_family:
 }
 
 //基本スタイル指定
+$thx_main_column_contents_width:
+  $thx_main_column_contents_width
+  - ($thx_main_column_contents_width % $thx_site_font_width)
+;
+
 $thx_beta_padding: thx-beta-padding(
     $thx_main_column_contents_width,
     $thx_site_font_width,
@@ -88,11 +66,6 @@ $thx_beta_padding: thx-beta-padding(
     $thx_beta_column_count,
     $thx_beta_column_margin
 );
-
-.entry-content {
-  padding-left: $thx_beta_padding;
-  padding-right: $thx_beta_padding;
-}
 
 .page-body {
   font-size: $thx_site_font_size;
@@ -114,4 +87,51 @@ $thx_beta_padding: thx-beta-padding(
 
 .secondary-box {
   padding: $thx_site_font_width;
+}
+
+.wp-block-columns.has-2-columns .wp-block-column,
+.wp-block-columns.has-3-columns .wp-block-column,
+.wp-block-columns.has-4-columns .wp-block-column,
+.wp-block-columns.has-5-columns .wp-block-column,
+.wp-block-columns.has-6-columns .wp-block-column {
+  margin-left: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+//mixin設定
+@mixin thx-beta-body {
+  font-family: $thx_font_family;
+}
+
+@mixin thx-beta-p {
+  border-style: $thx_beta_border_style;
+  border-width: $thx_beta_border_width;
+  border-color: $thx_beta_border_color;
+  text-align: justify;
+}
+
+@mixin thx-default-text-align {
+  text-align: start;
+}
+
+@mixin thx-column-margin(
+  $column_margin: $thx_beta_column_margin,
+  $column_count: $thx_beta_column_count
+) {
+  $columns_text_count: (
+    ($thx_main_column_contents_width / $thx_site_font_width)
+    - 2 * ($column_count - 1)
+    )
+  ;
+  $column_margin: (
+    (
+      ($columns_text_count % $column_count) * $thx_site_font_width
+      + ($column_margin * ((2 * $column_count) - 2))
+    )
+    /($column_count - 1)
+    )
+  ;
+  margin-right: $column_margin;
 }

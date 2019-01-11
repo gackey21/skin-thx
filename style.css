@@ -657,11 +657,6 @@ a[data-slide-contents*="slide-contents"]:hover {
 /*********/
 /* ベタ組 */
 /*********/
-.entry-content {
-	padding-left: 4px;
-	padding-right: 4px;
-}
-
 .page-body {
 	font-size: 18px;
 }
@@ -684,6 +679,36 @@ a[data-slide-contents*="slide-contents"]:hover {
 	padding: 18px;
 }
 
+.wp-block-columns.has-2-columns .wp-block-column,
+.wp-block-columns.has-3-columns .wp-block-column,
+.wp-block-columns.has-4-columns .wp-block-column,
+.wp-block-columns.has-5-columns .wp-block-column,
+.wp-block-columns.has-6-columns .wp-block-column {
+	margin-left: 0px;
+}
+
+.wp-block-columns.has-2-columns .wp-block-column:last-child,
+.wp-block-columns.has-3-columns .wp-block-column:last-child,
+.wp-block-columns.has-4-columns .wp-block-column:last-child,
+.wp-block-columns.has-5-columns .wp-block-column:last-child,
+.wp-block-columns.has-6-columns .wp-block-column:last-child {
+	margin-right: 0px;
+}
+
+@media screen and (min-width: 1243px) {
+	/*******************/
+	/* 1243px以上のベタ組                         */
+	/* @media screen and (max-width: 1242px) {  */
+	/*   .main {                                */
+	/*   width: 67%;                            */
+	/*   }                                      */
+	/* }                                        */
+	/*******************/
+	.no-scrollable-main .main {
+		width: 852px;
+	}
+}
+
 @media screen and (min-width: 1025px) {
 	/********************/
 	/* 1025px以上のルール */
@@ -703,52 +728,22 @@ a[data-slide-contents*="slide-contents"]:hover {
 		border-width: 0px;
 		border-color: rgba(47, 93, 80, 0);
 		text-align: justify;
-		padding-left: 4px;
-		padding-right: 4px;
-	}
-	/* カラムブロック内 padding 設定 */
-	.has-2-columns .wp-block-column p {
-		padding-left: 2px;
-		padding-right: 2px;
-	}
-	.has-3-columns .wp-block-column p {
-		padding-left: 4.33333px;
-		padding-right: 4.33333px;
-	}
-	.has-4-columns .wp-block-column p {
-		padding-left: 5.5px;
-		padding-right: 5.5px;
-	}
-	.has-5-columns .wp-block-column p {
-		padding-left: 2.6px;
-		padding-right: 2.6px;
-	}
-	.has-6-columns .wp-block-column p {
-		padding-left: 6.66667px;
-		padding-right: 6.66667px;
 	}
 	/* カラムブロック間マージン設定 */
-	.wp-block-columns.has-2-columns .wp-block-column,
-	.wp-block-columns.has-3-columns .wp-block-column,
-	.wp-block-columns.has-4-columns .wp-block-column,
-	.wp-block-columns.has-5-columns .wp-block-column,
+	.wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 40.5px;
+	}
 	.wp-block-columns.has-6-columns .wp-block-column {
-		margin-left: 18px;
-		margin-right: 18px;
-	}
-	.wp-block-columns.has-2-columns .wp-block-column:first-child,
-	.wp-block-columns.has-3-columns .wp-block-column:first-child,
-	.wp-block-columns.has-4-columns .wp-block-column:first-child,
-	.wp-block-columns.has-5-columns .wp-block-column:first-child,
-	.wp-block-columns.has-6-columns .wp-block-column:first-child {
-		margin-left: 0px;
-	}
-	.wp-block-columns.has-2-columns .wp-block-column:last-child,
-	.wp-block-columns.has-3-columns .wp-block-column:last-child,
-	.wp-block-columns.has-4-columns .wp-block-column:last-child,
-	.wp-block-columns.has-5-columns .wp-block-column:last-child,
-	.wp-block-columns.has-6-columns .wp-block-column:last-child {
-		margin-right: 0px;
+		margin-right: 50.4px;
 	}
 }
 
@@ -767,16 +762,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 	.wp-block-columns.has-2-columns .wp-block-column,
 	.wp-block-columns.has-3-columns .wp-block-column {
-		margin-left: 16px;
-		margin-right: 16px;
-	}
-	.wp-block-columns.has-2-columns .wp-block-column:first-child,
-	.wp-block-columns.has-3-columns .wp-block-column:first-child {
-		margin-left: 0px;
-	}
-	.wp-block-columns.has-2-columns .wp-block-column:last-child,
-	.wp-block-columns.has-3-columns .wp-block-column:last-child {
-		margin-right: 0px;
+		margin-right: NaN;
 	}
 	/* ４・６カラムは疑似２カラム表示 */
 	.wp-block-columns.has-4-columns .wp-block-column,
@@ -857,8 +843,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 	.wp-block-columns.has-2-columns .wp-block-column,
 	.wp-block-columns.has-3-columns .wp-block-column {
-		margin-left: 0px;
-		margin-right: 0px;
+		margin-right: NaN;
 	}
 }
 
