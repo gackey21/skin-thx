@@ -657,6 +657,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 /*********/
 /* ベタ組 */
 /*********/
+.entry-content {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
 .page-body {
 	font-size: 18px;
 }

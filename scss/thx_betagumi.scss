@@ -26,29 +26,6 @@ $thx_font_family:
     Meiryo,
     sans-serif;
 
-//基本スタイル指定
-.page-body {
-  font-size: $thx_site_font_size;
-}
-
-.blank-box {
-  margin-left: 0;
-  margin-right: 0;
-  border-width: 2px;
-  padding-left: ($thx_site_font_width - 2px);
-  padding-right: ($thx_site_font_width - 2px);
-}
-
-.blank-box.sticky {
-  border-width: 0 0 0 ($thx_site_font_width * 2);
-  padding-left: $thx_site_font_width;
-  padding-right: $thx_site_font_width;
-}
-
-.secondary-box {
-  padding: $thx_site_font_width;
-}
-
 //mixin設定
 @mixin thx-beta-body {
   font-family: $thx_font_family;
@@ -101,4 +78,40 @@ $thx_font_family:
     % $font_width
     / 2
   );
+}
+
+//基本スタイル指定
+$thx_beta_padding: thx-beta-padding(
+    $thx_main_column_contents_width,
+    $thx_site_font_width,
+    $thx_beta_border_width,
+    $thx_beta_column_count,
+    $thx_beta_column_margin
+);
+
+.entry-content {
+  padding-left: $thx_beta_padding;
+  padding-right: $thx_beta_padding;
+}
+
+.page-body {
+  font-size: $thx_site_font_size;
+}
+
+.blank-box {
+  margin-left: 0;
+  margin-right: 0;
+  border-width: 2px;
+  padding-left: ($thx_site_font_width - 2px);
+  padding-right: ($thx_site_font_width - 2px);
+}
+
+.blank-box.sticky {
+  border-width: 0 0 0 ($thx_site_font_width * 2);
+  padding-left: $thx_site_font_width;
+  padding-right: $thx_site_font_width;
+}
+
+.secondary-box {
+  padding: $thx_site_font_width;
 }
