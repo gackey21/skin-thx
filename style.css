@@ -669,6 +669,12 @@ a[data-slide-contents*="slide-contents"]:hover {
 	padding-right: 16px;
 }
 
+.blank-box.sticky {
+	border-width: 0 0 0 36px;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
 @media screen and (min-width: 1025px) {
 	/********************/
 	/* 1025px以上のルール */
