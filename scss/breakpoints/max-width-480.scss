@@ -1,6 +1,7 @@
 // main: ../style.scss
 /*******************/
-/* 480px以下のベタ組 */
+/* 480px以下  */
+/* ベタ組みなし */
 /*******************/
 
 /* ２・３カラムはラップ表示 */
@@ -8,6 +9,7 @@
 .wp-block-columns.has-3-columns {
   flex-wrap: wrap;
   .wp-block-column {
-    @include thx-column-margin(0px);
+    margin-left: 0px;
+		margin-right: 0px;
   }
 }
