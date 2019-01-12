@@ -10,9 +10,9 @@ $thx_site_font_condense: 1;
 $thx_site_font_width: $thx_site_font_size * $thx_site_font_condense;
 
 // thx_beta_border
-$thx_beta_border_style: solid;
-$thx_beta_border_width: 0px;
-$thx_beta_border_color: fade-out($key_sub_color, 1);
+//$thx_beta_border_style: solid;
+//$thx_beta_border_width: 0px;
+//$thx_beta_border_color: fade-out($key_sub_color, 1);
 
 // thx_beta_column
 $thx_beta_column_count: 1;
@@ -107,9 +107,9 @@ $thx_main_column_contents_width:
 }
 
 @mixin thx-beta-p {
-  border-style: $thx_beta_border_style;
-  border-width: $thx_beta_border_width;
-  border-color: $thx_beta_border_color;
+//  border-style: $thx_beta_border_style;
+//  border-width: $thx_beta_border_width;
+//  border-color: $thx_beta_border_color;
   text-align: justify;
 }
 
