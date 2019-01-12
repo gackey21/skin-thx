@@ -731,19 +731,19 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 	/* カラムブロック間マージン設定 */
 	.wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 36px;
+		margin-right: NaN;
 	}
 	.wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 45px;
+		margin-right: NaN;
 	}
 	.wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 48px;
+		margin-right: NaN;
 	}
 	.wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 40.5px;
+		margin-right: NaN;
 	}
 	.wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 50.4px;
+		margin-right: NaN;
 	}
 }
 
@@ -868,29 +868,25 @@ a[data-slide-contents*="slide-contents"]:hover {
 		border-width: 0px;
 		border-color: rgba(47, 93, 80, 0);
 		text-align: justify;
-		padding-left: 7.04px;
-		padding-right: 7.04px;
 	}
-	/* カラムブロック内 padding 設定 */
-	.has-2-columns .wp-block-column p {
-		padding-left: 3.52px;
-		padding-right: 3.52px;
+	.no-scrollable-main .main {
+		width: 672px;
 	}
-	.has-3-columns .wp-block-column p {
-		padding-left: 2.34667px;
-		padding-right: 2.34667px;
+	/* カラムブロック間マージン設定 */
+	.wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
 	}
-	.has-4-columns .wp-block-column p {
-		padding-left: 1.76px;
-		padding-right: 1.76px;
+	.wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 36px;
 	}
-	.has-5-columns .wp-block-column p {
-		padding-left: 3.208px;
-		padding-right: 3.208px;
+	.wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 36px;
 	}
-	.has-6-columns .wp-block-column p {
-		padding-left: 1.17333px;
-		padding-right: 1.17333px;
+	.wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 40.5px;
+	}
+	.wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 36px;
 	}
 }
 

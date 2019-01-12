@@ -54,6 +54,7 @@ $thx_font_family:
 }
 
 //基本スタイル指定
+//コンテンツ幅を文字幅の整数倍に
 $thx_main_column_contents_width:
   $thx_main_column_contents_width
   - ($thx_main_column_contents_width % $thx_site_font_width)
@@ -117,11 +118,12 @@ $thx_beta_padding: thx-beta-padding(
 }
 
 @mixin thx-column-margin(
+  $contents_width: $thx_main_column_contents_width,
   $column_margin: $thx_beta_column_margin,
   $column_count: $thx_beta_column_count
 ) {
   $columns_text_count: (
-    ($thx_main_column_contents_width / $thx_site_font_width)
+    ($contents_width / $thx_site_font_width)
     - 2 * ($column_count - 1)
     )
   ;
