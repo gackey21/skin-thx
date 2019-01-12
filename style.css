@@ -729,21 +729,24 @@ a[data-slide-contents*="slide-contents"]:hover {
 		border-color: rgba(47, 93, 80, 0);
 		text-align: justify;
 	}
+	.no-scrollable-main .main {
+		width: 852px;
+	}
 	/* カラムブロック間マージン設定 */
 	.wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: NaN;
+		margin-right: 36px;
 	}
 	.wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: NaN;
+		margin-right: 45px;
 	}
 	.wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: NaN;
+		margin-right: 48px;
 	}
 	.wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: NaN;
+		margin-right: 40.5px;
 	}
 	.wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: NaN;
+		margin-right: 50.4px;
 	}
 }
 
