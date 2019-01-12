@@ -122,18 +122,12 @@ $thx_main_column_contents_width:
   $column_margin: $thx_beta_column_margin,
   $column_count: $thx_beta_column_count
 ) {
-  $columns_text_count: (
-    ($contents_width / $thx_site_font_width)
-    - 2 * ($column_count - 1)
-    )
-  ;
-  $column_margin: (
-    (
-      ($columns_text_count % $column_count) * $thx_site_font_width
-      + ($column_margin * ($column_count - 1))
-    )
-    /($column_count - 1)
-    )
-  ;
+  $columns_margin_total: $column_margin * ($column_count - 1);
+  $text_width: $contents_width - $columns_margin_total;
+  $text_count: $text_width / $thx_site_font_width;
+  $text_width_rem: $text_count % $column_count;
+  $text_width_rem: $text_width_rem * $thx_site_font_width;
+  $columns_margin_total: $columns_margin_total + $text_width_rem;
+  $column_margin: $columns_margin_total / ($column_count - 1);
   margin-right: $column_margin;
 }
