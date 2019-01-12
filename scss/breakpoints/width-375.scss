@@ -23,22 +23,24 @@ $thx_beta_column_margin: $thx_site_font_width * 1;
   font-size: $thx_site_font_size;
 }
 
+//コンテンツ幅を文字幅の整数倍に
+$thx_main_column_contents_width:
+  $thx_main_column_contents_width
+  - ($thx_main_column_contents_width % $thx_site_font_width)
+;
+
 body {
   @include thx-beta-body;
 }
 
-$thx_beta_padding: thx-beta-padding(
-    $thx_main_column_contents_width,
-    $thx_site_font_width,
-    $thx_beta_border_width,
-    $thx_beta_column_count,
-    $thx_beta_column_margin
-);
-
 p {
   @include thx-beta-p;
-  padding-left: $thx_beta_padding;
-  padding-right: $thx_beta_padding;
+}
+
+.no-scrollable-main .main {
+  width: $thx_main_column_contents_width + 20;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ４５６カラムはアジャスト解除 */
