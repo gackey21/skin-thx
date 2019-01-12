@@ -749,7 +749,8 @@ a[data-slide-contents*="slide-contents"]:hover {
 
 @media screen and (max-width: 767px) {
 	/*******************/
-	/* 767px以下のベタ組 */
+	/* 767px以下　      */
+	/* ベタ組みなし      */
 	/* iPad 縦持ち未満  */
 	/*******************/
 	.page-body {
@@ -762,7 +763,12 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 	.wp-block-columns.has-2-columns .wp-block-column,
 	.wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: NaN;
+		margin-left: 0px;
+		margin-right: 32px;
+	}
+	.wp-block-columns.has-2-columns .wp-block-column:last-child,
+	.wp-block-columns.has-3-columns .wp-block-column:last-child {
+		margin-right: 0px;
 	}
 	/* ４・６カラムは疑似２カラム表示 */
 	.wp-block-columns.has-4-columns .wp-block-column,

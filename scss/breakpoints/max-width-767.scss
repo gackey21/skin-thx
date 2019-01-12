@@ -1,6 +1,7 @@
 // main: ../style.scss
 /*******************/
-/* 767px以下のベタ組 */
+/* 767px以下　      */
+/* ベタ組みなし      */
 /* iPad 縦持ち未満  */
 /*******************/
 
@@ -28,7 +29,11 @@ $thx_beta_column_margin: $thx_site_font_width * 1;
 .wp-block-columns.has-3-columns {
   flex-wrap: nowrap;
   .wp-block-column {
-    @include thx-column-margin($thx_beta_column_margin);
+    margin-left: 0px;
+    margin-right: $thx_site_font_width * 2;
+    &:last-child {
+      margin-right: 0px;
+    }
   }
 }
 
