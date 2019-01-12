@@ -42,7 +42,12 @@ p {
 @for $i from 2 through 6 {
   .wp-block-columns.has-#{$i}-columns{
     .wp-block-column{
-      @include thx-column-margin($thx_main_column_contents_width, $thx_beta_column_margin,$i);
+      @include thx-column-margin(
+        $thx_main_column_contents_width,
+        $thx_site_font_width,
+        $i,
+        $thx_beta_column_margin
+      );
     }
   }
 }

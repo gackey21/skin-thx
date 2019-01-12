@@ -119,14 +119,15 @@ $thx_main_column_contents_width:
 
 @mixin thx-column-margin(
   $contents_width: $thx_main_column_contents_width,
-  $column_margin: $thx_beta_column_margin,
-  $column_count: $thx_beta_column_count
+  $font_width: $thx_site_font_width,
+  $column_count: $thx_beta_column_count,
+  $column_margin: $thx_beta_column_margin
 ) {
   $columns_margin_total: $column_margin * ($column_count - 1);
   $text_width: $contents_width - $columns_margin_total;
-  $text_count: $text_width / $thx_site_font_width;
+  $text_count: $text_width / $font_width;
   $text_width_rem: $text_count % $column_count;
-  $text_width_rem: $text_width_rem * $thx_site_font_width;
+  $text_width_rem: $text_width_rem * $font_width;
   $columns_margin_total: $columns_margin_total + $text_width_rem;
   $column_margin: $columns_margin_total / ($column_count - 1);
   margin-right: $column_margin;
