@@ -28,7 +28,7 @@ $thx_font_family:
 ;
 
 //関数設定
-@function thx-beta-padding (
+/*@function thx-beta-padding (
   $width: $thx_main_column_contents_width,
   $font_width: $thx_site_font_width,
   $border_width: $thx_beta_border_width,
@@ -51,7 +51,7 @@ $thx_font_family:
     % $font_width
     / 2
   );
-}
+}*/
 
 //基本スタイル指定
 //コンテンツ幅を文字幅の整数倍に
@@ -60,13 +60,13 @@ $thx_main_column_contents_width:
   - ($thx_main_column_contents_width % $thx_site_font_width)
 ;
 
-$thx_beta_padding: thx-beta-padding(
+/*$thx_beta_padding: thx-beta-padding(
     $thx_main_column_contents_width,
     $thx_site_font_width,
     $thx_beta_border_width,
     $thx_beta_column_count,
     $thx_beta_column_margin
-);
+);*/
 
 .page-body {
   font-size: $thx_site_font_size;
