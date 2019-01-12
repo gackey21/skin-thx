@@ -5,10 +5,11 @@
 /****************/
 // ベタ組用変数
 $thx_main_column_contents_width:
-  1024px * 0.67 - ( 1 + 29 ) * 2;
+  1024px * 0.67 - ( 1 + 29 ) * 2
+;
 //  $thx_site_font_size: 18px;
-//  $thx_site_font_condense: 1;
-//  $thx_site_font_width: $thx_site_font_size * $thx_site_font_condense;
+//$thx_site_font_condense: 1;
+//$thx_site_font_width: $thx_site_font_size * $thx_site_font_condense;
 
 // thx_beta_border
 //$thx_beta_border_style: solid;
@@ -17,7 +18,7 @@ $thx_main_column_contents_width:
 
 // thx_beta_column
 //$thx_beta_column_count: 1;
-//$thx_beta_column_margin: $thx_site_font_width * 1;
+//$thx_beta_column_margin: $thx_site_font_width * 2;
 
 //コンテンツ幅を文字幅の整数倍に
 $thx_main_column_contents_width:

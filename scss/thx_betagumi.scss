@@ -16,7 +16,7 @@ $thx_beta_border_color: fade-out($key_sub_color, 1);
 
 // thx_beta_column
 $thx_beta_column_count: 1;
-$thx_beta_column_margin: $thx_site_font_width * 1;
+$thx_beta_column_margin: $thx_site_font_width * 2;
 
 //基本フォントファミリー
 $thx_font_family:
@@ -130,7 +130,7 @@ $thx_main_column_contents_width:
   $column_margin: (
     (
       ($columns_text_count % $column_count) * $thx_site_font_width
-      + ($column_margin * ((2 * $column_count) - 2))
+      + ($column_margin * ($column_count - 1))
     )
     /($column_count - 1)
     )
