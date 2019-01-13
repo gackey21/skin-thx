@@ -9,11 +9,6 @@ $thx_site_font_size: 18px;
 $thx_site_font_condense: 1;
 $thx_site_font_width: $thx_site_font_size * $thx_site_font_condense;
 
-// thx_beta_border
-//$thx_beta_border_style: solid;
-//$thx_beta_border_width: 0px;
-//$thx_beta_border_color: fade-out($key_sub_color, 1);
-
 // thx_beta_column
 $thx_beta_column_count: 1;
 $thx_beta_column_margin: $thx_site_font_width * 2;
@@ -27,46 +22,12 @@ $thx_font_family:
     sans-serif
 ;
 
-//関数設定
-/*@function thx-beta-padding (
-  $width: $thx_main_column_contents_width,
-  $font_width: $thx_site_font_width,
-  $border_width: $thx_beta_border_width,
-  $column_count: $thx_beta_column_count,
-  $column_margin: $thx_beta_column_margin
-) {
-  @return (
-    (
-      $width
-      -
-      (
-        $column_margin * ((2 * $column_count) - 2)
-      )
-      -
-      (
-        $border_width * (2 * $column_count)
-      )
-    )
-    / $column_count
-    % $font_width
-    / 2
-  );
-}*/
-
 //基本スタイル指定
 //コンテンツ幅を文字幅の整数倍に
 $thx_main_column_contents_width:
   $thx_main_column_contents_width
   - ($thx_main_column_contents_width % $thx_site_font_width)
 ;
-
-/*$thx_beta_padding: thx-beta-padding(
-    $thx_main_column_contents_width,
-    $thx_site_font_width,
-    $thx_beta_border_width,
-    $thx_beta_column_count,
-    $thx_beta_column_margin
-);*/
 
 .page-body {
   font-size: $thx_site_font_size;
@@ -78,9 +39,6 @@ $thx_main_column_contents_width:
 .wp-block-columns.has-5-columns .wp-block-column,
 .wp-block-columns.has-6-columns .wp-block-column {
   margin-left: 0px;
-//  &:last-child {
-//    margin-right: 0px;
-//  }
 }
 
 //mixin設定
@@ -89,9 +47,6 @@ $thx_main_column_contents_width:
 }
 
 @mixin thx-beta-p {
-//  border-style: $thx_beta_border_style;
-//  border-width: $thx_beta_border_width;
-//  border-color: $thx_beta_border_color;
   text-align: justify;
 }
 
