@@ -53,7 +53,7 @@ $h_bk_color: lighten($key_color, 40%);
 @import "adjustment";
 //@import "anime";
 @import "thx_betagumi";
-///////////////////////////////////////
 // メディアクエリ
-///////////////////////////////////////
 @import "breakpoints/breakpoints";
+// オーバーライド
+@import "override";

@@ -53,3 +53,89 @@ p {
     }
   }
 }
+
+/* 案内ボックス */
+.secondary-box {
+  @include secondary-box;
+  $contents_width:
+    $thx_main_column_contents_width
+    - $thx_site_font_width * 2
+  ;
+  @for $i from 2 through 6 {
+    .wp-block-columns.has-#{$i}-columns{
+      .wp-block-column{
+        @include thx-column-margin(
+          $contents_width,
+          $thx_site_font_width,
+          $i,
+          $thx_beta_column_margin
+        );
+      }
+    }
+  }
+}
+
+/* 白抜きボックス */
+.blank-box {
+  @include blank-box;
+  $contents_width:
+    $thx_main_column_contents_width
+    - $thx_site_font_width * 2
+  ;
+  @for $i from 2 through 6 {
+    .wp-block-columns.has-#{$i}-columns{
+      .wp-block-column{
+        @include thx-column-margin(
+          $contents_width,
+          $thx_site_font_width,
+          $i,
+          $thx_beta_column_margin
+        );
+      }
+    }
+  }
+}
+
+/* 付箋風ボックス */
+.blank-box.sticky {
+  @include blank-box-sticky;
+}
+.sticky {
+  $contents_width:
+    $thx_main_column_contents_width
+    - $thx_site_font_width * 4
+  ;
+  @for $i from 2 through 6 {
+    .wp-block-columns.has-#{$i}-columns{
+      .wp-block-column{
+        @include thx-column-margin(
+          $contents_width,
+          $thx_site_font_width,
+          $i,
+          $thx_beta_column_margin
+        );
+      }
+    }
+  }
+}
+
+/* アイコンボックス */
+.common-icon-box {
+  @include common-icon-box;
+  $contents_width:
+    $thx_main_column_contents_width
+    - $thx_site_font_width * 5
+  ;
+  @for $i from 2 through 6 {
+    .wp-block-columns.has-#{$i}-columns{
+      .wp-block-column{
+        @include thx-column-margin(
+          $contents_width,
+          $thx_site_font_width,
+          $i,
+          $thx_beta_column_margin
+        );
+      }
+    }
+  }
+}

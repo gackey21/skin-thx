@@ -49,3 +49,28 @@ p {
 .wp-block-columns.has-6-columns {
   @include thx-default-text-align;
 }
+
+/* 案内ボックス */
+.secondary-box {
+  padding: $thx_site_font_width;
+}
+
+/* 白抜きボックス */
+.blank-box {
+  border-width: 2px;
+  padding-left: ($thx_site_font_width - 2px);
+  padding-right: ($thx_site_font_width - 2px);
+}
+
+/* 付箋風ボックス */
+.blank-box.sticky {
+  border-width: 0 0 0 ($thx_site_font_width * 1);
+  padding-left: $thx_site_font_width;
+  padding-right: $thx_site_font_width;
+}
+
+/* アイコンボックス */
+.common-icon-box {
+  padding-left: ($thx_site_font_width / 2) - 1px;
+  padding-right: ($thx_site_font_width / 2) - 1px;
+}
