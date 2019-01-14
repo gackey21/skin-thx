@@ -533,39 +533,16 @@ a[data-slide-contents*="slide-contents"]:hover {
 /*********/
 /* ベタ組 */
 /*********/
-/*@function thx-beta-padding (
-  $width: $thx_main_column_contents_width,
-  $font_width: $thx_site_font_width,
-  $border_width: $thx_beta_border_width,
-  $column_count: $thx_beta_column_count,
-  $column_margin: $thx_beta_column_margin
-) {
-  @return (
-    (
-      $width
-      -
-      (
-        $column_margin * ((2 * $column_count) - 2)
-      )
-      -
-      (
-        $border_width * (2 * $column_count)
-      )
-    )
-    / $column_count
-    % $font_width
-    / 2
-  );
-}*/
-/*$thx_beta_padding: thx-beta-padding(
-    $thx_main_column_contents_width,
-    $thx_site_font_width,
-    $thx_beta_border_width,
-    $thx_beta_column_count,
-    $thx_beta_column_margin
-);*/
-.page-body {
-	font-size: 18px;
+@media screen and (max-width: 767px) {
+	.page-body {
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.page-body {
+		font-size: 18px;
+	}
 }
 
 .wp-block-columns.has-2-columns .wp-block-column,
