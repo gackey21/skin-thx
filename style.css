@@ -668,6 +668,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 	/* アイコンボックス */
 	.common-icon-box {
+		border-width: 1px;
 		padding-left: 71px;
 		padding-right: 17px;
 	}
@@ -912,6 +913,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 	/* アイコンボックス */
 	.common-icon-box {
+		border-width: 1px;
 		padding-left: 71px;
 		padding-right: 17px;
 	}
@@ -1050,6 +1052,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 	/* アイコンボックス */
 	.common-icon-box {
+		border-width: 1px;
 		padding-left: 71px;
 		padding-right: 17px;
 	}
