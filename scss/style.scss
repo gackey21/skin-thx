@@ -40,6 +40,24 @@ $bg_color: change-color($key_color, $lightness: 95%);
 $key_color_thin: fade-out($key_color, 0.95);
 $h_bk_color: lighten($key_color, 40%);
 
+$mq-breakpoints: (
+  'iphone-p': 375px,
+  'small' : 480px,
+  'ipad-p': 768px,
+  'ipad-l' : 1024px,
+  'large': 1280px,
+);
+
+@mixin mq($breakpoint: small, $rule: min, $subtraction: false) {
+  $breakpoint: map_get($mq-breakpoints, $breakpoint);
+  @if ($rule == max) and ($subtraction == false) {
+    $breakpoint: $breakpoint - 1;
+  }
+  @media screen and (#{$rule}-width: $breakpoint) {
+    @content;
+  }
+}
+
 //基本要素
 @import "base";
 //グローバルナビ

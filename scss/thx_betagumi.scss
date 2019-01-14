@@ -30,7 +30,14 @@ $thx_main_column_contents_width:
 ;
 
 .page-body {
-  font-size: $thx_site_font_size;
+  @include mq(ipad-p, max) {
+    $thx_site_font_size: 16px;
+    font-size: $thx_site_font_size;
+  }
+  @include mq(ipad-p) {
+    $thx_site_font_size: 18px;
+    font-size: $thx_site_font_size;
+  }
 }
 
 .wp-block-columns.has-2-columns .wp-block-column,
