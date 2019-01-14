@@ -137,3 +137,26 @@ p {
     }
   }
 }
+
+/* トグルボックス */
+.toggle-checkbox:checked~.toggle-content {
+  @include toggle-checkbox
+};
+.toggle-content {
+  $contents_width:
+    $thx_main_column_contents_width
+    - $thx_site_font_width * 2
+  ;
+  @for $i from 2 through 6 {
+    .wp-block-columns.has-#{$i}-columns{
+      .wp-block-column{
+        @include thx-column-margin(
+          $contents_width,
+          $thx_site_font_width,
+          $i,
+          $thx_beta_column_margin
+        );
+      }
+    }
+  }
+}

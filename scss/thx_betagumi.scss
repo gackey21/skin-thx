@@ -99,3 +99,9 @@ $thx_main_column_contents_width:
   padding-left: ($thx_site_font_width * 4) - 1px;
   padding-right: $thx_site_font_width - 1px;
 }
+
+@mixin toggle-checkbox {
+  border-width: 1px;
+  padding-left: ($thx_site_font_width - 1px);
+  padding-right: ($thx_site_font_width - 1px);
+}

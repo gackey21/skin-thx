@@ -74,3 +74,10 @@ p {
   padding-left: ($thx_site_font_width / 2) - 1px;
   padding-right: ($thx_site_font_width / 2) - 1px;
 }
+
+/* トグルボックス */
+.toggle-checkbox:checked~.toggle-content {
+  border-width: 1px;
+  padding-left: ($thx_site_font_width - 1px);
+  padding-right: ($thx_site_font_width - 1px);
+}
