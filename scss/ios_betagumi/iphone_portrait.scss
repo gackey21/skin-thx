@@ -1,3 +1,50 @@
+/*_/_/_/_/_/_/_/_/*/
+/* iPhone  縦持ち */
+/*       共通設定 */
+/*_/_/_/_/_/_/_/_/*/
+@media screen and
+  (max-width: 414px) and
+  (orientation: portrait)
+{
+  $font_width: $thx_iphone_font_width;
+  .page-body {
+    font-size: $font_width;
+  }
+
+  /* 案内ボックス */
+  .secondary-box {
+    padding: $font_width;
+  }
+
+  /* 白抜きボックス */
+  .blank-box {
+    border-width: 2px;
+    padding-left: ($font_width - 2px);
+    padding-right: ($font_width - 2px);
+  }
+
+  /* 付箋風ボックス */
+  .blank-box.sticky {
+    border-width: 0 0 0 ($font_width * 1);
+    padding-left: $font_width;
+    padding-right: $font_width;
+  }
+
+  /* アイコンボックス */
+  .common-icon-box {
+    border-width: 1px;
+    padding-left: ($font_width / 2) - 1px;
+    padding-right: ($font_width / 2) - 1px;
+  }
+
+  /* トグルボックス */
+  .toggle-checkbox:checked~.toggle-content {
+    border-width: 1px;
+    padding-left: ($font_width - 1px);
+    padding-right: ($font_width - 1px);
+  }
+}
+
 /*****************/
 /* iPhone 縦持ち */
 /*      個別設定 */
