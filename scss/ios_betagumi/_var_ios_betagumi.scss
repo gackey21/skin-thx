@@ -1,0 +1,62 @@
+// コンテンツ幅
+$thx_main_column_contents_width: 320px;
+
+// コンテンツのpadding幅
+$thx_main_column_contents_padding: 10px;
+
+// iPhoneでのフォントサイズ
+$thx_iphone_font_size: 16px;
+
+// iPadでのフォントサイズ
+$thx_ipad_font_size: 18px;
+
+// 仕様フォントのコンデンス幅
+$thx_site_font_condense: 1;
+
+// iPhoneでのフォント幅
+$thx_iphone_font_width:
+  $thx_iphone_font_size * $thx_site_font_condense
+;
+
+// iPadでのフォント幅
+$thx_ipad_font_width:
+  $thx_ipad_font_size * $thx_site_font_condense
+;
+
+// デフォルトのフォント幅
+$thx_site_font_width: $thx_iphone_font_width;
+
+// カラムの数
+$thx_beta_column_count: 1;
+
+// カラム間マージン
+$thx_beta_column_margin:
+  $thx_site_font_width * 2
+;
+
+//基本フォントファミリー
+$thx_font_family:
+//    "UD新ゴ コンデンス90 L",
+    'Hiragino Sans',
+    'Hiragino Kaku Gothic ProN',
+    Meiryo,
+    sans-serif
+;
+
+//コンテンツ幅を文字幅の整数倍に
+$thx_main_column_contents_width:
+  $thx_main_column_contents_width
+  - ($thx_main_column_contents_width % $thx_site_font_width)
+;
+
+//iPhone縦持ち
+$iphone_sizes_p: 320,375,414;
+
+//iPhone横向き
+$iphone_sizes_l: 568,667,736,812,896;
+
+//iPad縦向き
+$ipad_sizes_p: 768,834;
+
+//iPad横向き
+$ipad_sizes_l: 1024,1112,1194,1366;

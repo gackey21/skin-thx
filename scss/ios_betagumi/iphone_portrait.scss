@@ -1,0 +1,34 @@
+/*****************/
+/* iPhone 縦持ち */
+/*      個別設定 */
+/*****************/
+@each $size in $iphone_sizes_p {
+  $font_width: $thx_iphone_font_width;
+  $contents_padding: $thx_main_column_contents_padding;
+  // $contents_widthを文字幅の整数倍に
+  $contents_width:
+    ($size - $contents_padding * 2)
+    - (
+      ($size - $contents_padding * 2)
+      % $font_width
+    )
+  ;
+  @media screen and
+    (width: #{$size}px) and
+    (orientation: portrait)
+  {
+    body {
+      @include thx-beta-body;
+    }
+    p {
+      @include thx-beta-p;
+    }
+    .no-scrollable-main .main {
+      width: $contents_width + $contents_padding * 2;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: $contents_padding;
+      padding-right: $contents_padding;
+    }
+  }
+}

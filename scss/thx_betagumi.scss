@@ -1,0 +1,108 @@
+// main: style.scss
+/*********/
+/* ベタ組 */
+/*********/
+
+// ベタ組用変数
+$thx_main_column_contents_width: 800px;
+$thx_site_font_size: 18px;
+$thx_site_font_condense: 1;
+$thx_site_font_width: $thx_site_font_size * $thx_site_font_condense;
+
+// thx_beta_column
+$thx_beta_column_count: 1;
+$thx_beta_column_margin: $thx_site_font_width * 2;
+
+//基本フォントファミリー
+$thx_font_family:
+//    "UD新ゴ コンデンス90 L",
+    'Hiragino Sans',
+    'Hiragino Kaku Gothic ProN',
+    Meiryo,
+    sans-serif
+;
+
+//基本スタイル指定
+//コンテンツ幅を文字幅の整数倍に
+$thx_main_column_contents_width:
+  $thx_main_column_contents_width
+  - ($thx_main_column_contents_width % $thx_site_font_width)
+;
+
+.page-body {
+  @include mq(ipad-p, max) {
+    $thx_site_font_size: 16px;
+    font-size: $thx_site_font_size;
+  }
+  @include mq(ipad-p) {
+    $thx_site_font_size: 18px;
+    font-size: $thx_site_font_size;
+  }
+}
+
+.wp-block-columns.has-2-columns .wp-block-column,
+.wp-block-columns.has-3-columns .wp-block-column,
+.wp-block-columns.has-4-columns .wp-block-column,
+.wp-block-columns.has-5-columns .wp-block-column,
+.wp-block-columns.has-6-columns .wp-block-column {
+  margin-left: 0px;
+}
+
+//mixin設定
+@mixin thx-beta-body {
+  font-family: $thx_font_family;
+}
+
+@mixin thx-beta-p {
+  text-align: justify;
+}
+
+@mixin thx-default-text-align {
+  text-align: start;
+}
+
+@mixin thx-column-margin(
+  $contents_width: $thx_main_column_contents_width,
+  $font_width: $thx_site_font_width,
+  $column_count: $thx_beta_column_count,
+  $column_margin: $thx_beta_column_margin
+) {
+  $columns_margin_total: $column_margin * ($column_count - 1);
+  $text_width: $contents_width - $columns_margin_total;
+  $text_count: $text_width / $font_width;
+  $text_width_rem: $text_count % $column_count;
+  $text_width_rem: $text_width_rem * $font_width;
+  $columns_margin_total: $columns_margin_total + $text_width_rem;
+  $column_margin: $columns_margin_total / ($column_count - 1);
+  margin-right: $column_margin;
+}
+
+@mixin secondary-box {
+  padding: $thx_site_font_width;
+}
+
+@mixin blank-box {
+  margin-left: 0;
+  margin-right: 0;
+  border-width: 2px;
+  padding-left: ($thx_site_font_width - 2px);
+  padding-right: ($thx_site_font_width - 2px);
+}
+
+@mixin blank-box-sticky {
+  border-width: 0 0 0 ($thx_site_font_width * 2);
+  padding-left: $thx_site_font_width;
+  padding-right: $thx_site_font_width;
+}
+
+@mixin common-icon-box {
+  border-width: 1px;
+  padding-left: ($thx_site_font_width * 4) - 1px;
+  padding-right: $thx_site_font_width - 1px;
+}
+
+@mixin toggle-checkbox {
+  border-width: 1px;
+  padding-left: ($thx_site_font_width - 1px);
+  padding-right: ($thx_site_font_width - 1px);
+}

@@ -1,0 +1,129 @@
+// main: style.scss
+/* 動画サイトカラー */
+$amazon-color: hsl(36, 100%, 50%);
+$danime-color: hsl(13, 82%, 53%);
+$hulu-color: hsl(93, 50%, 50%);
+$unext-color: hsl(205, 100%, 43%);
+
+$amazon-color-070: fade-out($amazon-color, 0.3);
+$danime-color-070: fade-out($danime-color, 0.3);
+$hulu-color-070: fade-out($hulu-color, 0.3);
+$unext-color-070: fade-out($unext-color, 0.3);
+
+/* ボタン個別指定 */
+.btn-wrap-amazon {
+  a {
+    background-color: $amazon-color;
+    &:before {
+    	content: 'Amazon Prime';
+    }
+  }
+}
+
+.btn-wrap-danime {
+  a {
+    background-color: $danime-color;
+    &:before {
+    	content: 'dアニメストア';
+    }
+  }
+}
+
+.btn-wrap-hulu {
+  a {
+    background-color: $hulu-color;
+    &:before {
+    	content: 'Hulu';
+    }
+  }
+}
+
+.btn-wrap-unext {
+  a {
+    background-color: $unext-color;
+    &:before {
+    	content: 'U-NEXT';
+    }
+  }
+}
+
+/* 動画リンク囲みボタン基本設定 */
+.btn-wrap-amazon,
+.btn-wrap-unext,
+.btn-wrap-hulu,
+.btn-wrap-danime {
+  a{
+    font-size:1.25em;
+  	line-height:1em;
+  	color:$white;
+  	border-radius: 4px;
+  	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  	display: inline-block;
+  	cursor: pointer;
+  	padding: 10px 16px;
+  	text-decoration: none;
+  	text-align: center;
+  	border: 2px solid transparent;
+  	position: relative;
+  	transition-duration: 0.3s;
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.24);
+      transition-duration: 0.3s;
+    }
+    &:before {
+      font-family: "新ゴ B", $thx_font_family;
+      font-weight: 700;
+    }
+    &:after {
+      display: block;
+    	font-size:0.5em;
+    	line-height:1.25em;
+    	margin-top: .25em;
+    	white-space: pre;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-osx-font-smoothing: auto;
+    }
+  }
+}
+
+/* サブカテゴリ表示 */
+.thx_category_space {
+	position: absolute;
+	top: 0.2em;
+	left: 0.2em;
+}
+
+.thx-label {
+	display: block;
+	font-size: 0.5em;
+	line-height: 1.25em;
+	margin-top: 0.1em;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	color: #fff;
+	background-color: rgba(51,51,51,.7);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* ラベルID依存
+.thx-label.cat-label-20 {
+	background-color: $amazon-color-070;
+}
+
+.thx-label.cat-label-26 {
+	background-color: $danime-color-070;
+}
+
+.thx-label.cat-label-25 {
+	background-color: $hulu-color-070;
+}
+
+.thx-label.cat-label-24 {
+	background-color: $unext-color-070;
+}
+*/

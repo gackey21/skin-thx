@@ -1,0 +1,59 @@
+// //1240px以下
+// @media screen and (max-width: 1240px){
+//   @import "max-width-1240";
+// }
+
+//1243px以上
+@media screen and (min-width: 1243px){
+  @import "min-width-1243";
+}
+
+//1025px以上
+@media screen and (min-width: 1025px){
+  @import "min-width-1025";
+}
+
+//1023px以下
+@media screen and (max-width: 1023px){
+  @import "max-width-1023";
+}
+
+//768px以上
+@media screen and (min-width: 768px){
+  @import "min-width-768";
+}
+
+//767px以下
+@media screen and (max-width: 767px){
+  @import "max-width-767";
+}
+
+//667px以上
+@media screen and (min-width: 667px){
+  @import "min-width-667";
+}
+
+//480px以下
+@media screen and (max-width: 480px){
+  @import "max-width-480";
+}
+
+//356px以下
+@media screen and (max-width: 356px){
+  @import "max-width-356";
+}
+
+//iPad landscape · width: 1024px
+@media screen and (width: 1024px){
+  @import "width-1024";
+}
+
+//iPad portrait · width: 768px
+@media screen and (width: 768px){
+  @import "width-768";
+}
+
+//iPhone eXpensive portrait · width: 375px
+@media screen and (width: 375px){
+  @import "width-375";
+}

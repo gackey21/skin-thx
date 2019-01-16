@@ -1,0 +1,2059 @@
+@charset "UTF-8";
+/*
+  Skin Name: thx
+  Description: thx.jpにてscss勉強用に作成
+  Skin URI: https://
+  Author: がっきぃ
+  Author URI: https://thx.jp
+  Screenshot URI: https://
+  Version: 0.3.3
+  Priority: 0
+*/
+/*以下にスタイルシートを記入してください*/
+body {
+	background-color: #ecf9f5;
+	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Arial, sans-serif;
+}
+
+.header, .header .site-name-text {
+	color: #fff;
+}
+
+.header {
+	background-color: #38b48b;
+}
+
+.widget_recent_entries ul li a:hover,
+.widget_categories ul li a:hover,
+.widget_archive ul li a:hover,
+.widget_pages ul li a:hover,
+.widget_meta ul li a:hover,
+.widget_rss ul li a:hover,
+.widget_nav_menu ul li a:hover,
+.tagcloud a:hover,
+.pagination a:hover,
+.pager-links a:hover span,
+.pagination-next-link:hover,
+.comment-btn:hover,
+.comment-reply-link:hover,
+.navi-footer-in a:hover,
+.navi-footer-in a:hover {
+	background-color: rgba(56, 180, 139, 0.05);
+}
+
+.page-numbers,
+.tagcloud a,
+.author-box,
+.ranking-item,
+.pagination-next-link,
+.comment-reply-link,
+.toc {
+	border: 1px solid #2f5d50;
+}
+
+.toc {
+	width: 80%;
+}
+
+.page-numbers,
+.pagination-next-link {
+	border-radius: 8px;
+	background: rgba(56, 180, 139, 0.05);
+}
+
+.pagination .page-numbers,
+.pager-numbers .page-numbers {
+	border-radius: 50%;
+}
+
+.pagination .current,
+.page-numbers.current,
+.page-numbers.dots {
+	background: #2f5d50;
+}
+
+.cat-label,
+.mobile-menu-buttons,
+.mobile-menu-buttons .menu-button > a,
+.navi-menu-content,
+.navi-menu-content a,
+.go-to-top-button,
+#submit {
+	background-color: #38b48b;
+	color: #fff;
+}
+
+#submit {
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+}
+
+div.mobile-menu-buttons .menu-button:hover,
+.navi-menu-content a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #fff;
+}
+
+.sidebar-menu-content {
+	color: #333;
+}
+
+.cat-label {
+	top: 0;
+	left: 0;
+	border: none;
+	border-bottom-right-radius: 3px;
+}
+
+.search-edit,
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.widget_recent_entries ul li a,
+.widget_categories ul li a,
+.widget_archive ul li a {
+	border-bottom: 1px dashed #ccc;
+	padding: 5px 0;
+}
+
+.cat-item a::before {
+	font-family: FontAwesome;
+	content: '\f0da';
+	margin-right: 6px;
+}
+
+.cat-item .children a::before {
+	content: '\f105';
+}
+
+.post-count {
+	background-color: #caeee2;
+	padding: 0 8px;
+	border-radius: 6px;
+	font-size: 0.8em;
+}
+
+.main,
+.sidebar,
+.carousel-in,
+.sbp-main-before,
+.sbp-footer-before,
+.pbp-main-before,
+.pbp-footer-before {
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.a-wrap {
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+	border-radius: 4px;
+	transition-duration: 0.3s;
+}
+
+.a-wrap:hover {
+	background-color: transparent;
+	transform: translateY(-4px);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.24);
+	transition-duration: 0.3s;
+}
+
+.widget-entry-cards .a-wrap {
+	margin-bottom: 8px;
+}
+
+.comment-list ul.children {
+	padding: 0.6em;
+	background-color: rgba(56, 180, 139, 0.05);
+	border-left: 2px solid #2f5d50;
+}
+
+.widget-entry-cards.ranking-visible .card-thumb::before {
+	border-radius: 50%;
+	background: #38b48b;
+	top: -10px;
+	left: -10px;
+	border: 2px solid #eee;
+}
+
+.navi {
+	background-color: #fff;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+	font-weight: bold;
+}
+
+.navi a:hover {
+	background-color: #fff;
+	text-decoration: underline;
+}
+
+.navi ul .sub-menu {
+	background-color: #38b48b;
+	opacity: 0.96;
+}
+
+.navi ul .sub-menu a {
+	color: #fff;
+}
+
+.navi ul .sub-menu a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navi ul .sub-menu a .sub-caption {
+	opacity: .8;
+}
+
+.navi-in > ul .sub-menu {
+	display: block;
+}
+
+.navi-in > ul .sub-menu li {
+	visibility: hidden;
+	transition: all 0.2s ease;
+	height: 0;
+}
+
+.navi-in > ul li:hover > ul > li {
+	transition: all 0.2s ease;
+	visibility: visible;
+	height: 60px;
+}
+
+.navi-in > ul .sub-menu .sub-menu li {
+	display: none;
+}
+
+.navi-in > ul .sub-menu li:hover > ul > li {
+	display: block;
+}
+
+blockquote::before, blockquote::after {
+	content: "“";
+}
+
+#tinymce.main {
+	box-shadow: none;
+}
+
+/* フォント指定 */
+body {
+	font-family: "UD新ゴ コンデンス90 L", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.sub-antialiased {
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: auto;
+}
+
+.site-name-text {
+	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	font-weight: 800;
+}
+
+.entry-title,
+.archive-title,
+h1 {
+	font-family: "新ゴ B", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	font-weight: 700;
+}
+
+.tagline,
+h2,
+h3,
+h4,
+h5,
+h6,
+.sidebar h3,
+.widget-entry-cards.large-thumb-on .card-title,
+.cat-label {
+	font-family: "新ゴ R", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	font-weight: 600;
+}
+
+.admin-panel {
+	font-family: sans-serif;
+}
+
+/* 白抜き影付き文字 */
+.site-name-text,
+.entry-title,
+.archive-title {
+	color: #fff;
+	text-shadow: 0.075em 0.075em 0.02em rgba(0, 0, 0, 0.21);
+	background-color: #38b48b;
+}
+
+/* サイト名 */
+.site-name-text {
+	font-size: 3rem;
+	line-height: 1.5em;
+}
+
+.logo-text {
+	padding: 0;
+}
+
+/* 投稿タイトル */
+.entry-title,
+.archive-title {
+	font-size: 2rem;
+	font-feature-settings: "palt";
+	letter-spacing: 0.025em;
+	margin: 0px;
+	padding: 12px;
+}
+
+/* フッター */
+.footer {
+	padding-top: 2px;
+	background-color: #38b48b;
+}
+
+.footer-bottom-logo .site-name-text {
+	font-size: 2rem;
+}
+
+.navi-footer-in a {
+	color: #fff;
+}
+
+.footer-bottom-content {
+	color: #fff;
+}
+
+.footer-bottom-content .copyright {
+	margin-top: 2px;
+}
+
+.go-to-top-button {
+	background-color: #2f5d50;
+}
+
+/* コード改行禁止 */
+pre {
+	word-wrap: normal;
+	overflow-wrap: normal;
+	word-break: normal;
+}
+
+pre code {
+	word-wrap: normal;
+	overflow-wrap: normal;
+	font-size: 1rem;
+	line-height: 1rem;
+}
+
+pre code span {
+	word-wrap: normal;
+	overflow-wrap: normal;
+}
+
+/* タイトルカウンター */
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+	position: relative;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.article h2::after,
+.article h3::after,
+.article h4::after,
+.article h5::after,
+.article h6::after {
+	position: absolute;
+	right: 4px;
+	bottom: 0px;
+	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	font-weight: 800;
+	line-height: 1em;
+	color: rgba(47, 93, 80, 0.5);
+	transition-duration: 0.3s;
+}
+
+.article h2:hover::after,
+.article h3:hover::after,
+.article h4:hover::after,
+.article h5:hover::after,
+.article h6:hover::after {
+	color: rgba(47, 93, 80, 0);
+	transition-duration: 0.3s;
+}
+
+.article h2 {
+	font-size: 2rem;
+	line-height: 2.5rem;
+	counter-increment: c-h2;
+	counter-reset: c-h3;
+	color: #fff;
+	background-color: #38b48b;
+}
+
+.article h2::after {
+	font-size: 4rem;
+	content: counter(c-h2) ".";
+}
+
+.article h3 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	counter-increment: c-h3;
+	counter-reset: c-h4;
+	background: linear-gradient(90deg, #caeee2, #fff);
+	border: none;
+}
+
+.article h3::after {
+	font-size: 3rem;
+	content: counter(c-h2) "-" counter(c-h3);
+}
+
+.article h4,
+.article h5,
+.article h6 {
+	border-color: #caeee2;
+}
+
+.article h4 {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	counter-increment: c-h4;
+	counter-reset: c-h5;
+}
+
+.article h4::after {
+	font-size: 2rem;
+	content: counter(c-h2) "-" counter(c-h3) "-" counter(c-h4);
+}
+
+.article h5 {
+	counter-increment: c-h5;
+	counter-reset: c-h6;
+}
+
+.article h5::after {
+	font-size: 1.25rem;
+	content: counter(c-h2) "-" counter(c-h3) "-" counter(c-h4) "-" counter(c-h5);
+}
+
+.article h6 {
+	counter-increment: c-h6;
+	counter-reset: c-h7;
+}
+
+.article h6::after {
+	font-size: 1rem;
+	content: counter(c-h2) "-" counter(c-h3) "-" counter(c-h4) "-" counter(c-h5) "-" counter(c-h6);
+}
+
+/* サイドバーの文字を小さく */
+.sidebar {
+	font-size: 0.875rem;
+	line-height: 1.25em;
+}
+
+/* サイドバーウィジェット */
+.sidebar h3 {
+	color: #fff;
+	background-color: #38b48b;
+	padding: 0.4em;
+	margin: 0.3em 0;
+}
+
+/* スライドコンテンツ */
+.slide-contents {
+	background: #ecf9f5;
+	width: 100%;
+	border: #2f5d50 1px solid;
+	margin: 0 0 10px 0;
+	padding: 1rem;
+	display: none;
+}
+
+a[data-slide-contents*="slide-contents"] {
+	text-decoration: none;
+}
+
+a[data-slide-contents*="slide-contents"]:hover {
+	transition-duration: 0.3s;
+}
+
+/* under-entry-content の並び順 */
+.under-entry-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.under-entry-content .related-entries {
+	order: 2;
+}
+
+.under-entry-content .pager-post-navi {
+	order: -1;
+}
+
+.under-entry-content .comment-area {
+	order: 3;
+}
+
+/* サイズ調整 */
+.btn-wrap-w98 > a {
+	width: 98%;
+}
+
+.mg-tp_025em {
+	margin-top: 0.25em;
+}
+
+.mg-bt_4px,
+.mg-bt_4px > a {
+	margin-bottom: 4px;
+}
+
+/*********/
+/* ベタ組 */
+/*********/
+/*_/_/_/_/_/_/_/_/*/
+/* iPhone  縦持ち */
+/*       共通設定 */
+/*_/_/_/_/_/_/_/_/*/
+@media screen and (min-width: 320px) {
+	.page-body {
+		font-size: 16px;
+	}
+	/* 案内ボックス */
+	.secondary-box {
+		padding: 16px;
+	}
+	/* 白抜きボックス */
+	.blank-box {
+		border-width: 2px;
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+	/* 付箋風ボックス */
+	.blank-box.sticky {
+		border-width: 0 0 0 16px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	/* アイコンボックス */
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+	/* トグルボックス */
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+/*****************/
+/* iPhone 縦持ち */
+/*      個別設定 */
+/*****************/
+@media screen and (width: 320px) and (orientation: portrait) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 308px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (width: 375px) and (orientation: portrait) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 372px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (width: 414px) and (orientation: portrait) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 404px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+/*_/_/_/_/_/_/_/_/*/
+/* iPhone  横向き */
+/*       共通設定 */
+/*_/_/_/_/_/_/_/_/*/
+@media screen and (min-width: 568px) and (orientation: landscape) {
+	.page-body {
+		font-size: 16px;
+	}
+	/* ２・３カラムはカラム表示 */
+	.wp-block-columns.has-2-columns,
+	.wp-block-columns.has-3-columns {
+		flex-wrap: nowrap;
+	}
+	/* 案内ボックス */
+	.secondary-box {
+		padding: 16px;
+	}
+	/* 白抜きボックス */
+	.blank-box {
+		margin-left: 0;
+		margin-right: 0;
+		border-width: 2px;
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+	/* 付箋風ボックス */
+	.blank-box.sticky {
+		border-width: 0 0 0 32px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	/* アイコンボックス */
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 63px;
+		padding-right: 15px;
+	}
+	/* トグルボックス */
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+/*****************/
+/* iPhone 横向き */
+/*      個別設定 */
+/*****************/
+@media screen and (width: 568px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 564px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.secondary-box {
+		padding: 16px;
+	}
+	.secondary-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.secondary-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 40px;
+	}
+	.blank-box {
+		margin-left: 0;
+		margin-right: 0;
+		border-width: 2px;
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+	.blank-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.blank-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 40px;
+	}
+	.blank-box.sticky {
+		border-width: 0 0 0 32px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.sticky .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.sticky .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 63px;
+		padding-right: 15px;
+	}
+	.common-icon-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.common-icon-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 40px;
+	}
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.toggle-content .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.toggle-content .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 40px;
+	}
+}
+
+@media screen and (width: 667px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 660px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.secondary-box {
+		padding: 16px;
+	}
+	.secondary-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.secondary-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 40px;
+	}
+	.blank-box {
+		margin-left: 0;
+		margin-right: 0;
+		border-width: 2px;
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+	.blank-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.blank-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 40px;
+	}
+	.blank-box.sticky {
+		border-width: 0 0 0 32px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.sticky .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.sticky .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 63px;
+		padding-right: 15px;
+	}
+	.common-icon-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.common-icon-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 40px;
+	}
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.toggle-content .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.toggle-content .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 40px;
+	}
+}
+
+@media screen and (width: 736px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 724px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 40px;
+	}
+	.secondary-box {
+		padding: 16px;
+	}
+	.secondary-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.secondary-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.blank-box {
+		margin-left: 0;
+		margin-right: 0;
+		border-width: 2px;
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+	.blank-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.blank-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.blank-box.sticky {
+		border-width: 0 0 0 32px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.sticky .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.sticky .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 63px;
+		padding-right: 15px;
+	}
+	.common-icon-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.common-icon-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.toggle-content .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.toggle-content .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 48px;
+	}
+}
+
+@media screen and (width: 812px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 804px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.secondary-box {
+		padding: 16px;
+	}
+	.secondary-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.secondary-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 40px;
+	}
+	.blank-box {
+		margin-left: 0;
+		margin-right: 0;
+		border-width: 2px;
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+	.blank-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.blank-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 40px;
+	}
+	.blank-box.sticky {
+		border-width: 0 0 0 32px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.sticky .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.sticky .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 63px;
+		padding-right: 15px;
+	}
+	.common-icon-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.common-icon-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 40px;
+	}
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.toggle-content .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.toggle-content .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 40px;
+	}
+}
+
+@media screen and (width: 896px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 884px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.secondary-box {
+		padding: 16px;
+	}
+	.secondary-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.secondary-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.blank-box {
+		margin-left: 0;
+		margin-right: 0;
+		border-width: 2px;
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+	.blank-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.blank-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.blank-box.sticky {
+		border-width: 0 0 0 32px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.sticky .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.sticky .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 40px;
+	}
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 63px;
+		padding-right: 15px;
+	}
+	.common-icon-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.common-icon-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.toggle-content .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 32px;
+	}
+	.toggle-content .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 32px;
+	}
+}
+
+/*_/_/_/_/_/_/_/*/
+/* iPad  縦向き */
+/*     共通設定 */
+/*_/_/_/_/_/_/_/*/
+@media screen and (min-width: 768px) and (orientation: portrait) {
+	.page-body {
+		font-size: 18px;
+	}
+	.wp-block-columns.has-2-columns,
+	.wp-block-columns.has-3-columns,
+	.wp-block-columns.has-4-columns,
+	.wp-block-columns.has-5-columns,
+	.wp-block-columns.has-6-columns {
+		flex-wrap: nowrap;
+	}
+	/* 案内ボックス */
+	.secondary-box {
+		padding: 18px;
+	}
+	/* 白抜きボックス */
+	.blank-box {
+		margin-left: 0;
+		margin-right: 0;
+		border-width: 2px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	/* 付箋風ボックス */
+	.blank-box.sticky {
+		border-width: 0 0 0 36px;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+	/* アイコンボックス */
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 71px;
+		padding-right: 17px;
+	}
+	/* トグルボックス */
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+}
+
+/***************/
+/* iPad 縦向き */
+/*      個別設定 */
+/***************/
+@media screen and (width: 768px) and (orientation: portrait) {
+	.page-body {
+		font-size: 18px;
+	}
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 756px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 27px;
+		padding-right: 27px;
+	}
+	/* ４〜６カラムはカラム表示 */
+	.wp-block-columns.has-4-columns,
+	.wp-block-columns.has-5-columns,
+	.wp-block-columns.has-6-columns {
+		flex-wrap: nowrap;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column:nth-child(odd),
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(odd),
+	.wp-block-columns.has-6-columns .wp-block-column:nth-child(odd) {
+		padding-right: 0px;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column:nth-child(even),
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(even),
+	.wp-block-columns.has-6-columns .wp-block-column:nth-child(even) {
+		padding-left: 0px;
+	}
+	.wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 42px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 40.5px;
+	}
+	.wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 32.4px;
+	}
+	.secondary-box {
+		padding: 18px;
+	}
+	.secondary-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.secondary-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.secondary-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.secondary-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.secondary-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 46.8px;
+	}
+	.blank-box {
+		margin-left: 0;
+		margin-right: 0;
+		border-width: 2px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.blank-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.blank-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.blank-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.blank-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.blank-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 46.8px;
+	}
+	.blank-box.sticky {
+		border-width: 0 0 0 36px;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+	.sticky .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.sticky .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.sticky .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 42px;
+	}
+	.sticky .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.sticky .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 39.6px;
+	}
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 71px;
+		padding-right: 17px;
+	}
+	.common-icon-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.common-icon-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.common-icon-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.common-icon-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 40.5px;
+	}
+	.common-icon-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+	.toggle-content .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.toggle-content .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.toggle-content .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.toggle-content .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.toggle-content .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 46.8px;
+	}
+}
+
+@media screen and (width: 834px) and (orientation: portrait) {
+	.page-body {
+		font-size: 18px;
+	}
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 828px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 27px;
+		padding-right: 27px;
+	}
+	/* ４〜６カラムはカラム表示 */
+	.wp-block-columns.has-4-columns,
+	.wp-block-columns.has-5-columns,
+	.wp-block-columns.has-6-columns {
+		flex-wrap: nowrap;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column:nth-child(odd),
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(odd),
+	.wp-block-columns.has-6-columns .wp-block-column:nth-child(odd) {
+		padding-right: 0px;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column:nth-child(even),
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(even),
+	.wp-block-columns.has-6-columns .wp-block-column:nth-child(even) {
+		padding-left: 0px;
+	}
+	.wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 42px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 46.8px;
+	}
+	.secondary-box {
+		padding: 18px;
+	}
+	.secondary-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.secondary-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.secondary-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.secondary-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 49.5px;
+	}
+	.secondary-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 39.6px;
+	}
+	.blank-box {
+		margin-left: 0;
+		margin-right: 0;
+		border-width: 2px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.blank-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.blank-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.blank-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.blank-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 49.5px;
+	}
+	.blank-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 39.6px;
+	}
+	.blank-box.sticky {
+		border-width: 0 0 0 36px;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+	.sticky .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.sticky .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.sticky .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 42px;
+	}
+	.sticky .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 40.5px;
+	}
+	.sticky .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 32.4px;
+	}
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 71px;
+		padding-right: 17px;
+	}
+	.common-icon-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.common-icon-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.common-icon-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.common-icon-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.common-icon-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 50.4px;
+	}
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+	.toggle-content .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.toggle-content .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.toggle-content .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.toggle-content .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 49.5px;
+	}
+	.toggle-content .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 39.6px;
+	}
+}
+
+/*_/_/_/_/_/_/_/*/
+/* iPad  横向き */
+/*     共通設定 */
+/*_/_/_/_/_/_/_/*/
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+	.page-body {
+		font-size: 18px;
+	}
+	/* 案内ボックス */
+	.secondary-box {
+		padding: 18px;
+	}
+	/* 白抜きボックス */
+	.blank-box {
+		margin-left: 0;
+		margin-right: 0;
+		border-width: 2px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	/* 付箋風ボックス */
+	.blank-box.sticky {
+		border-width: 0 0 0 36px;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+	/* アイコンボックス */
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 71px;
+		padding-right: 17px;
+	}
+	/* トグルボックス */
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+}
+
+/***************/
+/* iPad 横向き */
+/*      個別設定 */
+/***************/
+@media screen and (width: 1024px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 672px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 29px;
+		padding-right: 29px;
+	}
+	.wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 40.5px;
+	}
+	.wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.secondary-box {
+		padding: 18px;
+	}
+	.secondary-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.secondary-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.secondary-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.secondary-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.secondary-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 50.4px;
+	}
+	.blank-box {
+		margin-left: 0;
+		margin-right: 0;
+		border-width: 2px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.blank-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.blank-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.blank-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.blank-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.blank-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 50.4px;
+	}
+	.blank-box.sticky {
+		border-width: 0 0 0 36px;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+	.sticky .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.sticky .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.sticky .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.sticky .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.sticky .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 43.2px;
+	}
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 71px;
+		padding-right: 17px;
+	}
+	.common-icon-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.common-icon-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.common-icon-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.common-icon-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 40.5px;
+	}
+	.common-icon-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 39.6px;
+	}
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+	.toggle-content .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.toggle-content .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.toggle-content .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.toggle-content .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.toggle-content .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 50.4px;
+	}
+}
+
+@media screen and (width: 1112px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 744px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 29px;
+		padding-right: 29px;
+	}
+	.wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 50.4px;
+	}
+	.secondary-box {
+		padding: 18px;
+	}
+	.secondary-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.secondary-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.secondary-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.secondary-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 49.5px;
+	}
+	.secondary-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 43.2px;
+	}
+	.blank-box {
+		margin-left: 0;
+		margin-right: 0;
+		border-width: 2px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.blank-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.blank-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.blank-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.blank-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 49.5px;
+	}
+	.blank-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 43.2px;
+	}
+	.blank-box.sticky {
+		border-width: 0 0 0 36px;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+	.sticky .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.sticky .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.sticky .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.sticky .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 40.5px;
+	}
+	.sticky .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 71px;
+		padding-right: 17px;
+	}
+	.common-icon-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.common-icon-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.common-icon-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.common-icon-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.common-icon-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 32.4px;
+	}
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+	.toggle-content .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.toggle-content .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.toggle-content .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.toggle-content .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 49.5px;
+	}
+	.toggle-content .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 43.2px;
+	}
+}
+
+@media screen and (width: 1194px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 798px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 29px;
+		padding-right: 29px;
+	}
+	.wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 49.5px;
+	}
+	.wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 39.6px;
+	}
+	.secondary-box {
+		padding: 18px;
+	}
+	.secondary-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.secondary-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.secondary-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 42px;
+	}
+	.secondary-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 40.5px;
+	}
+	.secondary-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 32.4px;
+	}
+	.blank-box {
+		margin-left: 0;
+		margin-right: 0;
+		border-width: 2px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.blank-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.blank-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.blank-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 42px;
+	}
+	.blank-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 40.5px;
+	}
+	.blank-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 32.4px;
+	}
+	.blank-box.sticky {
+		border-width: 0 0 0 36px;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+	.sticky .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.sticky .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.sticky .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.sticky .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.sticky .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 46.8px;
+	}
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 71px;
+		padding-right: 17px;
+	}
+	.common-icon-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.common-icon-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.common-icon-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 48px;
+	}
+	.common-icon-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 49.5px;
+	}
+	.common-icon-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 43.2px;
+	}
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+	.toggle-content .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.toggle-content .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.toggle-content .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 42px;
+	}
+	.toggle-content .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 40.5px;
+	}
+	.toggle-content .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 32.4px;
+	}
+}
+
+@media screen and (width: 1366px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 906px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 29px;
+		padding-right: 29px;
+	}
+	.wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 42px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 39.6px;
+	}
+	.secondary-box {
+		padding: 18px;
+	}
+	.secondary-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.secondary-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.secondary-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.secondary-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.secondary-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 32.4px;
+	}
+	.blank-box {
+		margin-left: 0;
+		margin-right: 0;
+		border-width: 2px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.blank-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.blank-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.blank-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.blank-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.blank-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 32.4px;
+	}
+	.blank-box.sticky {
+		border-width: 0 0 0 36px;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+	.sticky .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.sticky .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.sticky .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 42px;
+	}
+	.sticky .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.sticky .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 46.8px;
+	}
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 71px;
+		padding-right: 17px;
+	}
+	.common-icon-box .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.common-icon-box .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.common-icon-box .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 36px;
+	}
+	.common-icon-box .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.common-icon-box .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 43.2px;
+	}
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+	.toggle-content .wp-block-columns.has-2-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.toggle-content .wp-block-columns.has-3-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.toggle-content .wp-block-columns.has-4-columns .wp-block-column {
+		margin-right: 54px;
+	}
+	.toggle-content .wp-block-columns.has-5-columns .wp-block-column {
+		margin-right: 45px;
+	}
+	.toggle-content .wp-block-columns.has-6-columns .wp-block-column {
+		margin-right: 32.4px;
+	}
+}
+
+/*_/_/_/_/_/_/_/_/*/
+/* iPhone  カラム */
+/*       共通設定 */
+/*_/_/_/_/_/_/_/_/*/
+@media (max-width: 767px) and (orientation: portrait) {
+	/* ２・３カラムはラップ表示 */
+	.wp-block-columns.has-2-columns,
+	.wp-block-columns.has-3-columns {
+		flex-wrap: wrap;
+	}
+	.wp-block-columns.has-2-columns .wp-block-column,
+	.wp-block-columns.has-3-columns .wp-block-column {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+@media (max-width: 767px) and (orientation: portrait), (max-width: 1023px) and (orientation: landscape) {
+	/* ４・６カラムは疑似２カラム表示 */
+	.wp-block-columns.has-4-columns .wp-block-column,
+	.wp-block-columns.has-6-columns .wp-block-column {
+		flex-basis: 50%;
+		margin-left: 0px;
+		margin-right: 0px;
+		text-align: start;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column:nth-child(odd),
+	.wp-block-columns.has-6-columns .wp-block-column:nth-child(odd) {
+		padding-right: 16px;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column:nth-child(even),
+	.wp-block-columns.has-6-columns .wp-block-column:nth-child(even) {
+		padding-left: 16px;
+	}
+	/* ５カラムは２＋３カラム表示 */
+	.wp-block-columns.has-5-columns .wp-block-column {
+		margin-left: 0px;
+		margin-right: 0px;
+		text-align: start;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(1) {
+		flex-basis: 50%;
+		padding-right: 16px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(2) {
+		flex-basis: 50%;
+		padding-left: 16px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(3) {
+		flex-basis: 33.33333%;
+		padding-right: 21.33333px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(4) {
+		flex-basis: 33.33333%;
+		padding-left: 10.66667px;
+		padding-right: 10.66667px;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column:nth-child(5) {
+		flex-basis: 33.33333%;
+		padding-left: 21.33333px;
+	}
+}
+
+/*                */
+/* オーバーライド */
+/*                */
+.wp-block-columns.has-2-columns .wp-block-column,
+.wp-block-columns.has-3-columns .wp-block-column,
+.wp-block-columns.has-4-columns .wp-block-column,
+.wp-block-columns.has-5-columns .wp-block-column,
+.wp-block-columns.has-6-columns .wp-block-column {
+	margin-left: 0px;
+}
+
+.wp-block-columns.has-2-columns .wp-block-column:last-child,
+.wp-block-columns.has-3-columns .wp-block-column:last-child,
+.wp-block-columns.has-4-columns .wp-block-column:last-child,
+.wp-block-columns.has-5-columns .wp-block-column:last-child,
+.wp-block-columns.has-6-columns .wp-block-column:last-child {
+	margin-right: 0px;
+}
