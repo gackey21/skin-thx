@@ -250,7 +250,8 @@ blockquote::before, blockquote::after {
 
 /* フォント指定 */
 body {
-	font-family: "UD新ゴ コンデンス90 L", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	font-weight: 300;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

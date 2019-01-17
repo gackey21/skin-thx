@@ -9,8 +9,11 @@ $thx_font_family:
 
 //デフォルト設定
 body {
-  font-family: "UD新ゴ コンデンス90 L",
-    $thx_font_family;
+  font-family:
+//    "UD新ゴ コンデンス90 L",
+    $thx_font_family
+  ;
+    font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
