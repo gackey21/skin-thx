@@ -29,10 +29,22 @@ $thx_site_font_width: $thx_iphone_font_width;
 // カラムの数
 $thx_beta_column_count: 1;
 
+// マージン計算するカラムの数
+$thx_beta_column_loop: 3;
+
 // カラム間マージン
 $thx_beta_column_margin:
   $thx_site_font_width * 2
 ;
+
+// Cocoonブロックのクラス名
+$cocoon_block_class: (
+  blank-box: 2,
+  secondary-box: 2,
+  toggle-content: 2,
+  sticky: 4,
+  common-icon-box: 5
+);
 
 //基本フォントファミリー
 $thx_font_family:
