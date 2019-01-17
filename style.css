@@ -541,6 +541,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (max-width: 414px) and (orientation: portrait) {
 	.page-body {
 		font-size: 16px;
+		font-weight: 300;
 	}
 	/* 案内ボックス */
 	.secondary-box {
@@ -579,6 +580,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (width: 320px) and (orientation: portrait) {
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;
@@ -595,6 +597,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (width: 375px) and (orientation: portrait) {
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;
@@ -611,6 +614,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (width: 414px) and (orientation: portrait) {
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;
@@ -631,6 +635,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (min-width: 568px) and (orientation: landscape) {
 	.page-body {
 		font-size: 16px;
+		font-weight: 300;
 	}
 	/* ２・３カラムはカラム表示 */
 	.wp-block-columns.has-2-columns,
@@ -676,6 +681,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (width: 568px) and (orientation: landscape) {
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;
@@ -701,6 +707,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (width: 667px) and (orientation: landscape) {
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;
@@ -726,6 +733,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (width: 736px) and (orientation: landscape) {
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;
@@ -751,6 +759,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (width: 812px) and (orientation: landscape) {
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;
@@ -776,6 +785,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (width: 896px) and (orientation: landscape) {
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;
@@ -805,6 +815,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (min-width: 768px) and (orientation: portrait) {
 	.page-body {
 		font-size: 18px;
+		font-weight: 300;
 	}
 	.wp-block-columns.has-2-columns,
 	.wp-block-columns.has-3-columns,
@@ -855,6 +866,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;
@@ -908,6 +920,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;
@@ -962,6 +975,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (min-width: 1024px) and (orientation: landscape) {
 	.page-body {
 		font-size: 18px;
+		font-weight: 300;
 	}
 	/* 案内ボックス */
 	.secondary-box {
@@ -1002,6 +1016,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (width: 1024px) and (orientation: landscape) {
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;
@@ -1036,6 +1051,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (width: 1112px) and (orientation: landscape) {
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;
@@ -1070,6 +1086,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (width: 1194px) and (orientation: landscape) {
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;
@@ -1104,6 +1121,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (width: 1366px) and (orientation: landscape) {
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;

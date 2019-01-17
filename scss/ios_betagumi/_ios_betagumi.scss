@@ -8,6 +8,7 @@
 //mixin設定
 @mixin thx-beta-body {
   font-family: $thx_font_family;
+  font-weight: $thx_font_weight;
 }
 
 @mixin thx-beta-p {
