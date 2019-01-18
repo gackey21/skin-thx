@@ -1,0 +1,75 @@
+/*_/_/_/_/_/_/_/_/*/
+/* iPhone  横向き */
+/*       共通設定 */
+/*_/_/_/_/_/_/_/_/*/
+@media screen and
+  (min-width: 568px) and
+  (orientation: landscape)
+{
+  $font_width: $thx_iphone_font_width;
+  .page-body {
+    font-size: $font_width;
+    font-weight: $thx_font_weight;
+  }
+
+  /* 案内ボックス */
+  .secondary-box {
+    @include secondary-box($font_width);
+  }
+
+  /* 白抜きボックス */
+  .blank-box {
+    @include blank-box($font_width);
+  }
+
+  /* 付箋風ボックス */
+  .blank-box.sticky {
+    @include blank-box-sticky($font_width);
+  }
+
+  /* アイコンボックス */
+  .common-icon-box {
+    @include common-icon-box($font_width);
+  }
+
+  /* トグルボックス */
+  .toggle-checkbox:checked~.toggle-content {
+    @include toggle-checkbox($font_width)
+  }
+}
+
+/*****************/
+/* iPhone 横向き */
+/*      個別設定 */
+/*****************/
+@each $size in $iphone_sizes_l {
+  $font_width: $thx_iphone_font_width;
+  $column_margin: $font_width * 2;
+  $contents_padding: $thx_main_column_contents_padding;
+  // $contents_widthを文字幅の整数倍に
+  $contents_width:
+    ($size - $contents_padding * 2)
+    - (
+      ($size - $contents_padding * 2)
+      % $font_width
+    )
+  ;
+  @media screen and
+    (width: #{$size}px) and
+    (orientation: landscape)
+  {
+    body {
+      @include thx-beta-body;
+    }
+    p {
+      @include thx-beta-p;
+    }
+    .no-scrollable-main .main {
+      width: $contents_width + $contents_padding * 2;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: $contents_padding;
+      padding-right: $contents_padding;
+    }
+  }
+}
