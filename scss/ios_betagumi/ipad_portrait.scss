@@ -18,31 +18,6 @@
   .wp-block-columns.has-6-columns {
     flex-wrap: nowrap;
   }
-
-  /* 案内ボックス */
-  .secondary-box {
-    @include secondary-box($font_width);
-  }
-
-  /* 白抜きボックス */
-  .blank-box {
-    @include blank-box($font_width);
-  }
-
-  /* 付箋風ボックス */
-  .blank-box.sticky {
-    @include blank-box-sticky($font_width);
-  }
-
-  /* アイコンボックス */
-  .common-icon-box {
-    @include common-icon-box($font_width);
-  }
-
-  /* トグルボックス */
-  .toggle-checkbox:checked~.toggle-content {
-    @include toggle-checkbox($font_width)
-  }
 }
 /***************/
 /* iPad 縦向き */
@@ -64,22 +39,6 @@
         % $font_width
       )
     ;
-    .page-body {
-      font-size: $font_width;
-    }
-    body {
-      @include thx-beta-body;
-    }
-    p {
-      @include thx-beta-p;
-    }
-    .no-scrollable-main .main {
-      width: $contents_width + $contents_padding * 2;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: $contents_padding;
-      padding-right: $contents_padding;
-    }
     /* ４〜６カラムはカラム表示 */
     .wp-block-columns.has-4-columns,
     .wp-block-columns.has-5-columns,

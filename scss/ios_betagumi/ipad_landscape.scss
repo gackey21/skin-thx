@@ -7,35 +7,6 @@
   (orientation: landscape)
 {
   $font_width: $thx_ipad_font_width;
-  .page-body {
-    font-size: $font_width;
-    font-weight: $thx_font_weight;
-  }
-
-  /* 案内ボックス */
-  .secondary-box {
-    @include secondary-box($font_width);
-  }
-
-  /* 白抜きボックス */
-  .blank-box {
-    @include blank-box($font_width);
-  }
-
-  /* 付箋風ボックス */
-  .blank-box.sticky {
-    @include blank-box-sticky($font_width);
-  }
-
-  /* アイコンボックス */
-  .common-icon-box {
-    @include common-icon-box($font_width);
-  }
-
-  /* トグルボックス */
-  .toggle-checkbox:checked~.toggle-content {
-    @include toggle-checkbox($font_width)
-  }
 }
 
 /***************/
@@ -61,20 +32,6 @@
     (width: #{$size}px) and
     (orientation: landscape)
   {
-    body {
-      @include thx-beta-body;
-    }
-    p {
-      @include thx-beta-p;
-    }
-    .no-scrollable-main .main {
-      width: $contents_width + $contents_padding * 2;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: $contents_padding - 1;
-      padding-right: $contents_padding - 1;
-    }
-
     @if $thx_beta_column_loop != 6 {
       @for $i from ($thx_beta_column_loop + 1) through 6 {
         .wp-block-columns.has-#{$i}-columns{

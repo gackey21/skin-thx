@@ -1,6 +1,6 @@
 /*_/_/_/_/_/_/_/*/
 /* iPad  縦向き */
-/*     共通設定 */
+/* amp 共通設定 */
 /*_/_/_/_/_/_/_/*/
 @media screen and
   (min-width: 768px) and
@@ -10,13 +10,6 @@
   .page-body {
     font-size: $font_width;
     font-weight: $thx_font_weight;
-  }
-  .wp-block-columns.has-2-columns,
-  .wp-block-columns.has-3-columns,
-  .wp-block-columns.has-4-columns,
-  .wp-block-columns.has-5-columns,
-  .wp-block-columns.has-6-columns {
-    flex-wrap: nowrap;
   }
 
   /* 案内ボックス */
@@ -46,7 +39,7 @@
 }
 /***************/
 /* iPad 縦向き */
-/*      個別設定 */
+/*  amp 個別設定 */
 /***************/
 @each $size in $ipad_sizes_p {
   @media screen and

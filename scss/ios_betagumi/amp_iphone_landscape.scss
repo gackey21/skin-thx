@@ -1,6 +1,6 @@
 /*_/_/_/_/_/_/_/_/*/
 /* iPhone  横向き */
-/*       共通設定 */
+/*   amp 共通設定 */
 /*_/_/_/_/_/_/_/_/*/
 @media screen and
   (min-width: 568px) and
@@ -40,7 +40,7 @@
 
 /*****************/
 /* iPhone 横向き */
-/*      個別設定 */
+/*  amp 個別設定 */
 /*****************/
 @each $size in $iphone_sizes_l {
   $font_width: $thx_iphone_font_width;

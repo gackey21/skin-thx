@@ -549,7 +549,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 /*********/
 /*_/_/_/_/_/_/_/_/*/
 /* iPhone  横向き */
-/*       共通設定 */
+/*   amp 共通設定 */
 /*_/_/_/_/_/_/_/_/*/
 @media screen and (min-width: 568px) and (orientation: landscape) {
 	.page-body {
@@ -590,7 +590,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 
 /*****************/
 /* iPhone 横向き */
-/*      個別設定 */
+/*  amp 個別設定 */
 /*****************/
 @media screen and (width: 568px) and (orientation: landscape) {
 	body {
@@ -679,19 +679,12 @@ a[data-slide-contents*="slide-contents"]:hover {
 
 /*_/_/_/_/_/_/_/*/
 /* iPad  縦向き */
-/*     共通設定 */
+/* amp 共通設定 */
 /*_/_/_/_/_/_/_/*/
 @media screen and (min-width: 768px) and (orientation: portrait) {
 	.page-body {
 		font-size: 18px;
 		font-weight: 300;
-	}
-	.wp-block-columns.has-2-columns,
-	.wp-block-columns.has-3-columns,
-	.wp-block-columns.has-4-columns,
-	.wp-block-columns.has-5-columns,
-	.wp-block-columns.has-6-columns {
-		flex-wrap: nowrap;
 	}
 	/* 案内ボックス */
 	.secondary-box {
@@ -727,7 +720,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 
 /***************/
 /* iPad 縦向き */
-/*      個別設定 */
+/*  amp 個別設定 */
 /***************/
 @media screen and (width: 768px) and (orientation: portrait) {
 	.page-body {
@@ -771,7 +764,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 
 /*_/_/_/_/_/_/_/*/
 /* iPad  横向き */
-/*     共通設定 */
+/* amp 共通設定 */
 /*_/_/_/_/_/_/_/*/
 @media screen and (min-width: 1024px) and (orientation: landscape) {
 	.page-body {
@@ -812,7 +805,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 
 /***************/
 /* iPad 横向き */
-/*      個別設定 */
+/*  amp 個別設定 */
 /***************/
 @media screen and (width: 1024px) and (orientation: landscape) {
 	body {
