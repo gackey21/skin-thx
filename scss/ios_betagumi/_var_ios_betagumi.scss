@@ -30,7 +30,7 @@ $thx_site_font_width: $thx_iphone_font_width;
 $thx_beta_column_count: 1;
 
 // マージン計算するカラムの数
-$thx_beta_column_loop: 3;
+$thx_beta_column_loop: 6;
 
 // カラム間マージン
 $thx_beta_column_margin:
@@ -39,6 +39,7 @@ $thx_beta_column_margin:
 
 // Cocoonブロックのクラス名
 $cocoon_block_class: (
+  entry-content: 0,
   blank-box: 2,
   secondary-box: 2,
   toggle-content: 2,
