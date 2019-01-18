@@ -82,180 +82,22 @@
       padding-right: $contents_padding;
     }
 
-    $column_per_000: ();
-    $column_per_020: ();
-    $column_per_025: ();
-    $column_per_033: ();
-    $column_per_040: ();
-    $column_per_050: ();
-    $column_per_060: ();
-    $column_per_066: ();
-    $column_per_075: ();
-    $column_per_080: ();
-    $column_per_100: ();
-
-    // カラムブロック間マージン設定
-    @for $i from 2 through 3 {
-      .wp-block-columns.has-#{$i}-columns{
-        .wp-block-column{
-          $columns_width:
-            $contents_width
-            - $column_margin * ($i - 1)
-          ;
-          $columns_rem:
-            $columns_width / $font_width % $i
-          ;
-          $columns_per:
-            $columns_rem /  ($i - 1)
-          ;
-          @if $columns_per == 0 {
-            $column_per_000: append($column_per_000, &, 'comma');
-          }
-          @if $columns_per == 0.2 {
-            $column_per_020: append($column_per_020, &, 'comma');
-          }
-          @if $columns_per == 0.25 {
-            $column_per_025: append($column_per_025, &, 'comma');
-          }
-          @if $columns_per == (1/3) {
-            $column_per_033: append($column_per_033, &, 'comma');
-          }
-          @if $columns_per == 0.4 {
-            $column_per_040: append($column_per_040, &, 'comma');
-          }
-          @if $columns_per == 0.5 {
-            $column_per_050: append($column_per_050, &, 'comma');
-          }
-          @if $columns_per == 0.6 {
-            $column_per_060: append($column_per_060, &, 'comma');
-          }
-          @if $columns_per == (2/3) {
-            $column_per_066: append($column_per_066, &, 'comma');
-          }
-          @if $columns_per == 0.75 {
-            $column_per_075: append($column_per_075, &, 'comma');
-          }
-          @if $columns_per == 0.8 {
-            $column_per_080: append($column_per_080, &, 'comma');
-          }
-          @if $columns_per == 1 {
-            $column_per_100: append($column_per_100, &, 'comma');
-          }
-        }
-      }
-    }
-
     // Cocoonブロック内カラムブロック間マージン設定
     @each $class, $count in $cocoon_block_class {
       .#{$class} {
-        @for $i from 2 through 3 {
-          .wp-block-columns.has-#{$i}-columns{
+        $columns_width: $contents_width - $font_width * $count;
+        @for $i from 2 through $thx_beta_column_loop {
+          .has-#{$i}-columns{
             .wp-block-column{
-              $columns_width:
-                $contents_width
-                - $font_width * $count
-              ;
-              $columns_width:
-                $columns_width
-                - $column_margin * ($i - 1)
-              ;
-              $columns_rem:
-                $columns_width / $font_width % $i
-              ;
-              $columns_per:
-                $columns_rem /  ($i - 1)
-              ;
-              @if $columns_per == 0 {
-                $column_per_000: append($column_per_000, &, 'comma');
-              }
-              @if $columns_per == 0.2 {
-                $column_per_020: append($column_per_020, &, 'comma');
-              }
-              @if $columns_per == 0.25 {
-                $column_per_025: append($column_per_025, &, 'comma');
-              }
-              @if $columns_per == (1/3) {
-                $column_per_033: append($column_per_033, &, 'comma');
-              }
-              @if $columns_per == 0.4 {
-                $column_per_040: append($column_per_040, &, 'comma');
-              }
-              @if $columns_per == 0.5 {
-                $column_per_050: append($column_per_050, &, 'comma');
-              }
-              @if $columns_per == 0.6 {
-                $column_per_060: append($column_per_060, &, 'comma');
-              }
-              @if $columns_per == (2/3) {
-                $column_per_066: append($column_per_066, &, 'comma');
-              }
-              @if $columns_per == 0.75 {
-                $column_per_075: append($column_per_075, &, 'comma');
-              }
-              @if $columns_per == 0.8 {
-                $column_per_080: append($column_per_080, &, 'comma');
-              }
-              @if $columns_per == 1 {
-                $column_per_100: append($column_per_100, &, 'comma');
-              }
+              @include thx-column-margin(
+                $columns_width,
+                $font_width,
+                $i,
+                $column_margin
+              );
             }
           }
         }
-      }
-    }
-    @if $column_per_000 != () {
-      #{$column_per_000} {
-        margin-right: $column_margin * (1 + (1/2) * 0);
-      }
-    }
-    @if $column_per_020 != () {
-      #{$column_per_020} {
-        margin-right: $column_margin * (1 + (1/2) * 0.2);
-      }
-    }
-    @if $column_per_025 != () {
-      #{$column_per_025} {
-        margin-right: $column_margin * (1 + (1/2) * 0.25);
-      }
-    }
-    @if $column_per_033 != () {
-      #{$column_per_033} {
-        margin-right: $column_margin * (1 + (1/2) * (1/3));
-      }
-    }
-    @if $column_per_040 != () {
-      #{$column_per_040} {
-        margin-right: $column_margin * (1 + (1/2) * 0.4);
-      }
-    }
-    @if $column_per_050 != () {
-      #{$column_per_050} {
-        margin-right: $column_margin * (1 + (1/2) * 0.5);
-      }
-    }
-    @if $column_per_060 != () {
-      #{$column_per_060} {
-        margin-right: $column_margin * (1 + (1/2) * 0.6);
-      }
-    }
-    @if $column_per_066 != () {
-      #{$column_per_066} {
-        margin-right: $column_margin * (1 + (1/2) * (2/3));
-      }
-    }
-    @if $column_per_075 != () {
-      #{$column_per_075} {
-        margin-right: $column_margin * (1 + (1/2) * 0.75);
-      }
-    }
-    @if $column_per_080 != () {
-      #{$column_per_080} {
-        margin-right: $column_margin * (1 + (1/2) * 0.8);
-      }
-    }
-    @if $column_per_100 != () {
-      #{$column_per_100} {
-        margin-right: $column_margin * (1 + (1/2) * 1);
       }
     }
   }
