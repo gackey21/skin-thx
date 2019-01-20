@@ -10,7 +10,7 @@ $thx_iphone_font_size: 16px;
 // iPadでのフォントサイズ
 $thx_ipad_font_size: 18px;
 
-// 仕様フォントのコンデンス幅
+// 使用フォントのコンデンス幅
 $thx_site_font_condense: 1;
 
 // iPhoneでのフォント幅
@@ -30,11 +30,15 @@ $thx_site_font_width: $thx_iphone_font_width;
 $thx_beta_column_count: 1;
 
 // マージン計算するカラムの数
-$thx_beta_column_loop: 6;
+$thx_beta_column_loop: 3;
+
+// カラム間マージンの文字数
+$thx_beta_column_margin_text: 2;
 
 // カラム間マージン
 $thx_beta_column_margin:
-  $thx_site_font_width * 2
+  $thx_site_font_width
+  * $thx_beta_column_margin_text
 ;
 
 // Cocoonブロックのクラス名
