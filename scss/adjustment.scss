@@ -12,6 +12,21 @@ margin-top:0.25em;
 .mg-bt_4px > a{
 	margin-bottom: 4px;
 }
-.ht240 {height: 240px;}
-.ht480 {height: 480px;}
-.ht720 {height: 720px;}
+.ht240 {
+  height: 240px;
+  .editor-plain-text{
+    height: 240px !important;
+  }
+}
+.ht480 {
+  height: 480px;
+  .editor-plain-text{
+    height: 480px !important;
+  }
+}
+.ht720 {
+  height: 720px;
+  .editor-plain-text{
+    height: 720px !important;
+  }
+}
