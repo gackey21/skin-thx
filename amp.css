@@ -6,7 +6,7 @@
   Author: がっきぃ
   Author URI: https://thx.jp
   Screenshot URI: https://
-  Version: 0.3.6
+  Version: 0.3.7
   Priority: 0
 */
 /*以下にスタイルシートを記入してください*/
@@ -536,17 +536,123 @@ a[data-slide-contents*="slide-contents"]:hover {
 	height: 240px;
 }
 
+.ht240 .editor-plain-text {
+	height: 240px !important;
+}
+
 .ht480 {
 	height: 480px;
+}
+
+.ht480 .editor-plain-text {
+	height: 480px !important;
 }
 
 .ht720 {
 	height: 720px;
 }
 
-/*********/
-/* ベタ組 */
-/*********/
+.ht720 .editor-plain-text {
+	height: 720px !important;
+}
+
+/************/
+/* ampベタ組 */
+/************/
+/*_/_/_/_/_/_/_/_/*/
+/* iPhone  縦持ち */
+/*   amp 共通設定 */
+/*_/_/_/_/_/_/_/_/*/
+@media screen and (max-width: 414px) and (orientation: portrait) {
+	.page-body {
+		font-size: 16px;
+		font-weight: 300;
+	}
+	/* 案内ボックス */
+	.secondary-box {
+		padding: 16px;
+	}
+	/* 白抜きボックス */
+	.blank-box {
+		border-width: 2px;
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+	/* 付箋風ボックス */
+	.blank-box.sticky {
+		border-width: 0 0 0 16px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	/* アイコンボックス */
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+	/* トグルボックス */
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+/*****************/
+/* iPhone 縦持ち */
+/*      個別設定 */
+/*****************/
+@media screen and (width: 320px) and (orientation: portrait) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 308px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (width: 375px) and (orientation: portrait) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 372px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (width: 414px) and (orientation: portrait) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 404px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
 /*_/_/_/_/_/_/_/_/*/
 /* iPhone  横向き */
 /*   amp 共通設定 */
@@ -770,6 +876,13 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.page-body {
 		font-size: 18px;
 		font-weight: 300;
+	}
+	.no-scrollable-main .main {
+		width: 852px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 29px;
+		padding-right: 29px;
 	}
 	/* 案内ボックス */
 	.secondary-box {

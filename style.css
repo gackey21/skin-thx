@@ -6,7 +6,7 @@
   Author: がっきぃ
   Author URI: https://thx.jp
   Screenshot URI: https://
-  Version: 0.3.6
+  Version: 0.3.7
   Priority: 0
 */
 /*以下にスタイルシートを記入してください*/
@@ -536,17 +536,123 @@ a[data-slide-contents*="slide-contents"]:hover {
 	height: 240px;
 }
 
+.ht240 .editor-plain-text {
+	height: 240px !important;
+}
+
 .ht480 {
 	height: 480px;
+}
+
+.ht480 .editor-plain-text {
+	height: 480px !important;
 }
 
 .ht720 {
 	height: 720px;
 }
 
-/*********/
-/* ベタ組 */
-/*********/
+.ht720 .editor-plain-text {
+	height: 720px !important;
+}
+
+/************/
+/* ampベタ組 */
+/************/
+/*_/_/_/_/_/_/_/_/*/
+/* iPhone  縦持ち */
+/*   amp 共通設定 */
+/*_/_/_/_/_/_/_/_/*/
+@media screen and (max-width: 414px) and (orientation: portrait) {
+	.page-body {
+		font-size: 16px;
+		font-weight: 300;
+	}
+	/* 案内ボックス */
+	.secondary-box {
+		padding: 16px;
+	}
+	/* 白抜きボックス */
+	.blank-box {
+		border-width: 2px;
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+	/* 付箋風ボックス */
+	.blank-box.sticky {
+		border-width: 0 0 0 16px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	/* アイコンボックス */
+	.common-icon-box {
+		border-width: 1px;
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+	/* トグルボックス */
+	.toggle-checkbox:checked ~ .toggle-content {
+		border-width: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+/*****************/
+/* iPhone 縦持ち */
+/*      個別設定 */
+/*****************/
+@media screen and (width: 320px) and (orientation: portrait) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 308px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (width: 375px) and (orientation: portrait) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 372px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (width: 414px) and (orientation: portrait) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 404px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
 /*_/_/_/_/_/_/_/_/*/
 /* iPhone  横向き */
 /*   amp 共通設定 */
@@ -771,6 +877,13 @@ a[data-slide-contents*="slide-contents"]:hover {
 		font-size: 18px;
 		font-weight: 300;
 	}
+	.no-scrollable-main .main {
+		width: 852px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 29px;
+		padding-right: 29px;
+	}
 	/* 案内ボックス */
 	.secondary-box {
 		padding: 18px;
@@ -875,100 +988,17 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 }
 
+/*********/
+/* ベタ組 */
+/*********/
 /*_/_/_/_/_/_/_/_/*/
 /* iPhone  縦持ち */
 /*       共通設定 */
 /*_/_/_/_/_/_/_/_/*/
-@media screen and (max-width: 414px) and (orientation: portrait) {
-	.page-body {
-		font-size: 16px;
-		font-weight: 300;
-	}
-	/* 案内ボックス */
-	.secondary-box {
-		padding: 16px;
-	}
-	/* 白抜きボックス */
-	.blank-box {
-		border-width: 2px;
-		padding-left: 14px;
-		padding-right: 14px;
-	}
-	/* 付箋風ボックス */
-	.blank-box.sticky {
-		border-width: 0 0 0 16px;
-		padding-left: 16px;
-		padding-right: 16px;
-	}
-	/* アイコンボックス */
-	.common-icon-box {
-		border-width: 1px;
-		padding-left: 7px;
-		padding-right: 7px;
-	}
-	/* トグルボックス */
-	.toggle-checkbox:checked ~ .toggle-content {
-		border-width: 1px;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-}
-
 /*****************/
 /* iPhone 縦持ち */
 /*      個別設定 */
 /*****************/
-@media screen and (width: 320px) and (orientation: portrait) {
-	body {
-		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-		font-weight: 300;
-	}
-	p {
-		text-align: justify;
-	}
-	.no-scrollable-main .main {
-		width: 308px;
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-}
-
-@media screen and (width: 375px) and (orientation: portrait) {
-	body {
-		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-		font-weight: 300;
-	}
-	p {
-		text-align: justify;
-	}
-	.no-scrollable-main .main {
-		width: 372px;
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-}
-
-@media screen and (width: 414px) and (orientation: portrait) {
-	body {
-		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-		font-weight: 300;
-	}
-	p {
-		text-align: justify;
-	}
-	.no-scrollable-main .main {
-		width: 404px;
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-}
-
 /*_/_/_/_/_/_/_/_/*/
 /* iPhone  横向き */
 /*       共通設定 */
@@ -992,29 +1022,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.entry-content .has-3-columns .wp-block-column {
 		margin-right: 32px;
 	}
-	.entry-content .has-4-columns .wp-block-column {
-		margin-right: 32px;
-	}
-	.entry-content .has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.entry-content .has-6-columns .wp-block-column {
-		margin-right: 32px;
-	}
 	.blank-box .has-2-columns .wp-block-column {
 		margin-right: 32px;
 	}
 	.blank-box .has-3-columns .wp-block-column {
 		margin-right: 40px;
-	}
-	.blank-box .has-4-columns .wp-block-column {
-		margin-right: 42.66667px;
-	}
-	.blank-box .has-5-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.blank-box .has-6-columns .wp-block-column {
-		margin-right: 44.8px;
 	}
 	.secondary-box .has-2-columns .wp-block-column {
 		margin-right: 32px;
@@ -1022,29 +1034,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.secondary-box .has-3-columns .wp-block-column {
 		margin-right: 40px;
 	}
-	.secondary-box .has-4-columns .wp-block-column {
-		margin-right: 42.66667px;
-	}
-	.secondary-box .has-5-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.secondary-box .has-6-columns .wp-block-column {
-		margin-right: 44.8px;
-	}
 	.toggle-content .has-2-columns .wp-block-column {
 		margin-right: 32px;
 	}
 	.toggle-content .has-3-columns .wp-block-column {
 		margin-right: 40px;
-	}
-	.toggle-content .has-4-columns .wp-block-column {
-		margin-right: 42.66667px;
-	}
-	.toggle-content .has-5-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.toggle-content .has-6-columns .wp-block-column {
-		margin-right: 44.8px;
 	}
 	.sticky .has-2-columns .wp-block-column {
 		margin-right: 32px;
@@ -1052,29 +1046,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.sticky .has-3-columns .wp-block-column {
 		margin-right: 48px;
 	}
-	.sticky .has-4-columns .wp-block-column {
-		margin-right: 32px;
-	}
-	.sticky .has-5-columns .wp-block-column {
-		margin-right: 40px;
-	}
-	.sticky .has-6-columns .wp-block-column {
-		margin-right: 38.4px;
-	}
 	.common-icon-box .has-2-columns .wp-block-column {
 		margin-right: 48px;
 	}
 	.common-icon-box .has-3-columns .wp-block-column {
 		margin-right: 40px;
-	}
-	.common-icon-box .has-4-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.common-icon-box .has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .has-6-columns .wp-block-column {
-		margin-right: 35.2px;
 	}
 }
 
@@ -1085,29 +1061,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.entry-content .has-3-columns .wp-block-column {
 		margin-right: 32px;
 	}
-	.entry-content .has-4-columns .wp-block-column {
-		margin-right: 42.66667px;
-	}
-	.entry-content .has-5-columns .wp-block-column {
-		margin-right: 40px;
-	}
-	.entry-content .has-6-columns .wp-block-column {
-		margin-right: 32px;
-	}
 	.blank-box .has-2-columns .wp-block-column {
 		margin-right: 32px;
 	}
 	.blank-box .has-3-columns .wp-block-column {
 		margin-right: 40px;
-	}
-	.blank-box .has-4-columns .wp-block-column {
-		margin-right: 32px;
-	}
-	.blank-box .has-5-columns .wp-block-column {
-		margin-right: 32px;
-	}
-	.blank-box .has-6-columns .wp-block-column {
-		margin-right: 44.8px;
 	}
 	.secondary-box .has-2-columns .wp-block-column {
 		margin-right: 32px;
@@ -1115,29 +1073,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.secondary-box .has-3-columns .wp-block-column {
 		margin-right: 40px;
 	}
-	.secondary-box .has-4-columns .wp-block-column {
-		margin-right: 32px;
-	}
-	.secondary-box .has-5-columns .wp-block-column {
-		margin-right: 32px;
-	}
-	.secondary-box .has-6-columns .wp-block-column {
-		margin-right: 44.8px;
-	}
 	.toggle-content .has-2-columns .wp-block-column {
 		margin-right: 32px;
 	}
 	.toggle-content .has-3-columns .wp-block-column {
 		margin-right: 40px;
-	}
-	.toggle-content .has-4-columns .wp-block-column {
-		margin-right: 32px;
-	}
-	.toggle-content .has-5-columns .wp-block-column {
-		margin-right: 32px;
-	}
-	.toggle-content .has-6-columns .wp-block-column {
-		margin-right: 44.8px;
 	}
 	.sticky .has-2-columns .wp-block-column {
 		margin-right: 32px;
@@ -1145,29 +1085,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.sticky .has-3-columns .wp-block-column {
 		margin-right: 48px;
 	}
-	.sticky .has-4-columns .wp-block-column {
-		margin-right: 42.66667px;
-	}
-	.sticky .has-5-columns .wp-block-column {
-		margin-right: 44px;
-	}
-	.sticky .has-6-columns .wp-block-column {
-		margin-right: 38.4px;
-	}
 	.common-icon-box .has-2-columns .wp-block-column {
 		margin-right: 48px;
 	}
 	.common-icon-box .has-3-columns .wp-block-column {
 		margin-right: 40px;
-	}
-	.common-icon-box .has-4-columns .wp-block-column {
-		margin-right: 37.33333px;
-	}
-	.common-icon-box .has-5-columns .wp-block-column {
-		margin-right: 40px;
-	}
-	.common-icon-box .has-6-columns .wp-block-column {
-		margin-right: 35.2px;
 	}
 }
 
@@ -1178,29 +1100,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.entry-content .has-3-columns .wp-block-column {
 		margin-right: 40px;
 	}
-	.entry-content .has-4-columns .wp-block-column {
-		margin-right: 42.66667px;
-	}
-	.entry-content .has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.entry-content .has-6-columns .wp-block-column {
-		margin-right: 44.8px;
-	}
 	.blank-box .has-2-columns .wp-block-column {
 		margin-right: 32px;
 	}
 	.blank-box .has-3-columns .wp-block-column {
 		margin-right: 48px;
-	}
-	.blank-box .has-4-columns .wp-block-column {
-		margin-right: 32px;
-	}
-	.blank-box .has-5-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.blank-box .has-6-columns .wp-block-column {
-		margin-right: 38.4px;
 	}
 	.secondary-box .has-2-columns .wp-block-column {
 		margin-right: 32px;
@@ -1208,29 +1112,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.secondary-box .has-3-columns .wp-block-column {
 		margin-right: 48px;
 	}
-	.secondary-box .has-4-columns .wp-block-column {
-		margin-right: 32px;
-	}
-	.secondary-box .has-5-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.secondary-box .has-6-columns .wp-block-column {
-		margin-right: 38.4px;
-	}
 	.toggle-content .has-2-columns .wp-block-column {
 		margin-right: 32px;
 	}
 	.toggle-content .has-3-columns .wp-block-column {
 		margin-right: 48px;
-	}
-	.toggle-content .has-4-columns .wp-block-column {
-		margin-right: 32px;
-	}
-	.toggle-content .has-5-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.toggle-content .has-6-columns .wp-block-column {
-		margin-right: 38.4px;
 	}
 	.sticky .has-2-columns .wp-block-column {
 		margin-right: 32px;
@@ -1238,28 +1124,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.sticky .has-3-columns .wp-block-column {
 		margin-right: 32px;
 	}
-	.sticky .has-4-columns .wp-block-column {
-		margin-right: 42.66667px;
-	}
-	.sticky .has-5-columns .wp-block-column {
-		margin-right: 40px;
-	}
-	.sticky .has-6-columns .wp-block-column {
-		margin-right: 32px;
-	}
 	.common-icon-box .has-2-columns .wp-block-column {
 		margin-right: 48px;
 	}
 	.common-icon-box .has-3-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.common-icon-box .has-4-columns .wp-block-column {
-		margin-right: 37.33333px;
-	}
-	.common-icon-box .has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .has-6-columns .wp-block-column {
 		margin-right: 48px;
 	}
 }
@@ -1271,29 +1139,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.entry-content .has-3-columns .wp-block-column {
 		margin-right: 32px;
 	}
-	.entry-content .has-4-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.entry-content .has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.entry-content .has-6-columns .wp-block-column {
-		margin-right: 41.6px;
-	}
 	.blank-box .has-2-columns .wp-block-column {
 		margin-right: 48px;
 	}
 	.blank-box .has-3-columns .wp-block-column {
 		margin-right: 40px;
-	}
-	.blank-box .has-4-columns .wp-block-column {
-		margin-right: 37.33333px;
-	}
-	.blank-box .has-5-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.blank-box .has-6-columns .wp-block-column {
-		margin-right: 35.2px;
 	}
 	.secondary-box .has-2-columns .wp-block-column {
 		margin-right: 48px;
@@ -1301,29 +1151,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.secondary-box .has-3-columns .wp-block-column {
 		margin-right: 40px;
 	}
-	.secondary-box .has-4-columns .wp-block-column {
-		margin-right: 37.33333px;
-	}
-	.secondary-box .has-5-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.secondary-box .has-6-columns .wp-block-column {
-		margin-right: 35.2px;
-	}
 	.toggle-content .has-2-columns .wp-block-column {
 		margin-right: 48px;
 	}
 	.toggle-content .has-3-columns .wp-block-column {
 		margin-right: 40px;
-	}
-	.toggle-content .has-4-columns .wp-block-column {
-		margin-right: 37.33333px;
-	}
-	.toggle-content .has-5-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.toggle-content .has-6-columns .wp-block-column {
-		margin-right: 35.2px;
 	}
 	.sticky .has-2-columns .wp-block-column {
 		margin-right: 48px;
@@ -1331,29 +1163,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.sticky .has-3-columns .wp-block-column {
 		margin-right: 48px;
 	}
-	.sticky .has-4-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.sticky .has-5-columns .wp-block-column {
-		margin-right: 40px;
-	}
-	.sticky .has-6-columns .wp-block-column {
-		margin-right: 48px;
-	}
 	.common-icon-box .has-2-columns .wp-block-column {
 		margin-right: 32px;
 	}
 	.common-icon-box .has-3-columns .wp-block-column {
 		margin-right: 40px;
-	}
-	.common-icon-box .has-4-columns .wp-block-column {
-		margin-right: 42.66667px;
-	}
-	.common-icon-box .has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .has-6-columns .wp-block-column {
-		margin-right: 44.8px;
 	}
 }
 
@@ -1364,28 +1178,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.entry-content .has-3-columns .wp-block-column {
 		margin-right: 48px;
 	}
-	.entry-content .has-4-columns .wp-block-column {
-		margin-right: 32px;
-	}
-	.entry-content .has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.entry-content .has-6-columns .wp-block-column {
-		margin-right: 38.4px;
-	}
 	.blank-box .has-2-columns .wp-block-column {
 		margin-right: 32px;
 	}
 	.blank-box .has-3-columns .wp-block-column {
-		margin-right: 32px;
-	}
-	.blank-box .has-4-columns .wp-block-column {
-		margin-right: 42.66667px;
-	}
-	.blank-box .has-5-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.blank-box .has-6-columns .wp-block-column {
 		margin-right: 32px;
 	}
 	.secondary-box .has-2-columns .wp-block-column {
@@ -1394,28 +1190,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.secondary-box .has-3-columns .wp-block-column {
 		margin-right: 32px;
 	}
-	.secondary-box .has-4-columns .wp-block-column {
-		margin-right: 42.66667px;
-	}
-	.secondary-box .has-5-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.secondary-box .has-6-columns .wp-block-column {
-		margin-right: 32px;
-	}
 	.toggle-content .has-2-columns .wp-block-column {
 		margin-right: 32px;
 	}
 	.toggle-content .has-3-columns .wp-block-column {
-		margin-right: 32px;
-	}
-	.toggle-content .has-4-columns .wp-block-column {
-		margin-right: 42.66667px;
-	}
-	.toggle-content .has-5-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.toggle-content .has-6-columns .wp-block-column {
 		margin-right: 32px;
 	}
 	.sticky .has-2-columns .wp-block-column {
@@ -1424,29 +1202,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.sticky .has-3-columns .wp-block-column {
 		margin-right: 40px;
 	}
-	.sticky .has-4-columns .wp-block-column {
-		margin-right: 32px;
-	}
-	.sticky .has-5-columns .wp-block-column {
-		margin-right: 40px;
-	}
-	.sticky .has-6-columns .wp-block-column {
-		margin-right: 44.8px;
-	}
 	.common-icon-box .has-2-columns .wp-block-column {
 		margin-right: 48px;
 	}
 	.common-icon-box .has-3-columns .wp-block-column {
 		margin-right: 32px;
-	}
-	.common-icon-box .has-4-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.common-icon-box .has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .has-6-columns .wp-block-column {
-		margin-right: 41.6px;
 	}
 }
 
@@ -1459,13 +1219,36 @@ a[data-slide-contents*="slide-contents"]:hover {
 		font-size: 18px;
 		font-weight: 300;
 	}
-	.wp-block-columns.has-2-columns,
-	.wp-block-columns.has-3-columns,
-	.wp-block-columns.has-4-columns,
-	.wp-block-columns.has-5-columns,
-	.wp-block-columns.has-6-columns {
+	/* ベタ組み対象をカラム表示 */
+	.wp-block-columns.has-2-columns {
 		flex-wrap: nowrap;
 	}
+	.wp-block-columns.has-3-columns {
+		flex-wrap: nowrap;
+	}
+	.wp-block-columns.has-4-columns .wp-block-column p {
+		text-align: start;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column p {
+		text-align: start;
+	}
+	.wp-block-columns.has-6-columns .wp-block-column p {
+		text-align: start;
+	}
+	/* ４〜６カラムはカラム表示 */
+	/*    .wp-block-columns.has-4-columns,
+  .wp-block-columns.has-5-columns,
+  .wp-block-columns.has-6-columns {
+    flex-wrap: nowrap;
+    .wp-block-column{
+      &:nth-child(odd) {
+        padding-right: 0px;
+      }
+      &:nth-child(even) {
+        padding-left: 0px;
+      }
+    }
+  }*/
 }
 
 /***************/
@@ -1473,35 +1256,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 /*      個別設定 */
 /***************/
 @media screen and (width: 768px) and (orientation: portrait) {
-	/* ４〜６カラムはカラム表示 */
-	.wp-block-columns.has-4-columns,
-	.wp-block-columns.has-5-columns,
-	.wp-block-columns.has-6-columns {
-		flex-wrap: nowrap;
-	}
-	.wp-block-columns.has-4-columns .wp-block-column:nth-child(odd),
-	.wp-block-columns.has-5-columns .wp-block-column:nth-child(odd),
-	.wp-block-columns.has-6-columns .wp-block-column:nth-child(odd) {
-		padding-right: 0px;
-	}
-	.wp-block-columns.has-4-columns .wp-block-column:nth-child(even),
-	.wp-block-columns.has-5-columns .wp-block-column:nth-child(even),
-	.wp-block-columns.has-6-columns .wp-block-column:nth-child(even) {
-		padding-left: 0px;
-	}
 	.entry-content .has-2-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.entry-content .has-3-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.entry-content .has-4-columns .wp-block-column {
-		margin-right: 42px;
-	}
-	.entry-content .has-5-columns .wp-block-column {
-		margin-right: 40.5px;
-	}
-	.entry-content .has-6-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.blank-box .has-2-columns .wp-block-column {
@@ -1510,29 +1268,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.blank-box .has-3-columns .wp-block-column {
 		margin-right: 36px;
 	}
-	.blank-box .has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.blank-box .has-5-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.blank-box .has-6-columns .wp-block-column {
-		margin-right: 46.8px;
-	}
 	.secondary-box .has-2-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.secondary-box .has-3-columns .wp-block-column {
 		margin-right: 36px;
-	}
-	.secondary-box .has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.secondary-box .has-5-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.secondary-box .has-6-columns .wp-block-column {
-		margin-right: 46.8px;
 	}
 	.toggle-content .has-2-columns .wp-block-column {
 		margin-right: 54px;
@@ -1540,78 +1280,26 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.toggle-content .has-3-columns .wp-block-column {
 		margin-right: 36px;
 	}
-	.toggle-content .has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.toggle-content .has-5-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.toggle-content .has-6-columns .wp-block-column {
-		margin-right: 46.8px;
-	}
 	.sticky .has-2-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.sticky .has-3-columns .wp-block-column {
 		margin-right: 45px;
 	}
-	.sticky .has-4-columns .wp-block-column {
-		margin-right: 42px;
-	}
-	.sticky .has-5-columns .wp-block-column {
-		margin-right: 45px;
-	}
-	.sticky .has-6-columns .wp-block-column {
-		margin-right: 39.6px;
-	}
 	.common-icon-box .has-2-columns .wp-block-column {
 		margin-right: 36px;
 	}
 	.common-icon-box .has-3-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .has-4-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .has-5-columns .wp-block-column {
-		margin-right: 40.5px;
-	}
-	.common-icon-box .has-6-columns .wp-block-column {
 		margin-right: 36px;
 	}
 }
 
 @media screen and (width: 834px) and (orientation: portrait) {
-	/* ４〜６カラムはカラム表示 */
-	.wp-block-columns.has-4-columns,
-	.wp-block-columns.has-5-columns,
-	.wp-block-columns.has-6-columns {
-		flex-wrap: nowrap;
-	}
-	.wp-block-columns.has-4-columns .wp-block-column:nth-child(odd),
-	.wp-block-columns.has-5-columns .wp-block-column:nth-child(odd),
-	.wp-block-columns.has-6-columns .wp-block-column:nth-child(odd) {
-		padding-right: 0px;
-	}
-	.wp-block-columns.has-4-columns .wp-block-column:nth-child(even),
-	.wp-block-columns.has-5-columns .wp-block-column:nth-child(even),
-	.wp-block-columns.has-6-columns .wp-block-column:nth-child(even) {
-		padding-left: 0px;
-	}
 	.entry-content .has-2-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.entry-content .has-3-columns .wp-block-column {
 		margin-right: 36px;
-	}
-	.entry-content .has-4-columns .wp-block-column {
-		margin-right: 42px;
-	}
-	.entry-content .has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.entry-content .has-6-columns .wp-block-column {
-		margin-right: 46.8px;
 	}
 	.blank-box .has-2-columns .wp-block-column {
 		margin-right: 54px;
@@ -1619,29 +1307,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.blank-box .has-3-columns .wp-block-column {
 		margin-right: 45px;
 	}
-	.blank-box .has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.blank-box .has-5-columns .wp-block-column {
-		margin-right: 49.5px;
-	}
-	.blank-box .has-6-columns .wp-block-column {
-		margin-right: 39.6px;
-	}
 	.secondary-box .has-2-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.secondary-box .has-3-columns .wp-block-column {
 		margin-right: 45px;
-	}
-	.secondary-box .has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.secondary-box .has-5-columns .wp-block-column {
-		margin-right: 49.5px;
-	}
-	.secondary-box .has-6-columns .wp-block-column {
-		margin-right: 39.6px;
 	}
 	.toggle-content .has-2-columns .wp-block-column {
 		margin-right: 54px;
@@ -1649,28 +1319,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.toggle-content .has-3-columns .wp-block-column {
 		margin-right: 45px;
 	}
-	.toggle-content .has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.toggle-content .has-5-columns .wp-block-column {
-		margin-right: 49.5px;
-	}
-	.toggle-content .has-6-columns .wp-block-column {
-		margin-right: 39.6px;
-	}
 	.sticky .has-2-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.sticky .has-3-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.sticky .has-4-columns .wp-block-column {
-		margin-right: 42px;
-	}
-	.sticky .has-5-columns .wp-block-column {
-		margin-right: 40.5px;
-	}
-	.sticky .has-6-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.common-icon-box .has-2-columns .wp-block-column {
@@ -1678,15 +1330,6 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 	.common-icon-box .has-3-columns .wp-block-column {
 		margin-right: 45px;
-	}
-	.common-icon-box .has-4-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .has-6-columns .wp-block-column {
-		margin-right: 50.4px;
 	}
 }
 
@@ -1694,6 +1337,18 @@ a[data-slide-contents*="slide-contents"]:hover {
 /* iPad  横向き */
 /*     共通設定 */
 /*_/_/_/_/_/_/_/*/
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+	.wp-block-columns.has-4-columns .wp-block-column p {
+		text-align: start;
+	}
+	.wp-block-columns.has-5-columns .wp-block-column p {
+		text-align: start;
+	}
+	.wp-block-columns.has-6-columns .wp-block-column p {
+		text-align: start;
+	}
+}
+
 /***************/
 /* iPad 横向き */
 /*      個別設定 */
@@ -1705,29 +1360,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.entry-content .has-3-columns .wp-block-column {
 		margin-right: 36px;
 	}
-	.entry-content .has-4-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.entry-content .has-5-columns .wp-block-column {
-		margin-right: 40.5px;
-	}
-	.entry-content .has-6-columns .wp-block-column {
-		margin-right: 36px;
-	}
 	.blank-box .has-2-columns .wp-block-column {
 		margin-right: 36px;
 	}
 	.blank-box .has-3-columns .wp-block-column {
 		margin-right: 45px;
-	}
-	.blank-box .has-4-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.blank-box .has-5-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.blank-box .has-6-columns .wp-block-column {
-		margin-right: 50.4px;
 	}
 	.secondary-box .has-2-columns .wp-block-column {
 		margin-right: 36px;
@@ -1735,29 +1372,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.secondary-box .has-3-columns .wp-block-column {
 		margin-right: 45px;
 	}
-	.secondary-box .has-4-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.secondary-box .has-5-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.secondary-box .has-6-columns .wp-block-column {
-		margin-right: 50.4px;
-	}
 	.toggle-content .has-2-columns .wp-block-column {
 		margin-right: 36px;
 	}
 	.toggle-content .has-3-columns .wp-block-column {
 		margin-right: 45px;
-	}
-	.toggle-content .has-4-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.toggle-content .has-5-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.toggle-content .has-6-columns .wp-block-column {
-		margin-right: 50.4px;
 	}
 	.sticky .has-2-columns .wp-block-column {
 		margin-right: 36px;
@@ -1765,29 +1384,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.sticky .has-3-columns .wp-block-column {
 		margin-right: 54px;
 	}
-	.sticky .has-4-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.sticky .has-5-columns .wp-block-column {
-		margin-right: 45px;
-	}
-	.sticky .has-6-columns .wp-block-column {
-		margin-right: 43.2px;
-	}
 	.common-icon-box .has-2-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.common-icon-box .has-3-columns .wp-block-column {
 		margin-right: 45px;
-	}
-	.common-icon-box .has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.common-icon-box .has-5-columns .wp-block-column {
-		margin-right: 40.5px;
-	}
-	.common-icon-box .has-6-columns .wp-block-column {
-		margin-right: 39.6px;
 	}
 }
 
@@ -1798,29 +1399,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.entry-content .has-3-columns .wp-block-column {
 		margin-right: 45px;
 	}
-	.entry-content .has-4-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.entry-content .has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.entry-content .has-6-columns .wp-block-column {
-		margin-right: 50.4px;
-	}
 	.blank-box .has-2-columns .wp-block-column {
 		margin-right: 36px;
 	}
 	.blank-box .has-3-columns .wp-block-column {
 		margin-right: 54px;
-	}
-	.blank-box .has-4-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.blank-box .has-5-columns .wp-block-column {
-		margin-right: 49.5px;
-	}
-	.blank-box .has-6-columns .wp-block-column {
-		margin-right: 43.2px;
 	}
 	.secondary-box .has-2-columns .wp-block-column {
 		margin-right: 36px;
@@ -1828,29 +1411,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.secondary-box .has-3-columns .wp-block-column {
 		margin-right: 54px;
 	}
-	.secondary-box .has-4-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.secondary-box .has-5-columns .wp-block-column {
-		margin-right: 49.5px;
-	}
-	.secondary-box .has-6-columns .wp-block-column {
-		margin-right: 43.2px;
-	}
 	.toggle-content .has-2-columns .wp-block-column {
 		margin-right: 36px;
 	}
 	.toggle-content .has-3-columns .wp-block-column {
 		margin-right: 54px;
-	}
-	.toggle-content .has-4-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.toggle-content .has-5-columns .wp-block-column {
-		margin-right: 49.5px;
-	}
-	.toggle-content .has-6-columns .wp-block-column {
-		margin-right: 43.2px;
 	}
 	.sticky .has-2-columns .wp-block-column {
 		margin-right: 36px;
@@ -1858,28 +1423,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.sticky .has-3-columns .wp-block-column {
 		margin-right: 36px;
 	}
-	.sticky .has-4-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.sticky .has-5-columns .wp-block-column {
-		margin-right: 40.5px;
-	}
-	.sticky .has-6-columns .wp-block-column {
-		margin-right: 36px;
-	}
 	.common-icon-box .has-2-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.common-icon-box .has-3-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.common-icon-box .has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.common-icon-box .has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .has-6-columns .wp-block-column {
 		margin-right: 54px;
 	}
 }
@@ -1891,28 +1438,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.entry-content .has-3-columns .wp-block-column {
 		margin-right: 45px;
 	}
-	.entry-content .has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.entry-content .has-5-columns .wp-block-column {
-		margin-right: 49.5px;
-	}
-	.entry-content .has-6-columns .wp-block-column {
-		margin-right: 39.6px;
-	}
 	.blank-box .has-2-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.blank-box .has-3-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.blank-box .has-4-columns .wp-block-column {
-		margin-right: 42px;
-	}
-	.blank-box .has-5-columns .wp-block-column {
-		margin-right: 40.5px;
-	}
-	.blank-box .has-6-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.secondary-box .has-2-columns .wp-block-column {
@@ -1921,28 +1450,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.secondary-box .has-3-columns .wp-block-column {
 		margin-right: 54px;
 	}
-	.secondary-box .has-4-columns .wp-block-column {
-		margin-right: 42px;
-	}
-	.secondary-box .has-5-columns .wp-block-column {
-		margin-right: 40.5px;
-	}
-	.secondary-box .has-6-columns .wp-block-column {
-		margin-right: 54px;
-	}
 	.toggle-content .has-2-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.toggle-content .has-3-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.toggle-content .has-4-columns .wp-block-column {
-		margin-right: 42px;
-	}
-	.toggle-content .has-5-columns .wp-block-column {
-		margin-right: 40.5px;
-	}
-	.toggle-content .has-6-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.sticky .has-2-columns .wp-block-column {
@@ -1951,29 +1462,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.sticky .has-3-columns .wp-block-column {
 		margin-right: 36px;
 	}
-	.sticky .has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.sticky .has-5-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.sticky .has-6-columns .wp-block-column {
-		margin-right: 46.8px;
-	}
 	.common-icon-box .has-2-columns .wp-block-column {
 		margin-right: 36px;
 	}
 	.common-icon-box .has-3-columns .wp-block-column {
 		margin-right: 54px;
-	}
-	.common-icon-box .has-4-columns .wp-block-column {
-		margin-right: 48px;
-	}
-	.common-icon-box .has-5-columns .wp-block-column {
-		margin-right: 49.5px;
-	}
-	.common-icon-box .has-6-columns .wp-block-column {
-		margin-right: 43.2px;
 	}
 }
 
@@ -1984,28 +1477,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.entry-content .has-3-columns .wp-block-column {
 		margin-right: 45px;
 	}
-	.entry-content .has-4-columns .wp-block-column {
-		margin-right: 42px;
-	}
-	.entry-content .has-5-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.entry-content .has-6-columns .wp-block-column {
-		margin-right: 39.6px;
-	}
 	.blank-box .has-2-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.blank-box .has-3-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.blank-box .has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.blank-box .has-5-columns .wp-block-column {
-		margin-right: 45px;
-	}
-	.blank-box .has-6-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.secondary-box .has-2-columns .wp-block-column {
@@ -2014,28 +1489,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.secondary-box .has-3-columns .wp-block-column {
 		margin-right: 54px;
 	}
-	.secondary-box .has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.secondary-box .has-5-columns .wp-block-column {
-		margin-right: 45px;
-	}
-	.secondary-box .has-6-columns .wp-block-column {
-		margin-right: 54px;
-	}
 	.toggle-content .has-2-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.toggle-content .has-3-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.toggle-content .has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.toggle-content .has-5-columns .wp-block-column {
-		margin-right: 45px;
-	}
-	.toggle-content .has-6-columns .wp-block-column {
 		margin-right: 54px;
 	}
 	.sticky .has-2-columns .wp-block-column {
@@ -2044,29 +1501,11 @@ a[data-slide-contents*="slide-contents"]:hover {
 	.sticky .has-3-columns .wp-block-column {
 		margin-right: 36px;
 	}
-	.sticky .has-4-columns .wp-block-column {
-		margin-right: 42px;
-	}
-	.sticky .has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.sticky .has-6-columns .wp-block-column {
-		margin-right: 46.8px;
-	}
 	.common-icon-box .has-2-columns .wp-block-column {
 		margin-right: 36px;
 	}
 	.common-icon-box .has-3-columns .wp-block-column {
 		margin-right: 54px;
-	}
-	.common-icon-box .has-4-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .has-5-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.common-icon-box .has-6-columns .wp-block-column {
-		margin-right: 43.2px;
 	}
 }
 
@@ -2087,7 +1526,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 	}
 }
 
-@media (max-width: 767px) and (orientation: portrait), (max-width: 1023px) and (orientation: landscape) {
+@media (orientation: portrait), (max-width: 1023px) and (orientation: landscape) {
 	/* ４・６カラムは疑似２カラム表示 */
 	.wp-block-columns.has-4-columns .wp-block-column,
 	.wp-block-columns.has-6-columns .wp-block-column {

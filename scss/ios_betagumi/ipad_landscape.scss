@@ -7,6 +7,17 @@
   (orientation: landscape)
 {
   $font_width: $thx_ipad_font_width;
+  @if $thx_beta_column_loop != 6 {
+    @for $i from ($thx_beta_column_loop + 1) through 6 {
+      .wp-block-columns.has-#{$i}-columns{
+        .wp-block-column{
+          p {
+            @include thx-default-text-align;
+          }
+        }
+      }
+    }
+  }
 }
 
 /***************/
@@ -32,16 +43,6 @@
     (width: #{$size}px) and
     (orientation: landscape)
   {
-    @if $thx_beta_column_loop != 6 {
-      @for $i from ($thx_beta_column_loop + 1) through 6 {
-        .wp-block-columns.has-#{$i}-columns{
-          .wp-block-column{
-            @include thx-default-text-align;
-          }
-        }
-      }
-    }
-
     // Cocoonブロック内カラムブロック間マージン設定
     @each $class, $count in $cocoon_block_class {
       .#{$class} {

@@ -1,9 +1,10 @@
 // main: ../amp.scss
-/*********/
-/* ベタ組 */
-/*********/
+/************/
+/* ampベタ組 */
+/************/
 
 @import "var_ios_betagumi";
+//@import "background_grid";
 
 //mixin設定
 @mixin thx-beta-body {
@@ -65,7 +66,7 @@
   padding-right: ($font_width - 1px);
 }
 
-//@import "iphone_portrait";
+@import "amp_iphone_portrait";
 @import "amp_iphone_landscape";
 @import "amp_ipad_portrait";
 @import "amp_ipad_landscape";

@@ -1,8 +1,10 @@
 // コンテンツ幅
 $thx_main_column_contents_width: 320px;
+$thx_pc_main_contents_width: 800px;
 
 // コンテンツのpadding幅
 $thx_main_column_contents_padding: 10px;
+$thx_pc_main_contents_padding: 30px;
 
 // iPhoneでのフォントサイズ
 $thx_iphone_font_size: 16px;
@@ -23,8 +25,13 @@ $thx_ipad_font_width:
   $thx_ipad_font_size * $thx_site_font_condense
 ;
 
-// デフォルトのフォント幅
+// デフォルトのフォント
+$thx_site_font_size: $thx_iphone_font_size;
 $thx_site_font_width: $thx_iphone_font_width;
+
+// デフォルトのline-height
+$thx_site_line_height: 1.8;
+$thx_site_line_height_px: round($thx_iphone_font_size * $thx_site_line_height);
 
 // カラムの数
 $thx_beta_column_count: 1;

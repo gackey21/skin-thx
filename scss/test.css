@@ -3,12 +3,13 @@
 /* ベタ組 */
 /*********/
 /*_/_/_/_/_/_/_/_/*/
-/* iPhone  縦持ち */
-/*       共通設定 */
+/* iPhone  横向き */
+/*   amp 共通設定 */
 /*_/_/_/_/_/_/_/_/*/
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 568px) and (orientation: landscape) {
 	.page-body {
 		font-size: 16px;
+		font-weight: 300;
 	}
 	/* 案内ボックス */
 	.secondary-box {
@@ -16,21 +17,23 @@
 	}
 	/* 白抜きボックス */
 	.blank-box {
+		margin-left: 0;
+		margin-right: 0;
 		border-width: 2px;
 		padding-left: 14px;
 		padding-right: 14px;
 	}
 	/* 付箋風ボックス */
 	.blank-box.sticky {
-		border-width: 0 0 0 16px;
+		border-width: 0 0 0 32px;
 		padding-left: 16px;
 		padding-right: 16px;
 	}
 	/* アイコンボックス */
 	.common-icon-box {
 		border-width: 1px;
-		padding-left: 7px;
-		padding-right: 7px;
+		padding-left: 63px;
+		padding-right: 15px;
 	}
 	/* トグルボックス */
 	.toggle-checkbox:checked ~ .toggle-content {
@@ -40,20 +43,103 @@
 	}
 }
 
+/*****************/
+/* iPhone 横向き */
+/*  amp 個別設定 */
+/*****************/
+@media screen and (width: 568px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 564px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (width: 667px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 660px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (width: 736px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 724px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (width: 812px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 804px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (width: 896px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 884px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
 /*_/_/_/_/_/_/_/*/
 /* iPad  縦向き */
-/*     共通設定 */
+/* amp 共通設定 */
 /*_/_/_/_/_/_/_/*/
 @media screen and (min-width: 768px) and (orientation: portrait) {
 	.page-body {
 		font-size: 18px;
-	}
-	.wp-block-columns.has-2-columns,
-	.wp-block-columns.has-3-columns,
-	.wp-block-columns.has-4-columns,
-	.wp-block-columns.has-5-columns,
-	.wp-block-columns.has-6-columns {
-		flex-wrap: nowrap;
+		font-weight: 300;
 	}
 	/* 案内ボックス */
 	.secondary-box {
@@ -89,7 +175,7 @@
 
 /***************/
 /* iPad 縦向き */
-/*      個別設定 */
+/*  amp 個別設定 */
 /***************/
 @media screen and (width: 768px) and (orientation: portrait) {
 	.page-body {
@@ -97,6 +183,7 @@
 	}
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;
@@ -108,193 +195,6 @@
 		padding-left: 27px;
 		padding-right: 27px;
 	}
-	/* ４〜６カラムはカラム表示 */
-	.wp-block-columns.has-4-columns,
-	.wp-block-columns.has-5-columns,
-	.wp-block-columns.has-6-columns {
-		flex-wrap: nowrap;
-	}
-	.wp-block-columns.has-4-columns .wp-block-column:nth-child(odd),
-	.wp-block-columns.has-5-columns .wp-block-column:nth-child(odd),
-	.wp-block-columns.has-6-columns .wp-block-column:nth-child(odd) {
-		padding-right: 0px;
-	}
-	.wp-block-columns.has-4-columns .wp-block-column:nth-child(even),
-	.wp-block-columns.has-5-columns .wp-block-column:nth-child(even),
-	.wp-block-columns.has-6-columns .wp-block-column:nth-child(even) {
-		padding-left: 0px;
-	}
-	.wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 42px;
-	}
-	.wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 40.5px;
-	}
-	.wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 32.4px;
-	}
-	/* at-root */
-	.blank-box .wp-block-columns.has-2-columns .wp-block-column,
-	.secondary-box .wp-block-columns.has-2-columns .wp-block-column,
-	.toggle-content .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.sticky .wp-block-columns.has-2-columns .wp-block-column, .sticky .wp-block-columns.has-2-columns .wp-block-column, .sticky .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.common-icon-box .wp-block-columns.has-2-columns .wp-block-column, .common-icon-box .wp-block-columns.has-2-columns .wp-block-column, .common-icon-box .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.blank-box .wp-block-columns.has-3-columns .wp-block-column,
-	.secondary-box .wp-block-columns.has-3-columns .wp-block-column,
-	.toggle-content .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.sticky .wp-block-columns.has-3-columns .wp-block-column, .sticky .wp-block-columns.has-3-columns .wp-block-column, .sticky .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 45px;
-	}
-	.common-icon-box .wp-block-columns.has-3-columns .wp-block-column, .common-icon-box .wp-block-columns.has-3-columns .wp-block-column, .common-icon-box .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.blank-box .wp-block-columns.has-4-columns .wp-block-column,
-	.secondary-box .wp-block-columns.has-4-columns .wp-block-column,
-	.toggle-content .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.sticky .wp-block-columns.has-4-columns .wp-block-column, .sticky .wp-block-columns.has-4-columns .wp-block-column, .sticky .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 42px;
-	}
-	.common-icon-box .wp-block-columns.has-4-columns .wp-block-column, .common-icon-box .wp-block-columns.has-4-columns .wp-block-column, .common-icon-box .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.blank-box .wp-block-columns.has-5-columns .wp-block-column,
-	.secondary-box .wp-block-columns.has-5-columns .wp-block-column,
-	.toggle-content .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.sticky .wp-block-columns.has-5-columns .wp-block-column, .sticky .wp-block-columns.has-5-columns .wp-block-column, .sticky .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 45px;
-	}
-	.common-icon-box .wp-block-columns.has-5-columns .wp-block-column, .common-icon-box .wp-block-columns.has-5-columns .wp-block-column, .common-icon-box .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 40.5px;
-	}
-	.blank-box .wp-block-columns.has-6-columns .wp-block-column,
-	.secondary-box .wp-block-columns.has-6-columns .wp-block-column,
-	.toggle-content .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 46.8px;
-	}
-	.sticky .wp-block-columns.has-6-columns .wp-block-column, .sticky .wp-block-columns.has-6-columns .wp-block-column, .sticky .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 39.6px;
-	}
-	.common-icon-box .wp-block-columns.has-6-columns .wp-block-column, .common-icon-box .wp-block-columns.has-6-columns .wp-block-column, .common-icon-box .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.secondary-box {
-		padding: 18px;
-	}
-	.secondary-box .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.secondary-box .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.secondary-box .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.secondary-box .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.secondary-box .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 46.8px;
-	}
-	.blank-box {
-		margin-left: 0;
-		margin-right: 0;
-		border-width: 2px;
-		padding-left: 16px;
-		padding-right: 16px;
-	}
-	.blank-box .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.blank-box .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.blank-box .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.blank-box .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.blank-box .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 46.8px;
-	}
-	.blank-box.sticky {
-		border-width: 0 0 0 36px;
-		padding-left: 18px;
-		padding-right: 18px;
-	}
-	.sticky .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.sticky .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 45px;
-	}
-	.sticky .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 42px;
-	}
-	.sticky .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 45px;
-	}
-	.sticky .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 39.6px;
-	}
-	.common-icon-box {
-		border-width: 1px;
-		padding-left: 71px;
-		padding-right: 17px;
-	}
-	.common-icon-box .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 40.5px;
-	}
-	.common-icon-box .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.toggle-checkbox:checked ~ .toggle-content {
-		border-width: 1px;
-		padding-left: 17px;
-		padding-right: 17px;
-	}
-	.toggle-content .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.toggle-content .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.toggle-content .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.toggle-content .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.toggle-content .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 46.8px;
-	}
 }
 
 @media screen and (width: 834px) and (orientation: portrait) {
@@ -303,6 +203,7 @@
 	}
 	body {
 		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
 	p {
 		text-align: justify;
@@ -314,111 +215,22 @@
 		padding-left: 27px;
 		padding-right: 27px;
 	}
-	/* ４〜６カラムはカラム表示 */
-	.wp-block-columns.has-4-columns,
-	.wp-block-columns.has-5-columns,
-	.wp-block-columns.has-6-columns {
-		flex-wrap: nowrap;
+}
+
+/*_/_/_/_/_/_/_/*/
+/* iPad  横向き */
+/* amp 共通設定 */
+/*_/_/_/_/_/_/_/*/
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+	.page-body {
+		font-size: 18px;
+		font-weight: 300;
 	}
-	.wp-block-columns.has-4-columns .wp-block-column:nth-child(odd),
-	.wp-block-columns.has-5-columns .wp-block-column:nth-child(odd),
-	.wp-block-columns.has-6-columns .wp-block-column:nth-child(odd) {
-		padding-right: 0px;
-	}
-	.wp-block-columns.has-4-columns .wp-block-column:nth-child(even),
-	.wp-block-columns.has-5-columns .wp-block-column:nth-child(even),
-	.wp-block-columns.has-6-columns .wp-block-column:nth-child(even) {
-		padding-left: 0px;
-	}
-	.wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 42px;
-	}
-	.wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 46.8px;
-	}
-	/* at-root */
-	.blank-box .wp-block-columns.has-2-columns .wp-block-column,
-	.secondary-box .wp-block-columns.has-2-columns .wp-block-column,
-	.toggle-content .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.sticky .wp-block-columns.has-2-columns .wp-block-column, .sticky .wp-block-columns.has-2-columns .wp-block-column, .sticky .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.common-icon-box .wp-block-columns.has-2-columns .wp-block-column, .common-icon-box .wp-block-columns.has-2-columns .wp-block-column, .common-icon-box .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.blank-box .wp-block-columns.has-3-columns .wp-block-column,
-	.secondary-box .wp-block-columns.has-3-columns .wp-block-column,
-	.toggle-content .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 45px;
-	}
-	.sticky .wp-block-columns.has-3-columns .wp-block-column, .sticky .wp-block-columns.has-3-columns .wp-block-column, .sticky .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.common-icon-box .wp-block-columns.has-3-columns .wp-block-column, .common-icon-box .wp-block-columns.has-3-columns .wp-block-column, .common-icon-box .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 45px;
-	}
-	.blank-box .wp-block-columns.has-4-columns .wp-block-column,
-	.secondary-box .wp-block-columns.has-4-columns .wp-block-column,
-	.toggle-content .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.sticky .wp-block-columns.has-4-columns .wp-block-column, .sticky .wp-block-columns.has-4-columns .wp-block-column, .sticky .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 42px;
-	}
-	.common-icon-box .wp-block-columns.has-4-columns .wp-block-column, .common-icon-box .wp-block-columns.has-4-columns .wp-block-column, .common-icon-box .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.blank-box .wp-block-columns.has-5-columns .wp-block-column,
-	.secondary-box .wp-block-columns.has-5-columns .wp-block-column,
-	.toggle-content .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 49.5px;
-	}
-	.sticky .wp-block-columns.has-5-columns .wp-block-column, .sticky .wp-block-columns.has-5-columns .wp-block-column, .sticky .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 40.5px;
-	}
-	.common-icon-box .wp-block-columns.has-5-columns .wp-block-column, .common-icon-box .wp-block-columns.has-5-columns .wp-block-column, .common-icon-box .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.blank-box .wp-block-columns.has-6-columns .wp-block-column,
-	.secondary-box .wp-block-columns.has-6-columns .wp-block-column,
-	.toggle-content .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 39.6px;
-	}
-	.sticky .wp-block-columns.has-6-columns .wp-block-column, .sticky .wp-block-columns.has-6-columns .wp-block-column, .sticky .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 32.4px;
-	}
-	.common-icon-box .wp-block-columns.has-6-columns .wp-block-column, .common-icon-box .wp-block-columns.has-6-columns .wp-block-column, .common-icon-box .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 50.4px;
-	}
+	/* 案内ボックス */
 	.secondary-box {
 		padding: 18px;
 	}
-	.secondary-box .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.secondary-box .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 45px;
-	}
-	.secondary-box .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.secondary-box .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 49.5px;
-	}
-	.secondary-box .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 39.6px;
-	}
+	/* 白抜きボックス */
 	.blank-box {
 		margin-left: 0;
 		margin-right: 0;
@@ -426,79 +238,156 @@
 		padding-left: 16px;
 		padding-right: 16px;
 	}
-	.blank-box .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.blank-box .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 45px;
-	}
-	.blank-box .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.blank-box .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 49.5px;
-	}
-	.blank-box .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 39.6px;
-	}
+	/* 付箋風ボックス */
 	.blank-box.sticky {
 		border-width: 0 0 0 36px;
 		padding-left: 18px;
 		padding-right: 18px;
 	}
-	.sticky .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.sticky .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.sticky .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 42px;
-	}
-	.sticky .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 40.5px;
-	}
-	.sticky .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 32.4px;
-	}
+	/* アイコンボックス */
 	.common-icon-box {
 		border-width: 1px;
 		padding-left: 71px;
 		padding-right: 17px;
 	}
-	.common-icon-box .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 45px;
-	}
-	.common-icon-box .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 36px;
-	}
-	.common-icon-box .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 50.4px;
-	}
+	/* トグルボックス */
 	.toggle-checkbox:checked ~ .toggle-content {
 		border-width: 1px;
 		padding-left: 17px;
 		padding-right: 17px;
 	}
-	.toggle-content .wp-block-columns.has-2-columns .wp-block-column {
-		margin-right: 54px;
+}
+
+/***************/
+/* iPad 横向き */
+/*  amp 個別設定 */
+/***************/
+@media screen and (width: 1024px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
 	}
-	.toggle-content .wp-block-columns.has-3-columns .wp-block-column {
-		margin-right: 45px;
+	p {
+		text-align: justify;
 	}
-	.toggle-content .wp-block-columns.has-4-columns .wp-block-column {
-		margin-right: 54px;
-	}
-	.toggle-content .wp-block-columns.has-5-columns .wp-block-column {
-		margin-right: 49.5px;
-	}
-	.toggle-content .wp-block-columns.has-6-columns .wp-block-column {
-		margin-right: 39.6px;
+	.no-scrollable-main .main {
+		width: 672px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 29px;
+		padding-right: 29px;
 	}
 }
+
+@media screen and (width: 1112px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 744px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 29px;
+		padding-right: 29px;
+	}
+}
+
+@media screen and (width: 1194px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 798px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 29px;
+		padding-right: 29px;
+	}
+}
+
+@media screen and (width: 1366px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: 906px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 29px;
+		padding-right: 29px;
+	}
+}
+
+/*_/_/_/_/_/_/_/*/
+/* iPad  横向き */
+/*     共通設定 */
+/*_/_/_/_/_/_/_/*/
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+	body {
+		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+		font-weight: 300;
+	}
+	p {
+		text-align: justify;
+	}
+	.no-scrollable-main .main {
+		width: calc( 67% - 30px * 2 - (67% - 30px * 2 mod 18));
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 29px;
+		padding-right: 29px;
+	}
+	.entry-content .has-2-columns .wp-block-column {
+		margin-right: calc( ((67% - 30px * 2 - (67% - 30px * 2 mod 18) - 18px * 0) mod (18 * 2)) / 1 + 36px);
+	}
+	.entry-content .has-3-columns .wp-block-column {
+		margin-right: calc( ((67% - 30px * 2 - (67% - 30px * 2 mod 18) - 18px * 0) mod (18 * 3)) / 2 + 36px);
+	}
+	.blank-box .has-2-columns .wp-block-column {
+		margin-right: calc( ((67% - 30px * 2 - (67% - 30px * 2 mod 18) - 18px * 2) mod (18 * 2)) / 1 + 36px);
+	}
+	.blank-box .has-3-columns .wp-block-column {
+		margin-right: calc( ((67% - 30px * 2 - (67% - 30px * 2 mod 18) - 18px * 2) mod (18 * 3)) / 2 + 36px);
+	}
+	.secondary-box .has-2-columns .wp-block-column {
+		margin-right: calc( ((67% - 30px * 2 - (67% - 30px * 2 mod 18) - 18px * 2) mod (18 * 2)) / 1 + 36px);
+	}
+	.secondary-box .has-3-columns .wp-block-column {
+		margin-right: calc( ((67% - 30px * 2 - (67% - 30px * 2 mod 18) - 18px * 2) mod (18 * 3)) / 2 + 36px);
+	}
+	.toggle-content .has-2-columns .wp-block-column {
+		margin-right: calc( ((67% - 30px * 2 - (67% - 30px * 2 mod 18) - 18px * 2) mod (18 * 2)) / 1 + 36px);
+	}
+	.toggle-content .has-3-columns .wp-block-column {
+		margin-right: calc( ((67% - 30px * 2 - (67% - 30px * 2 mod 18) - 18px * 2) mod (18 * 3)) / 2 + 36px);
+	}
+	.sticky .has-2-columns .wp-block-column {
+		margin-right: calc( ((67% - 30px * 2 - (67% - 30px * 2 mod 18) - 18px * 4) mod (18 * 2)) / 1 + 36px);
+	}
+	.sticky .has-3-columns .wp-block-column {
+		margin-right: calc( ((67% - 30px * 2 - (67% - 30px * 2 mod 18) - 18px * 4) mod (18 * 3)) / 2 + 36px);
+	}
+	.common-icon-box .has-2-columns .wp-block-column {
+		margin-right: calc( ((67% - 30px * 2 - (67% - 30px * 2 mod 18) - 18px * 5) mod (18 * 2)) / 1 + 36px);
+	}
+	.common-icon-box .has-3-columns .wp-block-column {
+		margin-right: calc( ((67% - 30px * 2 - (67% - 30px * 2 mod 18) - 18px * 5) mod (18 * 3)) / 2 + 36px);
+	}
+}
+
+/***************/
+/* iPad 横向き */
+/*      個別設定 */
+/***************/
