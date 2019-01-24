@@ -149,10 +149,9 @@ p {
 }
 pre {
   margin-top: $line_space / 2 - 1px;
-  margin-bottom: -24px;
+  margin-bottom: $line_space / 2 - $line_height_px + 1px;
   padding-top: $line_space;
   padding-bottom: $font_size;
-  height: calc((100% / 32px) * #{$line_height_px} + #{$font_size})
 }
 /* 案内ボックス */
 .secondary-box {
