@@ -86,6 +86,11 @@ p {
     }
   }
 }
+.article {
+  ul, ol {
+    padding-left: $font_width * 2;
+  }
+}
 .thx .wp-block-column {
   margin-bottom: 0px;
 }

@@ -1310,6 +1310,10 @@ p {
 	margin: 0px;
 }
 
+.article ul, .article ol {
+	padding-left: 32px;
+}
+
 .thx .wp-block-column {
 	margin-bottom: 0px;
 }
@@ -1588,6 +1592,9 @@ pre {
 	}
 	.toc ul li, .toc ol li {
 		margin: 0px;
+	}
+	.article ul, .article ol {
+		padding-left: 36px;
 	}
 	.thx .wp-block-column {
 		margin-bottom: 0px;
@@ -1904,6 +1911,9 @@ pre {
 	}
 	.toc ul li, .toc ol li {
 		margin: 0px;
+	}
+	.article ul, .article ol {
+		padding-left: 36px;
 	}
 	.thx .wp-block-column {
 		margin-bottom: 0px;
