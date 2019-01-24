@@ -6,7 +6,8 @@
   (min-width: 768px) and
   (orientation: portrait)
 {
-  $font_width: $thx_ipad_font_width;
+  $font_size: $thx_ipad_font_size;
+  $font_width: $font_size * $thx_site_font_condense;
   .page-body {
     font-size: $font_width;
     font-weight: $thx_font_weight;
@@ -42,6 +43,7 @@
       }
     }
   }*/
+  @import "background_grid";
 }
 /***************/
 /* iPad 縦向き */

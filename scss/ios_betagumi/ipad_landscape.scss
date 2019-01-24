@@ -6,7 +6,8 @@
   (min-width: 1024px) and
   (orientation: landscape)
 {
-  $font_width: $thx_ipad_font_width;
+  $font_size: $thx_ipad_font_size;
+  $font_width: $font_size * $thx_site_font_condense;
   @if $thx_beta_column_loop != 6 {
     @for $i from ($thx_beta_column_loop + 1) through 6 {
       .wp-block-columns.has-#{$i}-columns{
@@ -18,6 +19,7 @@
       }
     }
   }
+  @import "background_grid";
 }
 
 /***************/

@@ -1,0 +1,236 @@
+// main: ../style.scss
+/*                */
+/* グリッド */
+/*                */
+$font_width: $font_size * $thx_site_font_condense;
+$line_space:
+  round(
+    ($thx_site_line_height - 1) * $font_size / 2
+  ) * 2
+;
+$line_height_px: $font_size + $line_space;
+
+
+
+@for $i from 2 through 10 {
+  .lu_#{$i} {
+    height: $line_height_px * ($i - 1) + $font_size;
+  }
+}
+p {
+  margin-top: $line_height_px;
+  margin-bottom: 0px;
+}
+.article {
+  $grid_color: fade-out($key_sub_color, 0.75);
+  line-height: $line_height_px;
+  background-image:
+  linear-gradient(
+    to bottom,
+    $grid_color 4%,
+    transparent 0%,
+    transparent percentage(1 / $thx_site_line_height) - 4%,
+    $grid_color 0%,
+    $grid_color percentage(1 / $thx_site_line_height) + 0%,
+    $white      0  ),
+  linear-gradient(
+  to right,
+    $grid_color 3%,
+    transparent 0%,
+    transparent 95%,
+    $grid_color 0%  );
+  background-position:
+    top $line_space / 2 - 2px
+    left
+  ;
+  background-size:
+    $font_size
+    $line_height_px
+  ;
+}
+.date-tags {
+  margin-bottom: 49px;
+  margin-bottom: $line_height_px * 2 - $line_space - 1;
+}
+.toc {
+  display: block;
+  width: calc(100% - 4 * #{$font_width} + 2px);
+  margin-top: $line_height_px;
+  margin-bottom: $line_space / 2;
+  margin-left: $font_size * 2 - 1px;
+  margin-right: $font_size * 2 - 1px;
+  border-width: 1px;
+  padding: 0px;
+  padding-left: $font_size;
+  padding-right: $font_size;
+  font-size: $font_size;
+  line-height: $line_height_px;
+}
+.toc-title {
+  border-width: 1px;
+  padding: 0px;
+  line-height: $line_height_px * 2 - 4px;
+}
+.thx .toc-checkbox {
+  &:checked~.toc-content{
+    margin-top: 1px;
+    margin-bottom: -1px;
+    padding: 0px;
+  }
+}
+.toc {
+  ul,ol {
+    margin: 0px;
+    li {
+      margin: 0px;
+    }
+  }
+}
+.thx .wp-block-column {
+  margin-bottom: 0px;
+}
+.article {
+  h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: $line_height_px / 2;
+    font-size: $line_height_px - 2px;
+    line-height: $line_height_px;
+  }
+  h2 {
+    margin-top: $line_height_px + 8px;
+//    margin-bottom: $line_space / 2;
+    margin-bottom: 0px;
+    padding: $line_height_px / 2 - 4px;
+    font-size: $line_height_px - 2px;
+    line-height: $line_height_px;
+  }
+  h3 {
+    margin-top: $line_height_px + 16px;
+//    margin-bottom: $line_space / 2;
+    margin-bottom: 0px;
+    padding: $line_height_px / 2 - 8px;
+    font-size: $line_height_px - 4px;
+    line-height: $line_height_px;
+  }
+  h4 {
+    margin-top: $line_height_px - 4px;
+//    margin-bottom: $line_space / 2;
+    margin-bottom: 0px;
+    padding: 0px;
+    padding-left: $line_height_px / 2;
+    padding-right: $line_height_px / 2;
+    font-size: $line_height_px - 6px;
+    line-height: $line_height_px;
+    background: $white;
+  }
+  h5 {
+    margin-top: $line_height_px - 2px;
+//    margin-bottom: $line_space / 2;
+    margin-bottom: 0px;
+    padding: 0px;
+    padding-left: $font_size;
+    padding-right: $font_size;
+    font-size: $font_size;
+    line-height: $line_height_px;
+    background: $white;
+  }
+  h6 {
+    margin-top: $line_height_px - 1px;
+//    margin-bottom: $line_space / 2;
+    margin-bottom: 0px;
+    padding: 0px;
+    padding-left: $font_size;
+    padding-right: $font_size;
+    font-size: $font_size;
+    line-height: $line_height_px;
+    background: $white;
+  }
+}
+pre {
+  margin-top: $line_space / 2 - 1px;
+  margin-bottom: -24px;
+  padding-top: $line_space;
+  padding-bottom: $font_size;
+  height: calc((100% / 32px) * #{$line_height_px} + #{$font_size})
+}
+/* 案内ボックス */
+.secondary-box {
+  @include secondary-box($font_width);
+  margin-top: $line_space / 2 - 1px;
+  margin-bottom: $line_space / 2 + 1px;
+  padding-top: $font_size / 2;
+  padding-bottom: $font_size / 2;
+  background: fade-out($white, 0.2);
+  + p {
+    margin-top: $line_space / 2;
+  }
+}
+
+/* 白抜きボックス */
+.blank-box {
+  @include blank-box($font_width);
+  margin-top: $line_space / 2 - 4px;
+  margin-bottom: $line_space / 2 - 0px;
+  padding-top: $font_size / 2;
+  padding-bottom: $font_size / 2;
+  background: fade-out($white, 0.2);
+  + p {
+    margin-top: $line_space / 2;
+  }
+}
+
+/* タブボックス */
+.blank-box.bb-tab {
+  margin-top: $line_height_px + $line_space / 2 - 4px;
+  &::before {
+    top: - $line_height_px - 0px;
+  }
+}
+
+/* 付箋風ボックス */
+.blank-box.sticky {
+  @include blank-box-sticky($font_width);
+  margin-top: $line_space / 2 - 1px;
+  margin-bottom: $line_space / 2 + 1px;
+  padding-top: $font_size / 2;
+  padding-bottom: $font_size / 2;
+  opacity: 0.8;
+  + p {
+    margin-top: $line_space / 2;
+  }
+}
+
+/* アイコンボックス */
+.common-icon-box {
+  margin-top: $line_space / 2 - 2px;
+  margin-bottom: $line_space / 2 - 0px;
+  padding-top: $font_size / 2;
+  padding-bottom: $font_size / 2;
+  background: fade-out($white, 0.2);
+  @include common-icon-box($font_width);
+  + p {
+    margin-top: $line_space / 2;
+  }
+}
+
+/* トグルボックス */
+.toggle-wrap {
+  margin-top: $line_space / 2 - 2px + 1px;
+  margin-bottom: $line_space / 2 - 0px;
+  + p {
+    margin-top: $line_space / 2;
+  }
+}
+.toggle-button {
+  padding-top: $font_size / 2 - 1px;
+  padding-bottom: $font_size / 2 - 1px;
+//    line-height: $line_height_px - 1px;
+}
+.toggle-checkbox:checked~.toggle-content {
+  margin-top: $line_space;
+  margin-bottom:  - 0px;
+  padding-top: $font_size / 2 - 1px;
+  padding-bottom: $font_size / 2 - 1px;
+  @include toggle-checkbox($font_width);
+}

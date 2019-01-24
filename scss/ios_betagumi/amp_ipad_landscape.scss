@@ -6,7 +6,14 @@
   (min-width: 1024px) and
   (orientation: landscape)
 {
+  $font_size: $thx_ipad_font_size;
   $font_width: $thx_ipad_font_width;
+  $thx_site_line_space:
+    round(
+      ($thx_site_line_height - 1) * $thx_site_font_size / 2
+    ) * 2
+  ;
+  $thx_site_line_height_px: $thx_site_font_size + $thx_site_line_space;
   $column_margin: $font_width * 2;
   $contents_width: $thx_pc_main_contents_width;
   $contents_padding: $thx_pc_main_contents_padding;
@@ -31,7 +38,6 @@
     padding-left: $contents_padding - 1;
     padding-right: $contents_padding - 1;
   }
-
   /* 案内ボックス */
   .secondary-box {
     @include secondary-box($font_width);
@@ -54,7 +60,7 @@
 
   /* トグルボックス */
   .toggle-checkbox:checked~.toggle-content {
-    @include toggle-checkbox($font_width)
+    @include toggle-checkbox($font_width);
   }
 }
 

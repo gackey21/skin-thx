@@ -6,7 +6,7 @@
   Author: がっきぃ
   Author URI: https://thx.jp
   Screenshot URI: https://
-  Version: 0.3.7
+  Version: 0.4.0
   Priority: 0
 */
 /*以下にスタイルシートを記入してください*/
@@ -568,6 +568,9 @@ a[data-slide-contents*="slide-contents"]:hover {
 		font-size: 16px;
 		font-weight: 300;
 	}
+	/*  .article {
+    @include background-grid($font_size);
+  }*/
 	/* 案内ボックス */
 	.secondary-box {
 		padding: 16px;
@@ -662,6 +665,9 @@ a[data-slide-contents*="slide-contents"]:hover {
 		font-size: 16px;
 		font-weight: 300;
 	}
+	/*  .article {
+    @include background-grid($font_size);
+  }*/
 	/* 案内ボックス */
 	.secondary-box {
 		padding: 16px;
@@ -792,6 +798,9 @@ a[data-slide-contents*="slide-contents"]:hover {
 		font-size: 18px;
 		font-weight: 300;
 	}
+	/*  .article {
+    @include background-grid($font_size);
+  }*/
 	/* 案内ボックス */
 	.secondary-box {
 		padding: 18px;

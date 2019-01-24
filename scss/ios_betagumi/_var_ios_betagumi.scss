@@ -30,8 +30,15 @@ $thx_site_font_size: $thx_iphone_font_size;
 $thx_site_font_width: $thx_iphone_font_width;
 
 // デフォルトのline-height
-$thx_site_line_height: 1.8;
-$thx_site_line_height_px: round($thx_iphone_font_size * $thx_site_line_height);
+$thx_site_line_height: 1.75;
+$thx_site_line_space:
+  round(
+    ($thx_site_line_height - 1) * $thx_site_font_size / 2
+  ) * 2
+;
+$thx_site_line_height_px: $thx_site_font_size + $thx_site_line_space;
+//$thx_site_line_height_px: round($thx_site_font_size * $thx_site_line_height);
+//$thx_site_line_space: $thx_site_line_height_px - $thx_site_font_size;
 
 // カラムの数
 $thx_beta_column_count: 1;
