@@ -1480,6 +1480,31 @@ pre {
 	padding-right: 15px;
 }
 
+.entry-content {
+	margin-bottom: 56px;
+}
+
+footer .cat-link {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+footer .tag-link {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.entry-categories-tags {
+	margin-bottom: 0px;
+}
+
+.entry-categories-tags > div {
+	margin-bottom: 0px;
+	padding-top: 1px;
+	padding-bottom: 3px;
+	line-height: 20px;
+}
+
 /*_/_/_/_/_/_/_/*/
 /* iPad  縦向き */
 /*     共通設定 */
@@ -1739,6 +1764,26 @@ pre {
 		border-width: 1px;
 		padding-left: 17px;
 		padding-right: 17px;
+	}
+	.entry-content {
+		margin-bottom: 64px;
+	}
+	footer .cat-link {
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+	footer .tag-link {
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+	.entry-categories-tags {
+		margin-bottom: 0px;
+	}
+	.entry-categories-tags > div {
+		margin-bottom: 0px;
+		padding-top: 1px;
+		padding-bottom: 3px;
+		line-height: 24px;
 	}
 }
 
@@ -2058,6 +2103,26 @@ pre {
 		border-width: 1px;
 		padding-left: 17px;
 		padding-right: 17px;
+	}
+	.entry-content {
+		margin-bottom: 64px;
+	}
+	footer .cat-link {
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+	footer .tag-link {
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+	.entry-categories-tags {
+		margin-bottom: 0px;
+	}
+	.entry-categories-tags > div {
+		margin-bottom: 0px;
+		padding-top: 1px;
+		padding-bottom: 3px;
+		line-height: 24px;
 	}
 }
 
