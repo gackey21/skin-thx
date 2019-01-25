@@ -89,6 +89,10 @@ p {
 .article {
   ul, ol {
     padding-left: $font_width * 2;
+    margin: 0px;
+    li {
+      margin: 0px;
+    }
   }
 }
 .thx .wp-block-column {

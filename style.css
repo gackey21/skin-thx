@@ -1312,6 +1312,11 @@ p {
 
 .article ul, .article ol {
 	padding-left: 32px;
+	margin: 0px;
+}
+
+.article ul li, .article ol li {
+	margin: 0px;
 }
 
 .thx .wp-block-column {
@@ -1631,6 +1636,10 @@ footer .tag-link {
 	}
 	.article ul, .article ol {
 		padding-left: 36px;
+		margin: 0px;
+	}
+	.article ul li, .article ol li {
+		margin: 0px;
 	}
 	.thx .wp-block-column {
 		margin-bottom: 0px;
@@ -1979,6 +1988,10 @@ footer .tag-link {
 	}
 	.article ul, .article ol {
 		padding-left: 36px;
+		margin: 0px;
+	}
+	.article ul li, .article ol li {
+		margin: 0px;
 	}
 	.thx .wp-block-column {
 		margin-bottom: 0px;
