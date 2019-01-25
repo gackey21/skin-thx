@@ -1327,7 +1327,7 @@ p {
 }
 
 .article h2 {
-	margin-top: 34px;
+	margin-top: 62px;
 	margin-bottom: 0px;
 	padding: 11px;
 	font-size: 26px;
@@ -1377,10 +1377,20 @@ p {
 
 pre {
 	margin-top: 5px;
+	margin-top: 33px;
 	margin-bottom: -21px;
+	margin-bottom: 7px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	line-height: 1.25;
+}
+
+p + pre {
+	margin-top: 5px;
+}
+
+pre + p {
+	margin-top: 5px;
 }
 
 /* 案内ボックス */
@@ -1633,7 +1643,7 @@ footer .tag-link {
 		line-height: 32px;
 	}
 	.article h2 {
-		margin-top: 38px;
+		margin-top: 70px;
 		margin-bottom: 0px;
 		padding: 13px;
 		font-size: 30px;
@@ -1678,10 +1688,18 @@ footer .tag-link {
 	}
 	pre {
 		margin-top: 6px;
+		margin-top: 38px;
 		margin-bottom: -24px;
+		margin-bottom: 8px;
 		padding-top: 0px;
 		padding-bottom: 0px;
 		line-height: 1.25;
+	}
+	p + pre {
+		margin-top: 6px;
+	}
+	pre + p {
+		margin-top: 6px;
 	}
 	/* 案内ボックス */
 	.secondary-box {
@@ -1973,7 +1991,7 @@ footer .tag-link {
 		line-height: 32px;
 	}
 	.article h2 {
-		margin-top: 38px;
+		margin-top: 70px;
 		margin-bottom: 0px;
 		padding: 13px;
 		font-size: 30px;
@@ -2018,10 +2036,18 @@ footer .tag-link {
 	}
 	pre {
 		margin-top: 6px;
+		margin-top: 38px;
 		margin-bottom: -24px;
+		margin-bottom: 8px;
 		padding-top: 0px;
 		padding-bottom: 0px;
 		line-height: 1.25;
+	}
+	p + pre {
+		margin-top: 6px;
+	}
+	pre + p {
+		margin-top: 6px;
 	}
 	/* 案内ボックス */
 	.secondary-box {

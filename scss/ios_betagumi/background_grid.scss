@@ -103,7 +103,7 @@ p {
     line-height: $line_height_px;
   }
   h2 {
-    margin-top: $line_height_px + 6px;
+    margin-top: $line_height_px * 2 + 6px;
 //    margin-bottom: $line_space / 2;
     margin-bottom: 0px;
     padding: $line_height_px / 2 - 3px;
@@ -154,12 +154,20 @@ p {
 }
 pre {
   margin-top: $line_space / 2 - 1px;
+  margin-top: $line_height_px + $line_space / 2 - 1px;
   margin-bottom: $line_space / 2 - $line_height_px + 1px;
+  margin-bottom: $line_space / 2 + 1px;
 //  padding-top: $line_space;
 //  padding-bottom: $font_size;
   padding-top: 0px;
   padding-bottom: 0px;
   line-height: 1.25;
+  p + & {
+    margin-top: $line_space / 2 - 1px;
+  }
+  & + p {
+    margin-top: $line_space / 2 - 1px;
+  }
 }
 /* 案内ボックス */
 .secondary-box {
