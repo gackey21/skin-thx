@@ -10,3 +10,6 @@ $font_size: $thx_iphone_font_size;
 @import "ipad_portrait";
 @import "ipad_landscape";
 @import "4-6columns";
+.article {
+  background: none;
+}
