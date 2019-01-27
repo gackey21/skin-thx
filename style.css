@@ -518,6 +518,19 @@ a[data-slide-contents*="slide-contents"]:hover {
 	order: 3;
 }
 
+/* 和文中欧文 */
+.thx_wao {
+	font-feature-settings: "pwid";
+}
+
+.thx_wao::before {
+	content: "\2009";
+}
+
+.thx_wao::after {
+	content: "\2009";
+}
+
 /* サイズ調整 */
 .btn-wrap-w98 > a {
 	width: 98%;
