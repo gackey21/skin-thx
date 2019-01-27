@@ -20,113 +20,8 @@ function is_entry_card_border_visible(){
   return true;
 }
 */
-//<style amp-custom>タグの作成
-function generate_style_amp_custom_tag(){?>
-<style amp-custom><?php
-  $css_all = '';
-  //AMPスタイルの取得（SCSSで出力したAMP用のCSS）
-  $css_url = get_template_directory_uri().'/amp.css';
-  $css = css_url_to_css_minify_code($css_url);
-  if ($css !== false) {
-    $css_all .= apply_filters( 'amp_parent_css', $css );
-  }
-  ///////////////////////////////////////////
-  //IcoMoonのスタイル
-  ///////////////////////////////////////////
-  $css_icomoom = css_url_to_css_minify_code(get_template_directory_uri().'/webfonts/icomoon/style.css');
-  if ($css_icomoom !== false) {
-    $css_all .= apply_filters( 'amp_icomoon_css', $css_icomoom );
-  }
-  ///////////////////////////////////////////
-  //スキンのスタイル
-  ///////////////////////////////////////////
-  if ( ($skin_url = get_skin_url()) && is_amp_skin_style_enable() ) {//設定されたスキンがある場合
-    //通常のスキンスタイル
-    $skin_css = css_url_to_css_minify_code($skin_url);
-//    if ($skin_css !== false) {
-//      $css_all .= apply_filters( 'amp_skin_css', $skin_css );
-//    }
-    //AMPのスキンスタイル
-    $amp_css_url = str_replace('style.css', 'amp.css', $skin_url);
-    $amp_css = css_url_to_css_minify_code($amp_css_url);
-    if ($amp_css !== false) {
-      $css_all .= apply_filters( 'amp_skin_amp_css', $amp_css );
-    } elseif ($skin_css !== false) {
-      $css_all .= apply_filters( 'amp_skin_css', $skin_css );
-    }
-  }
-  /*
-  ///////////////////////////////////////
-  // 本文中に挿入されたスタイル（ギャラリーなど）
-  ///////////////////////////////////////
-  //$content = do_shortcode(get_the_content());
-  //_v($content);
-  $pattern = '{<style[^>]*?>(.+?)</style>}is';
-  if (preg_match_all($pattern, $content, $m)) {
-    $all_idx = 0;
-    $css_idx = 1;
-    //_v($m);
-    if ($m[$css_idx]) {
-      foreach ($m[$css_idx] as$key => $css) {
-        //do_shortcodeすると、おそらくIDが一つ進むと思われ
-        //それに対応するためID番号に＋1している
-        if (preg_match('{#gallery-(\d+)}', $css, $n)) {
-          $css = str_replace($n[$all_idx], '#gallery-'.strval(intval($n[1])+1), $css);
-        }
-        $css_all .= minify_css($css);
-      }
-    }
-  }
-  */
-  ///////////////////////////////////////////
-  //カスタマイザーのスタイル
-  ///////////////////////////////////////////
-  ob_start();//バッファリング
-  get_template_part('tmp/css-custom');//カスタムテンプレートの呼び出し
-  $css_custom = ob_get_clean();
-  $css_all .= apply_filters( 'amp_custum_css', minify_css($css_custom) );
-  ///////////////////////////////////////////
-  //子テーマのスタイル
-  ///////////////////////////////////////////
-  if ( is_child_theme() && is_amp_child_theme_style_enable() ) {
-    //通常のスキンスタイル
-    $css_child_url = get_stylesheet_directory_uri().'/style.css';
-    $child_css = css_url_to_css_minify_code($css_child_url);
-    if ($child_css !== false) {
-      $css_all .= apply_filters( 'amp_child_css', $child_css );
-    }
-    //AMPのスキンスタイル
-    $css_child_url = get_stylesheet_directory_uri().'/amp.css';
-    $child_amp_css = css_url_to_css_minify_code($css_child_url);
-    if ($child_amp_css !== false) {
-      $css_all .= apply_filters( 'amp_child_amp_css', $child_amp_css );
-    }
-  }
-  ///////////////////////////////////////////
-  //投稿・固定ページに記入されているカスタムCSS
-  ///////////////////////////////////////////
-  if ($custom_css = get_custom_css_code()) {
-    $css_all .= apply_filters( 'amp_singular_custom_css', $custom_css );
-  }
-  //!importantの除去
-  $css_all = preg_replace('/!important/i', '', $css_all);
-  //CSSの縮小化
-  $css_all = minify_css($css_all);
-  //全てのCSSの出力
-  echo apply_filters( 'amp_all_css', $css_all );
-  //}?></style>
-<?php
-}
 
-/* <body>にクラス追加 */
-add_filter('body_class', 'thx_body_class_additional');
-if ( !function_exists( 'thx_body_class_additional' ) ):
-function thx_body_class_additional($classes) {
-  global $post;
-  $classes[] = 'thx';
-  return apply_filters('thx_body_class_additional', $classes);
-}//body_class_additional
-endif;
+
 
 //<style amp-custom>タグの作成
 function generate_style_amp_custom_tag(){?>
@@ -226,17 +121,9 @@ function generate_style_amp_custom_tag(){?>
 <?php
 }
 
-/* <body>にクラス追加 */
-add_filter('body_class', 'thx_body_class_additional');
-if ( !function_exists( 'thx_body_class_additional' ) ):
-function thx_body_class_additional($classes) {
-  global $post;
-  $classes[] = 'thx';
-  return apply_filters('thx_body_class_additional', $classes);
-}//body_class_additional
-endif;
 
-/* JS非同期読み込み */
+
+/* JS非同期読み込み
 if (!(is_admin() )) {
 function add_defer_to_enqueue_script( $url ) {
     if ( FALSE === strpos( $url, '.js' ) ) return $url;
@@ -245,10 +132,14 @@ function add_defer_to_enqueue_script( $url ) {
     return "$url' defer charset='UTF-8";
 }
 add_filter( 'clean_url', 'add_defer_to_enqueue_script', 11, 1 );
-}
+}*/
+
+
 
 /* カスタムフィールドでショートコード */
 echo apply_filters('the_content', get_post_meta($post->ID, 'custom_field', true));
+
+
 
 //アニメボタン
 function thx_anime_btn($atts) {
@@ -300,6 +191,8 @@ function thx_anime_btn($atts) {
 
 add_shortcode('thx_anime_btn','thx_anime_btn');
 
+
+
 function thx_test_01() {
 	$html = file_get_contents ( 'https://anime.dmkt-sp.jp/animestore/ci_pc?workId=22195' );
 	$dom = @DomDocument::loadHTML ( $html );
@@ -310,6 +203,8 @@ function thx_test_01() {
 }
 add_shortcode('thx_test_01', 'thx_test_01');
 
+
+
 function thx_test_02() {
 	$html = file_get_contents ( 'https://video.unext.jp/title/SID0037201' );
 	$dom = @DomDocument::loadHTML ( $html );
@@ -318,139 +213,8 @@ function thx_test_02() {
 		echo $dataList;
 	}
 }
-add_shortcode('thx_test_02', 'thx_test_02');
-
-function thx_test_03() {
-	$url = 'https://booklive.jp/product/index/title_id/60000492';
-	$url = strip_tags($url);//URL
-  if (preg_match('/.+(\.mp3|\.midi|\.mp4|\.mpeg|\.mpg|\.jpg|\.jpeg|\.png|\.gif|\.svg|\.pdf)$/i', $url, $m)) {
-    return;
-  }
-  $url = ampersand_urldecode($url);
-  $params = get_url_params($url);
-  $user_title = !empty($params['title']) ? $params['title'] : null;
-  $user_snipet = !empty($params['snipet']) ? $params['snipet'] : null;
-  $url = add_query_arg(array('title' => null, 'snipet' => null), $url);
-
-  $url_hash = TRANSIENT_BLOGCARD_PREFIX.md5( $url );
-  $error_title = $url; //エラーの場合はURLを表示
-  $title = $error_title;
-  $error_image = get_site_screenshot_url($url);
-
-  $image = $error_image;
-  $snipet = '';
-  $error_rel_nofollow = ' rel="nofollow"';
 
 
-
-  /*require_once*/ abspath(__FILE__).'open-graph.php';
-  //ブログカードキャッシュ更新モード、もしくはログインユーザー以外のときはキャッシュの取得
-  if ( !(is_external_blogcard_refresh_mode() && is_user_administrator()) ) {
-    //保存したキャッシュを取得
-    $ogp = get_transient( $url_hash );
-  }
-
-  if ( empty($ogp) ) {
-    $ogp = OpenGraphGetter::fetch( $url );
-    if ( $ogp == false ) {
-      $ogp = 'error';
-    } else {
-      //キャッシュ画像の取得
-      $res = fetch_card_image($ogp->image);
-
-      if ( $res ) {
-        $ogp->image = $res;
-      }
-
-      if ( isset( $ogp->title ) )
-        $title = $ogp->title;//タイトルの取得
-
-      if ( isset( $ogp->description ) )
-        $snipet = $ogp->description;//ディスクリプションの取得
-
-      if ( isset( $ogp->image ) )
-        $image = $ogp->image;////画像URLの取得
-
-      $error_rel_nofollow = null;
-    }
-
-    set_transient( $url_hash, $ogp,
-                   DAY_IN_SECONDS * intval(get_external_blogcard_cache_retention_period()) );
-
-  } elseif ( $ogp == 'error' ) {
-    //前回取得したとき404ページだったら何も出力しない
-  } else {
-    if ( isset( $ogp->title ) )
-      $title = $ogp->title;//タイトルの取得
-
-    if ( isset( $ogp->description ) )
-      $snipet = $ogp->description;//ディスクリプションの取得
-
-    if ( isset( $ogp->image ) )
-      $image = $ogp->image;//画像URLの取得
-
-    $error_rel_nofollow = null;
-  }
-	//var_dump($image);
-
-  //ドメイン名を取得
-  $domain = get_domain_name(isset($ogp->url) ? punycode_decode($ogp->url) : punycode_decode($url));
-
-  //og:imageが相対パスのとき
-  if(!$image || (strpos($image, '//') === false) || (is_ssl() && (strpos($image, 'https:') === false))){    // //OGPのURL情報があるか
-    //相対パスの時はエラー用の画像を表示
-    $image = $error_image;
-  }
-  $title = strip_tags($title);
-  if ($user_title) {
-    $title = $user_title;
-  }
-
-
-  $image = strip_tags($image);
-
-  $snipet = get_content_excerpt( $snipet, 160 );
-  $snipet = strip_tags($snipet);
-  if ($user_snipet) {
-    $snipet = $user_snipet;
-  }
-
-  //新しいタブで開く場合
-  $target = is_external_blogcard_target_blank() ? ' target="_blank"' : '';
-
-  //コメント内でブログカード呼び出しが行われた際はnofollowをつける
-  global $comment; //コメント内以外で$commentを呼び出すとnullになる
-  $nofollow = $comment || $error_rel_nofollow ? ' rel="nofollow"' : null;
-
-  //GoogleファビコンAPIを利用する
-  ////www.google.com/s2/favicons?domain=nelog.jp
-  $favicon_tag = '<div class="blogcard-favicon external-blogcard-favicon"><img src="//www.google.com/s2/favicons?domain='.$domain.'" class="blogcard-favicon-image" alt="" width="16" height="16" /></div>';
-
-  //サイトロゴ
-  $site_logo_tag = '<div class="blogcard-domain external-blogcard-domain">'.$domain.'</div>';
-  $site_logo_tag = '<div class="blogcard-site external-blogcard-site">'.$favicon_tag.$site_logo_tag.'</div>';
-
-  //サムネイルを取得できた場合
-  if ( $image ) {
-//    $thumbnail = '<img src="'.$image.'" alt="" class="blogcard-thumb-image external-blogcard-thumb-image" />';
-    $thumbnail = '<img src="https://res.booklive.jp/60000492/001/thumbnail/2L.jpg" alt="" class="blogcard-thumb-image external-blogcard-thumb-image" />';
-  }
-
-  //取得した情報からブログカードのHTMLタグを作成
-  $tag =
-
-    '<div class="blogcard external-blogcard'.get_additional_external_blogcard_classes().' cf">'.
-      '<figure class="blogcard-thumbnail external-blogcard-thumbnail">'.$thumbnail.'</figure>'.
-      '<div class="blogcard-content external-blogcard-content">'.
-        '<div class="blogcard-title external-blogcard-title">'.$title.'</div>'.
-        '<div class="blogcard-snipet external-blogcard-snipet">'.$snipet.'</div>'.
-      '</div>'.
-	  '<div class="blogcard-footer external-blogcard-footer cf">'.
-	  '<a href="'.$url.'" class="a-wrap cf"'.$target.$nofollow.'>'.$site_logo_tag.'</a>'.'</div>'.
-    '</div>';
-
-  return $tag;}
-add_shortcode('thx_test_03', 'thx_test_03');
 
 function thx_test_04() {
 	date_default_timezone_set('Asia/Tokyo');
