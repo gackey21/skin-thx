@@ -8,6 +8,9 @@
 {
   $font_size: $thx_ipad_font_size;
   $font_width: $font_size * $thx_site_font_condense;
+  p {
+    @include thx-fwid;
+  }
   @if $thx_beta_column_loop != 6 {
     @for $i from ($thx_beta_column_loop + 1) through 6 {
       .wp-block-columns.has-#{$i}-columns{

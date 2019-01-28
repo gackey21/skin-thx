@@ -518,19 +518,6 @@ a[data-slide-contents*="slide-contents"]:hover {
 	order: 3;
 }
 
-/* 和文中欧文 */
-.thx_wao {
-	font-feature-settings: "pwid";
-}
-
-.thx_wao::before {
-	content: "\2009";
-}
-
-.thx_wao::after {
-	content: "\2009";
-}
-
 /* サイズ調整 */
 .btn-wrap-w98 > a {
 	width: 98%;
@@ -1017,6 +1004,12 @@ a[data-slide-contents*="slide-contents"]:hover {
 /* iPhone  縦持ち */
 /*       共通設定 */
 /*_/_/_/_/_/_/_/_/*/
+@media screen and (max-width: 414px) and (orientation: portrait) {
+	p {
+		font-feature-settings: "fwid";
+	}
+}
+
 /*****************/
 /* iPhone 縦持ち */
 /*      個別設定 */
@@ -1026,6 +1019,9 @@ a[data-slide-contents*="slide-contents"]:hover {
 /*       共通設定 */
 /*_/_/_/_/_/_/_/_/*/
 @media screen and (min-width: 568px) and (orientation: landscape) {
+	p {
+		font-feature-settings: "fwid";
+	}
 	/* ２・３カラムはカラム表示 */
 	.wp-block-columns.has-2-columns,
 	.wp-block-columns.has-3-columns {
@@ -1543,6 +1539,9 @@ footer .tag-link {
 		font-size: 18px;
 		font-weight: 300;
 	}
+	p {
+		font-feature-settings: "fwid";
+	}
 	/* ベタ組み対象をカラム表示 */
 	.wp-block-columns.has-2-columns {
 		flex-wrap: nowrap;
@@ -1916,6 +1915,9 @@ footer .tag-link {
 /*     共通設定 */
 /*_/_/_/_/_/_/_/*/
 @media screen and (min-width: 1024px) and (orientation: landscape) {
+	p {
+		font-feature-settings: "fwid";
+	}
 	.wp-block-columns.has-4-columns .wp-block-column p {
 		text-align: start;
 	}
@@ -2404,8 +2406,22 @@ footer .tag-link {
 	}
 }
 
+/* グリッドを隠しておく */
 .article {
 	background: none;
+}
+
+/* 和文中欧文 */
+.thx_wao {
+	font-feature-settings: "pwid";
+}
+
+.thx_wao::before {
+	content: "\0020";
+}
+
+.thx_wao::after {
+	content: "\0020";
 }
 
 /*                */

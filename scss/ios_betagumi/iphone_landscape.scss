@@ -7,6 +7,9 @@
   (orientation: landscape)
 {
   $font_width: $thx_iphone_font_width;
+  p {
+    @include thx-fwid;
+  }
 
   /* ２・３カラムはカラム表示 */
   .wp-block-columns.has-2-columns,

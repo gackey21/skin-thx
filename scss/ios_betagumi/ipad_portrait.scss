@@ -12,6 +12,10 @@
     font-size: $font_width;
     font-weight: $thx_font_weight;
   }
+  p {
+    @include thx-fwid;
+  }
+  
   /* ベタ組み対象をカラム表示 */
   @for $i from 2 through $thx_beta_column_loop {
     .wp-block-columns.has-#{$i}-columns{
