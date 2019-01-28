@@ -273,14 +273,3 @@ a[data-slide-contents*="slide-contents"]:hover {
     order: 3;
   }
 }
-
-/* 和文中欧文 */
-.thx_wao {
-  font-feature-settings: "pwid";
-  &::before {
-    content: "\2009";
-  }
-  &::after {
-    content: "\2009";
-  }
-}
