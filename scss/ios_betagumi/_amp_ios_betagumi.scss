@@ -17,6 +17,9 @@
 
 @mixin thx-fwid {
   font-feature-settings: "fwid";
+  .editor-rich-text & {
+    font-feature-settings: normal;
+  }
 }
 
 @mixin thx-default-text-align {
