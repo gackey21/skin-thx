@@ -157,12 +157,14 @@ select {
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
+.wp-block-image a img,
 .a-wrap {
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
 	border-radius: 4px;
 	transition-duration: 0.3s;
 }
 
+.wp-block-image a img:hover,
 .a-wrap:hover {
 	background-color: transparent;
 	transform: translateY(-4px);
@@ -1008,6 +1010,9 @@ a[data-slide-contents*="slide-contents"]:hover {
 	p {
 		font-feature-settings: "fwid";
 	}
+	.editor-rich-text p {
+		font-feature-settings: normal;
+	}
 }
 
 /*****************/
@@ -1021,6 +1026,9 @@ a[data-slide-contents*="slide-contents"]:hover {
 @media screen and (min-width: 568px) and (orientation: landscape) {
 	p {
 		font-feature-settings: "fwid";
+	}
+	.editor-rich-text p {
+		font-feature-settings: normal;
 	}
 	/* ２・３カラムはカラム表示 */
 	.wp-block-columns.has-2-columns,
@@ -1270,6 +1278,14 @@ a[data-slide-contents*="slide-contents"]:hover {
 p {
 	margin-top: 28px;
 	margin-bottom: 0px;
+}
+
+img {
+	margin-top: 34px;
+}
+
+p img {
+	margin-top: 0px;
 }
 
 .article {
@@ -1542,6 +1558,9 @@ footer .tag-link {
 	p {
 		font-feature-settings: "fwid";
 	}
+	.editor-rich-text p {
+		font-feature-settings: normal;
+	}
 	/* ベタ組み対象をカラム表示 */
 	.wp-block-columns.has-2-columns {
 		flex-wrap: nowrap;
@@ -1605,6 +1624,12 @@ footer .tag-link {
 	p {
 		margin-top: 32px;
 		margin-bottom: 0px;
+	}
+	img {
+		margin-top: 39px;
+	}
+	p img {
+		margin-top: 0px;
 	}
 	.article {
 		line-height: 32px;
@@ -1918,6 +1943,9 @@ footer .tag-link {
 	p {
 		font-feature-settings: "fwid";
 	}
+	.editor-rich-text p {
+		font-feature-settings: normal;
+	}
 	.wp-block-columns.has-4-columns .wp-block-column p {
 		text-align: start;
 	}
@@ -1960,6 +1988,12 @@ footer .tag-link {
 	p {
 		margin-top: 32px;
 		margin-bottom: 0px;
+	}
+	img {
+		margin-top: 39px;
+	}
+	p img {
+		margin-top: 0px;
 	}
 	.article {
 		line-height: 32px;
@@ -2408,7 +2442,7 @@ footer .tag-link {
 
 /* グリッドを隠しておく */
 .article {
-	background: none;
+	background: #fff;
 }
 
 /* 和文中欧文 */
@@ -2417,10 +2451,12 @@ footer .tag-link {
 }
 
 .thx_wao::before {
+	font-family: arial narrow;
 	content: "\0020";
 }
 
 .thx_wao::after {
+	font-family: arial narrow;
 	content: "\0020";
 }
 

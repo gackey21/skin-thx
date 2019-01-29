@@ -21,6 +21,12 @@ p {
   margin-top: $line_height_px;
   margin-bottom: 0px;
 }
+img {
+  margin-top: $line_height_px + $line_space / 2;
+  p & {
+    margin-top: 0px;
+  }
+}
 .article {
   $grid_color: fade-out($key_sub_color, 0.75);
   line-height: $line_height_px;
