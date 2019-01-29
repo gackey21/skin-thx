@@ -23,6 +23,13 @@ function is_entry_card_border_visible(){
 
 
 
+// 引用符解除
+remove_filter("the_content", "wptexturize");
+remove_filter("the_excerpt", "wptexturize");
+remove_filter("the_title", "wptexturize");
+
+
+
 //<style amp-custom>タグの作成
 function generate_style_amp_custom_tag(){?>
 <style amp-custom><?php
