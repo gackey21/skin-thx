@@ -62,9 +62,9 @@
     (width: #{$size}px) and
     (orientation: landscape)
   {
-    body {
-      @include thx-beta-body;
-    }
+//    body {
+//      @include thx-beta-body;
+//    }
     p {
       @include thx-beta-p;
     }

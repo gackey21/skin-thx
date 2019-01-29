@@ -72,6 +72,10 @@
   padding-right: ($font_width - 1px);
 }
 
+body {
+  @include thx-beta-body;
+}
+
 @import "amp_iphone_portrait";
 @import "amp_iphone_landscape";
 @import "amp_ipad_portrait";

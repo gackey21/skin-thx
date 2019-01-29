@@ -69,9 +69,9 @@
     (width: #{$size}px) and
     (orientation: portrait)
   {
-    body {
-      @include thx-beta-body;
-    }
+//    body {
+//      @include thx-beta-body;
+//    }
     p {
       @include thx-beta-p;
     }

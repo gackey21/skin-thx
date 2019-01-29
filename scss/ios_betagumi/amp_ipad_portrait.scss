@@ -64,9 +64,9 @@
     .page-body {
       font-size: $font_width;
     }
-    body {
-      @include thx-beta-body;
-    }
+//    body {
+//      @include thx-beta-body;
+//    }
     p {
       @include thx-beta-p;
     }
