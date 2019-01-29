@@ -813,9 +813,6 @@ body {
 /*  amp 個別設定 */
 /***************/
 @media screen and (width: 768px) and (orientation: portrait) {
-	.page-body {
-		font-size: 18px;
-	}
 	p {
 		text-align: justify;
 	}
@@ -829,9 +826,6 @@ body {
 }
 
 @media screen and (width: 834px) and (orientation: portrait) {
-	.page-body {
-		font-size: 18px;
-	}
 	p {
 		text-align: justify;
 	}
