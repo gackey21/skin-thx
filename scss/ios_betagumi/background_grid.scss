@@ -17,15 +17,16 @@ $line_height_px: $font_size + $line_space;
     height: $line_height_px * ($i - 1) + $font_size;
   }
 }
-p {
+.article p {
   margin-top: $line_height_px;
   margin-bottom: 0px;
 }
-img {
+.thx .wp-block-image {
   margin-top: $line_height_px + $line_space / 2;
-  p & {
-    margin-top: 0px;
-  }
+  margin-bottom: 0px;
+//  p & {
+//    margin-top: 0px;
+//  }
 }
 .article {
   $grid_color: fade-out($key_sub_color, 0.75);
