@@ -13,24 +13,28 @@ jQuery(window).on('scroll', function (){
     var oh = jQuery(this).outerHeight();
 
     oh = oh - fz - ls / 2;
-    oh = Math.ceil(oh / lh) * lh;
-    oh = oh + fz + ls /2;
+    if((oh % lh) != 0){
+      oh = Math.ceil(oh / lh) * lh;
+      oh = oh + fz + ls /2;
 
-    if(scrollPos > elemOffset - wh + (wh / 2) ){
-      jQuery(this).outerHeight(oh);
+      if(scrollPos > elemOffset - wh + (wh / 1) ){
+        jQuery(this).outerHeight(oh);
+      }
     }
   });
 
-  jQuery('pre').each(function() {
+  jQuery('pre,.ad-wrap').each(function() {
     var elemOffset = jQuery(this).offset().top;
     var oh = jQuery(this).outerHeight();
 
     oh = oh - fz;
-    oh = Math.ceil(oh / lh) * lh;
-    oh = oh + fz;
+    if((oh % lh) != 0){
+      oh = Math.ceil(oh / lh) * lh;
+      oh = oh + fz;
 
-    if(scrollPos > elemOffset - wh + (wh / 2) ){
-      jQuery(this).outerHeight(oh);
+      if(scrollPos > elemOffset - wh + (wh / 2) ){
+        jQuery(this).outerHeight(oh);
+      }
     }
   });
 
