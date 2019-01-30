@@ -130,6 +130,18 @@ function generate_style_amp_custom_tag(){?>
 
 
 
+// <body>にクラス追加
+add_filter('body_class', 'thx_body_class_additional');
+if ( !function_exists( 'thx_body_class_additional' ) ):
+function thx_body_class_additional($classes) {
+  global $post;
+  $classes[] = 'thx';
+  return apply_filters('thx_body_class_additional', $classes);
+}//thx_body_class_additional
+endif;
+
+
+
 /* JS非同期読み込み
 if (!(is_admin() )) {
 function add_defer_to_enqueue_script( $url ) {
