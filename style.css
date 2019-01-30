@@ -1228,6 +1228,10 @@ body {
 	margin-bottom: 0px;
 }
 
+.thx .wp-block-image figcaption {
+	margin: 0px;
+}
+
 .article {
 	line-height: 28px;
 	background-image: linear-gradient(to bottom, rgba(47, 93, 80, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(47, 93, 80, 0.25) 0%, rgba(47, 93, 80, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(47, 93, 80, 0.25) 3%, transparent 0%, transparent 95%, rgba(47, 93, 80, 0.25) 0%);
@@ -1568,6 +1572,9 @@ footer .tag-link {
 	.thx .wp-block-image {
 		margin-top: 39px;
 		margin-bottom: 0px;
+	}
+	.thx .wp-block-image figcaption {
+		margin: 0px;
 	}
 	.article {
 		line-height: 32px;
@@ -1930,6 +1937,9 @@ footer .tag-link {
 	.thx .wp-block-image {
 		margin-top: 39px;
 		margin-bottom: 0px;
+	}
+	.thx .wp-block-image figcaption {
+		margin: 0px;
 	}
 	.article {
 		line-height: 32px;

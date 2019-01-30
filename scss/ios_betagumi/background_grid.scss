@@ -24,6 +24,9 @@ $line_height_px: $font_size + $line_space;
 .thx .wp-block-image {
   margin-top: $line_height_px + $line_space / 2;
   margin-bottom: 0px;
+  figcaption {
+    margin: 0px;
+  }
 //  p & {
 //    margin-top: 0px;
 //  }
