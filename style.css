@@ -1215,19 +1215,6 @@ body {
 	height: 268px;
 }
 
-.article p {
-	margin-top: -5px;
-	margin-bottom: -7px;
-}
-
-.article p + p {
-	margin-top: 35px;
-}
-
-.article p + ul, .article p ol {
-	margin-top: 7px;
-}
-
 .thx .wp-block-image {
 	margin-top: 12px;
 	margin-bottom: 12px;
@@ -1243,6 +1230,27 @@ body {
 	background-image: linear-gradient(to bottom, rgba(47, 93, 80, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(47, 93, 80, 0.25) 0%, rgba(47, 93, 80, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(47, 93, 80, 0.25) 3%, transparent 0%, transparent 95%, rgba(47, 93, 80, 0.25) 0%);
 	background-position: top 4px left;
 	background-size: 16px 28px;
+}
+
+.article p {
+	margin-top: -5px;
+	margin-bottom: -7px;
+}
+
+.article p + p {
+	margin-top: 35px;
+}
+
+.article p + ul, .article p ol {
+	margin-top: 7px;
+}
+
+.article pre {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 1.25;
 }
 
 .date-tags {
@@ -1357,14 +1365,6 @@ body {
 	font-size: 16px;
 	line-height: 28px;
 	background: #fff;
-}
-
-pre {
-	margin-top: 12px;
-	margin-bottom: 12px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	line-height: 1.25;
 }
 
 /* 案内ボックス */
@@ -1638,16 +1638,6 @@ footer .tag-link {
 	.lu_10 {
 		height: 306px;
 	}
-	.article p {
-		margin-top: -6px;
-		margin-bottom: -8px;
-	}
-	.article p + p {
-		margin-top: 40px;
-	}
-	.article p + ul, .article p ol {
-		margin-top: 8px;
-	}
 	.thx .wp-block-image {
 		margin-top: 14px;
 		margin-bottom: 14px;
@@ -1661,6 +1651,23 @@ footer .tag-link {
 		background-image: linear-gradient(to bottom, rgba(47, 93, 80, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(47, 93, 80, 0.25) 0%, rgba(47, 93, 80, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(47, 93, 80, 0.25) 3%, transparent 0%, transparent 95%, rgba(47, 93, 80, 0.25) 0%);
 		background-position: top 5px left;
 		background-size: 18px 32px;
+	}
+	.article p {
+		margin-top: -6px;
+		margin-bottom: -8px;
+	}
+	.article p + p {
+		margin-top: 40px;
+	}
+	.article p + ul, .article p ol {
+		margin-top: 8px;
+	}
+	.article pre {
+		margin-top: 14px;
+		margin-bottom: 14px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		line-height: 1.25;
 	}
 	.date-tags {
 		margin-bottom: 49px;
@@ -1759,13 +1766,6 @@ footer .tag-link {
 		font-size: 18px;
 		line-height: 32px;
 		background: #fff;
-	}
-	pre {
-		margin-top: 14px;
-		margin-bottom: 14px;
-		padding-top: 0px;
-		padding-bottom: 0px;
-		line-height: 1.25;
 	}
 	/* 案内ボックス */
 	.secondary-box {
@@ -2069,16 +2069,6 @@ footer .tag-link {
 	.lu_10 {
 		height: 306px;
 	}
-	.article p {
-		margin-top: -6px;
-		margin-bottom: -8px;
-	}
-	.article p + p {
-		margin-top: 40px;
-	}
-	.article p + ul, .article p ol {
-		margin-top: 8px;
-	}
 	.thx .wp-block-image {
 		margin-top: 14px;
 		margin-bottom: 14px;
@@ -2092,6 +2082,23 @@ footer .tag-link {
 		background-image: linear-gradient(to bottom, rgba(47, 93, 80, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(47, 93, 80, 0.25) 0%, rgba(47, 93, 80, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(47, 93, 80, 0.25) 3%, transparent 0%, transparent 95%, rgba(47, 93, 80, 0.25) 0%);
 		background-position: top 5px left;
 		background-size: 18px 32px;
+	}
+	.article p {
+		margin-top: -6px;
+		margin-bottom: -8px;
+	}
+	.article p + p {
+		margin-top: 40px;
+	}
+	.article p + ul, .article p ol {
+		margin-top: 8px;
+	}
+	.article pre {
+		margin-top: 14px;
+		margin-bottom: 14px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		line-height: 1.25;
 	}
 	.date-tags {
 		margin-bottom: 49px;
@@ -2190,13 +2197,6 @@ footer .tag-link {
 		font-size: 18px;
 		line-height: 32px;
 		background: #fff;
-	}
-	pre {
-		margin-top: 14px;
-		margin-bottom: 14px;
-		padding-top: 0px;
-		padding-bottom: 0px;
-		line-height: 1.25;
 	}
 	/* 案内ボックス */
 	.secondary-box {

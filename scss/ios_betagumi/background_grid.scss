@@ -17,18 +17,6 @@ $line_height_px: $font_size + $line_space;
     height: $line_height_px * ($i - 1) + $font_size;
   }
 }
-.article p {
-//  margin-top: $line_height_px;
-//  margin-bottom: 0px;
-  margin-top: - $line_space / 2 + 1;
-  margin-bottom: - $line_space / 2 - 1;
-  & + p {
-    margin-top: $line_height_px + $line_space / 2 + 1;
-  }
-  & + ul,ol {
-    margin-top: $line_space / 2 + 1;
-  }
-}
 .thx .wp-block-image {
   margin-top: $line_space;
   margin-bottom: $line_space;
@@ -66,6 +54,24 @@ $line_height_px: $font_size + $line_space;
     $font_size
     $line_height_px
   ;
+  p {
+    margin-top: - $line_space / 2 + 1;
+    margin-bottom: - $line_space / 2 - 1;
+    & + p {
+      margin-top: $line_height_px + $line_space / 2 + 1;
+    }
+    & + ul,ol {
+      margin-top: $line_space / 2 + 1;
+    }
+  }
+  pre {
+    margin-top: $line_space;
+    margin-bottom: $line_space;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 1.25;
+  }
+
 }
 .date-tags {
   margin-bottom: 49px;
@@ -178,25 +184,6 @@ $line_height_px: $font_size + $line_space;
     font-size: $font_size;
     line-height: $line_height_px;
     background: $white;
-  }
-}
-pre {
-//  margin-top: $line_space / 2 - 1px;
-//  margin-top: $line_height_px + $line_space / 2 - 1px;
-  margin-top: $line_space;
-//  margin-bottom: $line_space / 2 - $line_height_px + 1px;
-//  margin-bottom: $line_space / 2 + 1px;
-  margin-bottom: $line_space;
-//  padding-top: $line_space;
-//  padding-bottom: $font_size;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  line-height: 1.25;
-  p + & {
-//    margin-top: $line_space / 2 - 1px;
-  }
-  & + p {
-//    margin-top: $line_space / 2 - 1px;
   }
 }
 /* 案内ボックス */
