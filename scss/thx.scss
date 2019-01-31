@@ -62,15 +62,17 @@ h6,
 .site-name-text,
 .entry-title,
 .archive-title {
-  color: $white;
-  text-shadow: 0.075em 0.075em 0.02em rgba(0,0,0,0.21);
-  background-color: $key_color;
+//  color: $white;
+//  text-shadow: 0.075em 0.075em 0.02em rgba(0,0,0,0.21);
+//  background-color: $key_color;
 }
 
 /* サイト名 */
 .site-name-text {
 	font-size: 3rem;
 	line-height: 1.5em;
+  color: $white;
+  text-shadow: 0.075em 0.075em 0.02em rgba(0,0,0,0.21);
 }
 
 .logo-text {
@@ -80,12 +82,15 @@ h6,
 /* 投稿タイトル */
 .entry-title,
 .archive-title {
+  margin: 0px;
+  padding: 12px;
 	font-size: 2rem;
 	font-feature-settings : "palt";
 	letter-spacing: 0.025em;
-	margin: 0px;
-	padding: 12px;
-}
+  color: $white;
+  text-shadow: 0.075em 0.075em 0.02em rgba(0,0,0,0.21);
+  background-color: $key_color;
+	}
 
 /* フッター */
 .footer {
