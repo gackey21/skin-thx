@@ -18,12 +18,20 @@ $line_height_px: $font_size + $line_space;
   }
 }
 .article p {
-  margin-top: $line_height_px;
-  margin-bottom: 0px;
+//  margin-top: $line_height_px;
+//  margin-bottom: 0px;
+  margin-top: - $line_space / 2 + 1;
+  margin-bottom: - $line_space / 2 - 1;
+  & + p {
+    margin-top: $line_height_px + $line_space / 2 + 1;
+  }
+  & + ul,ol {
+    margin-top: $line_space / 2 + 1;
+  }
 }
 .thx .wp-block-image {
-  margin-top: $line_height_px + $line_space / 2;
-  margin-bottom: 0px;
+  margin-top: $line_space;
+  margin-bottom: $line_space;
   figcaption {
     margin: 0px;
     line-height: $line_height_px;
@@ -61,13 +69,14 @@ $line_height_px: $font_size + $line_space;
 }
 .date-tags {
   margin-bottom: 49px;
-  margin-bottom: $line_height_px * 2 - $line_space - 1;
+//  margin-bottom: $line_height_px * 2 - $line_space - 1;
+  margin-bottom: $line_height_px + $font_size - 1px;
 }
 .toc {
   display: block;
   width: calc(100% - 4 * #{$font_width} + 2px);
-  margin-top: $line_height_px;
-  margin-bottom: $line_space / 2;
+  margin-top: $line_space;
+  margin-bottom: $line_space;
   margin-left: $font_size * 2 - 1px;
   margin-right: $font_size * 2 - 1px;
   border-width: 1px;
@@ -80,7 +89,7 @@ $line_height_px: $font_size + $line_space;
 .toc-title {
   border-width: 1px;
   padding: 0px;
-  line-height: $line_height_px * 2 - 4px;
+  line-height: $line_height_px + $font_size - 4px;
 }
 .thx .toc-checkbox {
   &:checked~.toc-content{
@@ -104,6 +113,9 @@ $line_height_px: $font_size + $line_space;
     li {
       margin: 0px;
     }
+    & + p {
+      margin-top: 0px;
+    }
   }
 }
 .thx .wp-block-column {
@@ -112,31 +124,32 @@ $line_height_px: $font_size + $line_space;
 .article {
   h1 {
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: $line_space / 2 - 1px;
+//    margin-bottom: 0px;
     padding: $line_height_px / 2;
     font-size: $line_height_px - 2px;
     line-height: $line_height_px;
   }
   h2 {
     margin-top: $line_height_px * 2 + 6px;
-//    margin-bottom: $line_space / 2;
-    margin-bottom: 0px;
+    margin-bottom: $line_space;
+//    margin-bottom: 0px;
     padding: $line_height_px / 2 - 3px;
     font-size: $line_height_px - 2px;
     line-height: $line_height_px;
   }
   h3 {
     margin-top: $line_height_px + 16px;
-//    margin-bottom: $line_space / 2;
-    margin-bottom: 0px;
+    margin-bottom: $line_space;
+//    margin-bottom: 0px;
     padding: $line_height_px / 2 - 8px;
     font-size: $line_height_px - 4px;
     line-height: $line_height_px;
   }
   h4 {
     margin-top: $line_height_px - 4px;
-//    margin-bottom: $line_space / 2;
-    margin-bottom: 0px;
+    margin-bottom: $line_space;
+//    margin-bottom: 0px;
     padding: 0px;
     padding-left: $line_height_px / 2;
     padding-right: $line_height_px / 2;
@@ -146,8 +159,8 @@ $line_height_px: $font_size + $line_space;
   }
   h5 {
     margin-top: $line_height_px - 2px;
-//    margin-bottom: $line_space / 2;
-    margin-bottom: 0px;
+    margin-bottom: $line_space;
+//    margin-bottom: 0px;
     padding: 0px;
     padding-left: $font_size;
     padding-right: $font_size;
@@ -157,8 +170,8 @@ $line_height_px: $font_size + $line_space;
   }
   h6 {
     margin-top: $line_height_px - 1px;
-//    margin-bottom: $line_space / 2;
-    margin-bottom: 0px;
+    margin-bottom: $line_space;
+//    margin-bottom: 0px;
     padding: 0px;
     padding-left: $font_size;
     padding-right: $font_size;
@@ -168,86 +181,103 @@ $line_height_px: $font_size + $line_space;
   }
 }
 pre {
-  margin-top: $line_space / 2 - 1px;
-  margin-top: $line_height_px + $line_space / 2 - 1px;
-  margin-bottom: $line_space / 2 - $line_height_px + 1px;
-  margin-bottom: $line_space / 2 + 1px;
+//  margin-top: $line_space / 2 - 1px;
+//  margin-top: $line_height_px + $line_space / 2 - 1px;
+  margin-top: $line_space;
+//  margin-bottom: $line_space / 2 - $line_height_px + 1px;
+//  margin-bottom: $line_space / 2 + 1px;
+  margin-bottom: $line_space;
 //  padding-top: $line_space;
 //  padding-bottom: $font_size;
   padding-top: 0px;
   padding-bottom: 0px;
   line-height: 1.25;
   p + & {
-    margin-top: $line_space / 2 - 1px;
+//    margin-top: $line_space / 2 - 1px;
   }
   & + p {
-    margin-top: $line_space / 2 - 1px;
+//    margin-top: $line_space / 2 - 1px;
   }
 }
 /* 案内ボックス */
 .secondary-box {
   @include secondary-box($font_width);
-  margin-top: $line_space / 2 - 1px;
-  margin-bottom: $line_space / 2 + 1px;
+  margin-top: $line_space;
+  margin-bottom: $line_space;
   padding-top: $font_size / 2;
   padding-bottom: $font_size / 2;
   opacity: 0.8;
   + p {
-    margin-top: $line_space / 2;
+//    margin-top: $line_space / 2;
   }
 }
 
 /* 白抜きボックス */
 .blank-box {
   @include blank-box($font_width);
-  margin-top: $line_space / 2 - 4px;
-  margin-bottom: $line_space / 2 - 0px;
-  padding-top: $font_size / 2;
-  padding-bottom: $font_size / 2;
+  margin-top: $line_space;
+  margin-bottom: $line_space;
+  padding-top: $font_size / 2 - 2px;
+  padding-bottom: $font_size / 2 - 2px;
   background: fade-out($white, 0.2);
   + p {
-    margin-top: $line_space / 2;
+//    margin-top: $line_space / 2;
+  }
+}
+
+/* インフォボックス */
+.wp-block-cocoon-blocks-info-box {
+  @include blank-box($font_width);
+  margin-top: $line_space;
+  margin-bottom: $line_space;
+  padding-top: $font_size / 2;
+  padding-bottom: $font_size / 2;
+  opacity: 0.8;
+  + p {
+//    margin-top: $line_space / 2;
   }
 }
 
 /* タブボックス */
 .blank-box.bb-tab {
-  margin-top: $line_height_px + $line_space / 2 - 4px;
+//  margin-top: $line_height_px + $line_space / 2 - 4px;
+  margin-top: $line_height_px + $line_space;
   &::before {
-    top: - $line_height_px - 0px;
+//    top: - $line_height_px - 0px;
+    top: - round($line_height_px * 0.8);
   }
 }
 
 /* 付箋風ボックス */
 .blank-box.sticky {
   @include blank-box-sticky($font_width);
-  margin-top: $line_space / 2 - 1px;
-  margin-bottom: $line_space / 2 + 1px;
+  margin-top: $line_space;
+  margin-bottom: $line_space;
   padding-top: $font_size / 2;
   padding-bottom: $font_size / 2;
   opacity: 0.8;
   + p {
-    margin-top: $line_space / 2;
+//    margin-top: $line_space / 2;
   }
 }
 
 /* アイコンボックス */
 .common-icon-box {
-  margin-top: $line_space / 2 - 2px;
-  margin-bottom: $line_space / 2 - 0px;
-  padding-top: $font_size / 2;
-  padding-bottom: $font_size / 2;
+  margin-top: $line_space;
+  margin-bottom: $line_space;
+  padding-top: $font_size / 2 - 1px;
+  padding-bottom: $font_size / 2 - 1px;
   background: fade-out($white, 0.2);
   @include common-icon-box($font_width);
   + p {
-    margin-top: $line_space / 2;
+//    margin-top: $line_space / 2;
   }
 }
 
 /* トグルボックス */
 .toggle-wrap {
-  margin-top: $line_space / 2 - 2px + 1px;
-  margin-bottom: $line_space / 2 - 0px;
+  margin-top: $line_space;
+  margin-bottom: $line_space;
   + p {
     margin-top: $line_space / 2;
   }
@@ -264,8 +294,70 @@ pre {
   padding-bottom: $font_size / 2 - 1px;
   @include toggle-checkbox($font_width);
 }
+
 .entry-content {
   margin-bottom: $line_height_px * 2;
+  /* 広告エリア */
+  .ad-area {
+    margin-top: $line_space;
+    margin-bottom: $line_space;
+    background-color: fade-out($white, 0.2);
+  }
+  /* ブログカード */
+  .wp-block-cocoon-blocks-blogcard,
+  .wp-block-embed__wrapper {
+    margin-top:$line_space;
+    margin-bottom: $line_space;
+    .blogcard-wrap {
+      margin-top:$line_space;
+      margin-bottom: $line_space;
+      width: calc(100% - 4 * #{$font_width} + 0px);
+    }
+    .blogcard {
+      padding: $line_height_px / 2 - 1px;
+      padding-top:
+        ($line_height_px - 2 - 19)
+        - round(($line_height_px - 2 - 19) / 3)
+      ;
+      padding-bottom: round(($line_height_px - 2 - 19) / 3) ;
+      &::before {
+        top: - $font_size / 2;
+        z-index: 1;
+      }
+    }
+    .blogcard-thumbnail {
+      margin-top: 0px;
+    }
+    .blogcard-content {
+      max-height: ceil((140px - $font_size) / $line_height_px) * $line_height_px + $font_size;
+    }
+    .blogcard-footer {
+//      height: $line_height_px;
+      padding: 0px;
+      font-size: 16px;
+      line-height: 1;
+    }
+    .blogcard-favicon {
+      margin-top: 0px;
+      margin-right: $font_size / 4;
+    }
+  }
+  .wp-block-columns {
+    margin-top: $line_space;
+    margin-bottom: $line_space;
+    .wp-block-column :not(p):first-child {
+      margin-top: 0px;
+    }
+    .wp-block-column :not(p):last-child {
+      margin-bottom: 0px;
+    }
+
+/*    p + & {
+      .wp-block-column > p:first-child {
+        margin-top: $line_space / 2 + 1;
+      }
+    }*/
+  }
 }
 footer {
   .cat-link {
