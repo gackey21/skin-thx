@@ -71,6 +71,16 @@ $line_height_px: $font_size + $line_space;
     padding-bottom: 0px;
     line-height: 1.25;
   }
+  ul, ol {
+    padding-left: $font_width * 2;
+    margin: 0px;
+    li {
+      margin: 0px;
+    }
+    & + p {
+      margin-top: 0px;
+    }
+  }
 
 }
 .date-tags {
@@ -104,14 +114,14 @@ $line_height_px: $font_size + $line_space;
     padding: 0px;
   }
 }
-.toc {
+/*.toc {
   ul,ol {
     margin: 0px;
     li {
       margin: 0px;
     }
   }
-}
+}*/
 .article {
   ul, ol {
     padding-left: $font_width * 2;
