@@ -15,7 +15,7 @@
   p {
     @include thx-fwid;
   }
-  
+
   /* ベタ組み対象をカラム表示 */
   @for $i from 2 through $thx_beta_column_loop {
     .wp-block-columns.has-#{$i}-columns{
@@ -47,7 +47,7 @@
       }
     }
   }*/
-  @import "background_grid";
+  @import "../background_grid/background_grid";
 }
 /***************/
 /* iPad 縦向き */

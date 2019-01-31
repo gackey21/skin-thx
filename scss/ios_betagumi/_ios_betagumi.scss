@@ -6,7 +6,7 @@
 @import "iphone_portrait";
 @import "iphone_landscape";
 $font_size: $thx_iphone_font_size;
-@import "background_grid";
+@import "../background_grid/background_grid";
 @import "ipad_portrait";
 @import "ipad_landscape";
 @import "4-6columns";
