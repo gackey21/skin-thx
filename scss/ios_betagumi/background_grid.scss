@@ -77,8 +77,15 @@ $line_height_px: $font_size + $line_space;
     li {
       margin: 0px;
     }
-    & + p {
+    &:not(.wp-block-gallery) + p {
       margin-top: 0px;
+    }
+  }
+  ul.wp-block-gallery {
+    padding-left: 0px;
+    .blocks-gallery-item {
+//      margin-right: $font_size;
+      margin-bottom: $line_space;
     }
   }
 
@@ -130,7 +137,7 @@ $line_height_px: $font_size + $line_space;
       margin: 0px;
     }
     & + p {
-      margin-top: 0px;
+//      margin-top: 0px;
     }
   }
 }
@@ -292,7 +299,7 @@ $line_height_px: $font_size + $line_space;
   @include toggle-checkbox($font_width);
 }
 div[class*="cocoon-blocks"] {
-  :not(p) {
+  :not(p):not(li) {
     &:first-child {
       margin-top: 0px;
     }
@@ -369,18 +376,16 @@ div[class*="cocoon-blocks"] {
   .wp-block-columns {
     margin-top: $line_space;
     margin-bottom: $line_space;
-    .wp-block-column :not(p):first-child {
-      margin-top: 0px;
-    }
-    .wp-block-column :not(p):last-child {
-      margin-bottom: 0px;
-    }
-
-/*    p + & {
-      .wp-block-column > p:first-child {
-        margin-top: $line_space / 2 + 1;
+    .wp-block-column {
+      :not(p):not(li) {
+        &:first-child {
+          margin-top: 0px;
+        }
+        &:last-child {
+          margin-bottom: 0px;
+        }
       }
-    }*/
+    }
   }
 }
 footer {
