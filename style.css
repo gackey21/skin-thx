@@ -1385,8 +1385,8 @@ body {
 	padding: 16px;
 	margin-top: 12px;
 	margin-bottom: 12px;
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-top: 14px;
+	padding-bottom: 14px;
 	opacity: 0.8;
 }
 
@@ -1399,8 +1399,8 @@ body {
 	padding-right: 14px;
 	margin-top: 12px;
 	margin-bottom: 12px;
-	padding-top: 6px;
-	padding-bottom: 6px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	background: rgba(255, 255, 255, 0.8);
 }
 
@@ -1413,8 +1413,8 @@ body {
 	padding-right: 14px;
 	margin-top: 12px;
 	margin-bottom: 12px;
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-top: 14px;
+	padding-bottom: 14px;
 	opacity: 0.8;
 }
 
@@ -1434,8 +1434,8 @@ body {
 	padding-right: 16px;
 	margin-top: 12px;
 	margin-bottom: 12px;
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-top: 14px;
+	padding-bottom: 14px;
 	opacity: 0.8;
 }
 
@@ -1443,8 +1443,8 @@ body {
 .common-icon-box {
 	margin-top: 12px;
 	margin-bottom: 12px;
-	padding-top: 7px;
-	padding-bottom: 7px;
+	padding-top: 13px;
+	padding-bottom: 13px;
 	background: rgba(255, 255, 255, 0.8);
 	border-width: 1px;
 	padding-left: 63px;
@@ -1462,18 +1462,42 @@ body {
 }
 
 .toggle-button {
-	padding-top: 7px;
-	padding-bottom: 7px;
+	padding-top: 13px;
+	padding-bottom: 13px;
 }
 
 .toggle-checkbox:checked ~ .toggle-content {
 	margin-top: 12px;
 	margin-bottom: 0px;
-	padding-top: 7px;
-	padding-bottom: 7px;
+	padding-top: 13px;
+	padding-bottom: 13px;
 	border-width: 1px;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+div[class*="cocoon-blocks"] :not(p):first-child {
+	margin-top: 0px;
+}
+
+div[class*="cocoon-blocks"] :not(p):last-child {
+	margin-bottom: 0px;
+}
+
+div[class*="cocoon-blocks"] > ul > li:first-of-type, div[class*="cocoon-blocks"] > ol > li:first-of-type {
+	margin-top: -6px;
+}
+
+div[class*="cocoon-blocks"] > ul > li:last-of-type, div[class*="cocoon-blocks"] > ol > li:last-of-type {
+	margin-bottom: -6px;
+}
+
+div[class*="cocoon-blocks"] p:first-of-type {
+	margin-top: -6px;
+}
+
+div[class*="cocoon-blocks"] p:last-of-type {
+	margin-bottom: -6px;
 }
 
 .entry-content {
@@ -1797,8 +1821,8 @@ footer .tag-link {
 		padding: 18px;
 		margin-top: 14px;
 		margin-bottom: 14px;
-		padding-top: 9px;
-		padding-bottom: 9px;
+		padding-top: 16px;
+		padding-bottom: 16px;
 		opacity: 0.8;
 	}
 	/* 白抜きボックス */
@@ -1810,8 +1834,8 @@ footer .tag-link {
 		padding-right: 16px;
 		margin-top: 14px;
 		margin-bottom: 14px;
-		padding-top: 7px;
-		padding-bottom: 7px;
+		padding-top: 14px;
+		padding-bottom: 14px;
 		background: rgba(255, 255, 255, 0.8);
 	}
 	/* インフォボックス */
@@ -1823,8 +1847,8 @@ footer .tag-link {
 		padding-right: 16px;
 		margin-top: 14px;
 		margin-bottom: 14px;
-		padding-top: 9px;
-		padding-bottom: 9px;
+		padding-top: 16px;
+		padding-bottom: 16px;
 		opacity: 0.8;
 	}
 	/* タブボックス */
@@ -1841,16 +1865,16 @@ footer .tag-link {
 		padding-right: 18px;
 		margin-top: 14px;
 		margin-bottom: 14px;
-		padding-top: 9px;
-		padding-bottom: 9px;
+		padding-top: 16px;
+		padding-bottom: 16px;
 		opacity: 0.8;
 	}
 	/* アイコンボックス */
 	.common-icon-box {
 		margin-top: 14px;
 		margin-bottom: 14px;
-		padding-top: 8px;
-		padding-bottom: 8px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 		background: rgba(255, 255, 255, 0.8);
 		border-width: 1px;
 		padding-left: 71px;
@@ -1865,17 +1889,35 @@ footer .tag-link {
 		margin-top: 7px;
 	}
 	.toggle-button {
-		padding-top: 8px;
-		padding-bottom: 8px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 	.toggle-checkbox:checked ~ .toggle-content {
 		margin-top: 14px;
 		margin-bottom: 0px;
-		padding-top: 8px;
-		padding-bottom: 8px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 		border-width: 1px;
 		padding-left: 17px;
 		padding-right: 17px;
+	}
+	div[class*="cocoon-blocks"] :not(p):first-child {
+		margin-top: 0px;
+	}
+	div[class*="cocoon-blocks"] :not(p):last-child {
+		margin-bottom: 0px;
+	}
+	div[class*="cocoon-blocks"] > ul > li:first-of-type, div[class*="cocoon-blocks"] > ol > li:first-of-type {
+		margin-top: -7px;
+	}
+	div[class*="cocoon-blocks"] > ul > li:last-of-type, div[class*="cocoon-blocks"] > ol > li:last-of-type {
+		margin-bottom: -7px;
+	}
+	div[class*="cocoon-blocks"] p:first-of-type {
+		margin-top: -7px;
+	}
+	div[class*="cocoon-blocks"] p:last-of-type {
+		margin-bottom: -7px;
 	}
 	.entry-content {
 		margin-bottom: 64px;
@@ -2240,8 +2282,8 @@ footer .tag-link {
 		padding: 18px;
 		margin-top: 14px;
 		margin-bottom: 14px;
-		padding-top: 9px;
-		padding-bottom: 9px;
+		padding-top: 16px;
+		padding-bottom: 16px;
 		opacity: 0.8;
 	}
 	/* 白抜きボックス */
@@ -2253,8 +2295,8 @@ footer .tag-link {
 		padding-right: 16px;
 		margin-top: 14px;
 		margin-bottom: 14px;
-		padding-top: 7px;
-		padding-bottom: 7px;
+		padding-top: 14px;
+		padding-bottom: 14px;
 		background: rgba(255, 255, 255, 0.8);
 	}
 	/* インフォボックス */
@@ -2266,8 +2308,8 @@ footer .tag-link {
 		padding-right: 16px;
 		margin-top: 14px;
 		margin-bottom: 14px;
-		padding-top: 9px;
-		padding-bottom: 9px;
+		padding-top: 16px;
+		padding-bottom: 16px;
 		opacity: 0.8;
 	}
 	/* タブボックス */
@@ -2284,16 +2326,16 @@ footer .tag-link {
 		padding-right: 18px;
 		margin-top: 14px;
 		margin-bottom: 14px;
-		padding-top: 9px;
-		padding-bottom: 9px;
+		padding-top: 16px;
+		padding-bottom: 16px;
 		opacity: 0.8;
 	}
 	/* アイコンボックス */
 	.common-icon-box {
 		margin-top: 14px;
 		margin-bottom: 14px;
-		padding-top: 8px;
-		padding-bottom: 8px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 		background: rgba(255, 255, 255, 0.8);
 		border-width: 1px;
 		padding-left: 71px;
@@ -2308,17 +2350,35 @@ footer .tag-link {
 		margin-top: 7px;
 	}
 	.toggle-button {
-		padding-top: 8px;
-		padding-bottom: 8px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 	.toggle-checkbox:checked ~ .toggle-content {
 		margin-top: 14px;
 		margin-bottom: 0px;
-		padding-top: 8px;
-		padding-bottom: 8px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 		border-width: 1px;
 		padding-left: 17px;
 		padding-right: 17px;
+	}
+	div[class*="cocoon-blocks"] :not(p):first-child {
+		margin-top: 0px;
+	}
+	div[class*="cocoon-blocks"] :not(p):last-child {
+		margin-bottom: 0px;
+	}
+	div[class*="cocoon-blocks"] > ul > li:first-of-type, div[class*="cocoon-blocks"] > ol > li:first-of-type {
+		margin-top: -7px;
+	}
+	div[class*="cocoon-blocks"] > ul > li:last-of-type, div[class*="cocoon-blocks"] > ol > li:last-of-type {
+		margin-bottom: -7px;
+	}
+	div[class*="cocoon-blocks"] p:first-of-type {
+		margin-top: -7px;
+	}
+	div[class*="cocoon-blocks"] p:last-of-type {
+		margin-bottom: -7px;
 	}
 	.entry-content {
 		margin-bottom: 64px;

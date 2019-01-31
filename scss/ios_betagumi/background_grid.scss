@@ -201,8 +201,8 @@ $line_height_px: $font_size + $line_space;
   @include secondary-box($font_width);
   margin-top: $line_space;
   margin-bottom: $line_space;
-  padding-top: $font_size / 2;
-  padding-bottom: $font_size / 2;
+  padding-top: $line_height_px / 2;
+  padding-bottom: $line_height_px / 2;
   opacity: 0.8;
   + p {
 //    margin-top: $line_space / 2;
@@ -214,8 +214,8 @@ $line_height_px: $font_size + $line_space;
   @include blank-box($font_width);
   margin-top: $line_space;
   margin-bottom: $line_space;
-  padding-top: $font_size / 2 - 2px;
-  padding-bottom: $font_size / 2 - 2px;
+  padding-top: $line_height_px / 2 - 2px;
+  padding-bottom: $line_height_px / 2 - 2px;
   background: fade-out($white, 0.2);
   + p {
 //    margin-top: $line_space / 2;
@@ -227,8 +227,8 @@ $line_height_px: $font_size + $line_space;
   @include blank-box($font_width);
   margin-top: $line_space;
   margin-bottom: $line_space;
-  padding-top: $font_size / 2;
-  padding-bottom: $font_size / 2;
+  padding-top: $line_height_px / 2;
+  padding-bottom: $line_height_px / 2;
   opacity: 0.8;
   + p {
 //    margin-top: $line_space / 2;
@@ -250,8 +250,8 @@ $line_height_px: $font_size + $line_space;
   @include blank-box-sticky($font_width);
   margin-top: $line_space;
   margin-bottom: $line_space;
-  padding-top: $font_size / 2;
-  padding-bottom: $font_size / 2;
+  padding-top: $line_height_px / 2;
+  padding-bottom: $line_height_px / 2;
   opacity: 0.8;
   + p {
 //    margin-top: $line_space / 2;
@@ -262,8 +262,8 @@ $line_height_px: $font_size + $line_space;
 .common-icon-box {
   margin-top: $line_space;
   margin-bottom: $line_space;
-  padding-top: $font_size / 2 - 1px;
-  padding-bottom: $font_size / 2 - 1px;
+  padding-top: $line_height_px / 2 - 1px;
+  padding-bottom: $line_height_px / 2 - 1px;
   background: fade-out($white, 0.2);
   @include common-icon-box($font_width);
   + p {
@@ -280,18 +280,45 @@ $line_height_px: $font_size + $line_space;
   }
 }
 .toggle-button {
-  padding-top: $font_size / 2 - 1px;
-  padding-bottom: $font_size / 2 - 1px;
+  padding-top: $line_height_px / 2 - 1px;
+  padding-bottom: $line_height_px / 2 - 1px;
 //    line-height: $line_height_px - 1px;
 }
 .toggle-checkbox:checked~.toggle-content {
   margin-top: $line_space;
   margin-bottom:  - 0px;
-  padding-top: $font_size / 2 - 1px;
-  padding-bottom: $font_size / 2 - 1px;
+  padding-top: $line_height_px / 2 - 1px;
+  padding-bottom: $line_height_px / 2 - 1px;
   @include toggle-checkbox($font_width);
 }
-
+div[class*="cocoon-blocks"] {
+  :not(p) {
+    &:first-child {
+      margin-top: 0px;
+    }
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  >ul,>ol {
+    > li {
+      &:first-of-type {
+        margin-top: - $line_space /2;
+      }
+      &:last-of-type {
+        margin-bottom: - $line_space /2;
+      }
+    }
+  }
+  p {
+    &:first-of-type {
+      margin-top: - $line_space /2;
+    }
+    &:last-of-type {
+      margin-bottom: - $line_space /2;
+    }
+  }
+}
 .entry-content {
   margin-bottom: $line_height_px * 2;
   /* 広告エリア */
