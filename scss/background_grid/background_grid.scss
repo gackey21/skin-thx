@@ -32,6 +32,7 @@ $line_height_px: $font_size + $line_space;
 //    margin-top: 0px;
 //  }
 }
+//詳細度の弱いクラス
 .thx .article {
   @import "bg_h";
 }
@@ -71,13 +72,6 @@ $line_height_px: $font_size + $line_space;
       margin-top: $line_space / 2 + 1;
     }
   }
-  pre {
-    margin-top: $line_space;
-    margin-bottom: $line_space;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    line-height: 1.25;
-  }
   ul, ol {
     padding-left: $font_width * 2;
     margin: 0px;
@@ -96,6 +90,7 @@ $line_height_px: $font_size + $line_space;
     }
   }
   @import "bg_header_footer";
+  @import "bg_pre";
 
 }
 @import "bg_blogcard";

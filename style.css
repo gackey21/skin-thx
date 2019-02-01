@@ -1307,14 +1307,6 @@ body {
 	margin-top: 7px;
 }
 
-.article pre {
-	margin-top: 12px;
-	margin-bottom: 12px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	line-height: 1.25;
-}
-
 .article ul, .article ol {
 	padding-left: 32px;
 	margin: 0px;
@@ -1392,6 +1384,12 @@ body {
 	padding-top: 1px;
 	padding-bottom: 3px;
 	line-height: 20px;
+}
+
+.article pre {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 1.25;
 }
 
 .wp-block-cocoon-blocks-blogcard,
@@ -1767,13 +1765,6 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.article p + ul, .article p ol {
 		margin-top: 8px;
 	}
-	.article pre {
-		margin-top: 14px;
-		margin-bottom: 14px;
-		padding-top: 0px;
-		padding-bottom: 0px;
-		line-height: 1.25;
-	}
 	.article ul, .article ol {
 		padding-left: 36px;
 		margin: 0px;
@@ -1838,6 +1829,11 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		padding-top: 1px;
 		padding-bottom: 3px;
 		line-height: 24px;
+	}
+	.article pre {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		line-height: 1.25;
 	}
 	.wp-block-cocoon-blocks-blogcard,
 	.wp-block-embed__wrapper {
@@ -2237,13 +2233,6 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.article p + ul, .article p ol {
 		margin-top: 8px;
 	}
-	.article pre {
-		margin-top: 14px;
-		margin-bottom: 14px;
-		padding-top: 0px;
-		padding-bottom: 0px;
-		line-height: 1.25;
-	}
 	.article ul, .article ol {
 		padding-left: 36px;
 		margin: 0px;
@@ -2308,6 +2297,11 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		padding-top: 1px;
 		padding-bottom: 3px;
 		line-height: 24px;
+	}
+	.article pre {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		line-height: 1.25;
 	}
 	.wp-block-cocoon-blocks-blogcard,
 	.wp-block-embed__wrapper {
