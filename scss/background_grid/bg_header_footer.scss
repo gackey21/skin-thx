@@ -26,6 +26,13 @@
 .toc-content{
   margin-top: 1px;
   margin-bottom: -1px;
+  ul, ol {
+    padding-left: $font_width * 2;
+    margin: 0px;
+    li {
+        margin: 0px;
+    }
+  }
 }
 .toc-checkbox {
   &:checked~.toc-content{

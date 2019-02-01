@@ -17,26 +17,7 @@ $line_height_px: $font_size + $line_space;
     height: $line_height_px * ($i - 1) + $font_size;
   }
 }
-.entry-content > :not(p):not(li):not(dl) {
-  margin-top: $line_space;
-  margin-bottom: $line_space;
-}
-.thx .wp-block-image {
-  margin-top: $line_space;
-  margin-bottom: $line_space;
-  figcaption {
-    margin: 0px;
-    line-height: $line_height_px;
-  }
-//  p & {
-//    margin-top: 0px;
-//  }
-}
-//詳細度の弱いクラス
-.thx .article {
-  @import "bg_h";
-}
-.article {
+@mixin set-grid(){
   $grid_color: fade-out($key_sub_color, 0.75);
   line-height: $line_height_px;
   background-image:
@@ -62,14 +43,51 @@ $line_height_px: $font_size + $line_space;
     $font_size
     $line_height_px
   ;
+}
+@mixin p-margin($shift:1) {
+  margin-top: - $line_space / 2 + $shift;
+  margin-bottom: - $line_space / 2 - $shift;
+}
+@mixin p-margin-top($shift:1) {
+  margin-top: - $line_space / 2 + $shift;
+}
+@mixin p-margin-bottom($shift:1) {
+  margin-bottom: - $line_space / 2 - $shift;
+}
+.entry-content > :not(p):not(li):not(dl) {
+  margin-top: $line_space;
+  margin-bottom: $line_space;
+}
+.thx .wp-block-image {
+  margin-top: $line_space;
+  margin-bottom: $line_space;
+  figcaption {
+    margin: 0px;
+    line-height: $line_height_px;
+  }
+//  p & {
+//    margin-top: 0px;
+//  }
+}
+//詳細度の弱いクラス
+.thx .article {
+  @import "bg_h";
+}
+.article {
+  @include set-grid();
   p {
-    margin-top: - $line_space / 2 + 1;
-    margin-bottom: - $line_space / 2 - 1;
+    @include p-margin();
     & + p {
       margin-top: $line_height_px + $line_space / 2 + 1;
     }
     & + ul,ol {
-      margin-top: $line_space / 2 + 1;
+      > li {
+        &:first-of-type {
+          margin-top: $line_space /2 + 1;
+        }
+      }
+//      @include p-margin-top();
+//      margin-top: $line_space / 2 + 1;
     }
   }
   ul, ol {
@@ -77,6 +95,16 @@ $line_height_px: $font_size + $line_space;
     margin: 0px;
     li {
       margin: 0px;
+
+//      @include p-margin();
+    }
+    > li {
+      &:first-of-type {
+        @include p-margin-top();
+      }
+      &:last-of-type {
+        @include p-margin-bottom();
+      }
     }
     &:not(.wp-block-gallery) + p {
       margin-top: 0px;
@@ -94,6 +122,7 @@ $line_height_px: $font_size + $line_space;
 
 }
 @import "bg_blogcard";
+@import "bg_cocoon_box";
 
 /*.toc {
   ul,ol {
@@ -104,114 +133,9 @@ $line_height_px: $font_size + $line_space;
   }
 }*/
 .article {
-  ul, ol {
-    padding-left: $font_width * 2;
-    margin: 0px;
-    li {
-      margin: 0px;
-    }
-    & + p {
-//      margin-top: 0px;
-    }
   }
-}
 .thx .wp-block-column {
   margin-bottom: 0px;
-}
-/* 案内ボックス */
-.secondary-box {
-  @include secondary-box($font_width);
-  margin-top: $line_space;
-  margin-bottom: $line_space;
-  padding-top: $line_height_px / 2;
-  padding-bottom: $line_height_px / 2;
-  opacity: 0.8;
-  + p {
-//    margin-top: $line_space / 2;
-  }
-}
-
-/* 白抜きボックス */
-.blank-box {
-  @include blank-box($font_width);
-  margin-top: $line_space;
-  margin-bottom: $line_space;
-  padding-top: $line_height_px / 2 - 2px;
-  padding-bottom: $line_height_px / 2 - 2px;
-  background: fade-out($white, 0.2);
-  + p {
-//    margin-top: $line_space / 2;
-  }
-}
-
-/* インフォボックス */
-.wp-block-cocoon-blocks-info-box {
-  @include blank-box($font_width);
-  margin-top: $line_space;
-  margin-bottom: $line_space;
-  padding-top: $line_height_px / 2;
-  padding-bottom: $line_height_px / 2;
-  opacity: 0.8;
-  + p {
-//    margin-top: $line_space / 2;
-  }
-}
-
-/* タブボックス */
-.blank-box.bb-tab {
-//  margin-top: $line_height_px + $line_space / 2 - 4px;
-  margin-top: $line_height_px + $line_space;
-  &::before {
-//    top: - $line_height_px - 0px;
-    top: - round($line_height_px * 0.8);
-  }
-}
-
-/* 付箋風ボックス */
-.blank-box.sticky {
-  @include blank-box-sticky($font_width);
-  margin-top: $line_space;
-  margin-bottom: $line_space;
-  padding-top: $line_height_px / 2;
-  padding-bottom: $line_height_px / 2;
-  opacity: 0.8;
-  + p {
-//    margin-top: $line_space / 2;
-  }
-}
-
-/* アイコンボックス */
-.common-icon-box {
-  margin-top: $line_space;
-  margin-bottom: $line_space;
-  padding-top: $line_height_px / 2 - 1px;
-  padding-bottom: $line_height_px / 2 - 1px;
-  background: fade-out($white, 0.2);
-  @include common-icon-box($font_width);
-  + p {
-//    margin-top: $line_space / 2;
-  }
-}
-
-/* トグルボックス */
-.toggle-wrap {
-  margin-top: $line_space;
-  margin-bottom: $line_space;
-  + p {
-    margin-top: $line_space / 2;
-  }
-}
-.toggle-button {
-  padding-top: $line_height_px / 2 - 1px;
-  padding-bottom: $line_height_px / 2 - 1px;
-//    line-height: $line_height_px - 1px;
-}
-.toggle-checkbox:checked~.toggle-content {
-  margin-top: $line_space;
-  margin-bottom:  - 0px;
-  padding-top: $line_height_px / 2 - 1px;
-  padding-bottom: $line_height_px / 2 - 1px;
-  @include toggle-checkbox($font_width);
 }
 div[class*="cocoon-blocks"] {
   :not(p):not(li) {
