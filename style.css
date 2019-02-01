@@ -1336,6 +1336,14 @@ body {
 	margin-bottom: 12px;
 }
 
+.article dl :first-child {
+	margin-top: -5px;
+}
+
+.article dl :last-child {
+	margin-bottom: -7px;
+}
+
 .article .date-tags {
 	margin-top: 0px;
 	margin-bottom: 43px;
@@ -1404,6 +1412,8 @@ body {
 }
 
 .article pre {
+	margin-top: 12px;
+	margin-bottom: 12px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	line-height: 1.25;
@@ -1567,11 +1577,11 @@ body {
 	margin-bottom: 0px;
 }
 
-div[class*="cocoon-blocks"] :not(p):not(li):first-child {
+div[class*="cocoon-blocks"] :not(p):not(li):not(dt):not(dd):first-child {
 	margin-top: 0px;
 }
 
-div[class*="cocoon-blocks"] :not(p):not(li):last-child {
+div[class*="cocoon-blocks"] :not(p):not(li):not(dt):not(dd):last-child {
 	margin-bottom: 0px;
 }
 
@@ -1791,6 +1801,12 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.article ul.wp-block-gallery .blocks-gallery-item {
 		margin-bottom: 14px;
 	}
+	.article dl :first-child {
+		margin-top: -6px;
+	}
+	.article dl :last-child {
+		margin-bottom: -8px;
+	}
 	.article .date-tags {
 		margin-top: 0px;
 		margin-bottom: 49px;
@@ -1848,6 +1864,8 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		line-height: 24px;
 	}
 	.article pre {
+		margin-top: 14px;
+		margin-bottom: 14px;
 		padding-top: 0px;
 		padding-bottom: 0px;
 		line-height: 1.25;
@@ -1990,10 +2008,10 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.thx .wp-block-column {
 		margin-bottom: 0px;
 	}
-	div[class*="cocoon-blocks"] :not(p):not(li):first-child {
+	div[class*="cocoon-blocks"] :not(p):not(li):not(dt):not(dd):first-child {
 		margin-top: 0px;
 	}
-	div[class*="cocoon-blocks"] :not(p):not(li):last-child {
+	div[class*="cocoon-blocks"] :not(p):not(li):not(dt):not(dd):last-child {
 		margin-bottom: 0px;
 	}
 	div[class*="cocoon-blocks"] > ul > li:first-of-type, div[class*="cocoon-blocks"] > ol > li:first-of-type {
@@ -2262,6 +2280,12 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.article ul.wp-block-gallery .blocks-gallery-item {
 		margin-bottom: 14px;
 	}
+	.article dl :first-child {
+		margin-top: -6px;
+	}
+	.article dl :last-child {
+		margin-bottom: -8px;
+	}
 	.article .date-tags {
 		margin-top: 0px;
 		margin-bottom: 49px;
@@ -2319,6 +2343,8 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		line-height: 24px;
 	}
 	.article pre {
+		margin-top: 14px;
+		margin-bottom: 14px;
 		padding-top: 0px;
 		padding-bottom: 0px;
 		line-height: 1.25;
@@ -2461,10 +2487,10 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.thx .wp-block-column {
 		margin-bottom: 0px;
 	}
-	div[class*="cocoon-blocks"] :not(p):not(li):first-child {
+	div[class*="cocoon-blocks"] :not(p):not(li):not(dt):not(dd):first-child {
 		margin-top: 0px;
 	}
-	div[class*="cocoon-blocks"] :not(p):not(li):last-child {
+	div[class*="cocoon-blocks"] :not(p):not(li):not(dt):not(dd):last-child {
 		margin-bottom: 0px;
 	}
 	div[class*="cocoon-blocks"] > ul > li:first-of-type, div[class*="cocoon-blocks"] > ol > li:first-of-type {
