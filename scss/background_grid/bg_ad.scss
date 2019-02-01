@@ -1,0 +1,9 @@
+.ad-area {
+  margin-top: $line_space;
+  margin-bottom: $line_space;
+  background-color: fade-out($white, 0.2);
+}
+.ad-label {
+  @include p-margin-top();
+  margin-bottom: $line_space - $str_inner_margin_bottom;
+}
