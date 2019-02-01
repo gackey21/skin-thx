@@ -8,7 +8,7 @@ jQuery(window).on('scroll', function (){
   var lh = parseInt(jQuery('body').css('line-height'));
   var ls = lh - fz;
 
-  jQuery('.thx .wp-block-image figure').each(function() {
+  /*jQuery('.thx .wp-block-image figure').each(function() {
     var elemOffset = jQuery(this).offset().top;
     var oh = jQuery(this).outerHeight();
 
@@ -17,13 +17,13 @@ jQuery(window).on('scroll', function (){
       oh = Math.ceil(oh / lh) * lh;
       oh = oh + fz + ls /2;
 
-      if(scrollPos > elemOffset - wh + (wh / 1) ){
+      if(scrollPos > elemOffset - wh - (wh / 2) ){
         jQuery(this).outerHeight(oh);
       }
     }
-  });
+  });*/
 
-  jQuery('pre,.ad-wrap').each(function() {
+  jQuery('pre,table,.ad-area,.thx .wp-block-image,.wp-block-gallery,.blogcard-thumbnail,.blogcard-content').each(function() {
     var elemOffset = jQuery(this).offset().top;
     var oh = jQuery(this).outerHeight();
 
