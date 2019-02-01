@@ -1,0 +1,95 @@
+/* 案内ボックス */
+.secondary-box {
+  @include secondary-box($font_width);
+  margin-top: $line_space;
+  margin-bottom: $line_space;
+  padding-top: $line_height_px / 2;
+  padding-bottom: $line_height_px / 2;
+  opacity: 0.8;
+  + p {
+//    margin-top: $line_space / 2;
+  }
+}
+
+/* 白抜きボックス */
+.blank-box {
+  @include blank-box($font_width);
+  margin-top: $line_space;
+  margin-bottom: $line_space;
+  padding-top: $line_height_px / 2 - 2px;
+  padding-bottom: $line_height_px / 2 - 2px;
+  background: fade-out($white, 0.2);
+  + p {
+//    margin-top: $line_space / 2;
+  }
+}
+
+/* インフォボックス */
+.wp-block-cocoon-blocks-info-box {
+  @include blank-box($font_width);
+  margin-top: $line_space;
+  margin-bottom: $line_space;
+  padding-top: $line_height_px / 2;
+  padding-bottom: $line_height_px / 2;
+  opacity: 0.8;
+  + p {
+//    margin-top: $line_space / 2;
+  }
+}
+
+/* タブボックス */
+.blank-box.bb-tab {
+//  margin-top: $line_height_px + $line_space / 2 - 4px;
+  margin-top: $line_height_px + $line_space;
+  &::before {
+//    top: - $line_height_px - 0px;
+    top: - round($line_height_px * 0.8);
+  }
+}
+
+/* 付箋風ボックス */
+.blank-box.sticky {
+  @include blank-box-sticky($font_width);
+  margin-top: $line_space;
+  margin-bottom: $line_space;
+  padding-top: $line_height_px / 2;
+  padding-bottom: $line_height_px / 2;
+  opacity: 0.8;
+  + p {
+//    margin-top: $line_space / 2;
+  }
+}
+
+/* アイコンボックス */
+.common-icon-box {
+  margin-top: $line_space;
+  margin-bottom: $line_space;
+  padding-top: $line_height_px / 2 - 1px;
+  padding-bottom: $line_height_px / 2 - 1px;
+  background: fade-out($white, 0.2);
+  @include common-icon-box($font_width);
+  + p {
+//    margin-top: $line_space / 2;
+  }
+}
+
+/* トグルボックス */
+.toggle-wrap {
+  margin-top: $line_space;
+  margin-bottom: $line_space;
+  + p {
+//    margin-top: $line_space / 2;
+  }
+}
+.toggle-button {
+  padding-top: $font_size / 2 - 1px;
+  padding-bottom: $font_size / 2 - 1px;
+//    line-height: $line_height_px - 1px;
+}
+.toggle-checkbox:checked~.toggle-content {
+  margin-top: $line_space;
+  margin-bottom:  - 0px;
+  padding-top: $line_height_px / 2 - 1px;
+  padding-bottom: $line_height_px / 2 - 1px;
+  @include toggle-checkbox($font_width);
+}
