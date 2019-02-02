@@ -6,7 +6,7 @@
   Author: がっきぃ
   Author URI: https://thx.jp
   Screenshot URI: https://
-  Version: 0.4.0
+  Version: 0.4.3
   Priority: 0
 */
 /*以下にスタイルシートを記入してください*/
@@ -1595,7 +1595,7 @@ ruby {
 
 ruby::before {
 	position: absolute;
-	top: -18px;
+	top: -12px;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -2049,7 +2049,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	}
 	ruby::before {
 		position: absolute;
-		top: -20px;
+		top: -13.5px;
 		left: 0;
 		right: 0;
 		margin: auto;
@@ -2549,7 +2549,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	}
 	ruby::before {
 		position: absolute;
-		top: -20px;
+		top: -13.5px;
 		left: 0;
 		right: 0;
 		margin: auto;
