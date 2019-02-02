@@ -1577,6 +1577,11 @@ body {
 	padding-bottom: 7px;
 }
 
+.toggle-button::before {
+	display: inline-block;
+	height: 16px;
+}
+
 .toggle-checkbox:checked ~ .toggle-content {
 	margin-top: 12px;
 	margin-bottom: 0px;
@@ -2032,6 +2037,10 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.toggle-button {
 		padding-top: 8px;
 		padding-bottom: 8px;
+	}
+	.toggle-button::before {
+		display: inline-block;
+		height: 18px;
 	}
 	.toggle-checkbox:checked ~ .toggle-content {
 		margin-top: 14px;
@@ -2532,6 +2541,10 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.toggle-button {
 		padding-top: 8px;
 		padding-bottom: 8px;
+	}
+	.toggle-button::before {
+		display: inline-block;
+		height: 18px;
 	}
 	.toggle-checkbox:checked ~ .toggle-content {
 		margin-top: 14px;

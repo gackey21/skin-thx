@@ -84,7 +84,10 @@
 .toggle-button {
   padding-top: $font_size / 2 - 1px;
   padding-bottom: $font_size / 2 - 1px;
-//    line-height: $line_height_px - 1px;
+  &::before {
+    display: inline-block;
+    height: $font_size;
+  }
 }
 .toggle-checkbox:checked~.toggle-content {
   margin-top: $line_space;
