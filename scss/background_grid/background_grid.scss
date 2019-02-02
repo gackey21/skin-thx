@@ -109,7 +109,7 @@ $str_margin: ":not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd)";
       }
     }
     &:not(.wp-block-gallery) + p {
-      margin-top: 0px;
+      margin-top: $str_inner_margin_bottom;
     }
   }
   ul.wp-block-gallery {

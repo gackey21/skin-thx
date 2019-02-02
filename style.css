@@ -1329,7 +1329,7 @@ body {
 }
 
 .article ul:not(.wp-block-gallery) + p, .article ol:not(.wp-block-gallery) + p {
-	margin-top: 0px;
+	margin-top: 7px;
 }
 
 .article ul.wp-block-gallery {
@@ -1823,7 +1823,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		margin-bottom: -8px;
 	}
 	.article ul:not(.wp-block-gallery) + p, .article ol:not(.wp-block-gallery) + p {
-		margin-top: 0px;
+		margin-top: 8px;
 	}
 	.article ul.wp-block-gallery {
 		margin-top: 14px;
@@ -2323,7 +2323,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		margin-bottom: -8px;
 	}
 	.article ul:not(.wp-block-gallery) + p, .article ol:not(.wp-block-gallery) + p {
-		margin-top: 0px;
+		margin-top: 8px;
 	}
 	.article ul.wp-block-gallery {
 		margin-top: 14px;
