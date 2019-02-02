@@ -22,52 +22,47 @@ jQuery(window).on('load', function (){
 
 
 /* 行取り */
-jQuery(window).on('scroll', function (){
-  var scrollPos = jQuery(window).scrollTop();
+jQuery(function(){
   var wh = jQuery(window).height();
   var fz = parseInt(jQuery('body').css('font-size'));
   var lh = parseInt(jQuery('body').css('line-height'));
   var ls = lh - fz;
+  var lineUpOnce = jQuery(`pre,.blogcard-content`);
   var lineUp = jQuery(`
-    pre,
     table,
     .ad-area,
-    .thx .wp-block-image,
+    .wp-block-image,
     .wp-block-gallery,
-    .blogcard-thumbnail,
-    .blogcard-content
-    `);
+    .blogcard-thumbnail
+  `);
 
-  /*jQuery('.thx .wp-block-image figure').each(function() {
-    var elemOffset = jQuery(this).offset().top;
-    var oh = jQuery(this).outerHeight();
-
-    oh = oh - fz - ls / 2;
-    if((oh % lh) != 0){
-      oh = Math.ceil(oh / lh) * lh;
-      oh = oh + fz + ls /2;
-
-      if(scrollPos > elemOffset - wh - (wh / 2) ){
-        jQuery(this).outerHeight(oh);
-      }
-    }
-  });*/
-
-  lineUp.each(function() {
-    var elemOffset = jQuery(this).offset().top;
-    var oh = jQuery(this).outerHeight();
-
-    oh = oh - fz;
-    if((oh % lh) != 0){
+  jQuery(window).on('load', function (){
+    lineUpOnce.each(function () {
+      var oh = jQuery(this).outerHeight();
+      oh = oh - fz;
       oh = Math.ceil(oh / lh) * lh;
       oh = oh + fz;
 
-      if(scrollPos > elemOffset - wh + (wh / 2) ){
-        jQuery(this).outerHeight(oh);
-      }
-    }
+      jQuery(this).outerHeight(oh);
+    });
   });
 
+  jQuery(window).on('scroll', function (){
+    lineUp.each(function () {
+      var scrollPos = jQuery(window).scrollTop();
+      var elemOffset = jQuery(this).offset().top;
+      var oh = jQuery(this).outerHeight();
+      oh = oh - fz;
+      if((oh % lh) != 0){
+        oh = Math.ceil(oh / lh) * lh;
+        oh = oh + fz;
+
+        if(scrollPos > elemOffset - wh + (wh / 2) ){
+          jQuery(this).outerHeight(oh);
+        }
+      }
+    });
+  });
 });
 
 /* .article内の<p>、<li>にある半角英数字記号文字(列)にspan */
