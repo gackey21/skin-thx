@@ -1,0 +1,17 @@
+ruby {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  &::before {
+    position: absolute;
+    top: - $font_size * 0.75;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: $font_size / 2;
+    content: attr(data-yomi);
+  }
+  rt {
+    display: none;
+  }
+}
