@@ -11,7 +11,7 @@ $line_height_px: $font_size + $line_space;
 $str_inner_margin_shift: 1;
 $str_inner_margin_top: $line_space / 2 - $str_inner_margin_shift;
 $str_inner_margin_bottom: $line_space / 2 + $str_inner_margin_shift;
-$str_margin: ":not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd)";
+$str_tags: ":not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd)";
 
 
 @for $i from 2 through 10 {
@@ -56,7 +56,7 @@ $str_margin: ":not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd)";
 @mixin p-margin-bottom() {
   margin-bottom: - $str_inner_margin_bottom;
 }
-.entry-content > #{$str_margin} {
+.entry-content > #{$str_tags} {
   margin-top: $line_space;
   margin-bottom: $line_space;
 }
@@ -69,8 +69,13 @@ $str_margin: ":not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd)";
   }
 }
 //詳細度の弱いクラス
-.thx .article {
-  @import "bg_h";
+.thx {
+  .article {
+    @import "bg_h";
+    .entry-content {
+      line-height: $line_height_px;
+    }
+  }
 }
 .article {
   p {
@@ -144,7 +149,7 @@ $str_margin: ":not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd)";
   margin-bottom: 0px;
 }
 div[class*="cocoon-blocks"] {
-  #{$str_margin} {
+  #{$str_tags} {
     &:first-child {
       margin-top: 0px;
     }
@@ -178,7 +183,7 @@ div[class*="cocoon-blocks"] {
     margin-top: $line_space;
     margin-bottom: $line_space;
     .wp-block-column {
-      #{$str_margin} {
+      #{$str_tags} {
         &:first-child {
           margin-top: 0px;
         }

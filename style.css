@@ -1287,6 +1287,10 @@ body {
 	background: #fff;
 }
 
+.thx .article .entry-content {
+	line-height: 28px;
+}
+
 .article p {
 	margin-top: -5px;
 	margin-bottom: -7px;
@@ -1802,6 +1806,9 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		line-height: 32px;
 		background: #fff;
 	}
+	.thx .article .entry-content {
+		line-height: 32px;
+	}
 	.article p {
 		margin-top: -6px;
 		margin-bottom: -8px;
@@ -2311,6 +2318,9 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		font-size: 18px;
 		line-height: 32px;
 		background: #fff;
+	}
+	.thx .article .entry-content {
+		line-height: 32px;
 	}
 	.article p {
 		margin-top: -6px;
