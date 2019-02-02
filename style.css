@@ -1539,7 +1539,7 @@ body {
 }
 
 .blank-box.bb-tab::before {
-	top: -22px;
+	top: -30px;
 }
 
 /* 付箋風ボックス */
@@ -2009,7 +2009,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		margin-top: 46px;
 	}
 	.blank-box.bb-tab::before {
-		top: -26px;
+		top: -34px;
 	}
 	/* 付箋風ボックス */
 	.blank-box.sticky {
@@ -2516,7 +2516,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		margin-top: 46px;
 	}
 	.blank-box.bb-tab::before {
-		top: -26px;
+		top: -34px;
 	}
 	/* 付箋風ボックス */
 	.blank-box.sticky {

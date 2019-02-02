@@ -43,7 +43,7 @@
   margin-top: $line_height_px + $line_space;
   &::before {
 //    top: - $line_height_px - 0px;
-    top: - round($line_height_px * 0.8);
+    top: - $line_height_px - 2;
   }
 }
 
