@@ -73,7 +73,6 @@ $str_margin: ":not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd)";
   @import "bg_h";
 }
 .article {
-  @include set-grid();
   p {
     @include p-margin();
     & + {
@@ -138,7 +137,9 @@ $str_margin: ":not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd)";
 @import "bg_blogcard";
 @import "bg_cocoon_box";
 @import "bg_ruby";
-
+.thx-set-grid {
+  @include set-grid();
+}
 .thx .wp-block-column {
   margin-bottom: 0px;
 }

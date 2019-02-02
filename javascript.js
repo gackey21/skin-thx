@@ -1,5 +1,14 @@
 //ここにスキンで利用するJavaScriptを記入する
 
+/* thx-set-gridのトグル */
+jQuery(function() {
+  jQuery("main").click(function() {
+    jQuery(this).children(".article").toggleClass("thx-set-grid");
+  });
+});
+
+
+
 /* ルビ */
 jQuery(window).on('load', function (){
   var fz = parseInt(jQuery('body').css('font-size'));
