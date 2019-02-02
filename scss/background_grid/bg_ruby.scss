@@ -4,7 +4,8 @@ ruby {
   text-align: center;
   &::before {
     position: absolute;
-    top: - $font_size * 0.25;
+//    top: - $font_size * 0.25;
+    top: - $font_size * 0.75;
     left: 0;
     right: 0;
     margin: auto;

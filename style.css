@@ -1604,7 +1604,7 @@ ruby {
 
 ruby::before {
 	position: absolute;
-	top: -4px;
+	top: -12px;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -2072,7 +2072,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	}
 	ruby::before {
 		position: absolute;
-		top: -4.5px;
+		top: -13.5px;
 		left: 0;
 		right: 0;
 		margin: auto;
@@ -2585,7 +2585,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	}
 	ruby::before {
 		position: absolute;
-		top: -4.5px;
+		top: -13.5px;
 		left: 0;
 		right: 0;
 		margin: auto;
