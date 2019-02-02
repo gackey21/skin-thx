@@ -1,5 +1,26 @@
 //ここにスキンで利用するJavaScriptを記入する
 
+/* ルビ */
+jQuery(window).on('load', function (){
+  var fz = parseInt(jQuery('body').css('font-size'));
+  jQuery('ruby').each(function() {
+    var ow = jQuery(this).outerWidth();
+//    var html;
+    var yomigana;
+
+//    html = jQuery(this).html();
+    yomigana = jQuery(this).children("rt").text();
+    yomigana_length = yomigana.length * fz / 2;
+
+    if(yomigana_length > ow){
+      jQuery(this).css('width', yomigana_length);
+    }
+    jQuery(this).attr('data-yomi', yomigana);
+  });
+});
+
+
+
 /* 行取り */
 jQuery(window).on('scroll', function (){
   var scrollPos = jQuery(window).scrollTop();
