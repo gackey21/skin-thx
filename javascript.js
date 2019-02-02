@@ -28,6 +28,15 @@ jQuery(window).on('scroll', function (){
   var fz = parseInt(jQuery('body').css('font-size'));
   var lh = parseInt(jQuery('body').css('line-height'));
   var ls = lh - fz;
+  var lineUp = jQuery(`
+    pre,
+    table,
+    .ad-area,
+    .thx .wp-block-image,
+    .wp-block-gallery,
+    .blogcard-thumbnail,
+    .blogcard-content
+    `);
 
   /*jQuery('.thx .wp-block-image figure').each(function() {
     var elemOffset = jQuery(this).offset().top;
@@ -44,7 +53,7 @@ jQuery(window).on('scroll', function (){
     }
   });*/
 
-  jQuery('pre,table,.ad-area,.thx .wp-block-image,.wp-block-gallery,.blogcard-thumbnail,.blogcard-content').each(function() {
+  lineUp.each(function() {
     var elemOffset = jQuery(this).offset().top;
     var oh = jQuery(this).outerHeight();
 
