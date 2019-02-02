@@ -77,8 +77,8 @@
 .toggle-wrap {
   margin-top: $line_space;
   margin-bottom: $line_space;
-  + p {
-//    margin-top: $line_space / 2;
+  .toggle-content {
+    height: $line_space / 2;
   }
 }
 .toggle-button {
@@ -89,10 +89,14 @@
     height: $font_size;
   }
 }
-.toggle-checkbox:checked~.toggle-content {
-  margin-top: $line_space;
-  margin-bottom:  - 0px;
-  padding-top: $line_height_px / 2 - 1px;
-  padding-bottom: $line_height_px / 2 - 1px;
-  @include toggle-checkbox($font_width);
+.toggle-checkbox {
+  &:checked{
+    ~ .toggle-content {
+      margin-top: $line_space;
+      margin-bottom:  - 0px;
+      padding-top: $line_height_px / 2 - 1px;
+      padding-bottom: $line_height_px / 2 - 1px;
+      @include toggle-checkbox($font_width);
+    }
+  }
 }
