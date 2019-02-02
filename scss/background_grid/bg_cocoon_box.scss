@@ -42,8 +42,10 @@
 //  margin-top: $line_height_px + $line_space / 2 - 4px;
   margin-top: $line_height_px + $line_space;
   &::before {
-//    top: - $line_height_px - 0px;
-    top: - $line_height_px - 2;
+    top: - $line_space - 1;
+    height: $line_space + 2 * 3;
+    line-height: 1.5;
+    border-radius: 4px $line_space 2 * 3px 0;
   }
 }
 

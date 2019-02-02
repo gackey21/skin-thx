@@ -1539,7 +1539,10 @@ body {
 }
 
 .blank-box.bb-tab::before {
-	top: -30px;
+	top: -13px;
+	height: 18px;
+	line-height: 1.5;
+	border-radius: 4px 12px 6px 0;
 }
 
 /* 付箋風ボックス */
@@ -2009,7 +2012,10 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		margin-top: 46px;
 	}
 	.blank-box.bb-tab::before {
-		top: -34px;
+		top: -15px;
+		height: 20px;
+		line-height: 1.5;
+		border-radius: 4px 14px 6px 0;
 	}
 	/* 付箋風ボックス */
 	.blank-box.sticky {
@@ -2516,7 +2522,10 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		margin-top: 46px;
 	}
 	.blank-box.bb-tab::before {
-		top: -34px;
+		top: -15px;
+		height: 20px;
+		line-height: 1.5;
+		border-radius: 4px 14px 6px 0;
 	}
 	/* 付箋風ボックス */
 	.blank-box.sticky {
