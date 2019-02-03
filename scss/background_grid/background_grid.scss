@@ -12,6 +12,7 @@ $str_inner_margin_shift: 1;
 $str_inner_margin_top: $line_space / 2 - $str_inner_margin_shift;
 $str_inner_margin_bottom: $line_space / 2 + $str_inner_margin_shift;
 $str_tags: ":not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd)";
+$grid_color: fade-out($key_sub_color, 0.75);
 
 
 @for $i from 2 through 10 {
@@ -20,7 +21,6 @@ $str_tags: ":not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd)";
   }
 }
 @mixin set-grid(){
-  $grid_color: fade-out($key_sub_color, 0.75);
   line-height: $line_height_px;
   background-image:
   linear-gradient(

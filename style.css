@@ -1502,6 +1502,7 @@ body {
 .wp-block-embed__wrapper .blogcard-favicon {
 	display: inline-block;
 	height: 12px;
+	margin-top: 0px;
 	margin-right: 6px;
 }
 
@@ -1984,6 +1985,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.wp-block-embed__wrapper .blogcard-favicon {
 		display: inline-block;
 		height: 14px;
+		margin-top: 0px;
 		margin-right: 7px;
 	}
 	/* 案内ボックス */
@@ -2500,6 +2502,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.wp-block-embed__wrapper .blogcard-favicon {
 		display: inline-block;
 		height: 14px;
+		margin-top: 0px;
 		margin-right: 7px;
 	}
 	/* 案内ボックス */
