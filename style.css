@@ -1291,6 +1291,14 @@ body {
 	line-height: 28px;
 }
 
+.article :not(li) > ul > li:first-of-type, .article :not(li) > ol > li:first-of-type {
+	margin-top: -5px;
+}
+
+.article :not(li) > ul > li:last-of-type, .article :not(li) > ol > li:last-of-type {
+	margin-bottom: -7px;
+}
+
 .article p {
 	margin-top: -5px;
 	margin-bottom: -7px;
@@ -1319,14 +1327,6 @@ body {
 
 .article ul:not(.wp-block-gallery) + p, .article ol:not(.wp-block-gallery) + p {
 	margin-top: 7px;
-}
-
-.article :not(li) > ul > li:first-of-type, .article :not(li) > ol > li:first-of-type {
-	margin-top: -5px;
-}
-
-.article :not(li) > ul > li:last-of-type, .article :not(li) > ol > li:last-of-type {
-	margin-bottom: -7px;
 }
 
 .article ul.wp-block-gallery {
@@ -1814,6 +1814,12 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.thx .article .entry-content {
 		line-height: 32px;
 	}
+	.article :not(li) > ul > li:first-of-type, .article :not(li) > ol > li:first-of-type {
+		margin-top: -6px;
+	}
+	.article :not(li) > ul > li:last-of-type, .article :not(li) > ol > li:last-of-type {
+		margin-bottom: -8px;
+	}
 	.article p {
 		margin-top: -6px;
 		margin-bottom: -8px;
@@ -1836,12 +1842,6 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	}
 	.article ul:not(.wp-block-gallery) + p, .article ol:not(.wp-block-gallery) + p {
 		margin-top: 8px;
-	}
-	.article :not(li) > ul > li:first-of-type, .article :not(li) > ol > li:first-of-type {
-		margin-top: -6px;
-	}
-	.article :not(li) > ul > li:last-of-type, .article :not(li) > ol > li:last-of-type {
-		margin-bottom: -8px;
 	}
 	.article ul.wp-block-gallery {
 		margin-top: 14px;
@@ -2333,6 +2333,12 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.thx .article .entry-content {
 		line-height: 32px;
 	}
+	.article :not(li) > ul > li:first-of-type, .article :not(li) > ol > li:first-of-type {
+		margin-top: -6px;
+	}
+	.article :not(li) > ul > li:last-of-type, .article :not(li) > ol > li:last-of-type {
+		margin-bottom: -8px;
+	}
 	.article p {
 		margin-top: -6px;
 		margin-bottom: -8px;
@@ -2355,12 +2361,6 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	}
 	.article ul:not(.wp-block-gallery) + p, .article ol:not(.wp-block-gallery) + p {
 		margin-top: 8px;
-	}
-	.article :not(li) > ul > li:first-of-type, .article :not(li) > ol > li:first-of-type {
-		margin-top: -6px;
-	}
-	.article :not(li) > ul > li:last-of-type, .article :not(li) > ol > li:last-of-type {
-		margin-bottom: -8px;
 	}
 	.article ul.wp-block-gallery {
 		margin-top: 14px;

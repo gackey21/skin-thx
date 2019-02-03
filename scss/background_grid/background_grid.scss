@@ -78,6 +78,18 @@ $str_tags: ":not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd)";
   }
 }
 .article {
+  :not(li) > {
+    ul, ol{
+      > li {
+        &:first-of-type {
+          @include p-margin-top();
+        }
+        &:last-of-type {
+          @include p-margin-bottom();
+        }
+      }
+    }
+  }
   p {
     @include p-margin();
     & + {
@@ -104,18 +116,6 @@ $str_tags: ":not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd)";
     }
     &:not(.wp-block-gallery) + p {
       margin-top: $str_inner_margin_bottom;
-    }
-  }
-  :not(li) > {
-    ul, ol{
-      > li {
-        &:first-of-type {
-          @include p-margin-top();
-        }
-        &:last-of-type {
-          @include p-margin-bottom();
-        }
-      }
     }
   }
   ul.wp-block-gallery {
