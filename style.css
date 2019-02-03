@@ -1585,10 +1585,6 @@ body {
 	margin-bottom: 12px;
 }
 
-.toggle-wrap .toggle-content {
-	height: 6px;
-}
-
 .toggle-button {
 	padding-top: 7px;
 	padding-bottom: 7px;
@@ -2061,9 +2057,6 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.toggle-wrap {
 		margin-top: 14px;
 		margin-bottom: 14px;
-	}
-	.toggle-wrap .toggle-content {
-		height: 7px;
 	}
 	.toggle-button {
 		padding-top: 8px;
@@ -2580,9 +2573,6 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.toggle-wrap {
 		margin-top: 14px;
 		margin-bottom: 14px;
-	}
-	.toggle-wrap .toggle-content {
-		height: 7px;
 	}
 	.toggle-button {
 		padding-top: 8px;
