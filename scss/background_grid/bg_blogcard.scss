@@ -1,5 +1,6 @@
 .wp-block-cocoon-blocks-blogcard,
 .wp-block-embed__wrapper {
+  $footer_size: round($font_size * 0.4) * 2;
   margin-top:$line_space;
   margin-bottom: $line_space;
   .blogcard-wrap {
@@ -12,11 +13,8 @@
   }
   .blogcard {
     padding: $line_height_px / 2 - 1px;
-    padding-top:
-      ($line_height_px - 2 - 19)
-      - round(($line_height_px - 2 - 19) / 3)
-    ;
-    padding-bottom: round(($line_height_px - 2 - 19) / 3) ;
+    padding-top: $line_height_px / 2 - 1px + 3px;
+    padding-bottom: $line_height_px / 2 - 1px - 3px;
     &::before {
       top: - $font_size / 2;
       z-index: 1;
@@ -24,18 +22,20 @@
   }
   .blogcard-thumbnail {
     margin-top: 0px;
+    margin-bottom: $line_height_px - $footer_size;
   }
   .blogcard-content {
     max-height: ceil((140px - $font_size) / $line_height_px) * $line_height_px + $font_size;
   }
   .blogcard-footer {
-//      height: $line_height_px;
+    margin-top: $line_height_px - $footer_size;
     padding: 0px;
-    font-size: 16px;
+    font-size: $footer_size;
     line-height: 1;
   }
   .blogcard-favicon {
-    margin-top: 0px;
-    margin-right: $font_size / 4;
+    display: inline-block;
+    height: $footer_size;
+    margin-right: $footer_size / 2;
   }
 }
