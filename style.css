@@ -11,7 +11,7 @@
 */
 /*以下にスタイルシートを記入してください*/
 body {
-	background-color: #ecf9f5;
+	background-color: #eaf0fb;
 	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Arial, sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-	background-color: #38b48b;
+	background-color: #1e4f9f;
 }
 
 .widget_recent_entries ul li a:hover,
@@ -38,7 +38,7 @@ body {
 .comment-reply-link:hover,
 .navi-footer-in a:hover,
 .navi-footer-in a:hover {
-	background-color: rgba(56, 180, 139, 0.05);
+	background-color: rgba(30, 79, 159, 0.05);
 }
 
 .page-numbers,
@@ -48,7 +48,7 @@ body {
 .pagination-next-link,
 .comment-reply-link,
 .toc {
-	border: 1px solid #2f5d50;
+	border: 1px solid #29a6e0;
 }
 
 .toc {
@@ -58,7 +58,7 @@ body {
 .page-numbers,
 .pagination-next-link {
 	border-radius: 8px;
-	background: rgba(56, 180, 139, 0.05);
+	background: rgba(30, 79, 159, 0.05);
 }
 
 .pagination .page-numbers,
@@ -69,7 +69,7 @@ body {
 .pagination .current,
 .page-numbers.current,
 .page-numbers.dots {
-	background: #2f5d50;
+	background: #29a6e0;
 }
 
 .cat-label,
@@ -79,7 +79,7 @@ body {
 .navi-menu-content a,
 .go-to-top-button,
 #submit {
-	background-color: #38b48b;
+	background-color: #1e4f9f;
 	color: #fff;
 }
 
@@ -141,7 +141,7 @@ select {
 }
 
 .post-count {
-	background-color: #caeee2;
+	background-color: #9cbbec;
 	padding: 0 8px;
 	border-radius: 6px;
 	font-size: 0.8em;
@@ -178,13 +178,13 @@ select {
 
 .comment-list ul.children {
 	padding: 0.6em;
-	background-color: rgba(56, 180, 139, 0.05);
-	border-left: 2px solid #2f5d50;
+	background-color: rgba(30, 79, 159, 0.05);
+	border-left: 2px solid #29a6e0;
 }
 
 .widget-entry-cards.ranking-visible .card-thumb::before {
 	border-radius: 50%;
-	background: #38b48b;
+	background: #1e4f9f;
 	top: -10px;
 	left: -10px;
 	border: 2px solid #eee;
@@ -202,7 +202,7 @@ select {
 }
 
 .navi ul .sub-menu {
-	background-color: #38b48b;
+	background-color: #1e4f9f;
 	opacity: 0.96;
 }
 
@@ -316,13 +316,13 @@ h6,
 	letter-spacing: 0.025em;
 	color: #fff;
 	text-shadow: 0.075em 0.075em 0.02em rgba(0, 0, 0, 0.21);
-	background-color: #38b48b;
+	background-color: #1e4f9f;
 }
 
 /* フッター */
 .footer {
 	padding-top: 2px;
-	background-color: #38b48b;
+	background-color: #1e4f9f;
 }
 
 .footer-bottom-logo .site-name-text {
@@ -342,7 +342,7 @@ h6,
 }
 
 .go-to-top-button {
-	background-color: #2f5d50;
+	background-color: #29a6e0;
 }
 
 /* コード改行禁止 */
@@ -388,7 +388,7 @@ pre code span {
 	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	font-weight: 800;
 	line-height: 1em;
-	color: rgba(47, 93, 80, 0.5);
+	color: rgba(41, 166, 224, 0.5);
 	transition-duration: 0.3s;
 }
 
@@ -397,7 +397,7 @@ pre code span {
 .article h4:hover::after,
 .article h5:hover::after,
 .article h6:hover::after {
-	color: rgba(47, 93, 80, 0);
+	color: rgba(41, 166, 224, 0);
 	transition-duration: 0.3s;
 }
 
@@ -407,7 +407,7 @@ pre code span {
 	counter-increment: c-h2;
 	counter-reset: c-h3;
 	color: #fff;
-	background-color: #38b48b;
+	background-color: #1e4f9f;
 }
 
 .article h2::after {
@@ -420,7 +420,7 @@ pre code span {
 	line-height: 2rem;
 	counter-increment: c-h3;
 	counter-reset: c-h4;
-	background: linear-gradient(90deg, #caeee2, #fff);
+	background: linear-gradient(90deg, #9cbbec, #fff);
 	border: none;
 }
 
@@ -432,7 +432,7 @@ pre code span {
 .article h4,
 .article h5,
 .article h6 {
-	border-color: #caeee2;
+	border-color: #9cbbec;
 }
 
 .article h4 {
@@ -476,16 +476,16 @@ pre code span {
 /* サイドバーウィジェット */
 .sidebar h3 {
 	color: #fff;
-	background-color: #38b48b;
+	background-color: #1e4f9f;
 	padding: 0.4em;
 	margin: 0.3em 0;
 }
 
 /* スライドコンテンツ */
 .slide-contents {
-	background: #ecf9f5;
+	background: #eaf0fb;
 	width: 100%;
-	border: #2f5d50 1px solid;
+	border: #29a6e0 1px solid;
 	margin: 0 0 10px 0;
 	padding: 1rem;
 	display: none;
@@ -1317,16 +1317,16 @@ body {
 	margin: 0px;
 }
 
-.article ul > li:first-of-type, .article ol > li:first-of-type {
+.article ul:not(.wp-block-gallery) + p, .article ol:not(.wp-block-gallery) + p {
+	margin-top: 7px;
+}
+
+.article :not(li) > ul > li:first-of-type, .article :not(li) > ol > li:first-of-type {
 	margin-top: -5px;
 }
 
-.article ul > li:last-of-type, .article ol > li:last-of-type {
+.article :not(li) > ul > li:last-of-type, .article :not(li) > ol > li:last-of-type {
 	margin-bottom: -7px;
-}
-
-.article ul:not(.wp-block-gallery) + p, .article ol:not(.wp-block-gallery) + p {
-	margin-top: 7px;
 }
 
 .article ul.wp-block-gallery {
@@ -1369,29 +1369,38 @@ body {
 }
 
 .article .toc {
-	display: block;
 	width: calc(100% - 4 * 16px + 2px);
+	margin-top: 12px;
+	margin-bottom: 12px;
 	margin-left: 31px;
 	margin-right: 31px;
 	border-width: 1px;
 	padding: 0px;
+	font-size: 16px;
+	line-height: 28px;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.article .toc-title {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-bottom: 0px;
 	padding-left: 16px;
 	padding-right: 16px;
 	font-size: 16px;
 	line-height: 28px;
 }
 
-.article .toc-title {
-	margin-top: 1px;
-	margin-bottom: -1px;
-	border-width: 1px;
-	padding: 0px;
-	line-height: 40px;
+.article .toc-title::after {
+	display: inline-block;
+	height: 16px;
 }
 
 .article .toc-content {
-	margin-top: 1px;
-	margin-bottom: -1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 5px;
+	height: 12px;
 }
 
 .article .toc-content ul, .article .toc-content ol {
@@ -1404,9 +1413,10 @@ body {
 }
 
 .article .toc-checkbox:checked ~ .toc-content {
-	margin-top: 1px;
-	margin-bottom: -1px;
-	padding: 0px;
+	padding-top: 6px;
+	padding-bottom: 13px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .article footer .cat-link {
@@ -1618,7 +1628,7 @@ ruby rt {
 
 .thx-set-grid {
 	line-height: 28px;
-	background-image: linear-gradient(to bottom, rgba(47, 93, 80, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(47, 93, 80, 0.25) 0%, rgba(47, 93, 80, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(47, 93, 80, 0.25) 3%, transparent 0%, transparent 95%, rgba(47, 93, 80, 0.25) 0%);
+	background-image: linear-gradient(to bottom, rgba(41, 166, 224, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(41, 166, 224, 0.25) 0%, rgba(41, 166, 224, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(41, 166, 224, 0.25) 3%, transparent 0%, transparent 95%, rgba(41, 166, 224, 0.25) 0%);
 	background-position: top 4px left;
 	background-size: 16px 28px;
 }
@@ -1633,14 +1643,6 @@ div[class*="cocoon-blocks"] :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(
 
 div[class*="cocoon-blocks"] :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd):last-child {
 	margin-bottom: 0px;
-}
-
-div[class*="cocoon-blocks"] > ul > li:first-of-type, div[class*="cocoon-blocks"] > ol > li:first-of-type {
-	margin-top: -6px;
-}
-
-div[class*="cocoon-blocks"] > ul > li:last-of-type, div[class*="cocoon-blocks"] > ol > li:last-of-type {
-	margin-bottom: -6px;
 }
 
 div[class*="cocoon-blocks"] p:first-of-type {
@@ -1829,14 +1831,14 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.article ul li, .article ol li {
 		margin: 0px;
 	}
-	.article ul > li:first-of-type, .article ol > li:first-of-type {
-		margin-top: -6px;
-	}
-	.article ul > li:last-of-type, .article ol > li:last-of-type {
-		margin-bottom: -8px;
-	}
 	.article ul:not(.wp-block-gallery) + p, .article ol:not(.wp-block-gallery) + p {
 		margin-top: 8px;
+	}
+	.article :not(li) > ul > li:first-of-type, .article :not(li) > ol > li:first-of-type {
+		margin-top: -6px;
+	}
+	.article :not(li) > ul > li:last-of-type, .article :not(li) > ol > li:last-of-type {
+		margin-bottom: -8px;
 	}
 	.article ul.wp-block-gallery {
 		margin-top: 14px;
@@ -1870,27 +1872,35 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		margin-bottom: 49px;
 	}
 	.article .toc {
-		display: block;
 		width: calc(100% - 4 * 18px + 2px);
+		margin-top: 14px;
+		margin-bottom: 14px;
 		margin-left: 35px;
 		margin-right: 35px;
 		border-width: 1px;
 		padding: 0px;
+		font-size: 18px;
+		line-height: 32px;
+		background: rgba(255, 255, 255, 0.8);
+	}
+	.article .toc-title {
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-bottom: 0px;
 		padding-left: 18px;
 		padding-right: 18px;
 		font-size: 18px;
 		line-height: 32px;
 	}
-	.article .toc-title {
-		margin-top: 1px;
-		margin-bottom: -1px;
-		border-width: 1px;
-		padding: 0px;
-		line-height: 46px;
+	.article .toc-title::after {
+		display: inline-block;
+		height: 18px;
 	}
 	.article .toc-content {
-		margin-top: 1px;
-		margin-bottom: -1px;
+		padding-left: 17px;
+		padding-right: 17px;
+		height: 6px;
+		height: 14px;
 	}
 	.article .toc-content ul, .article .toc-content ol {
 		padding-left: 36px;
@@ -1900,9 +1910,10 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		margin: 0px;
 	}
 	.article .toc-checkbox:checked ~ .toc-content {
-		margin-top: 1px;
-		margin-bottom: -1px;
-		padding: 0px;
+		padding-top: 7px;
+		padding-bottom: 15px;
+		padding-left: 17px;
+		padding-right: 17px;
 	}
 	.article footer .cat-link {
 		padding-top: 2px;
@@ -2084,7 +2095,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	}
 	.thx-set-grid {
 		line-height: 32px;
-		background-image: linear-gradient(to bottom, rgba(47, 93, 80, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(47, 93, 80, 0.25) 0%, rgba(47, 93, 80, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(47, 93, 80, 0.25) 3%, transparent 0%, transparent 95%, rgba(47, 93, 80, 0.25) 0%);
+		background-image: linear-gradient(to bottom, rgba(41, 166, 224, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(41, 166, 224, 0.25) 0%, rgba(41, 166, 224, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(41, 166, 224, 0.25) 3%, transparent 0%, transparent 95%, rgba(41, 166, 224, 0.25) 0%);
 		background-position: top 5px left;
 		background-size: 18px 32px;
 	}
@@ -2096,12 +2107,6 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	}
 	div[class*="cocoon-blocks"] :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd):last-child {
 		margin-bottom: 0px;
-	}
-	div[class*="cocoon-blocks"] > ul > li:first-of-type, div[class*="cocoon-blocks"] > ol > li:first-of-type {
-		margin-top: -7px;
-	}
-	div[class*="cocoon-blocks"] > ul > li:last-of-type, div[class*="cocoon-blocks"] > ol > li:last-of-type {
-		margin-bottom: -7px;
 	}
 	div[class*="cocoon-blocks"] p:first-of-type {
 		margin-top: -7px;
@@ -2342,14 +2347,14 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.article ul li, .article ol li {
 		margin: 0px;
 	}
-	.article ul > li:first-of-type, .article ol > li:first-of-type {
-		margin-top: -6px;
-	}
-	.article ul > li:last-of-type, .article ol > li:last-of-type {
-		margin-bottom: -8px;
-	}
 	.article ul:not(.wp-block-gallery) + p, .article ol:not(.wp-block-gallery) + p {
 		margin-top: 8px;
+	}
+	.article :not(li) > ul > li:first-of-type, .article :not(li) > ol > li:first-of-type {
+		margin-top: -6px;
+	}
+	.article :not(li) > ul > li:last-of-type, .article :not(li) > ol > li:last-of-type {
+		margin-bottom: -8px;
 	}
 	.article ul.wp-block-gallery {
 		margin-top: 14px;
@@ -2383,27 +2388,35 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		margin-bottom: 49px;
 	}
 	.article .toc {
-		display: block;
 		width: calc(100% - 4 * 18px + 2px);
+		margin-top: 14px;
+		margin-bottom: 14px;
 		margin-left: 35px;
 		margin-right: 35px;
 		border-width: 1px;
 		padding: 0px;
+		font-size: 18px;
+		line-height: 32px;
+		background: rgba(255, 255, 255, 0.8);
+	}
+	.article .toc-title {
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-bottom: 0px;
 		padding-left: 18px;
 		padding-right: 18px;
 		font-size: 18px;
 		line-height: 32px;
 	}
-	.article .toc-title {
-		margin-top: 1px;
-		margin-bottom: -1px;
-		border-width: 1px;
-		padding: 0px;
-		line-height: 46px;
+	.article .toc-title::after {
+		display: inline-block;
+		height: 18px;
 	}
 	.article .toc-content {
-		margin-top: 1px;
-		margin-bottom: -1px;
+		padding-left: 17px;
+		padding-right: 17px;
+		height: 6px;
+		height: 14px;
 	}
 	.article .toc-content ul, .article .toc-content ol {
 		padding-left: 36px;
@@ -2413,9 +2426,10 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		margin: 0px;
 	}
 	.article .toc-checkbox:checked ~ .toc-content {
-		margin-top: 1px;
-		margin-bottom: -1px;
-		padding: 0px;
+		padding-top: 7px;
+		padding-bottom: 15px;
+		padding-left: 17px;
+		padding-right: 17px;
 	}
 	.article footer .cat-link {
 		padding-top: 2px;
@@ -2597,7 +2611,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	}
 	.thx-set-grid {
 		line-height: 32px;
-		background-image: linear-gradient(to bottom, rgba(47, 93, 80, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(47, 93, 80, 0.25) 0%, rgba(47, 93, 80, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(47, 93, 80, 0.25) 3%, transparent 0%, transparent 95%, rgba(47, 93, 80, 0.25) 0%);
+		background-image: linear-gradient(to bottom, rgba(41, 166, 224, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(41, 166, 224, 0.25) 0%, rgba(41, 166, 224, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(41, 166, 224, 0.25) 3%, transparent 0%, transparent 95%, rgba(41, 166, 224, 0.25) 0%);
 		background-position: top 5px left;
 		background-size: 18px 32px;
 	}
@@ -2609,12 +2623,6 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	}
 	div[class*="cocoon-blocks"] :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd):last-child {
 		margin-bottom: 0px;
-	}
-	div[class*="cocoon-blocks"] > ul > li:first-of-type, div[class*="cocoon-blocks"] > ol > li:first-of-type {
-		margin-top: -7px;
-	}
-	div[class*="cocoon-blocks"] > ul > li:last-of-type, div[class*="cocoon-blocks"] > ol > li:last-of-type {
-		margin-bottom: -7px;
 	}
 	div[class*="cocoon-blocks"] p:first-of-type {
 		margin-top: -7px;
