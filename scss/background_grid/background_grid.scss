@@ -181,6 +181,9 @@ div[class*="cocoon-blocks"] {
   .wp-block-columns {
     margin-top: - $line_space;
     margin-bottom: 0px;
+    + .wp-block-columns {
+      margin-top: 0px;
+    }
   }
   #{$str_tags} {
     + .wp-block-columns {
