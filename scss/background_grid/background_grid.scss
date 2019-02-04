@@ -148,7 +148,7 @@ $grid_color: fade-out($key_sub_color, 0.75);
   @include set-grid();
 }
 .thx .wp-block-column {
-  margin-bottom: 0px;
+//  margin-bottom: 0px;
 }
 div[class*="cocoon-blocks"] {
   #{$str_tags} {
@@ -180,13 +180,17 @@ div[class*="cocoon-blocks"] {
 }
 .entry-content {
   margin-bottom: $line_height_px * 2 + $line_space;
-
   .wp-block-columns {
-    margin-top: $line_space;
-    margin-bottom: $line_space;
+    margin-top: - $line_space;
+    margin-bottom: 0px;
   }
 }
+
 .wp-block-column {
+  .wp-block-columns & {
+    margin-top: $line_space;
+    margin-bottom: 0px;
+  }
   #{$str_tags} {
     &:first-child {
       margin-top: 0px;
