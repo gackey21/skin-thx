@@ -14,5 +14,8 @@ ruby {
   }
   rt {
     display: none;
+    .editor-rich-text & {
+      display: block;
+    }
   }
 }
