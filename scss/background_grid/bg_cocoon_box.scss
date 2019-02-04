@@ -80,7 +80,7 @@
   margin-top: $line_space;
   margin-bottom: $line_space;
   .toggle-content {
-//    height: $line_space / 2;
+    height: $line_space / 2;
   }
 }
 .toggle-button {
@@ -100,5 +100,68 @@
       padding-bottom: $line_height_px / 2 - 1px;
       @include toggle-checkbox($font_width);
     }
+  }
+}
+
+/* キャプションボックス */
+.caption-box {
+}
+.caption-box-label {
+  padding: 0px;
+  padding-left: $font_width;
+}
+.caption-box-content {
+  padding-top: $line_height_px / 2 - 2px;
+  padding-bottom: $line_height_px / 2 - 2px;
+  background: fade-out($white, 0.2);
+  @include caption-box($font_width);
+}
+
+/* タブキャプションボックス */
+.tab-caption-box {
+  position: relative;
+}
+.tab-caption-box-label {
+  position: absolute;
+  top: - $line_space + 1;
+  height: $line_space + 2 * 3;
+  border-radius: 4px $line_space 2 * 3px 0;
+  font-size: $font_size - 2px;
+  line-height: $font_size;
+}
+.tab-caption-box-content {
+  padding-top: $line_height_px / 2 - 2px;
+  padding-bottom: $line_height_px / 2 - 2px;
+  background: fade-out($white, 0.2);
+  @include tab-caption-box($font_width);
+}
+.tab-caption-box-label-text,
+.block-box-label-text {
+  font-family: $thx_font_family;
+  font-weight: 500;
+//  font-size: $font_size - 2px;
+  &::before {
+  }
+}
+.block-box-label {
+  &::before {
+
+  }
+}
+/* ラベルボックス */
+.label-box {
+  position: relative;
+  .label-box-label {
+    position: absolute;
+    top: - $font_size / 2 - 1;
+    height: $line_space + 2 * 3;
+    line-height: 1.5;
+  }
+  .label-box-content {
+    margin-top: 0px;
+    padding-top: $line_height_px / 2 - 2px;
+    padding-bottom: $line_height_px / 2 - 2px;
+    background: fade-out($white, 0.2);
+    @include label-box($font_width);
   }
 }

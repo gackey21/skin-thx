@@ -72,6 +72,24 @@
   padding-right: ($font_width - 1px);
 }
 
+@mixin caption-box($font_width: $thx_site_font_width) {
+  border-width: 2px;
+  padding-left: ($font_width - 2px);
+  padding-right: ($font_width - 2px);
+}
+
+@mixin tab-caption-box($font_width: $thx_site_font_width) {
+  border-width: 2px;
+  padding-left: ($font_width - 2px);
+  padding-right: ($font_width - 2px);
+}
+
+@mixin label-box($font_width: $thx_site_font_width) {
+  border-width: 2px;
+  padding-left: ($font_width - 2px);
+  padding-right: ($font_width - 2px);
+}
+
 body {
   @include thx-beta-body;
 }
