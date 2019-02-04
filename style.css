@@ -1639,11 +1639,15 @@ body {
 	margin-top: 40px;
 }
 
+.wp-block-column .blank-box.bb-tab {
+	margin-top: 28px;
+}
+
 .blank-box.bb-tab::before {
-	top: -13px;
-	height: 18px;
-	line-height: 1.5;
-	border-radius: 4px 12px 6px 0;
+	top: -30px;
+	height: 34px;
+	border-radius: 8px 28px 6px 0;
+	line-height: 34px;
 }
 
 /* 付箋風ボックス */
@@ -1817,11 +1821,11 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	margin-bottom: 12px;
 }
 
-.entry-content .wp-block-columns .wp-block-column :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd):first-child {
+.wp-block-column :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd):first-child {
 	margin-top: 0px;
 }
 
-.entry-content .wp-block-columns .wp-block-column :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd):last-child {
+.wp-block-column :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd):last-child {
 	margin-bottom: 0px;
 }
 
@@ -2182,11 +2186,14 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.blank-box.bb-tab {
 		margin-top: 46px;
 	}
+	.wp-block-column .blank-box.bb-tab {
+		margin-top: 32px;
+	}
 	.blank-box.bb-tab::before {
-		top: -15px;
-		height: 20px;
-		line-height: 1.5;
-		border-radius: 4px 14px 6px 0;
+		top: -34px;
+		height: 38px;
+		border-radius: 8px 32px 7px 0;
+		line-height: 38px;
 	}
 	/* 付箋風ボックス */
 	.blank-box.sticky {
@@ -2333,10 +2340,10 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		margin-top: 14px;
 		margin-bottom: 14px;
 	}
-	.entry-content .wp-block-columns .wp-block-column :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd):first-child {
+	.wp-block-column :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd):first-child {
 		margin-top: 0px;
 	}
-	.entry-content .wp-block-columns .wp-block-column :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd):last-child {
+	.wp-block-column :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd):last-child {
 		margin-bottom: 0px;
 	}
 }
@@ -2791,11 +2798,14 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.blank-box.bb-tab {
 		margin-top: 46px;
 	}
+	.wp-block-column .blank-box.bb-tab {
+		margin-top: 32px;
+	}
 	.blank-box.bb-tab::before {
-		top: -15px;
-		height: 20px;
-		line-height: 1.5;
-		border-radius: 4px 14px 6px 0;
+		top: -34px;
+		height: 38px;
+		border-radius: 8px 32px 7px 0;
+		line-height: 38px;
 	}
 	/* 付箋風ボックス */
 	.blank-box.sticky {
@@ -2942,10 +2952,10 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		margin-top: 14px;
 		margin-bottom: 14px;
 	}
-	.entry-content .wp-block-columns .wp-block-column :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd):first-child {
+	.wp-block-column :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd):first-child {
 		margin-top: 0px;
 	}
-	.entry-content .wp-block-columns .wp-block-column :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd):last-child {
+	.wp-block-column :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd):last-child {
 		margin-bottom: 0px;
 	}
 }

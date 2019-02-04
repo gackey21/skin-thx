@@ -184,15 +184,15 @@ div[class*="cocoon-blocks"] {
   .wp-block-columns {
     margin-top: $line_space;
     margin-bottom: $line_space;
-    .wp-block-column {
-      #{$str_tags} {
-        &:first-child {
-          margin-top: 0px;
-        }
-        &:last-child {
-          margin-bottom: 0px;
-        }
-      }
+  }
+}
+.wp-block-column {
+  #{$str_tags} {
+    &:first-child {
+      margin-top: 0px;
+    }
+    &:last-child {
+      margin-bottom: 0px;
     }
   }
 }
