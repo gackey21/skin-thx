@@ -1822,6 +1822,14 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	margin-bottom: 0px;
 }
 
+.entry-content p + .wp-block-columns, .entry-content ul + .wp-block-columns, .entry-content ol + .wp-block-columns, .entry-content li + .wp-block-columns, .entry-content dl + .wp-block-columns, .entry-content dt + .wp-block-columns, .entry-content dd + .wp-block-columns {
+	margin-top: 0px;
+}
+
+.wp-block-columns + p, .wp-block-columns + ul, .wp-block-columns + ol, .wp-block-columns + li, .wp-block-columns + dl, .wp-block-columns + dt, .wp-block-columns + dd {
+	margin-top: 7px;
+}
+
 .wp-block-columns .wp-block-column {
 	margin-top: 12px;
 	margin-bottom: 0px;
@@ -2346,6 +2354,12 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.entry-content .wp-block-columns {
 		margin-top: -14px;
 		margin-bottom: 0px;
+	}
+	.entry-content p + .wp-block-columns, .entry-content ul + .wp-block-columns, .entry-content ol + .wp-block-columns, .entry-content li + .wp-block-columns, .entry-content dl + .wp-block-columns, .entry-content dt + .wp-block-columns, .entry-content dd + .wp-block-columns {
+		margin-top: 0px;
+	}
+	.wp-block-columns + p, .wp-block-columns + ul, .wp-block-columns + ol, .wp-block-columns + li, .wp-block-columns + dl, .wp-block-columns + dt, .wp-block-columns + dd {
+		margin-top: 8px;
 	}
 	.wp-block-columns .wp-block-column {
 		margin-top: 14px;
@@ -2966,6 +2980,12 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.entry-content .wp-block-columns {
 		margin-top: -14px;
 		margin-bottom: 0px;
+	}
+	.entry-content p + .wp-block-columns, .entry-content ul + .wp-block-columns, .entry-content ol + .wp-block-columns, .entry-content li + .wp-block-columns, .entry-content dl + .wp-block-columns, .entry-content dt + .wp-block-columns, .entry-content dd + .wp-block-columns {
+		margin-top: 0px;
+	}
+	.wp-block-columns + p, .wp-block-columns + ul, .wp-block-columns + ol, .wp-block-columns + li, .wp-block-columns + dl, .wp-block-columns + dt, .wp-block-columns + dd {
+		margin-top: 8px;
 	}
 	.wp-block-columns .wp-block-column {
 		margin-top: 14px;
