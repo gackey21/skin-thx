@@ -1548,6 +1548,7 @@ body {
 .wp-block-embed__wrapper .blogcard-wrap {
 	margin-top: 12px;
 	margin-bottom: 12px;
+	padding: 0px;
 	width: calc(100% - 4 * 16px + 0px);
 }
 
@@ -2108,6 +2109,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.wp-block-embed__wrapper .blogcard-wrap {
 		margin-top: 14px;
 		margin-bottom: 14px;
+		padding: 0px;
 		width: calc(100% - 4 * 18px + 0px);
 	}
 	.wp-block-column .wp-block-cocoon-blocks-blogcard .blogcard-wrap, .wp-block-column
@@ -2724,6 +2726,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.wp-block-embed__wrapper .blogcard-wrap {
 		margin-top: 14px;
 		margin-bottom: 14px;
+		padding: 0px;
 		width: calc(100% - 4 * 18px + 0px);
 	}
 	.wp-block-column .wp-block-cocoon-blocks-blogcard .blogcard-wrap, .wp-block-column

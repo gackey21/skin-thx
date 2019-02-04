@@ -6,6 +6,7 @@
   .blogcard-wrap {
     margin-top:$line_space;
     margin-bottom: $line_space;
+    padding: 0px;
     width: calc(100% - 4 * #{$font_width} + 0px);
     .wp-block-column & {
       width: 100%;
