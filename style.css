@@ -1730,6 +1730,7 @@ body {
 }
 
 .tab-caption-box-content {
+	margin-top: 0px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	background: rgba(255, 255, 255, 0.8);
@@ -2266,6 +2267,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		line-height: 18px;
 	}
 	.tab-caption-box-content {
+		margin-top: 0px;
 		padding-top: 14px;
 		padding-bottom: 14px;
 		background: rgba(255, 255, 255, 0.8);
@@ -2879,6 +2881,7 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		line-height: 18px;
 	}
 	.tab-caption-box-content {
+		margin-top: 0px;
 		padding-top: 14px;
 		padding-bottom: 14px;
 		background: rgba(255, 255, 255, 0.8);
