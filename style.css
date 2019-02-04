@@ -1716,21 +1716,15 @@ body {
 }
 
 /* タブキャプションボックス */
-.tab-caption-box {
-	position: relative;
-}
-
 .tab-caption-box-label {
-	position: absolute;
-	top: -11px;
-	height: 18px;
-	border-radius: 4px 12px 6px 0;
-	font-size: 14px;
-	line-height: 16px;
+	height: 34px;
+	border-radius: 8px 28px 6px 0;
+	font-size: 16px;
+	line-height: 34px;
 }
 
 .tab-caption-box-content {
-	margin-top: 0px;
+	margin-top: -6px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	background: rgba(255, 255, 255, 0.8);
@@ -2255,19 +2249,14 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		padding-right: 16px;
 	}
 	/* タブキャプションボックス */
-	.tab-caption-box {
-		position: relative;
-	}
 	.tab-caption-box-label {
-		position: absolute;
-		top: -13px;
-		height: 20px;
-		border-radius: 4px 14px 6px 0;
-		font-size: 16px;
-		line-height: 18px;
+		height: 38px;
+		border-radius: 8px 32px 7px 0;
+		font-size: 18px;
+		line-height: 38px;
 	}
 	.tab-caption-box-content {
-		margin-top: 0px;
+		margin-top: -6px;
 		padding-top: 14px;
 		padding-bottom: 14px;
 		background: rgba(255, 255, 255, 0.8);
@@ -2869,19 +2858,14 @@ div[class*="cocoon-blocks"] p:last-of-type {
 		padding-right: 16px;
 	}
 	/* タブキャプションボックス */
-	.tab-caption-box {
-		position: relative;
-	}
 	.tab-caption-box-label {
-		position: absolute;
-		top: -13px;
-		height: 20px;
-		border-radius: 4px 14px 6px 0;
-		font-size: 16px;
-		line-height: 18px;
+		height: 38px;
+		border-radius: 8px 32px 7px 0;
+		font-size: 18px;
+		line-height: 38px;
 	}
 	.tab-caption-box-content {
-		margin-top: 0px;
+		margin-top: -6px;
 		padding-top: 14px;
 		padding-bottom: 14px;
 		background: rgba(255, 255, 255, 0.8);
