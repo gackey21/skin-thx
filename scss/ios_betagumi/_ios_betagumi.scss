@@ -11,11 +11,6 @@ $font_size: $thx_iphone_font_size;
 @import "ipad_landscape";
 @import "4-6columns";
 
-/* グリッドを隠しておく
-.article {
-  background: $white;
-}*/
-
 /* 和文中欧文 */
 .thx_wao {
   font-feature-settings: "pwid";

@@ -2486,6 +2486,9 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	.wp-block-columns.has-6-columns .wp-block-column p {
 		text-align: start;
 	}
+	.wp-block-columns .wp-block-column:not(:last-child) {
+		margin-right: 36px;
+	}
 	/*                */
 	/* グリッド */
 	/*                */
@@ -3255,10 +3258,6 @@ div[class*="cocoon-blocks"] p:last-of-type {
 	}
 }
 
-/* グリッドを隠しておく
-.article {
-  background: $white;
-}*/
 /* 和文中欧文 */
 .thx_wao {
 	font-feature-settings: "pwid";

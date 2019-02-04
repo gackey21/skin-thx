@@ -22,6 +22,12 @@
       }
     }
   }
+  //PC用のカラム幅調整
+  .wp-block-columns {
+    .wp-block-column:not(:last-child) {
+      margin-right: $font_width * 2;
+    }
+  }
   @import "../background_grid/background_grid";
 }
 
