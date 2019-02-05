@@ -1,43 +1,50 @@
+.entry-content {
+  .blogcard-type {
+  }
+}
+
 .wp-block-cocoon-blocks-blogcard,
 .wp-block-embed__wrapper {
-  $footer_size: round($font_size * 0.4) * 2;
+}
+$footer_size: round($font_size * 0.4) * 2;
+.blogcard-wrap {
   margin-top:$line_space;
   margin-bottom: $line_space;
-  .blogcard-wrap {
-    margin-top:$line_space;
-    margin-bottom: $line_space;
-    padding: 0px;
-    width: calc(100% - 4 * #{$font_width} + 0px);
-    .wp-block-column & {
-      width: 100%;
-    }
+  padding: 0px;
+  width: calc(100% - 4 * #{$font_width} + 0px);
+  .wp-block-column & {
+    width: 100%;
   }
-  .blogcard {
-    padding: $line_height_px / 2 - 1px;
-    padding-top: $line_height_px / 2 - 1px + 3px;
-    padding-bottom: $line_height_px / 2 - 1px - 3px;
-    &::before {
-      top: - $font_size / 2;
-      z-index: 1;
-    }
+  .blogcard{
+    margin-top:$line_space + $line_height_px;
+    margin-bottom: $line_space + $line_height_px;
   }
-  .blogcard-thumbnail {
-    margin-top: 0px;
-    margin-bottom: $line_height_px - $footer_size;
+}
+.blogcard {
+  padding: $line_height_px / 2 - 1px;
+  padding-top: $line_height_px / 2 - 1px + 3px;
+  padding-bottom: $line_height_px / 2 - 1px - 3px;
+  &::before {
+    top: - $font_size / 2;
+    z-index: 1;
   }
-  .blogcard-content {
-    max-height: ceil((140px - $font_size) / $line_height_px) * $line_height_px + $font_size;
-  }
-  .blogcard-footer {
-    margin-top: $line_height_px - $footer_size;
-    padding: 0px;
-    font-size: $footer_size;
-    line-height: 1;
-  }
-  .blogcard-favicon {
-    display: inline-block;
-    height: $footer_size;
-    margin-top: 0px;
-    margin-right: $footer_size / 2;
-  }
+}
+.blogcard-thumbnail {
+  margin-top: 0px;
+  margin-bottom: $line_height_px - $footer_size;
+}
+.blogcard-content {
+  max-height: ceil((140px - $font_size) / $line_height_px) * $line_height_px + $font_size;
+}
+.blogcard-footer {
+  margin-top: $line_height_px - $footer_size;
+  padding: 0px;
+  font-size: $footer_size;
+  line-height: 1;
+}
+.blogcard-favicon {
+  display: inline-block;
+  height: $footer_size;
+  margin-top: 0px;
+  margin-right: $footer_size / 2;
 }
