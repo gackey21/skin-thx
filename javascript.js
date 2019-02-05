@@ -36,7 +36,7 @@ jQuery(function(){
   var fz = parseInt(jQuery('body').css('font-size'));
   var lh = parseInt(jQuery('body').css('line-height'));
   var ls = lh - fz;
-  var lineUpOnce = jQuery(`pre,.blogcard-content,blockquote`);
+  var lineUpOnce = jQuery(`pre,.blogcard-content,blockquote,.wp-block-spacer`);
   var lineUp = jQuery(`
     table,
     .ad-area,
