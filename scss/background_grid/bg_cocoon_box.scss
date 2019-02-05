@@ -1,3 +1,32 @@
+// cocoonボックス汎用設定
+.block-box {
+  & > :first-child#{$str_tags_exclusion} {
+    margin-top: 0px;
+  }
+  & > :last-child#{$str_tags_exclusion} {
+    margin-bottom: 0px;
+  }
+  >ul,>ol {
+    > li {
+      &:first-of-type {
+//        margin-top: - $line_space /2;
+      }
+      &:last-of-type {
+//        margin-bottom: - $line_space /2;
+      }
+    }
+  }
+  //親スタイルの打ち消しに必須
+  p {
+    &:first-of-type {
+      margin-top: - $line_space /2;
+    }
+    &:last-of-type {
+      margin-bottom: - $line_space /2;
+    }
+  }
+}
+
 /* 案内ボックス */
 .secondary-box {
   @include secondary-box($font_width);
@@ -32,7 +61,7 @@
 .blank-box.bb-tab {
 //  margin-top: $line_height_px + $line_space / 2 - 4px;
   margin-top: $line_height_px + $line_space;
-  .wp-block-column & {
+//  .wp-block-column &:first-child {
     margin-top: $line_height_px;
   }
   &::before {
