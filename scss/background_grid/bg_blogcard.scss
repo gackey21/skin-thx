@@ -2,24 +2,49 @@
   .blogcard-type {
   }
 }
+.wp-block-embed__wrapper {}
 
-.wp-block-cocoon-blocks-blogcard,
-.wp-block-embed__wrapper {
-}
 $footer_size: round($font_size * 0.4) * 2;
-.blogcard-wrap {
+$blogcard_class: '.wp-block-cocoon-blocks-blogcard';
+
+#{$blogcard_class} {
   margin-top:$line_space;
   margin-bottom: $line_space;
+}
+#{$blogcard_class} {
+  + {
+   #{$str_tags} {
+     margin-top:$str_inner_margin_bottom + $line_height_px;
+   }
+ }
+}
+#{$str_tags} {
+  + {
+    #{$blogcard_class} {
+      margin-top:$line_space + $line_height_px;
+    }
+  }
+}
+
+
+.blogcard-wrap {
+  margin: 0px auto;
   padding: 0px;
   width: calc(100% - 4 * #{$font_width} + 0px);
   .wp-block-column & {
     width: 100%;
   }
-  .blogcard{
-    margin-top:$line_space + $line_height_px;
-    margin-bottom: $line_space + $line_height_px;
+}
+/*#{$str_tags} {
+  + div {
+    .blogcard-wrap {
+      margin-top:$line_space + $line_height_px;
+    }
   }
 }
+.blogcard-wrap + #{$str_tags} {
+  margin-top:$str_inner_margin_bottom + $line_height_px;
+}*/
 .blogcard {
   padding: $line_height_px / 2 - 1px;
   padding-top: $line_height_px / 2 - 1px + 3px;
