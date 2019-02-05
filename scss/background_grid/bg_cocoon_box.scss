@@ -61,7 +61,7 @@
 .blank-box.bb-tab {
 //  margin-top: $line_height_px + $line_space / 2 - 4px;
   margin-top: $line_height_px + $line_space;
-//  .wp-block-column &:first-child {
+  .wp-block-column &:first-child {
     margin-top: $line_height_px;
   }
   &::before {
