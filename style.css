@@ -1435,7 +1435,7 @@ body {
 .article .ad-area {
 	margin-top: 12px;
 	margin-bottom: 12px;
-	background-color: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 0.8);
 }
 
 .article .ad-label {
@@ -2077,7 +2077,7 @@ ruby rt {
 	.article .ad-area {
 		margin-top: 14px;
 		margin-bottom: 14px;
-		background-color: rgba(255, 255, 255, 0.8);
+		background: rgba(255, 255, 255, 0.8);
 	}
 	.article .ad-label {
 		margin-top: -6px;
@@ -2744,7 +2744,7 @@ ruby rt {
 	.article .ad-area {
 		margin-top: 14px;
 		margin-bottom: 14px;
-		background-color: rgba(255, 255, 255, 0.8);
+		background: rgba(255, 255, 255, 0.8);
 	}
 	.article .ad-label {
 		margin-top: -6px;
