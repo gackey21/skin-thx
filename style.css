@@ -1857,6 +1857,7 @@ ruby rt {
 .entry-content .wp-block-image {
 	margin-top: 12px;
 	margin-bottom: 12px;
+	background: rgba(255, 255, 255, 0.8);
 }
 
 .entry-content .wp-block-image figcaption {
@@ -2431,6 +2432,7 @@ ruby rt {
 	.entry-content .wp-block-image {
 		margin-top: 14px;
 		margin-bottom: 14px;
+		background: rgba(255, 255, 255, 0.8);
 	}
 	.entry-content .wp-block-image figcaption {
 		margin: 0px;
@@ -3096,6 +3098,7 @@ ruby rt {
 	.entry-content .wp-block-image {
 		margin-top: 14px;
 		margin-bottom: 14px;
+		background: rgba(255, 255, 255, 0.8);
 	}
 	.entry-content .wp-block-image figcaption {
 		margin: 0px;
