@@ -1863,7 +1863,7 @@ ruby rt {
 
 .entry-content .wp-block-image figcaption {
 	margin: 0px;
-	line-height: 28px;
+	line-height: 1.5em;
 }
 
 .wp-block-columns + p, .wp-block-columns + ul, .wp-block-columns + ol, .wp-block-columns + li, .wp-block-columns + dl, .wp-block-columns + dt, .wp-block-columns + dd {
@@ -2438,7 +2438,7 @@ ruby rt {
 	}
 	.entry-content .wp-block-image figcaption {
 		margin: 0px;
-		line-height: 32px;
+		line-height: 1.5em;
 	}
 	.wp-block-columns + p, .wp-block-columns + ul, .wp-block-columns + ol, .wp-block-columns + li, .wp-block-columns + dl, .wp-block-columns + dt, .wp-block-columns + dd {
 		margin-top: 8px;
@@ -3105,7 +3105,7 @@ ruby rt {
 	}
 	.entry-content .wp-block-image figcaption {
 		margin: 0px;
-		line-height: 32px;
+		line-height: 1.5em;
 	}
 	.wp-block-columns + p, .wp-block-columns + ul, .wp-block-columns + ol, .wp-block-columns + li, .wp-block-columns + dl, .wp-block-columns + dt, .wp-block-columns + dd {
 		margin-top: 8px;
