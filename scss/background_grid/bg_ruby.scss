@@ -25,6 +25,10 @@ ruby {
   top: - $font_size * 0.75;
   display: inline-flex;
   justify-content: space-between;
-  left: 0;
-  right: 0;
+  left:  $font_size / 4;
+  right:  $font_size / 4;
+}
+.thx_yomi_long {
+left:  0px;
+right:  0px;
 }

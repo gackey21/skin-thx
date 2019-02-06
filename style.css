@@ -1819,8 +1819,13 @@ ruby rt {
 	top: -12px;
 	display: inline-flex;
 	justify-content: space-between;
-	left: 0;
-	right: 0;
+	left: 4px;
+	right: 4px;
+}
+
+.thx_yomi_long {
+	left: 0px;
+	right: 0px;
 }
 
 .thx-set-frost {
@@ -2414,8 +2419,12 @@ ruby rt {
 		top: -13.5px;
 		display: inline-flex;
 		justify-content: space-between;
-		left: 0;
-		right: 0;
+		left: 4.5px;
+		right: 4.5px;
+	}
+	.thx_yomi_long {
+		left: 0px;
+		right: 0px;
 	}
 	.thx-set-frost {
 		background: rgba(255, 255, 255, 0.8);
@@ -3090,8 +3099,12 @@ ruby rt {
 		top: -13.5px;
 		display: inline-flex;
 		justify-content: space-between;
-		left: 0;
-		right: 0;
+		left: 4.5px;
+		right: 4.5px;
+	}
+	.thx_yomi_long {
+		left: 0px;
+		right: 0px;
 	}
 	.thx-set-frost {
 		background: rgba(255, 255, 255, 0.8);
