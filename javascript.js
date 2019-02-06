@@ -14,17 +14,42 @@ jQuery(window).on('load', function (){
   var fz = parseInt(jQuery('body').css('font-size'));
   jQuery('ruby').each(function() {
     var ow = jQuery(this).outerWidth();
-//    var html;
+    var html;
     var yomigana;
+    var yomigana_span = '<div class="thx_yomi">';
 
-//    html = jQuery(this).html();
+    ruby_html = jQuery(this).html();
     yomigana = jQuery(this).children("rt").text();
     yomigana_length = yomigana.length * fz / 2;
+    yomigana_space = yomigana_length + fz;
 
     if(yomigana_length > ow){
       jQuery(this).css('width', yomigana_length);
     }
-    jQuery(this).attr('data-yomi', yomigana);
+    for(var i=0; i< yomigana.length; i++) {
+      if(yomigana_space < ow){
+        if(i==0){
+          yomigana_span += '<span>　'+yomigana.substr(i, 1)+'</span>';
+        }
+        else if (i==yomigana.length-1) {
+          yomigana_span += '<span>'+yomigana.substr(i, 1)+'　</span>';
+        }
+        else {
+          yomigana_span += '<span>'+yomigana.substr(i, 1)+'</span>';
+        }
+      }
+      else {
+        yomigana_span += '<span>'+yomigana.substr(i, 1)+'</span>';
+      }
+    }
+    yomigana_span += '</div>';
+    if(yomigana_space < ow){
+//      alert(ruby_html);
+//      alert(yomigana_span);
+//      alert(ruby_html+yomigana_span);
+    }
+    jQuery(this).html(ruby_html+yomigana_span)
+//    jQuery(this).attr('data-yomi', yomigana);
   });
 });
 

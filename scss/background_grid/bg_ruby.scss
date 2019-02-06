@@ -19,3 +19,12 @@ ruby {
     }
   }
 }
+.thx_yomi {
+  font-size: $font_size / 2;
+  position: absolute;
+  top: - $font_size * 0.75;
+  display: inline-flex;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+}

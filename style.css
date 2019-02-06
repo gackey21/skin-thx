@@ -1813,6 +1813,16 @@ ruby rt {
 	display: block;
 }
 
+.thx_yomi {
+	font-size: 8px;
+	position: absolute;
+	top: -12px;
+	display: inline-flex;
+	justify-content: space-between;
+	left: 0;
+	right: 0;
+}
+
 .thx-set-frost {
 	background: rgba(255, 255, 255, 0.8);
 }
@@ -2397,6 +2407,15 @@ ruby rt {
 	}
 	.editor-rich-text ruby rt {
 		display: block;
+	}
+	.thx_yomi {
+		font-size: 9px;
+		position: absolute;
+		top: -13.5px;
+		display: inline-flex;
+		justify-content: space-between;
+		left: 0;
+		right: 0;
 	}
 	.thx-set-frost {
 		background: rgba(255, 255, 255, 0.8);
@@ -3064,6 +3083,15 @@ ruby rt {
 	}
 	.editor-rich-text ruby rt {
 		display: block;
+	}
+	.thx_yomi {
+		font-size: 9px;
+		position: absolute;
+		top: -13.5px;
+		display: inline-flex;
+		justify-content: space-between;
+		left: 0;
+		right: 0;
 	}
 	.thx-set-frost {
 		background: rgba(255, 255, 255, 0.8);
