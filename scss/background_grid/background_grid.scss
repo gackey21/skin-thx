@@ -172,6 +172,7 @@ $grid_color: fade-out($key_sub_color, 0.75);
   .wp-block-image {
     margin-top: $line_space;
     margin-bottom: $line_space;
+    line-height: 1em;
     @include set-frost();
     figcaption {
       margin: 0px;
