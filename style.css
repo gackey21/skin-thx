@@ -1310,16 +1310,6 @@ body {
 	margin-bottom: 12px;
 }
 
-.thx .wp-block-image {
-	margin-top: 12px;
-	margin-bottom: 12px;
-}
-
-.thx .wp-block-image figcaption {
-	margin: 0px;
-	line-height: 28px;
-}
-
 .thx .article h1 {
 	margin-top: 0px;
 	margin-bottom: 5px;
@@ -1864,6 +1854,16 @@ ruby rt {
 	margin-bottom: 12px;
 }
 
+.entry-content .wp-block-image {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.entry-content .wp-block-image figcaption {
+	margin: 0px;
+	line-height: 28px;
+}
+
 .wp-block-columns + p, .wp-block-columns + ul, .wp-block-columns + ol, .wp-block-columns + li, .wp-block-columns + dl, .wp-block-columns + dt, .wp-block-columns + dd {
 	margin-top: 7px;
 }
@@ -1970,14 +1970,6 @@ ruby rt {
 	.entry-content > :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
 		margin-top: 14px;
 		margin-bottom: 14px;
-	}
-	.thx .wp-block-image {
-		margin-top: 14px;
-		margin-bottom: 14px;
-	}
-	.thx .wp-block-image figcaption {
-		margin: 0px;
-		line-height: 32px;
 	}
 	.thx .article h1 {
 		margin-top: 0px;
@@ -2435,6 +2427,14 @@ ruby rt {
 	}
 	.entry-content .wp-block-embed {
 		margin-bottom: 14px;
+	}
+	.entry-content .wp-block-image {
+		margin-top: 14px;
+		margin-bottom: 14px;
+	}
+	.entry-content .wp-block-image figcaption {
+		margin: 0px;
+		line-height: 32px;
 	}
 	.wp-block-columns + p, .wp-block-columns + ul, .wp-block-columns + ol, .wp-block-columns + li, .wp-block-columns + dl, .wp-block-columns + dt, .wp-block-columns + dd {
 		margin-top: 8px;
@@ -2636,14 +2636,6 @@ ruby rt {
 		margin-top: 14px;
 		margin-bottom: 14px;
 	}
-	.thx .wp-block-image {
-		margin-top: 14px;
-		margin-bottom: 14px;
-	}
-	.thx .wp-block-image figcaption {
-		margin: 0px;
-		line-height: 32px;
-	}
 	.thx .article h1 {
 		margin-top: 0px;
 		margin-bottom: 6px;
@@ -3100,6 +3092,14 @@ ruby rt {
 	}
 	.entry-content .wp-block-embed {
 		margin-bottom: 14px;
+	}
+	.entry-content .wp-block-image {
+		margin-top: 14px;
+		margin-bottom: 14px;
+	}
+	.entry-content .wp-block-image figcaption {
+		margin: 0px;
+		line-height: 32px;
 	}
 	.wp-block-columns + p, .wp-block-columns + ul, .wp-block-columns + ol, .wp-block-columns + li, .wp-block-columns + dl, .wp-block-columns + dt, .wp-block-columns + dd {
 		margin-top: 8px;
