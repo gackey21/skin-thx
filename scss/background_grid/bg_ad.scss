@@ -1,7 +1,7 @@
 .ad-area {
   margin-top: $line_space;
   margin-bottom: $line_space;
-  background-color: fade-out($white, 0.2);
+  @include set-frost();
 }
 .ad-label {
   @include p-margin-top();

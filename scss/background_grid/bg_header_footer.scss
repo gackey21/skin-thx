@@ -13,7 +13,7 @@
   padding: 0px;
   font-size: $font_size;
   line-height: $line_height_px;
-  background: fade-out($white, 0.2);
+  @include set-frost();
 }
 .toc-title {
   padding-top: $font_size / 2 - 1px;
