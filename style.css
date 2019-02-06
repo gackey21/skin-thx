@@ -1613,6 +1613,14 @@ p + .wp-block-cocoon-blocks-blogcard, ul + .wp-block-cocoon-blocks-blogcard, ol 
 	margin-bottom: 0px;
 }
 
+.block-box div[class*="-content"] > :first-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
+	margin-top: 0px;
+}
+
+.block-box div[class*="-content"] > :last-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
+	margin-bottom: 0px;
+}
+
 .block-box p:first-of-type {
 	margin-top: -6px;
 }
@@ -2208,6 +2216,12 @@ ruby rt {
 		margin-top: 0px;
 	}
 	.block-box > :last-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
+		margin-bottom: 0px;
+	}
+	.block-box div[class*="-content"] > :first-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
+		margin-top: 0px;
+	}
+	.block-box div[class*="-content"] > :last-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
 		margin-bottom: 0px;
 	}
 	.block-box p:first-of-type {
@@ -2863,6 +2877,12 @@ ruby rt {
 		margin-top: 0px;
 	}
 	.block-box > :last-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
+		margin-bottom: 0px;
+	}
+	.block-box div[class*="-content"] > :first-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
+		margin-top: 0px;
+	}
+	.block-box div[class*="-content"] > :last-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
 		margin-bottom: 0px;
 	}
 	.block-box p:first-of-type {

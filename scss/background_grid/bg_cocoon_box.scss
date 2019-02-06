@@ -6,6 +6,14 @@
   & > :last-child#{$str_tags_exclusion} {
     margin-bottom: 0px;
   }
+  div[class*="-content"] > {
+    :first-child#{$str_tags_exclusion} {
+      margin-top: 0px;
+    }
+    :last-child#{$str_tags_exclusion} {
+      margin-bottom: 0px;
+    }
+  }
   >ul,>ol {
     > li {
       &:first-of-type {
