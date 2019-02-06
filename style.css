@@ -1732,6 +1732,7 @@ p + .wp-block-cocoon-blocks-blogcard, ul + .wp-block-cocoon-blocks-blogcard, ol 
 	margin-bottom: 0px;
 	padding-top: 13px;
 	padding-bottom: 13px;
+	background: rgba(255, 255, 255, 0.8);
 	border-width: 1px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -2321,6 +2322,7 @@ ruby rt {
 		margin-bottom: 0px;
 		padding-top: 15px;
 		padding-bottom: 15px;
+		background: rgba(255, 255, 255, 0.8);
 		border-width: 1px;
 		padding-left: 17px;
 		padding-right: 17px;
@@ -2982,6 +2984,7 @@ ruby rt {
 		margin-bottom: 0px;
 		padding-top: 15px;
 		padding-bottom: 15px;
+		background: rgba(255, 255, 255, 0.8);
 		border-width: 1px;
 		padding-left: 17px;
 		padding-right: 17px;
