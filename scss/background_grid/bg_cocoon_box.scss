@@ -52,7 +52,7 @@
   margin-bottom: $line_space;
   padding-top: $line_height_px / 2 - 2px;
   padding-bottom: $line_height_px / 2 - 2px;
-  background: fade-out($white, 0.2);
+  @include set-frost();
 }
 
 /* インフォボックス */
@@ -95,7 +95,7 @@
   margin-bottom: $line_space;
   padding-top: $line_height_px / 2 - 1px;
   padding-bottom: $line_height_px / 2 - 1px;
-  background: fade-out($white, 0.2);
+  @include set-frost();
   @include common-icon-box($font_width);
 }
 
@@ -122,7 +122,7 @@
       margin-bottom:  - 0px;
       padding-top: $line_height_px / 2 - 1px;
       padding-bottom: $line_height_px / 2 - 1px;
-      background: fade-out($white, 0.2);
+      @include set-frost();
       @include toggle-checkbox($font_width);
     }
   }
@@ -138,7 +138,7 @@
 .caption-box-content {
   padding-top: $line_height_px / 2 - 2px;
   padding-bottom: $line_height_px / 2 - 2px;
-  background: fade-out($white, 0.2);
+  @include set-frost();
   @include caption-box($font_width);
 }
 
@@ -158,7 +158,7 @@
   margin-top: - 2 * 3px;
   padding-top: $line_height_px / 2 - 2px;
   padding-bottom: $line_height_px / 2 - 2px;
-  background: fade-out($white, 0.2);
+  @include set-frost();
   @include tab-caption-box($font_width);
 }
 .tab-caption-box-label-text,
@@ -187,7 +187,7 @@
     margin-top: 0px;
     padding-top: $line_height_px / 2 - 2px;
     padding-bottom: $line_height_px / 2 - 2px;
-    background: fade-out($white, 0.2);
+    @include set-frost();
     @include label-box($font_width);
   }
 }
