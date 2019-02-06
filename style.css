@@ -1823,6 +1823,10 @@ ruby rt {
 	display: block;
 }
 
+.thx-set-frost {
+	background: rgba(255, 255, 255, 0.8);
+}
+
 .thx-set-grid {
 	line-height: 28px;
 	background-image: linear-gradient(to bottom, rgba(41, 166, 224, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(41, 166, 224, 0.25) 0%, rgba(41, 166, 224, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(41, 166, 224, 0.25) 3%, transparent 0%, transparent 95%, rgba(41, 166, 224, 0.25) 0%);
@@ -2399,6 +2403,9 @@ ruby rt {
 	}
 	.editor-rich-text ruby rt {
 		display: block;
+	}
+	.thx-set-frost {
+		background: rgba(255, 255, 255, 0.8);
 	}
 	.thx-set-grid {
 		line-height: 32px;
@@ -3061,6 +3068,9 @@ ruby rt {
 	}
 	.editor-rich-text ruby rt {
 		display: block;
+	}
+	.thx-set-frost {
+		background: rgba(255, 255, 255, 0.8);
 	}
 	.thx-set-grid {
 		line-height: 32px;
