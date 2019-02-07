@@ -46,13 +46,18 @@ jQuery(function(){
   var fz = parseInt(jQuery('body').css('font-size'));
   var lh = parseInt(jQuery('body').css('line-height'));
   var ls = lh - fz;
-  var lineUpOnce = jQuery(`pre,.blogcard-content,blockquote,.wp-block-spacer`);
+  var lineUpOnce = jQuery(`
+    .blogcard-content,
+    .wp-block-spacer,
+    blockquote,
+    pre
+  `);
   var lineUp = jQuery(`
-    table,
     .ad-area,
     .wp-block-image,
     .wp-block-gallery,
-    .blogcard-thumbnail
+    .blogcard-thumbnail,
+    table
   `);
 
   jQuery(window).on('load', function (){
