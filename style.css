@@ -284,7 +284,10 @@ h6,
 .sidebar h3,
 .widget-entry-cards.large-thumb-on .card-title,
 .cat-label,
-.blogcard-title {
+.blogcard-title,
+.tab-caption-box-label-text,
+.block-box-label-text,
+.toggle-button {
 	font-family: "新ゴ R", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	font-weight: 600;
 }
@@ -1759,12 +1762,6 @@ p + .wp-block-cocoon-blocks-blogcard, ul + .wp-block-cocoon-blocks-blogcard, ol 
 	padding-right: 14px;
 }
 
-.tab-caption-box-label-text,
-.block-box-label-text {
-	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-	font-weight: 500;
-}
-
 /* ラベルボックス */
 .label-box {
 	position: relative;
@@ -2369,11 +2366,6 @@ ruby rt {
 		border-width: 2px;
 		padding-left: 16px;
 		padding-right: 16px;
-	}
-	.tab-caption-box-label-text,
-	.block-box-label-text {
-		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-		font-weight: 500;
 	}
 	/* ラベルボックス */
 	.label-box {
@@ -3051,11 +3043,6 @@ ruby rt {
 		border-width: 2px;
 		padding-left: 16px;
 		padding-right: 16px;
-	}
-	.tab-caption-box-label-text,
-	.block-box-label-text {
-		font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-		font-weight: 500;
 	}
 	/* ラベルボックス */
 	.label-box {
