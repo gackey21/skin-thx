@@ -60,6 +60,12 @@ $grid_color: fade-out($key_sub_color, 0.75);
 @mixin p-margin-bottom() {
   margin-bottom: - $str_inner_margin_bottom;
 }
+@mixin p-p-margin-top() {
+  margin-top: $line_height_px + $str_inner_margin_bottom;
+}
+@mixin p-li-margin-top() {
+  margin-top: $str_inner_margin_bottom;
+}
 .entry-content > #{$str_tags_exclusion} {
   margin-top: $line_space;
   margin-bottom: $line_space;
@@ -90,17 +96,17 @@ $grid_color: fade-out($key_sub_color, 0.75);
     @include p-margin();
     & + {
       p {
-        margin-top: $line_height_px + $line_space / 2 + 1;
+        @include p-p-margin-top();
       }
       ul,ol {
         > li {
           &:first-of-type {
-            margin-top: $line_space /2 + 1;
+            @include p-li-margin-top();
           }
         }
       }
       dl {
-        margin-top: $line_space /2 + 1;
+        @include p-li-margin-top();
       }
     }
   }
@@ -111,7 +117,7 @@ $grid_color: fade-out($key_sub_color, 0.75);
       margin: 0px;
     }
     &:not(.wp-block-gallery) + p {
-      margin-top: $str_inner_margin_bottom;
+      @include p-li-margin-top();
     }
   }
   ul.wp-block-gallery {
@@ -185,7 +191,7 @@ $grid_color: fade-out($key_sub_color, 0.75);
   & {
     + {
       #{$str_tags} {
-        margin-top: $str_inner_margin_bottom;
+        @include p-li-margin-top();
       }
     }
   }
