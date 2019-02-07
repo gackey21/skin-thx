@@ -1409,6 +1409,7 @@ body {
 	margin-top: 12px;
 	margin-bottom: 12px;
 	padding-left: 0px;
+	background: rgba(255, 255, 255, 0.8);
 }
 
 .article ul.wp-block-gallery .blocks-gallery-item {
@@ -2073,6 +2074,7 @@ ruby rt {
 		margin-top: 14px;
 		margin-bottom: 14px;
 		padding-left: 0px;
+		background: rgba(255, 255, 255, 0.8);
 	}
 	.article ul.wp-block-gallery .blocks-gallery-item {
 		margin-top: 0px;
@@ -2754,6 +2756,7 @@ ruby rt {
 		margin-top: 14px;
 		margin-bottom: 14px;
 		padding-left: 0px;
+		background: rgba(255, 255, 255, 0.8);
 	}
 	.article ul.wp-block-gallery .blocks-gallery-item {
 		margin-top: 0px;

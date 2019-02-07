@@ -120,6 +120,7 @@ $grid_color: fade-out($key_sub_color, 0.75);
     margin-top: $line_space;
     margin-bottom: $line_space;
     padding-left: 0px;
+    @include set-frost();
     .blocks-gallery-item {
       margin-top: 0px;
       margin-bottom: $line_space;
