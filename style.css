@@ -1589,7 +1589,6 @@ p + .wp-block-cocoon-blocks-blogcard, ul + .wp-block-cocoon-blocks-blogcard, ol 
 }
 
 .blogcard-favicon {
-	display: inline-block;
 	height: 12px;
 	margin-top: 0px;
 	margin-right: 6px;
@@ -2218,7 +2217,6 @@ ruby rt {
 		line-height: 1;
 	}
 	.blogcard-favicon {
-		display: inline-block;
 		height: 14px;
 		margin-top: 0px;
 		margin-right: 7px;
@@ -2895,7 +2893,6 @@ ruby rt {
 		line-height: 1;
 	}
 	.blogcard-favicon {
-		display: inline-block;
 		height: 14px;
 		margin-top: 0px;
 		margin-right: 7px;
