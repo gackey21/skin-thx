@@ -66,10 +66,6 @@ $grid_color: fade-out($key_sub_color, 0.75);
 @mixin p-li-margin-top() {
   margin-top: $str_inner_margin_bottom;
 }
-.entry-content > #{$str_tags_exclusion} {
-  margin-top: $line_space;
-  margin-bottom: $line_space;
-}
 //詳細度の弱いクラス
 .thx {
   .article {
@@ -163,6 +159,10 @@ $grid_color: fade-out($key_sub_color, 0.75);
 }
 .entry-content {
   margin-bottom: $line_height_px * 2 + $line_space;
+  > #{$str_tags_exclusion} {
+    margin-top: $line_space;
+    margin-bottom: $line_space;
+  }
   @include columns-margin();
   .block-box {
     @include columns-margin();
