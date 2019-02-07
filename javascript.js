@@ -81,7 +81,7 @@ jQuery(function(){
         oh = Math.ceil(oh / lh) * lh;
         oh = oh + fz;
 
-        if(scrollPos > elemOffset - wh + (wh / 2) ){
+        if(scrollPos > elemOffset - wh + (wh * 0 / 1) ){
           jQuery(this).outerHeight(oh);
         }
       }
