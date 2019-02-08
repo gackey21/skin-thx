@@ -544,6 +544,10 @@ a[data-slide-contents*="slide-contents"]:hover {
 	text-overflow: ellipsis;
 }
 
+.cat-label-10 {
+	background-color: rgba(0, 115, 170, 0.75);
+}
+
 .cat-label-11 {
 	background-color: rgba(63, 119, 150, 0.75);
 }
