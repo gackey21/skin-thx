@@ -128,11 +128,13 @@ $grid_color: fade-out($key_sub_color, 0.75);
   }
   dl {
     margin: 0px;
-    :first-child {
-      @include p-margin-top();
-    }
-    :last-child {
-      @include p-margin-bottom();
+    > {
+      :first-child {
+        @include p-margin-top();
+      }
+      :last-child {
+        @include p-margin-bottom();
+      }
     }
   }
   @import "bg_ad";
