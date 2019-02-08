@@ -22,13 +22,14 @@ ruby {
 .thx_yomi {
   font-size: $font_size / 2;
   position: absolute;
-  top: - $font_size * 0.75;
+  top: - $str_inner_margin_shift * 1px;
   display: inline-flex;
   justify-content: space-between;
   left:  $font_size / 4;
   right:  $font_size / 4;
+  line-height: $line_space / 2;
 }
 .thx_yomi_long {
-left:  0px;
-right:  0px;
+  left:  0px;
+  right:  0px;
 }

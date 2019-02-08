@@ -1810,11 +1810,12 @@ ruby rt {
 .thx_yomi {
 	font-size: 8px;
 	position: absolute;
-	top: -12px;
+	top: -1px;
 	display: inline-flex;
 	justify-content: space-between;
 	left: 4px;
 	right: 4px;
+	line-height: 6px;
 }
 
 .thx_yomi_long {
@@ -2407,11 +2408,12 @@ ruby rt {
 	.thx_yomi {
 		font-size: 9px;
 		position: absolute;
-		top: -13.5px;
+		top: -1px;
 		display: inline-flex;
 		justify-content: space-between;
 		left: 4.5px;
 		right: 4.5px;
+		line-height: 7px;
 	}
 	.thx_yomi_long {
 		left: 0px;
@@ -3083,11 +3085,12 @@ ruby rt {
 	.thx_yomi {
 		font-size: 9px;
 		position: absolute;
-		top: -13.5px;
+		top: -1px;
 		display: inline-flex;
 		justify-content: space-between;
 		left: 4.5px;
 		right: 4.5px;
+		line-height: 7px;
 	}
 	.thx_yomi_long {
 		left: 0px;
