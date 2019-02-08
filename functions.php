@@ -23,6 +23,22 @@ function is_entry_card_border_visible(){
 
 
 
+//リンクのないカテゴリーの取得（複数）
+//カテゴリーID付加
+function get_thx_categories(){
+  $categories = null;
+  foreach((get_the_category()) as $category){
+    $categories .= '<div class="entry-category thx-label cat-label-'.$category->cat_ID.'">'.$category->cat_name.'</div>';
+  }
+  return $categories;
+}
+
+function thx_categories(){
+  echo get_thx_categories();
+}
+
+
+
 // 引用符解除
 remove_filter("the_content", "wptexturize");
 remove_filter("the_excerpt", "wptexturize");
