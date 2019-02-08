@@ -55,3 +55,53 @@
     display: block;
   }
 }
+
+//last-childは左展開
+$menu_height: 60px;
+$sub_menu_width: 176px;
+@mixin menu_item_has_children($unicode:''){
+  position: relative;
+  >a{
+    &::after{
+      @include fontawesome($unicode);
+      position: absolute;
+      right: 3px;
+      top: 0;
+      //top: ($menu_height - $icon_height) / 2;
+    }
+  }
+}
+@mixin fontawesome($unicode:'/f004') {
+  font-family: FontAwesome;
+  content: $unicode;
+  padding-right: 3px;
+}
+.navi-in > ul {
+  .sub-menu {
+    min-width: $sub_menu_width;
+    ul{
+            top: -$menu_height;
+            left: $sub_menu_width;
+            position: relative;
+          }
+  }
+  > li {
+    &:last-of-type {
+      .sub-menu {
+        .menu-item-has-children {
+          @include menu_item_has_children('\f104');
+          >a{
+            &::after{
+              left: 3px;
+              //top: ($menu_height - $icon_height) / 2;
+            }
+          }
+          ul {
+            margin-left: -$sub_menu_width * 2;
+            margin-right: $sub_menu_width * 2;
+          }
+        }
+      }
+    }
+  }
+}

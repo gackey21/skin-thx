@@ -242,6 +242,38 @@ select {
 	display: block;
 }
 
+.navi-in > ul .sub-menu {
+	min-width: 176px;
+}
+
+.navi-in > ul .sub-menu ul {
+	top: -60px;
+	left: 176px;
+	position: relative;
+}
+
+.navi-in > ul > li:last-of-type .sub-menu .menu-item-has-children {
+	position: relative;
+}
+
+.navi-in > ul > li:last-of-type .sub-menu .menu-item-has-children > a::after {
+	font-family: FontAwesome;
+	content: "";
+	padding-right: 3px;
+	position: absolute;
+	right: 3px;
+	top: 0;
+}
+
+.navi-in > ul > li:last-of-type .sub-menu .menu-item-has-children > a::after {
+	left: 3px;
+}
+
+.navi-in > ul > li:last-of-type .sub-menu .menu-item-has-children ul {
+	margin-left: -352px;
+	margin-right: 352px;
+}
+
 blockquote::before, blockquote::after {
 	content: "“";
 }
