@@ -23,6 +23,10 @@ jQuery(window).on('load', function (){
     yomigana_length = yomigana.length * fz / 2;
     yomigana_space = yomigana_length + fz;
 
+    if (yomigana.length == 1) {
+      yomigana_span = '<div class="thx_yomi thx_yomi_mono">';
+    }
+
     if (yomigana_length + fz / 2 > ow) {
       yomigana_span = '<div class="thx_yomi thx_yomi_long">';
     }

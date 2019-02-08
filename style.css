@@ -1823,6 +1823,10 @@ ruby rt {
 	right: 0px;
 }
 
+.thx_yomi_mono {
+	display: inline-block;
+}
+
 .thx-set-frost {
 	background: rgba(255, 255, 255, 0.8);
 }
@@ -2418,6 +2422,9 @@ ruby rt {
 	.thx_yomi_long {
 		left: 0px;
 		right: 0px;
+	}
+	.thx_yomi_mono {
+		display: inline-block;
 	}
 	.thx-set-frost {
 		background: rgba(255, 255, 255, 0.8);
@@ -3095,6 +3102,9 @@ ruby rt {
 	.thx_yomi_long {
 		left: 0px;
 		right: 0px;
+	}
+	.thx_yomi_mono {
+		display: inline-block;
 	}
 	.thx-set-frost {
 		background: rgba(255, 255, 255, 0.8);
