@@ -538,10 +538,22 @@ a[data-slide-contents*="slide-contents"]:hover {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	color: #fff;
-	background-color: rgba(51, 51, 51, 0.7);
+	background-color: rgba(30, 79, 159, 0.75);
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+.cat-label-11 {
+	background-color: rgba(63, 119, 150, 0.75);
+}
+
+.cat-label-15 {
+	background-color: rgba(56, 180, 139, 0.75);
+}
+
+.cat-label-16 {
+	background-color: rgba(255, 63, 148, 0.75);
 }
 
 /* サイズ調整 */

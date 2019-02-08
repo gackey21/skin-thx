@@ -14,9 +14,19 @@
   padding-bottom: 0.1em;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  color: #fff;
-  background-color: rgba(51,51,51,.7);
+  color: $white;
+  background-color: fade-out($key_color, 0.25);;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.cat-label-11 {
+  background-color: fade-out(#3F7796, 0.25);;
+}
+.cat-label-15 {
+  background-color: fade-out(#38b48b, 0.25);;
+}
+.cat-label-16 {
+  background-color: fade-out(#FF3F94, 0.25);;
 }
