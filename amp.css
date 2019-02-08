@@ -11,7 +11,7 @@
 */
 /*以下にスタイルシートを記入してください*/
 body {
-	background-color: #eaf0fb;
+	background-color: #ecf9f5;
 	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Arial, sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-	background-color: #1e4f9f;
+	background-color: #38b48b;
 }
 
 .widget_recent_entries ul li a:hover,
@@ -38,7 +38,7 @@ body {
 .comment-reply-link:hover,
 .navi-footer-in a:hover,
 .navi-footer-in a:hover {
-	background-color: rgba(30, 79, 159, 0.05);
+	background-color: rgba(56, 180, 139, 0.05);
 }
 
 .page-numbers,
@@ -48,7 +48,7 @@ body {
 .pagination-next-link,
 .comment-reply-link,
 .toc {
-	border: 1px solid #29a6e0;
+	border: 1px solid #2f5d50;
 }
 
 .toc {
@@ -58,7 +58,7 @@ body {
 .page-numbers,
 .pagination-next-link {
 	border-radius: 8px;
-	background: rgba(30, 79, 159, 0.05);
+	background: rgba(56, 180, 139, 0.05);
 }
 
 .pagination .page-numbers,
@@ -69,7 +69,7 @@ body {
 .pagination .current,
 .page-numbers.current,
 .page-numbers.dots {
-	background: #29a6e0;
+	background: #2f5d50;
 }
 
 .cat-label,
@@ -79,7 +79,7 @@ body {
 .navi-menu-content a,
 .go-to-top-button,
 #submit {
-	background-color: #1e4f9f;
+	background-color: #38b48b;
 	color: #fff;
 }
 
@@ -141,7 +141,7 @@ select {
 }
 
 .post-count {
-	background-color: #9cbbec;
+	background-color: #caeee2;
 	padding: 0 8px;
 	border-radius: 6px;
 	font-size: 0.8em;
@@ -178,13 +178,13 @@ select {
 
 .comment-list ul.children {
 	padding: 0.6em;
-	background-color: rgba(30, 79, 159, 0.05);
-	border-left: 2px solid #29a6e0;
+	background-color: rgba(56, 180, 139, 0.05);
+	border-left: 2px solid #2f5d50;
 }
 
 .widget-entry-cards.ranking-visible .card-thumb::before {
 	border-radius: 50%;
-	background: #1e4f9f;
+	background: #38b48b;
 	top: -10px;
 	left: -10px;
 	border: 2px solid #eee;
@@ -202,7 +202,7 @@ select {
 }
 
 .navi ul .sub-menu {
-	background-color: #1e4f9f;
+	background-color: #38b48b;
 	opacity: 0.96;
 }
 
@@ -284,6 +284,7 @@ h6,
 .sidebar h3,
 .widget-entry-cards.large-thumb-on .card-title,
 .cat-label,
+.thx-label,
 .blogcard-title,
 .tab-caption-box-label-text,
 .block-box-label-text,
@@ -319,13 +320,13 @@ h6,
 	letter-spacing: 0.025em;
 	color: #fff;
 	text-shadow: 0.075em 0.075em 0.02em rgba(0, 0, 0, 0.21);
-	background-color: #1e4f9f;
+	background-color: #38b48b;
 }
 
 /* フッター */
 .footer {
 	padding-top: 2px;
-	background-color: #1e4f9f;
+	background-color: #38b48b;
 }
 
 .footer-bottom-logo .site-name-text {
@@ -345,7 +346,7 @@ h6,
 }
 
 .go-to-top-button {
-	background-color: #29a6e0;
+	background-color: #2f5d50;
 }
 
 /* コード改行禁止 */
@@ -391,7 +392,7 @@ pre code span {
 	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	font-weight: 800;
 	line-height: 1em;
-	color: rgba(41, 166, 224, 0.5);
+	color: rgba(47, 93, 80, 0.5);
 	transition-duration: 0.3s;
 }
 
@@ -400,7 +401,7 @@ pre code span {
 .article h4:hover::after,
 .article h5:hover::after,
 .article h6:hover::after {
-	color: rgba(41, 166, 224, 0);
+	color: rgba(47, 93, 80, 0);
 	transition-duration: 0.3s;
 }
 
@@ -410,7 +411,7 @@ pre code span {
 	counter-increment: c-h2;
 	counter-reset: c-h3;
 	color: #fff;
-	background-color: #1e4f9f;
+	background-color: #38b48b;
 }
 
 .article h2::after {
@@ -423,7 +424,7 @@ pre code span {
 	line-height: 2rem;
 	counter-increment: c-h3;
 	counter-reset: c-h4;
-	background: linear-gradient(90deg, #9cbbec, #fff);
+	background: linear-gradient(90deg, #caeee2, #fff);
 	border: none;
 }
 
@@ -435,7 +436,7 @@ pre code span {
 .article h4,
 .article h5,
 .article h6 {
-	border-color: #9cbbec;
+	border-color: #caeee2;
 }
 
 .article h4 {
@@ -479,16 +480,16 @@ pre code span {
 /* サイドバーウィジェット */
 .sidebar h3 {
 	color: #fff;
-	background-color: #1e4f9f;
+	background-color: #38b48b;
 	padding: 0.4em;
 	margin: 0.3em 0;
 }
 
 /* スライドコンテンツ */
 .slide-contents {
-	background: #eaf0fb;
+	background: #ecf9f5;
 	width: 100%;
-	border: #29a6e0 1px solid;
+	border: #2f5d50 1px solid;
 	margin: 0 0 10px 0;
 	padding: 1rem;
 	display: none;
@@ -529,7 +530,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 
 .thx-label {
 	display: block;
-	font-size: 0.5em;
+	font-size: 0.625em;
 	line-height: 1.25em;
 	margin-top: 0.1em;
 	padding-top: 0.1em;
@@ -537,10 +538,26 @@ a[data-slide-contents*="slide-contents"]:hover {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	color: #fff;
-	background-color: rgba(51, 51, 51, 0.7);
+	background-color: rgba(56, 180, 139, 0.75);
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+.cat-label-10 {
+	background-color: rgba(0, 115, 170, 0.75);
+}
+
+.cat-label-11 {
+	background-color: rgba(63, 119, 150, 0.75);
+}
+
+.cat-label-15 {
+	background-color: rgba(56, 180, 139, 0.75);
+}
+
+.cat-label-16 {
+	background-color: rgba(255, 63, 148, 0.75);
 }
 
 /* サイズ調整 */
