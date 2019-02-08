@@ -80,10 +80,10 @@ $sub_menu_width: 176px;
   .sub-menu {
     min-width: $sub_menu_width;
     ul{
-            top: -$menu_height;
-            left: $sub_menu_width;
-            position: relative;
-          }
+      top: -$menu_height;
+      left: $sub_menu_width;
+      position: relative;
+    }
   }
   > li {
     &:last-of-type {
