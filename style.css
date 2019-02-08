@@ -520,6 +520,29 @@ a[data-slide-contents*="slide-contents"]:hover {
 	order: 3;
 }
 
+/* サブカテゴリ表示 */
+.thx_category_space {
+	position: absolute;
+	top: 0.2em;
+	left: 0.2em;
+}
+
+.thx-label {
+	display: block;
+	font-size: 0.5em;
+	line-height: 1.25em;
+	margin-top: 0.1em;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	color: #fff;
+	background-color: rgba(51, 51, 51, 0.7);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 /* サイズ調整 */
 .btn-wrap-w98 > a {
 	width: 98%;
