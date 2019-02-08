@@ -37,6 +37,12 @@ function thx_categories(){
   echo get_thx_categories();
 }
 
+function get_the_category_orderby_id( $categories ) {
+    usort( $categories, '_usort_terms_by_ID');
+    return $categories;
+}
+add_filter( 'get_the_categories', 'get_the_category_orderby_id' );
+
 
 
 // 引用符解除
