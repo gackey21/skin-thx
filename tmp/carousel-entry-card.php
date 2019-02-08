@@ -16,7 +16,9 @@ if ( !defined( 'ABSPATH' ) ) exit; ?>
           <?php else: // サムネイルを持っていないとき ?>
     <img src="<?php echo get_no_image_320x180_url(); ?>" alt="" class="no-image carousel-entry-card-no-image" width="<?php echo THUMB320WIDTH; ?>" height="<?php echo THUMB320HEIGHT; ?>" />
     <?php endif; ?>
-    <?php the_nolink_category(); //カテゴリラベルの取得 ?>
+    <div class="thx_category_space">
+      <?php thx_categories(); //カテゴリラベルの取得 ?>
+    </div>
   </figure><!-- /.carousel-entry-thumb -->
 
   <div class="carousel-entry-card-content card-content">
