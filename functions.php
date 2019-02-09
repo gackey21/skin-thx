@@ -23,6 +23,91 @@ function is_entry_card_border_visible(){
 
 
 
+/*
+//汎用エントリーウィジェットのタグ生成
+function generate_widget_entries_tag($entry_count = 5, $entry_type = ET_DEFAULT, $cat_ids = array(), $include_children = 0, $post_type = null, $taxonomy = 'category', $random = 0){
+  //ランダムが有効な時は関連記事
+  if ($random) {
+    $prefix = 'widget-related';
+  } else {
+    $prefix = 'new';
+  }
+  $args = array(
+    'posts_per_page' => $entry_count,
+    'no_found_rows' => true,
+  );
+  if ($post_type) {
+    $args += array(
+      'post_type' => explode(',', $post_type)
+    );
+  }
+  if ($random) {
+    $args += array(
+      'orderby' => 'rand'
+    );
+  }
+  if ( $cat_ids ) {
+    //_v($cat_ids);
+    $args += array(
+      'tax_query' => array(
+        array(
+          'taxonomy' => $taxonomy,
+          'terms' => $cat_ids,
+          'include_children' => $include_children,
+          'field' => 'term_id',
+          'operator' => 'IN'
+          ),
+        'relation' => 'AND'
+      )
+    );
+  }
+  if ($random) {
+    $args = apply_filters('widget_related_entries_args', $args);
+  } else {
+    $args = apply_filters('widget_new_entries_args', $args);
+  }
+  $args = apply_filters('widget_entries_args', $args);
+  //_v($args);
+  $thumb_size = get_widget_entries_thumbnail_size($entry_type);
+  //query_posts( $args ); //クエリの作成
+  $query = new WP_Query( $args );
+  ?>
+  <div class="<?php echo $prefix; ?>-entry-cards widget-entry-cards no-icon cf<?php echo get_additional_widget_entriy_cards_classes($entry_type); ?>">
+  <?php //if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  <?php if ( $query -> have_posts() ) : while ( $query -> have_posts() ) : $query -> the_post(); ?>
+  <a href="<?php the_permalink(); ?>" class="<?php echo $prefix; ?>-entry-card-link widget-entry-card-link a-wrap" title="<?php the_title(); ?>">
+    <div class="<?php echo $prefix; ?>-entry-card widget-entry-card e-card cf">
+      <figure class="<?php echo $prefix; ?>-entry-card-thumb widget-entry-card-thumb card-thumb">
+      <?php if ( has_post_thumbnail() ): // サムネイルを持っているときの処理 ?>
+        <?php the_post_thumbnail( $thumb_size, array('alt' => '') ); ?>
+      <?php else: // サムネイルを持っていないときの処理
+        $url = ($entry_type == ET_DEFAULT) ? get_no_image_120x68_url() : get_no_image_320x180_url();
+        $w   = ($entry_type == ET_DEFAULT) ? THUMB120WIDTH  : THUMB320WIDTH;
+        $h   = ($entry_type == ET_DEFAULT) ? THUMB120HEIGHT : THUMB320HEIGHT;
+        ?>
+        <img src="<?php echo $url; ?>" alt="" class="no-image <?php echo $prefix; ?>-entry-card-thumb-no-image widget-entry-card-thumb-no-image" width="<?php echo $w; ?>" height="<?php echo $h; ?>" />
+      <?php endif; ?>
+      <?php thx_categories(); //カテゴリラベルの取得 ?>
+      </figure><!-- /.new-entry-card-thumb -->
+
+      <div class="<?php echo $prefix; ?>-entry-card-content widget-entry-card-content card-content">
+        <div class="<?php echo $prefix; ?>-entry-card-title widget-entry-card-title card-title"><?php the_title();?></div>
+        <?php generate_widget_entry_card_date($prefix); ?>
+      </div><!-- /.new-entry-content -->
+    </div><!-- /.new-entry-card -->
+  </a><!-- /.new-entry-card-link -->
+  <?php endwhile;
+  else :
+    echo '<p>'.__( '記事は見つかりませんでした。', THEME_NAME ).'</p>';//見つからない時のメッセージ
+  endif; ?>
+  <?php wp_reset_postdata(); ?>
+  <?php //wp_reset_query(); ?>
+  </div>
+<?php
+}*/
+
+
+
 //リンクのないカテゴリーの取得（複数）
 //カテゴリーID付加
 function get_thx_categories(){
