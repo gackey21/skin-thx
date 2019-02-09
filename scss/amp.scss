@@ -59,6 +59,8 @@ $mq-breakpoints: (
   }
 }
 
+//基本変数
+@import "var_thx";
 //基本要素
 @import "base";
 //グローバルナビ
