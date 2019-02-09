@@ -1919,7 +1919,7 @@ ruby rt {
 }
 
 .entry-content {
-	margin-bottom: 68px;
+	margin-bottom: 56px;
 }
 
 .entry-content > :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
@@ -2516,7 +2516,7 @@ ruby rt {
 		background-size: 18px 32px;
 	}
 	.entry-content {
-		margin-bottom: 78px;
+		margin-bottom: 64px;
 	}
 	.entry-content > :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
 		margin-top: 14px;
@@ -3196,7 +3196,7 @@ ruby rt {
 		background-size: 18px 32px;
 	}
 	.entry-content {
-		margin-bottom: 78px;
+		margin-bottom: 64px;
 	}
 	.entry-content > :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
 		margin-top: 14px;

@@ -161,7 +161,7 @@ $grid_color: fade-out($key_sub_color, 0.75);
   }
 }
 .entry-content {
-  margin-bottom: $line_height_px * 2 + $line_space;
+  margin-bottom: $line_height_px * 2;
   > #{$str_tags_exclusion} {
     margin-top: $line_space;
     margin-bottom: $line_space;
