@@ -1592,6 +1592,8 @@ body {
 .article .entry-categories-tags {
 	margin-bottom: 0px;
 	background: rgba(255, 255, 255, 0.8);
+	display: flex;
+	align-items: center;
 }
 
 .article .entry-categories-tags > div {
@@ -2253,6 +2255,8 @@ ruby rt {
 	.article .entry-categories-tags {
 		margin-bottom: 0px;
 		background: rgba(255, 255, 255, 0.8);
+		display: flex;
+		align-items: center;
 	}
 	.article .entry-categories-tags > div {
 		margin-bottom: 0px;
@@ -2945,6 +2949,8 @@ ruby rt {
 	.article .entry-categories-tags {
 		margin-bottom: 0px;
 		background: rgba(255, 255, 255, 0.8);
+		display: flex;
+		align-items: center;
 	}
 	.article .entry-categories-tags > div {
 		margin-bottom: 0px;

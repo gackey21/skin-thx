@@ -72,6 +72,8 @@ footer {
 .entry-categories-tags {
   margin-bottom: 0px;
   @include set-frost();
+  display: flex;
+  align-items: center;
 //  padding-top: $line_space / 2;
 //  padding-bottom: $line_space / 2 + $font_size;
   > div {
