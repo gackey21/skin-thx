@@ -37,6 +37,7 @@ function thx_categories(){
   echo get_thx_categories();
 }
 
+//カテゴリーをID順にソート
 function get_the_category_orderby_id( $categories ) {
     usort( $categories, '_usort_terms_by_ID');
     return $categories;
