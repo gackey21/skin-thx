@@ -358,6 +358,11 @@ h6,
 	background-color: #1e4f9f;
 }
 
+/* アーカイブページのコンテンツ */
+.ect-entry-card {
+	margin-top: 44px;
+}
+
 /* フッター */
 .footer {
 	padding-top: 2px;
