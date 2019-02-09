@@ -1,5 +1,5 @@
 .ad-area {
-  margin-top: $line_space;
+  margin-top: $line_space + $line_height_px;
   margin-bottom: $line_space;
   @include set-frost();
 }
