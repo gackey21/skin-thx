@@ -243,20 +243,20 @@ select {
 }
 
 .navi-in > ul .sub-menu {
-	min-width: 176px;
+	min-width: 240px;
 }
 
 .navi-in > ul .sub-menu ul {
 	top: -60px;
-	left: 176px;
+	left: 240px;
 	position: relative;
 }
 
-.navi-in > ul > li:last-of-type .sub-menu .menu-item-has-children {
+.navi-in > ul > li:nth-of-type(5) .sub-menu .menu-item-has-children {
 	position: relative;
 }
 
-.navi-in > ul > li:last-of-type .sub-menu .menu-item-has-children > a::after {
+.navi-in > ul > li:nth-of-type(5) .sub-menu .menu-item-has-children > a::after {
 	font-family: FontAwesome;
 	content: "";
 	padding-right: 3px;
@@ -265,13 +265,13 @@ select {
 	top: 0;
 }
 
-.navi-in > ul > li:last-of-type .sub-menu .menu-item-has-children > a::after {
+.navi-in > ul > li:nth-of-type(5) .sub-menu .menu-item-has-children > a::after {
 	left: 3px;
 }
 
-.navi-in > ul > li:last-of-type .sub-menu .menu-item-has-children ul {
-	margin-left: -352px;
-	margin-right: 352px;
+.navi-in > ul > li:nth-of-type(5) .sub-menu .menu-item-has-children ul {
+	margin-left: -480px;
+	margin-right: 480px;
 }
 
 blockquote::before, blockquote::after {

@@ -56,9 +56,9 @@
   }
 }
 
-//last-childは左展開
+//nth-of-type(5)は左展開
 $menu_height: 60px;
-$sub_menu_width: 176px;
+$sub_menu_width: 240px;
 @mixin menu_item_has_children($unicode:''){
   position: relative;
   >a{
@@ -86,7 +86,7 @@ $sub_menu_width: 176px;
     }
   }
   > li {
-    &:last-of-type {
+    &:nth-of-type(5) {
       .sub-menu {
         .menu-item-has-children {
           @include menu_item_has_children('\f104');
