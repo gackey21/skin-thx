@@ -252,6 +252,10 @@ select {
 	position: relative;
 }
 
+.navi-in > ul > li:nth-of-type(5) .sub-menu {
+	right: 0;
+}
+
 .navi-in > ul > li:nth-of-type(5) .sub-menu .menu-item-has-children {
 	position: relative;
 }

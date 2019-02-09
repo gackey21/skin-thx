@@ -88,6 +88,7 @@ $sub_menu_width: 240px;
   > li {
     &:nth-of-type(5) {
       .sub-menu {
+        right: 0;
         .menu-item-has-children {
           @include menu_item_has_children('\f104');
           >a{
