@@ -2,7 +2,7 @@ ruby {
   position: relative;
   display: inline-block;
   text-align: center;
-  &::before {
+/*  &::before {
     position: absolute;
 //    top: - $font_size * 0.25;
     top: - $font_size * 0.75;
@@ -11,7 +11,7 @@ ruby {
     margin: auto;
     font-size: $font_size / 2;
     content: attr(data-yomi);
-  }
+  }*/
   rt {
     display: none;
     .editor-rich-text & {

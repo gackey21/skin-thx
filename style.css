@@ -1884,16 +1884,16 @@ ruby {
 	position: relative;
 	display: inline-block;
 	text-align: center;
-}
-
-ruby::before {
-	position: absolute;
-	top: -12px;
-	left: 0;
-	right: 0;
-	margin: auto;
-	font-size: 8px;
-	content: attr(data-yomi);
+	/*  &::before {
+    position: absolute;
+//    top: - $font_size * 0.25;
+    top: - $font_size * 0.75;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: $font_size / 2;
+    content: attr(data-yomi);
+  }*/
 }
 
 ruby rt {
@@ -2504,15 +2504,16 @@ ruby rt {
 		position: relative;
 		display: inline-block;
 		text-align: center;
-	}
-	ruby::before {
-		position: absolute;
-		top: -13.5px;
-		left: 0;
-		right: 0;
-		margin: auto;
-		font-size: 9px;
-		content: attr(data-yomi);
+		/*  &::before {
+    position: absolute;
+//    top: - $font_size * 0.25;
+    top: - $font_size * 0.75;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: $font_size / 2;
+    content: attr(data-yomi);
+  }*/
 	}
 	ruby rt {
 		display: none;
@@ -3198,15 +3199,16 @@ ruby rt {
 		position: relative;
 		display: inline-block;
 		text-align: center;
-	}
-	ruby::before {
-		position: absolute;
-		top: -13.5px;
-		left: 0;
-		right: 0;
-		margin: auto;
-		font-size: 9px;
-		content: attr(data-yomi);
+		/*  &::before {
+    position: absolute;
+//    top: - $font_size * 0.25;
+    top: - $font_size * 0.75;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: $font_size / 2;
+    content: attr(data-yomi);
+  }*/
 	}
 	ruby rt {
 		display: none;
