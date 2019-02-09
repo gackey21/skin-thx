@@ -71,10 +71,27 @@ footer {
 }
 .entry-categories-tags {
   margin-bottom: 0px;
+  @include set-frost();
+//  padding-top: $line_space / 2;
+//  padding-bottom: $line_space / 2 + $font_size;
   > div {
     margin-bottom: 0px;
-    padding-top: 1px;
-    padding-bottom: 3px;
-    line-height: $line_height_px - 8px;
+//    padding-top: 1px;
+//    padding-bottom: 3px;
+//    line-height: $line_height_px - 8px;
   }
+}
+.sns-share,
+.sns-follow {
+  margin-top: $line_space + $line_height_px;
+  margin-bottom: $line_space;
+  @include set-frost();
+}
+.sns-share-message,
+.sns-follow-message {
+  @include p-margin-top();
+  margin-bottom: $line_space - $str_inner_margin_bottom;
+}
+.footer-meta {
+  line-height: $font_size;
 }

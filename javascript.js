@@ -51,6 +51,8 @@ jQuery(function(){
   var lh = parseInt(jQuery('body').css('line-height'));
   var ls = lh - fz;
   var lineUpOnce = jQuery(`
+    .sns-buttons,
+    .entry-categories-tags,
     .blogcard-content,
     .wp-block-spacer,
     blockquote,

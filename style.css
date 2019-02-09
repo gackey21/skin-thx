@@ -1591,13 +1591,28 @@ body {
 
 .article .entry-categories-tags {
 	margin-bottom: 0px;
+	background: rgba(255, 255, 255, 0.8);
 }
 
 .article .entry-categories-tags > div {
 	margin-bottom: 0px;
-	padding-top: 1px;
-	padding-bottom: 3px;
-	line-height: 20px;
+}
+
+.article .sns-share,
+.article .sns-follow {
+	margin-top: 40px;
+	margin-bottom: 12px;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.article .sns-share-message,
+.article .sns-follow-message {
+	margin-top: -5px;
+	margin-bottom: 5px;
+}
+
+.article .footer-meta {
+	line-height: 16px;
 }
 
 .article pre {
@@ -1919,7 +1934,7 @@ ruby rt {
 }
 
 .entry-content {
-	margin-bottom: 56px;
+	margin-bottom: 68px;
 }
 
 .entry-content > :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
@@ -2237,12 +2252,24 @@ ruby rt {
 	}
 	.article .entry-categories-tags {
 		margin-bottom: 0px;
+		background: rgba(255, 255, 255, 0.8);
 	}
 	.article .entry-categories-tags > div {
 		margin-bottom: 0px;
-		padding-top: 1px;
-		padding-bottom: 3px;
-		line-height: 24px;
+	}
+	.article .sns-share,
+	.article .sns-follow {
+		margin-top: 46px;
+		margin-bottom: 14px;
+		background: rgba(255, 255, 255, 0.8);
+	}
+	.article .sns-share-message,
+	.article .sns-follow-message {
+		margin-top: -6px;
+		margin-bottom: 6px;
+	}
+	.article .footer-meta {
+		line-height: 18px;
 	}
 	.article pre {
 		margin-top: 14px;
@@ -2516,7 +2543,7 @@ ruby rt {
 		background-size: 18px 32px;
 	}
 	.entry-content {
-		margin-bottom: 64px;
+		margin-bottom: 78px;
 	}
 	.entry-content > :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
 		margin-top: 14px;
@@ -2917,12 +2944,24 @@ ruby rt {
 	}
 	.article .entry-categories-tags {
 		margin-bottom: 0px;
+		background: rgba(255, 255, 255, 0.8);
 	}
 	.article .entry-categories-tags > div {
 		margin-bottom: 0px;
-		padding-top: 1px;
-		padding-bottom: 3px;
-		line-height: 24px;
+	}
+	.article .sns-share,
+	.article .sns-follow {
+		margin-top: 46px;
+		margin-bottom: 14px;
+		background: rgba(255, 255, 255, 0.8);
+	}
+	.article .sns-share-message,
+	.article .sns-follow-message {
+		margin-top: -6px;
+		margin-bottom: 6px;
+	}
+	.article .footer-meta {
+		line-height: 18px;
 	}
 	.article pre {
 		margin-top: 14px;
@@ -3196,7 +3235,7 @@ ruby rt {
 		background-size: 18px 32px;
 	}
 	.entry-content {
-		margin-bottom: 64px;
+		margin-bottom: 78px;
 	}
 	.entry-content > :not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
 		margin-top: 14px;
