@@ -28,9 +28,7 @@ if ( !defined( 'ABSPATH' ) ) exit; ?>
       <?php else: // サムネイルを持っていないとき ?>
         <?php echo get_entry_card_no_image_tag($count); ?>
       <?php endif; ?>
-      <div class="thx_category_space">
-        <?php thx_categories(); //カテゴリラベルの取得 ?>
-      </div>
+      <?php thx_categories(); //カテゴリラベルの取得 ?>
     </figure><!-- /.entry-card-thumb -->
 
     <div class="entry-card-content card-content e-card-content">
