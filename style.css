@@ -1582,11 +1582,13 @@ body {
 .article footer .cat-link {
 	padding-top: 2px;
 	padding-bottom: 2px;
+	line-height: 21px;
 }
 
 .article footer .tag-link {
 	padding-top: 1px;
 	padding-bottom: 1px;
+	line-height: 21px;
 }
 
 .article .entry-categories-tags {
@@ -2247,10 +2249,12 @@ ruby rt {
 	.article footer .cat-link {
 		padding-top: 2px;
 		padding-bottom: 2px;
+		line-height: 24px;
 	}
 	.article footer .tag-link {
 		padding-top: 1px;
 		padding-bottom: 1px;
+		line-height: 24px;
 	}
 	.article .entry-categories-tags {
 		margin-bottom: 0px;
@@ -2942,10 +2946,12 @@ ruby rt {
 	.article footer .cat-link {
 		padding-top: 2px;
 		padding-bottom: 2px;
+		line-height: 24px;
 	}
 	.article footer .tag-link {
 		padding-top: 1px;
 		padding-bottom: 1px;
+		line-height: 24px;
 	}
 	.article .entry-categories-tags {
 		margin-bottom: 0px;

@@ -63,10 +63,12 @@ footer {
   .cat-link {
     padding-top: 2px;
     padding-bottom: 2px;
+    line-height: $line_height_px * 0.75;
   }
   .tag-link {
     padding-top: 1px;
     padding-bottom: 1px;
+    line-height: $line_height_px * 0.75;
   }
 }
 .entry-categories-tags {
