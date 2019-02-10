@@ -221,3 +221,11 @@ $grid_color: fade-out($key_sub_color, 0.75);
     }
   }*/
 }
+.thx {
+  .entry-content{
+    [class$="-box"] >* {
+//      margin-top: initial;
+//      margin-bottom: initial;
+    }
+  }
+}
