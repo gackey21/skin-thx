@@ -23,8 +23,9 @@ function is_entry_card_border_visible(){
 
 
 
-/*
+
 //汎用エントリーウィジェットのタグ生成
+if ( !function_exists( 'generate_widget_entries_tag' ) ):
 function generate_widget_entries_tag($entry_count = 5, $entry_type = ET_DEFAULT, $cat_ids = array(), $include_children = 0, $post_type = null, $taxonomy = 'category', $random = 0){
   //ランダムが有効な時は関連記事
   if ($random) {
@@ -104,7 +105,9 @@ function generate_widget_entries_tag($entry_count = 5, $entry_type = ET_DEFAULT,
   <?php //wp_reset_query(); ?>
   </div>
 <?php
-}*/
+}
+endif;
+
 
 
 
