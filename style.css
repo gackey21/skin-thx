@@ -584,22 +584,19 @@ a[data-slide-contents*="slide-contents"]:hover {
 	text-overflow: ellipsis;
 }
 
+/*
 .cat-label-10 {
-	background-color: rgba(0, 115, 170, 0.75);
+  background-color: fade-out(#0073aa, 0.25);;
 }
-
 .cat-label-11 {
-	background-color: rgba(63, 119, 150, 0.75);
+  background-color: fade-out(#3F7796, 0.25);;
 }
-
 .cat-label-15 {
-	background-color: rgba(56, 180, 139, 0.75);
+  background-color: fade-out(#38b48b, 0.25);;
 }
-
 .cat-label-16 {
-	background-color: rgba(255, 63, 148, 0.75);
-}
-
+  background-color: fade-out(#FF3F94, 0.25);;
+}*/
 /* サイズ調整 */
 .btn-wrap-w98 > a {
 	width: 98%;
