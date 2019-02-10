@@ -272,8 +272,8 @@ $text_colors = array();
 foreach ($cats as $cat) {
   $color = get_category_color($cat->cat_ID);
   $text_color = get_category_text_color($cat->cat_ID);
-  $cat_label_pre = '.cat-label.cat-label-';
-  $cat_link_pre = '.cat-link.cat-link-';
+  $cat_label_pre = '.thx-label.cat-label-';
+  $cat_link_pre = '.thx-link.cat-link-';
   if ($color) {
     $selectors = $cat_label_pre.$cat->cat_ID.', '.$cat_link_pre.$cat->cat_ID;
     if (isset($colors[$color])) {
@@ -296,6 +296,7 @@ $css = '';
 //カテゴリー背景色
 foreach ($colors as $color_code => $ids) {
   $selector = implode(', ', $ids);
+  $color_code = colorcode_to_rgb_css_code($color_code, 0.75);
   $css .= $selector.'{'.PHP_EOL.
     '  background-color: '.$color_code.';'.PHP_EOL.
     '  color: #fff;'.PHP_EOL.
