@@ -110,6 +110,7 @@ function generate_widget_entries_tag($entry_count = 5, $entry_type = ET_DEFAULT,
 
 //リンクのないカテゴリーの取得（複数）
 //カテゴリーID付加
+if ( !function_exists( 'get_thx_categories' ) ):
 function get_thx_categories(){
   $categories = null;
   $categories = '<div class="thx_category_space">';
@@ -119,17 +120,22 @@ function get_thx_categories(){
   $categories .= '</div>';
   return $categories;
 }
+endif;
 
+if ( !function_exists( 'thx_categories' ) ):
 function thx_categories(){
   echo get_thx_categories();
 }
+endif;
 
 //カテゴリーをID順にソート
+if ( !function_exists( 'get_the_category_orderby_id' ) ):
 function get_the_category_orderby_id( $categories ) {
     usort( $categories, '_usort_terms_by_ID');
     return $categories;
 }
 add_filter( 'get_the_categories', 'get_the_category_orderby_id' );
+endif;
 
 
 
@@ -141,6 +147,7 @@ remove_filter("the_title", "wptexturize");
 
 
 //<style amp-custom>タグの作成
+if ( !function_exists( 'generate_style_amp_custom_tag' ) ):
 function generate_style_amp_custom_tag(){?>
 <style amp-custom><?php
   $css_all = '';
@@ -237,6 +244,7 @@ function generate_style_amp_custom_tag(){?>
   //}?></style>
 <?php
 }
+endif;
 
 
 
