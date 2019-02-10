@@ -21,7 +21,7 @@ jQuery(window).on('load', function (){
     ruby_html = jQuery(this).html();
     yomigana = jQuery(this).children("rt").text();
     yomigana_length = yomigana.length * fz / 2;
-    yomigana_space = yomigana_length + fz;
+//    yomigana_space = yomigana_length + fz;
 
     if (yomigana.length == 1) {
       yomigana_span = '<div class="thx_yomi thx_yomi_mono">';
