@@ -23,7 +23,7 @@ function is_entry_card_border_visible(){
 
 
 
-
+/*
 //汎用エントリーウィジェットのタグ生成
 if ( !function_exists( 'generate_widget_entries_tag' ) ):
 // function generate_widget_entries_tag($entry_count = 5, $entry_type = ET_DEFAULT, $cat_ids = array(), $include_children = 0, $post_type = null, $taxonomy = 'category', $random = 0, $action = null){
@@ -145,11 +145,24 @@ function generate_widget_entries_tag($atts){
   </div>
 <?php
 }
+endif;*/
+
+
+
+
+//リンクのないカテゴリーの取得
+if ( !function_exists( 'get_the_nolink_category' ) ):
+function get_the_nolink_category($id = null, $is_display = true){
+  $categories = null;
+  $categories = '<div class="thx_category_space">';
+  foreach((get_the_category()) as $category){
+    $categories .= '<div class="entry-category thx-label cat-label cat-label-'.$category->cat_ID.'">'.$category->cat_name.'</div>';
+  }
+  $categories .= '</div>';
+  return $categories;
+}
 endif;
-
-
-
-
+/*
 //リンクのないカテゴリーの取得（複数）
 //カテゴリーID付加
 if ( !function_exists( 'get_thx_categories' ) ):
@@ -168,7 +181,7 @@ if ( !function_exists( 'thx_categories' ) ):
 function thx_categories(){
   echo get_thx_categories();
 }
-endif;
+endif;*/
 
 //カテゴリーをID順にソート
 if ( !function_exists( 'get_the_category_orderby_id' ) ):
