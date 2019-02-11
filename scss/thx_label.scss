@@ -19,11 +19,28 @@
   color: $white;
   background-color: $key_color;
   border-top-right-radius: 1em;
+
 //  white-space: nowrap;
 //  overflow: hidden;
 //  text-overflow: ellipsis;
 //  opacity: 0.75;
 }
+.widget-entry-cards {
+  .thx_category_space {
+    display: none;
+  }
+}
+.not-default {
+  .thx_category_space {
+    display: block;
+  }
+}
+.popular-entry-cards {
+  .thx_category_space {
+    display: none;
+  }
+}
+
 /*
 .cat-label-10 {
   background-color: fade-out(#0073aa, 0.25);;
