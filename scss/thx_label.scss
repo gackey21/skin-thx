@@ -15,10 +15,14 @@
   padding-left: 0.5em;
   padding-right: 0.5em;
   color: $white;
-  background-color: fade-out($key_color, 0.25);;
+  background-color: $key_color;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  opacity: 0.75;
+  max-width: 100%;
+  position: initial;
+  border-top-right-radius: 1em;
 }
 /*
 .cat-label-10 {
