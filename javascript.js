@@ -1,5 +1,17 @@
 //ここにスキンで利用するJavaScriptを記入する
 
+/* ラベルの背景を透明度75％に変更 */
+jQuery(function() {
+  jQuery('.thx-label').each(function() {
+    var bgc = jQuery(this).css('background-color');
+    bgc = bgc.replace('rgb','rgba');
+    bgc = bgc.replace(')',', 0.75)');
+    jQuery(this).css('background-color', bgc);
+  });
+});
+
+
+
 /* thx-set-gridのトグル */
 jQuery(function() {
   jQuery("main").click(function() {
