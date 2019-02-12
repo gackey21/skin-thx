@@ -9,6 +9,7 @@
   p {
     @include thx-fwid;
   }
+  @import '../background_grid/bg_column_wrap'
 }
 
 /*****************/

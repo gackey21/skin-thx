@@ -153,10 +153,11 @@ $grid_color: fade-out($key_sub_color, 0.75);
 }
 @mixin columns-margin() {
   .wp-block-columns {
-    margin-top: - $line_space;
-    margin-bottom: 0px;
+//    margin-top: - $line_space;
+//    margin-bottom: 0px;
     + .wp-block-columns {
-      margin-top: 0px;
+//      margin-top: 0px;
+      margin-top: $line_height_px + $line_space;
     }
   }
 }
@@ -172,7 +173,7 @@ $grid_color: fade-out($key_sub_color, 0.75);
   }
   #{$str_tags} {
     + .wp-block-columns {
-      margin-top: 0px;
+//      margin-top: 0px;
     }
   }
   .wp-block-embed {
@@ -194,7 +195,7 @@ $grid_color: fade-out($key_sub_color, 0.75);
   & {
     + {
       #{$str_tags} {
-        @include p-li-margin-top();
+//        @include p-li-margin-top();
       }
     }
   }
@@ -203,7 +204,7 @@ $grid_color: fade-out($key_sub_color, 0.75);
 
 .wp-block-column {
   .wp-block-columns & {
-    margin-top: $line_space;
+//    margin-top: $line_space;
     margin-bottom: 0px;
   }
   & > :first-child#{$str_tags_exclusion} {

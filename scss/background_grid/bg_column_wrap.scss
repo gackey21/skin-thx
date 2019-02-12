@@ -1,0 +1,11 @@
+$font_size: $thx_iphone_font_size;
+$font_width: $font_size * $thx_site_font_condense;
+$line_space:
+  round(
+    ($thx_site_line_height - 1) * $font_size / 2
+  ) * 2;
+$line_height_px: $font_size + $line_space;
+
+.wp-block-column + .wp-block-column {
+  margin-top: $line_space;
+}
