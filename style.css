@@ -1732,11 +1732,11 @@ p + .wp-block-cocoon-blocks-blogcard, ul + .wp-block-cocoon-blocks-blogcard, ol 
 	margin-right: 6px;
 }
 
-.block-box > :first-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
+.block-box > :first-child {
 	margin-top: 0px;
 }
 
-.block-box > :last-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
+.block-box > :last-child {
 	margin-bottom: 0px;
 }
 
@@ -2395,10 +2395,10 @@ ruby rt {
 		margin-top: 0px;
 		margin-right: 7px;
 	}
-	.block-box > :first-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
+	.block-box > :first-child {
 		margin-top: 0px;
 	}
-	.block-box > :last-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
+	.block-box > :last-child {
 		margin-bottom: 0px;
 	}
 	.block-box div[class*="-content"] > :first-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
@@ -3109,10 +3109,10 @@ ruby rt {
 		margin-top: 0px;
 		margin-right: 7px;
 	}
-	.block-box > :first-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
+	.block-box > :first-child {
 		margin-top: 0px;
 	}
-	.block-box > :last-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
+	.block-box > :last-child {
 		margin-bottom: 0px;
 	}
 	.block-box div[class*="-content"] > :first-child:not(p):not(ul):not(ol):not(li):not(dl):not(dt):not(dd) {
