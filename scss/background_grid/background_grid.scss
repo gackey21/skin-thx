@@ -164,17 +164,13 @@ $grid_color: fade-out($key_sub_color, 0.75);
 .entry-content {
   margin-bottom: $line_height_px * 2 + $line_space;
   > #{$str_tags_exclusion} {
+//  > * {
     margin-top: $line_space;
     margin-bottom: $line_space;
   }
   @include columns-margin();
   .block-box {
 //    @include columns-margin();
-  }
-  #{$str_tags} {
-    + .wp-block-columns {
-//      margin-top: 0px;
-    }
   }
   .wp-block-embed {
     margin-bottom: $line_space;
@@ -198,6 +194,14 @@ $grid_color: fade-out($key_sub_color, 0.75);
 //        @include p-li-margin-top();
       }
     }
+  }
+}
+#{$str_tags} {
+  + .wp-block-columns:not(.thx) {
+      margin-top: $line_height_px + $line_space;
+  }
+  .wp-block-columns + & {
+    margin-top: $str_inner_margin_bottom + $line_height_px;
   }
 }
 
