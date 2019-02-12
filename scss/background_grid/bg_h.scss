@@ -92,6 +92,9 @@ h3 {
       margin-top: - $h4_spare_margin_top + $font_size;
       margin-top: $h4_spare_margin_top - ($line_height_px * 2 + $line_space);
     }
+    .blank-box.bb-tab {
+      margin-top: $h3_spare_margin_bottom + $line_height_px;
+    }
   }
 }
 h4 {
