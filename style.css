@@ -1455,13 +1455,21 @@ body {
 	background: #fff;
 }
 
+.thx .article h4 + h5 {
+	margin-top: -14px;
+}
+
+.thx .article h4 + .blank-box.bb-tab {
+	margin-top: 50px;
+}
+
 .thx .article h5 {
 	margin-top: 26px;
 	margin-bottom: 12px;
 	padding: 0px;
 	padding-left: 16px;
 	padding-right: 16px;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 28px;
 	background: #fff;
 }
@@ -2158,13 +2166,19 @@ ruby rt {
 		line-height: 32px;
 		background: #fff;
 	}
+	.thx .article h4 + h5 {
+		margin-top: -16px;
+	}
+	.thx .article h4 + .blank-box.bb-tab {
+		margin-top: 58px;
+	}
 	.thx .article h5 {
 		margin-top: 30px;
 		margin-bottom: 14px;
 		padding: 0px;
 		padding-left: 18px;
 		padding-right: 18px;
-		font-size: 18px;
+		font-size: 22px;
 		line-height: 32px;
 		background: #fff;
 	}
@@ -2174,7 +2188,7 @@ ruby rt {
 		padding: 0px;
 		padding-left: 18px;
 		padding-right: 18px;
-		font-size: 18px;
+		font-size: 20px;
 		line-height: 32px;
 		background: #fff;
 	}
@@ -2866,13 +2880,19 @@ ruby rt {
 		line-height: 32px;
 		background: #fff;
 	}
+	.thx .article h4 + h5 {
+		margin-top: -16px;
+	}
+	.thx .article h4 + .blank-box.bb-tab {
+		margin-top: 58px;
+	}
 	.thx .article h5 {
 		margin-top: 30px;
 		margin-bottom: 14px;
 		padding: 0px;
 		padding-left: 18px;
 		padding-right: 18px;
-		font-size: 18px;
+		font-size: 22px;
 		line-height: 32px;
 		background: #fff;
 	}
@@ -2882,7 +2902,7 @@ ruby rt {
 		padding: 0px;
 		padding-left: 18px;
 		padding-right: 18px;
-		font-size: 18px;
+		font-size: 20px;
 		line-height: 32px;
 		background: #fff;
 	}

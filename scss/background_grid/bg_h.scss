@@ -43,6 +43,13 @@ $h4_spare_margin:
 $h4_spare_margin_bottom: round($h4_spare_margin * 0.35);
 $h4_spare_margin_top: $h4_spare_margin - $h4_spare_margin_bottom;
 
+$h5_margin_top: $line_height_px - 2px;
+$h5_margin_bottom: $line_space;
+
+$h6_margin_top: $line_height_px - 1px;
+$h6_margin_bottom: $line_space;
+
+
 h1 {
   margin-top: 0px;
   margin-bottom: $line_space / 2 - 1px;
@@ -111,10 +118,18 @@ margin-bottom: $h4_spare_margin_bottom;
   font-size: $line_height_px - 6px;
   line-height: $line_height_px;
   background: $white;
+  + {
+    h5 {
+      margin-top: $h5_margin_top - ($line_height_px * 1 + $line_space);
+    }
+    .blank-box.bb-tab {
+      margin-top: $h4_spare_margin_bottom + $line_height_px;
+    }
+  }
 }
 h5 {
-  margin-top: $line_height_px - 2px;
-  margin-bottom: $line_space;
+  margin-top: $h5_margin_top;
+  margin-bottom: $h5_margin_bottom;
 //    margin-bottom: 0px;
   padding: 0px;
   padding-left: $font_size;
@@ -124,8 +139,8 @@ h5 {
   background: $white;
 }
 h6 {
-  margin-top: $line_height_px - 1px;
-  margin-bottom: $line_space;
+  margin-top: $h6_margin_top;
+  margin-bottom: $h6_margin_bottom;
 //    margin-bottom: 0px;
   padding: 0px;
   padding-left: $font_size;
