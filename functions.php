@@ -44,6 +44,45 @@ function thx_categories(){
   echo get_thx_categories();
 }
 endif;*/
+//カラーコードをHSLに変換
+if ( !function_exists( 'colorcode_to_rgb' ) ):
+function colorcode_to_hsl($colorcode){
+  $rgb = colorcode_to_rgb($colorcode);
+  $r = $rgb['red'] / 255;
+  $g = $rgb['green'] / 255;
+  $b = $rgb['blue'] / 255;
+  $max = max( $r, $g, $b );
+  $min = min( $r, $g, $b );
+  $h;
+  $s;
+  $l = ( $max + $min ) / 2;
+  $d = $max - $min;
+
+  if( $d == 0 ){
+    $h = $s = 0; // achromatic
+  } else {
+    $s = $d / ( 1 - abs( 2 * $l - 1 ) );
+    switch( $max ){
+      case $r:
+      $h = 60 * fmod( ( ( $g - $b ) / $d ), 6 );
+      if ($b > $g) {
+        $h += 360;
+      }
+      break;
+      case $g:
+      $h = 60 * ( ( $b - $r ) / $d + 2 );
+      break;
+      case $b:
+      $h = 60 * ( ( $r - $g ) / $d + 4 );
+      break;
+    }
+  }
+  $hsl['h'] = round( $h, 2 );
+  $hsl['s'] = round( $s, 2 );
+  $hsl['l'] = round( $l, 2 );
+  return $hsl;
+}
+endif;
 
 //カテゴリーをID順にソート
 if ( !function_exists( 'get_the_category_orderby_id' ) ):
