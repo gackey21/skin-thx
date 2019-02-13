@@ -41,6 +41,8 @@ body {
 .pagination .current,
 .page-numbers.current,
 .page-numbers.dots{
+  color: #fff;
+  border-color: <?php echo $key_sub_color; ?>;
   background: <?php echo $key_sub_color; ?>;
 }
 .comment-list{
