@@ -416,7 +416,6 @@ pre code span {
 	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 	font-weight: 800;
 	line-height: 1em;
-	color: rgba(47, 93, 80, 0.5);
 	transition-duration: 0.3s;
 }
 
@@ -425,7 +424,6 @@ pre code span {
 .article h4:hover::after,
 .article h5:hover::after,
 .article h6:hover::after {
-	color: rgba(47, 93, 80, 0);
 	transition-duration: 0.3s;
 }
 

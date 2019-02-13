@@ -153,11 +153,11 @@ pre {
     font-family: $thx_font_family;
     font-weight: 800;
     line-height: 1em;
-    color: fade-out($key_sub_color, 0.5);
+//    color: fade-out($key_sub_color, 0.5);
     transition-duration: 0.3s;
   }
   &:hover::after{
-    color: fade-out($key_sub_color, 1);
+//    color: fade-out($key_sub_color, 1);
     transition-duration: 0.3s;
   }
 }
