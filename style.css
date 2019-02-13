@@ -14,14 +14,6 @@ body {
 	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Arial, sans-serif;
 }
 
-.header, .header .site-name-text {
-	color: #fff;
-}
-
-.header {
-	background-color: #38b48b;
-}
-
 .widget_recent_entries ul li a:hover,
 .widget_categories ul li a:hover,
 .widget_archive ul li a:hover,
