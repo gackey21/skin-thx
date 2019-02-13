@@ -60,12 +60,12 @@ body {
   background-color: <?php echo $key_color; ?>;
 }
 .article h3 {
-  background: linear-gradient(90deg, <?php echo colorcode_to_hsl_css_code($key_color,1.4); ?>, #fff);
+  background: linear-gradient(90deg, <?php echo colorcode_to_hsl_css_code($key_color,'80%'); ?>, #fff);
 }
 .article h4,
 .article h5,
 .article h6 {
-  border-color: <?php echo colorcode_to_hsl_css_code($key_color,1.4); ?>;
+  border-color: <?php echo colorcode_to_hsl_css_code($key_color,'60%'); ?>;
 }
 
 .article h2::after,
