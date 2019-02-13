@@ -6,7 +6,7 @@
   Author: がっきぃ
   Author URI: https://thx.jp
   Screenshot URI: https://
-  Version: 0.4.7
+  Version: 0.4.8
   Priority: 0
 */
 /*以下にスタイルシートを記入してください*/
@@ -34,8 +34,8 @@ $border_color: #ccc;
 //$key_sub_color: $thx_yamabukitya;
 $key_color: $thx_ruriiro;
 $key_sub_color: $thx_amairo;
-$key_color: $thx_hisuiiro;
-$key_sub_color: $thx_biroudo;
+//$key_color: $thx_hisuiiro;
+//$key_sub_color: $thx_biroudo;
 
 $bg_color: change-color($key_color, $lightness: 95%);
 $key_color_thin: fade-out($key_color, 0.95);

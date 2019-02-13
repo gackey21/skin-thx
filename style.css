@@ -6,7 +6,7 @@
   Author: がっきぃ
   Author URI: https://thx.jp
   Screenshot URI: https://
-  Version: 0.4.7
+  Version: 0.4.8
   Priority: 0
 */
 /*以下にスタイルシートを記入してください*/
@@ -21,7 +21,7 @@ body {
 .page-numbers,
 .pagination-next-link {
 	border-radius: 8px;
-	background: rgba(56, 180, 139, 0.05);
+	background: rgba(30, 79, 159, 0.05);
 }
 
 .pagination .page-numbers,
@@ -439,9 +439,9 @@ pre code span {
 
 /* スライドコンテンツ */
 .slide-contents {
-	background: #ecf9f5;
+	background: #eaf0fb;
 	width: 100%;
-	border: #2f5d50 1px solid;
+	border: #29a6e0 1px solid;
 	margin: 0 0 10px 0;
 	padding: 1rem;
 	display: none;
@@ -1884,7 +1884,7 @@ ruby rt {
 
 .thx-set-grid {
 	line-height: 28px;
-	background-image: linear-gradient(to bottom, rgba(47, 93, 80, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(47, 93, 80, 0.25) 0%, rgba(47, 93, 80, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(47, 93, 80, 0.25) 3%, transparent 0%, transparent 95%, rgba(47, 93, 80, 0.25) 0%);
+	background-image: linear-gradient(to bottom, rgba(41, 166, 224, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(41, 166, 224, 0.25) 0%, rgba(41, 166, 224, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(41, 166, 224, 0.25) 3%, transparent 0%, transparent 95%, rgba(41, 166, 224, 0.25) 0%);
 	background-position: top 4px left;
 	background-size: 16px 28px;
 }
@@ -2508,7 +2508,7 @@ p + .wp-block-columns:not(.thx), ul + .wp-block-columns:not(.thx), ol + .wp-bloc
 	}
 	.thx-set-grid {
 		line-height: 32px;
-		background-image: linear-gradient(to bottom, rgba(47, 93, 80, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(47, 93, 80, 0.25) 0%, rgba(47, 93, 80, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(47, 93, 80, 0.25) 3%, transparent 0%, transparent 95%, rgba(47, 93, 80, 0.25) 0%);
+		background-image: linear-gradient(to bottom, rgba(41, 166, 224, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(41, 166, 224, 0.25) 0%, rgba(41, 166, 224, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(41, 166, 224, 0.25) 3%, transparent 0%, transparent 95%, rgba(41, 166, 224, 0.25) 0%);
 		background-position: top 5px left;
 		background-size: 18px 32px;
 	}
@@ -3217,7 +3217,7 @@ p + .wp-block-columns:not(.thx), ul + .wp-block-columns:not(.thx), ol + .wp-bloc
 	}
 	.thx-set-grid {
 		line-height: 32px;
-		background-image: linear-gradient(to bottom, rgba(47, 93, 80, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(47, 93, 80, 0.25) 0%, rgba(47, 93, 80, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(47, 93, 80, 0.25) 3%, transparent 0%, transparent 95%, rgba(47, 93, 80, 0.25) 0%);
+		background-image: linear-gradient(to bottom, rgba(41, 166, 224, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(41, 166, 224, 0.25) 0%, rgba(41, 166, 224, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(41, 166, 224, 0.25) 3%, transparent 0%, transparent 95%, rgba(41, 166, 224, 0.25) 0%);
 		background-position: top 5px left;
 		background-size: 18px 32px;
 	}
