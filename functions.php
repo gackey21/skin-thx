@@ -44,8 +44,18 @@ function thx_categories(){
   echo get_thx_categories();
 }
 endif;*/
+//カラーコードをHSLのCSSコードに変換
+if ( !function_exists( 'colorcode_to_hsl_css_code' ) ):
+function colorcode_to_hsl_css_code($colorcode, $lightness = 1.0, $opacity = 1.0){
+  $hsl = colorcode_to_hsl($colorcode);
+  $h = $hsl['h'];
+  $s = $hsl['s'] * 100;
+  $l = round($hsl['l'] * 100 * $lightness);
+  return 'hsla('.$h.', '.$s.'%, '.$l.'%, '.$opacity.')';
+}
+endif;
 //カラーコードをHSLに変換
-if ( !function_exists( 'colorcode_to_rgb' ) ):
+if ( !function_exists( 'colorcode_to_hsl' ) ):
 function colorcode_to_hsl($colorcode){
   $rgb = colorcode_to_rgb($colorcode);
   $r = $rgb['red'] / 255;
@@ -77,7 +87,7 @@ function colorcode_to_hsl($colorcode){
       break;
     }
   }
-  $hsl['h'] = round( $h, 2 );
+  $hsl['h'] = round( $h, 0 );
   $hsl['s'] = round( $s, 2 );
   $hsl['l'] = round( $l, 2 );
   return $hsl;

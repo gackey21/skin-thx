@@ -17,6 +17,9 @@ if (get_site_key_color()): ?>
   color: #fff;
   background-color: <?php echo get_site_key_color(); ?>;
 }
+.article h3 {
+  background: linear-gradient(90deg, <?php echo colorcode_to_hsl_css_code(get_site_key_color(),1.4); ?>, #fff);
+}
 
 <?php endif ?>
 
