@@ -17,3 +17,31 @@ function get_the_nolink_category($id = null, $is_display = true){
   return $categories;
 }
 endif;
+
+//設定変更CSSを読み込む
+if ( !function_exists( 'wp_add_css_custome_to_inline_style' ) ):
+function wp_add_css_custome_to_inline_style(){
+  ob_start();//バッファリング
+  get_template_part('tmp/css-custom');
+  get_template_part('thx/css-custom');
+  $css_custom = ob_get_clean();
+  //CSSの縮小化
+  $css_custom = minify_css($css_custom);
+  //HTMLにインラインでスタイルを書く
+  if (get_skin_url()) {
+    //スキンがある場合
+    wp_add_inline_style( THEME_NAME.'-skin-style', $css_custom );
+  } else {
+    //スキンを使用しない場合
+    wp_add_inline_style( THEME_NAME.'-style', $css_custom );
+  }
+}
+endif;
+
+//サイトキーサブカラー
+define('OP_SITE_KEY_SUB_COLOR', 'site_key_sub_color');
+if ( !function_exists( 'get_site_key_sub_color' ) ):
+function get_site_key_sub_color(){
+  return get_theme_option(OP_SITE_KEY_SUB_COLOR);
+}
+endif;
