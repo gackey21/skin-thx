@@ -8,25 +8,31 @@
 if ( !defined( 'ABSPATH' ) ) exit; ?>
 
 
-<?php //サイトキーカラー
-if (get_site_key_color()): ?>
+<?php
+if (get_site_key_color()){
+  $key_color = get_site_key_color();
+} else {
+  $key_color = '#555';
+}
+if (get_site_key_sub_color()){
+  $key_sub_color = get_site_key_sub_color();
+} else {
+  $key_sub_color = colorcode_to_hsl_css_code($key_color,1.4);
+}?>
 
 <?php //thx ?>
 .entry-title,
 .archive-title {
   color: #fff;
-  background-color: <?php echo get_site_key_color(); ?>;
+  background-color: <?php echo $key_color; ?>;
 }
 .article h3 {
-  background: linear-gradient(90deg, <?php echo colorcode_to_hsl_css_code(get_site_key_color(),1.4); ?>, #fff);
+  background: linear-gradient(90deg, <?php echo colorcode_to_hsl_css_code($key_color,1.4); ?>, #fff);
 }
 
-<?php endif ?>
 
 
 
-<?php //サイトキーサブカラー
-if (get_site_key_sub_color()): ?>
 
 <?php //base ?>
 .page-numbers,
@@ -74,6 +80,3 @@ if (get_site_key_sub_color()): ?>
 .go-to-top-button{
   background-color: <?php echo get_site_key_sub_color(); ?>;
 }
-
-
-<?php endif ?>
