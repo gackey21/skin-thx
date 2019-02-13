@@ -1,3 +1,5 @@
 ,,オプション名と値をカンマ区切りで書く
 header_layout_type,center_logo
 
+site_key_color,#38b48b
+site_key_sub_color,#2f5d50
