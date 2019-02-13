@@ -185,7 +185,7 @@ pre {
   counter-increment: c-h3;
   counter-reset: c-h4;
 
-  background: linear-gradient(90deg, $h_bk_color, $white);
+//  background: linear-gradient(90deg, $h_bk_color, $white);
   border: none;
 
   &::after{
@@ -197,7 +197,7 @@ pre {
 .article h4,
 .article h5,
 .article h6 {
-  border-color: $h_bk_color;
+//  border-color: $h_bk_color;
 }
 
 .article h4 {

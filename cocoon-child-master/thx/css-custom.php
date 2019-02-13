@@ -59,6 +59,12 @@ if (get_site_key_sub_color()){
 .article h3 {
   background: linear-gradient(90deg, <?php echo colorcode_to_hsl_css_code($key_color,1.4); ?>, #fff);
 }
+.article h4,
+.article h5,
+.article h6 {
+  border-color: <?php echo colorcode_to_hsl_css_code($key_color,1.4); ?>;
+}
+
 .article h2::after,
 .article h3::after,
 .article h4::after,
