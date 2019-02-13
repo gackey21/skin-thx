@@ -21,6 +21,12 @@ if (get_site_key_sub_color()){
 }?>
 
 
+<?php //打ち消し ?>
+.a-wrap:hover {
+  background-color:initial;
+}
+
+
 
 <?php //base ?>
 body {
