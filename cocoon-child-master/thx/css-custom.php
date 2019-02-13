@@ -16,7 +16,7 @@ if (get_site_key_color()){
 }
 if (get_site_key_sub_color()){
   $key_sub_color = get_site_key_sub_color();
-} else {
+} else {//要改良
   $key_sub_color = colorcode_to_hsl_css_code($key_color,1.4);
 }?>
 
