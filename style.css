@@ -14,16 +14,6 @@ body {
 	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Arial, sans-serif;
 }
 
-.page-numbers,
-.tagcloud a,
-.author-box,
-.ranking-item,
-.pagination-next-link,
-.comment-reply-link,
-.toc {
-	border: 1px solid #2f5d50;
-}
-
 .toc {
 	width: 80%;
 }
