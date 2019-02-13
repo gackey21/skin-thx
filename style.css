@@ -450,8 +450,6 @@ pre code span {
 	line-height: 2.5rem;
 	counter-increment: c-h2;
 	counter-reset: c-h3;
-	color: #fff;
-	background-color: #38b48b;
 }
 
 .article h2::after {
