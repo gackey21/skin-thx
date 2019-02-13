@@ -50,7 +50,11 @@ function colorcode_to_hsla_css_code($colorcode, $opacity = 1.0, $lightness = 1.0
   $hsl = colorcode_to_hsl($colorcode);
   $h = $hsl['h'];
   $s = $hsl['s'] * 100;
-  $l = round($hsl['l'] * 100 * $lightness);
+  if (mb_substr($lightness, -1) == '%') {
+    $l = mb_substr($lightness, 0, -1);
+  } else {
+    $l = round($hsl['l'] * 100 * $lightness);
+  }
   return 'hsla('.$h.', '.$s.'%, '.$l.'%, '.$opacity.')';
 }
 endif;
@@ -60,7 +64,11 @@ function colorcode_to_hsl_css_code($colorcode, $lightness = 1.0){
   $hsl = colorcode_to_hsl($colorcode);
   $h = $hsl['h'];
   $s = $hsl['s'] * 100;
-  $l = round($hsl['l'] * 100 * $lightness);
+  if (mb_substr($lightness, -1) == '%') {
+    $l = mb_substr($lightness, 0, -1);
+  } else {
+    $l = round($hsl['l'] * 100 * $lightness);
+  }
   return 'hsl('.$h.', '.$s.'%, '.$l.'%)';
 }
 endif;
