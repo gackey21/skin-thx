@@ -11,7 +11,6 @@
 */
 /*以下にスタイルシートを記入してください*/
 body {
-	background-color: #ecf9f5;
 	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Arial, sans-serif;
 }
 
@@ -64,23 +63,6 @@ body {
 .pagination .page-numbers,
 .pager-numbers .page-numbers {
 	border-radius: 50%;
-}
-
-.pagination .current,
-.page-numbers.current,
-.page-numbers.dots {
-	background: #2f5d50;
-}
-
-.cat-label,
-.mobile-menu-buttons,
-.mobile-menu-buttons .menu-button > a,
-.navi-menu-content,
-.navi-menu-content a,
-.go-to-top-button,
-#submit {
-	background-color: #38b48b;
-	color: #fff;
 }
 
 #submit {
@@ -141,7 +123,6 @@ select {
 }
 
 .post-count {
-	background-color: #caeee2;
 	padding: 0 8px;
 	border-radius: 6px;
 	font-size: 0.8em;
@@ -178,13 +159,10 @@ select {
 
 .comment-list ul.children {
 	padding: 0.6em;
-	background-color: rgba(56, 180, 139, 0.05);
-	border-left: 2px solid #2f5d50;
 }
 
 .widget-entry-cards.ranking-visible .card-thumb::before {
 	border-radius: 50%;
-	background: #38b48b;
 	top: -10px;
 	left: -10px;
 	border: 2px solid #eee;

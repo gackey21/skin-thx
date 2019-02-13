@@ -1,7 +1,7 @@
 //基本要素
 
 body {
-  background-color: $bg_color;
+//  background-color: $bg_color;
   font-family: 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Arial, sans-serif;
 }
 
@@ -59,7 +59,7 @@ body {
 .pagination .current,
 .page-numbers.current,
 .page-numbers.dots{
-  background: $key_sub_color;
+//  background: $key_sub_color;
 }
 
 
@@ -70,8 +70,8 @@ body {
 .navi-menu-content a,
 .go-to-top-button,
 #submit{
-  background-color: $key_color;
-  color: $white;
+//  background-color: $key_color;
+//  color: $white;
 }
 
 #submit{
@@ -131,7 +131,7 @@ select{
 }
 
 .post-count{
-  background-color: $h_bk_color;
+//  background-color: $h_bk_color;
   padding: 0 8px;
   border-radius: 6px;
   font-size: 0.8em;
@@ -179,15 +179,15 @@ select{
 .comment-list{
   ul.children{
     padding: 0.6em;
-    background-color: $key_color_thin;
-    border-left: 2px solid $key_sub_color;
+//    background-color: $key_color_thin;
+//    border-left: 2px solid $key_sub_color;
   }
 }
 
 .widget-entry-cards.ranking-visible .card-thumb{
   &::before{
     border-radius: 50%;
-    background: $key_color;
+//    background: $key_color;
     top: -10px;
     left: -10px;
     border: 2px solid #eee;

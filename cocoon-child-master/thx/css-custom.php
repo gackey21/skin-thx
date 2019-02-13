@@ -23,6 +23,9 @@ if (get_site_key_sub_color()){
 
 
 <?php //base ?>
+body {
+  background-color: <?php echo colorcode_to_hsl_css_code($key_color,'95%'); ?>;
+}
 .page-numbers,
 .tagcloud a,
 // #list .a-wrap,
