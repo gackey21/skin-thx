@@ -381,10 +381,6 @@ h6,
 	margin-top: 2px;
 }
 
-.go-to-top-button {
-	background-color: #2f5d50;
-}
-
 /* コード改行禁止 */
 pre {
 	word-wrap: normal;

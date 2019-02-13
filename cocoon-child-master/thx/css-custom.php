@@ -79,5 +79,9 @@ if (get_site_key_sub_color()): ?>
 	transition-duration: 0.3s;
 }
 
+.go-to-top-button{
+  background-color: <?php echo get_site_key_sub_color(); ?>;
+}
+
 
 <?php endif ?>
