@@ -44,7 +44,10 @@ h6,
 .blogcard-title,
 .tab-caption-box-label-text,
 .block-box-label-text,
-.toggle-button {
+.toggle-button,
+.pagination .current,
+.page-numbers.current,
+.page-numbers.dots {
   font-family: "新ゴ R", $thx_font_family;
   font-weight: 600;
 }
