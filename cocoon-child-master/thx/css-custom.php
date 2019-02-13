@@ -11,6 +11,12 @@ if ( !defined( 'ABSPATH' ) ) exit; ?>
 <?php //サイトキーカラー
 if (get_site_key_color()): ?>
 
+<?php //thx ?>
+.entry-title,
+.archive-title {
+  color: #fff;
+  background-color: <?php echo get_site_key_color(); ?>;
+}
 
 <?php endif ?>
 
