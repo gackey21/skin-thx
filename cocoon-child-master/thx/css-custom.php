@@ -8,14 +8,16 @@
 if ( !defined( 'ABSPATH' ) ) exit; ?>
 
 
+<?php //サイトキーカラー
+if (get_site_key_color()): ?>
+
+
+<?php endif ?>
+
+
+
 <?php //サイトキーサブカラー
 if (get_site_key_sub_color()): ?>
-
-<?php //てすと ?>
-.article h2,
-#footer{
-  background-color: <?php echo get_site_key_sub_color(); ?>;
-}
 
 <?php //base ?>
 .page-numbers,
