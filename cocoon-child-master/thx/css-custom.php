@@ -25,6 +25,9 @@ if (get_site_key_sub_color()){
 .a-wrap:hover {
   background-color:initial;
 }
+.blogcard-wrap:hover {
+  background-color:#fff;
+}
 
 
 
