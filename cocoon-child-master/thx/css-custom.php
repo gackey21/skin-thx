@@ -85,5 +85,6 @@ body {
 }
 
 .go-to-top-button{
+  color: #fff;
   background-color: <?php echo $key_sub_color; ?>;
 }
