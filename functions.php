@@ -44,9 +44,37 @@ function thx_categories(){
   echo get_thx_categories();
 }
 endif;*/
+//キーカラーからサブカラーを作成
+if ( !function_exists( 'generate_sub_color' ) ):
+function generate_sub_color($hsl){
+  if ($hsl['l'] > 0.45) {
+    $hsl['l'] -= 0.25;
+  } else {
+    $hsl['l'] += 0.25;
+  };
+  return $hsl;
+}
+endif;
+//HSLをHSLAのCSSコードに変換
+if ( !function_exists( 'hsl_to_hsla_css_code' ) ):
+function hsl_to_hsla_css_code($hsl, $lightness = 1.0, $opacity = 1.0){
+  $h = $hsl['h'];
+  //$hsl['s'] == 0の時、何故か'%'が付加されない
+  if ($hsl['s'] == 0) {
+    $hsl['s'] = 0.01;
+  }
+  $s = $hsl['s'] * 100;
+  if (mb_substr($lightness, -1) == '%') {
+    $l = mb_substr($lightness, 0, -1);
+  } else {
+    $l = round($hsl['l'] * 100 * $lightness);
+  }
+  return 'hsla('.$h.', '.$s.'%, '.$l.'%, '.$opacity.')';
+}
+endif;
 //カラーコードをHSLAのCSSコードに変換
 if ( !function_exists( 'colorcode_to_hsla_css_code' ) ):
-function colorcode_to_hsla_css_code($colorcode, $opacity = 1.0, $lightness = 1.0){
+function colorcode_to_hsla_css_code($colorcode, $lightness = 1.0, $opacity = 1.0){
   $hsl = colorcode_to_hsl($colorcode);
   $h = $hsl['h'];
   //$hsl['s'] == 0の時、何故か'%'が付加されない
@@ -78,6 +106,21 @@ function colorcode_to_hsl_css_code($colorcode, $lightness = 1.0){
     $l = round($hsl['l'] * 100 * $lightness);
   }
   return 'hsl('.$h.', '.$s.'%, '.$l.'%)';
+}
+endif;
+//HSLをHSLAに変換
+if ( !function_exists( 'hsl_to_hsla' ) ):
+function hsl_to_hsla($hsl, $lightness = 1.0, $opacity = 1.0){
+  $hsla['h'] = $hsl['h'];
+  $hsla['s'] = $hsl['s'];
+  if (mb_substr($lightness, -1) == '%') {
+    $l = mb_substr($lightness, 0, -1);
+  } else {
+    $l = round($hsl['l'] * 100 * $lightness);
+  }
+  $hsla['l'] = $l;
+  $hsla['a'] = $opacity;
+  return $hsl;
 }
 endif;
 //カラーコードをHSLに変換
