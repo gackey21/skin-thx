@@ -40,13 +40,6 @@ div.mobile-menu-buttons .menu-button:hover,
 	color: #333;
 }
 
-.cat-label {
-	top: 0;
-	left: 0;
-	border: none;
-	border-bottom-right-radius: 3px;
-}
-
 .search-edit,
 input[type="text"],
 input[type="password"],
@@ -481,6 +474,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 	position: initial;
 	max-width: 100%;
 	margin-top: 0.1em;
+	border: none;
 	padding-top: 0.1em;
 	padding-bottom: 0.1em;
 	padding-left: 0.5em;
@@ -488,6 +482,7 @@ a[data-slide-contents*="slide-contents"]:hover {
 	font-size: 0.625em;
 	line-height: 1.25em;
 	border-top-right-radius: 1em;
+	border-bottom-right-radius: 3px;
 }
 
 .widget-entry-cards .thx_category_space {
