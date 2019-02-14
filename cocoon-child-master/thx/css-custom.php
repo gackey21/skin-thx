@@ -57,6 +57,17 @@ if (get_site_background_color()){//背景色
 body {
   background-color: <?php echo $thx_bg; ?>;
 }
+.pagination .current,
+.page-numbers.current,
+.page-numbers.dots{
+  color: #fff;
+  border-color: <?php echo $thx_sub; ?>;
+  background: <?php echo $thx_sub; ?>;
+}
+.page-numbers,
+.pagination-next-link{
+  background: <?php echo $thx_key_095; ?>;
+}
 .page-numbers,
 .tagcloud a,
 .author-box,
@@ -66,13 +77,6 @@ body {
 .article .toc{
   border: 1px solid <?php echo $thx_sub; ?>;
 }
-.pagination .current,
-.page-numbers.current,
-.page-numbers.dots{
-  color: #fff;
-  border-color: <?php echo $thx_sub; ?>;
-  background: <?php echo $thx_sub; ?>;
-}
 .comment-list{
   ul.children{
     padding: 0.6em;
@@ -80,7 +84,9 @@ body {
     border-left: 2px solid <?php echo $thx_sub; ?>;
   }
 }
-
+.widget-entry-cards.ranking-visible .card-thumb::before {
+  background-color: <?php echo $thx_key; ?>;
+}
 
 
 <?php //thx ?>
