@@ -553,7 +553,6 @@ a[data-slide-contents*="slide-contents"]:hover {
 /************/
 body {
 	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-	font-weight: 300;
 	-webkit-text-size-adjust: 100%;
 }
 
