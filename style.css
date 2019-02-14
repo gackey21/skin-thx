@@ -10,10 +10,6 @@
   Priority: 0
 */
 /*以下にスタイルシートを記入してください*/
-body {
-	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Arial, sans-serif;
-}
-
 .toc {
 	width: 80%;
 }
