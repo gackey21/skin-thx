@@ -49,6 +49,10 @@ if ( !function_exists( 'colorcode_to_hsla_css_code' ) ):
 function colorcode_to_hsla_css_code($colorcode, $opacity = 1.0, $lightness = 1.0){
   $hsl = colorcode_to_hsl($colorcode);
   $h = $hsl['h'];
+  //$hsl['s'] == 0の時、何故か'%'が付加されない
+  if ($hsl['s'] == 0) {
+    $hsl['s'] = 0.01;
+  }
   $s = $hsl['s'] * 100;
   if (mb_substr($lightness, -1) == '%') {
     $l = mb_substr($lightness, 0, -1);
@@ -63,6 +67,10 @@ if ( !function_exists( 'colorcode_to_hsl_css_code' ) ):
 function colorcode_to_hsl_css_code($colorcode, $lightness = 1.0){
   $hsl = colorcode_to_hsl($colorcode);
   $h = $hsl['h'];
+  //$hsl['s'] == 0の時、何故か'%'が付加されない
+  if ($hsl['s'] == 0) {
+    $hsl['s'] = 0.01;
+  }
   $s = $hsl['s'] * 100;
   if (mb_substr($lightness, -1) == '%') {
     $l = mb_substr($lightness, 0, -1);
