@@ -138,7 +138,7 @@ function colorcode_to_hsl($colorcode){
   $d = $max - $min;
 
   if( $d == 0 ){
-    $h = $s = 0; // achromatic
+    $h = $s = 0;
   } else {
     $s = $d / ( 1 - abs( 2 * $l - 1 ) );
     switch( $max ){
