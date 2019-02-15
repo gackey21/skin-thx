@@ -1577,11 +1577,25 @@ body {
 	margin-bottom: 12px;
 }
 
-.wp-block-cocoon-blocks-blogcard + p, .wp-block-cocoon-blocks-blogcard + ul, .wp-block-cocoon-blocks-blogcard + ol, .wp-block-cocoon-blocks-blogcard + li, .wp-block-cocoon-blocks-blogcard + dl, .wp-block-cocoon-blocks-blogcard + dt, .wp-block-cocoon-blocks-blogcard + dd {
+.wp-block-cocoon-blocks-blogcard + p, .wp-block-cocoon-blocks-blogcard + ul, .wp-block-cocoon-blocks-blogcard + ol, .wp-block-cocoon-blocks-blogcard + li, .wp-block-cocoon-blocks-blogcard + dl, .wp-block-cocoon-blocks-blogcard + dt, .wp-block-cocoon-blocks-blogcard + dd,
+.blogcard-wrap + p,
+.blogcard-wrap + ul,
+.blogcard-wrap + ol,
+.blogcard-wrap + li,
+.blogcard-wrap + dl,
+.blogcard-wrap + dt,
+.blogcard-wrap + dd {
 	margin-top: 35px;
 }
 
-p + .wp-block-cocoon-blocks-blogcard, ul + .wp-block-cocoon-blocks-blogcard, ol + .wp-block-cocoon-blocks-blogcard, li + .wp-block-cocoon-blocks-blogcard, dl + .wp-block-cocoon-blocks-blogcard, dt + .wp-block-cocoon-blocks-blogcard, dd + .wp-block-cocoon-blocks-blogcard {
+p + .wp-block-cocoon-blocks-blogcard,
+p + .blogcard-wrap, ul + .wp-block-cocoon-blocks-blogcard,
+ul + .blogcard-wrap, ol + .wp-block-cocoon-blocks-blogcard,
+ol + .blogcard-wrap, li + .wp-block-cocoon-blocks-blogcard,
+li + .blogcard-wrap, dl + .wp-block-cocoon-blocks-blogcard,
+dl + .blogcard-wrap, dt + .wp-block-cocoon-blocks-blogcard,
+dt + .blogcard-wrap, dd + .wp-block-cocoon-blocks-blogcard,
+dd + .blogcard-wrap {
 	margin-top: 40px;
 }
 
@@ -2244,10 +2258,24 @@ p + .wp-block-columns:not(.thx), ul + .wp-block-columns:not(.thx), ol + .wp-bloc
 		margin-top: 14px;
 		margin-bottom: 14px;
 	}
-	.wp-block-cocoon-blocks-blogcard + p, .wp-block-cocoon-blocks-blogcard + ul, .wp-block-cocoon-blocks-blogcard + ol, .wp-block-cocoon-blocks-blogcard + li, .wp-block-cocoon-blocks-blogcard + dl, .wp-block-cocoon-blocks-blogcard + dt, .wp-block-cocoon-blocks-blogcard + dd {
+	.wp-block-cocoon-blocks-blogcard + p, .wp-block-cocoon-blocks-blogcard + ul, .wp-block-cocoon-blocks-blogcard + ol, .wp-block-cocoon-blocks-blogcard + li, .wp-block-cocoon-blocks-blogcard + dl, .wp-block-cocoon-blocks-blogcard + dt, .wp-block-cocoon-blocks-blogcard + dd,
+	.blogcard-wrap + p,
+	.blogcard-wrap + ul,
+	.blogcard-wrap + ol,
+	.blogcard-wrap + li,
+	.blogcard-wrap + dl,
+	.blogcard-wrap + dt,
+	.blogcard-wrap + dd {
 		margin-top: 40px;
 	}
-	p + .wp-block-cocoon-blocks-blogcard, ul + .wp-block-cocoon-blocks-blogcard, ol + .wp-block-cocoon-blocks-blogcard, li + .wp-block-cocoon-blocks-blogcard, dl + .wp-block-cocoon-blocks-blogcard, dt + .wp-block-cocoon-blocks-blogcard, dd + .wp-block-cocoon-blocks-blogcard {
+	p + .wp-block-cocoon-blocks-blogcard,
+	p + .blogcard-wrap, ul + .wp-block-cocoon-blocks-blogcard,
+	ul + .blogcard-wrap, ol + .wp-block-cocoon-blocks-blogcard,
+	ol + .blogcard-wrap, li + .wp-block-cocoon-blocks-blogcard,
+	li + .blogcard-wrap, dl + .wp-block-cocoon-blocks-blogcard,
+	dl + .blogcard-wrap, dt + .wp-block-cocoon-blocks-blogcard,
+	dt + .blogcard-wrap, dd + .wp-block-cocoon-blocks-blogcard,
+	dd + .blogcard-wrap {
 		margin-top: 46px;
 	}
 	.blogcard-wrap {
@@ -2953,10 +2981,24 @@ p + .wp-block-columns:not(.thx), ul + .wp-block-columns:not(.thx), ol + .wp-bloc
 		margin-top: 14px;
 		margin-bottom: 14px;
 	}
-	.wp-block-cocoon-blocks-blogcard + p, .wp-block-cocoon-blocks-blogcard + ul, .wp-block-cocoon-blocks-blogcard + ol, .wp-block-cocoon-blocks-blogcard + li, .wp-block-cocoon-blocks-blogcard + dl, .wp-block-cocoon-blocks-blogcard + dt, .wp-block-cocoon-blocks-blogcard + dd {
+	.wp-block-cocoon-blocks-blogcard + p, .wp-block-cocoon-blocks-blogcard + ul, .wp-block-cocoon-blocks-blogcard + ol, .wp-block-cocoon-blocks-blogcard + li, .wp-block-cocoon-blocks-blogcard + dl, .wp-block-cocoon-blocks-blogcard + dt, .wp-block-cocoon-blocks-blogcard + dd,
+	.blogcard-wrap + p,
+	.blogcard-wrap + ul,
+	.blogcard-wrap + ol,
+	.blogcard-wrap + li,
+	.blogcard-wrap + dl,
+	.blogcard-wrap + dt,
+	.blogcard-wrap + dd {
 		margin-top: 40px;
 	}
-	p + .wp-block-cocoon-blocks-blogcard, ul + .wp-block-cocoon-blocks-blogcard, ol + .wp-block-cocoon-blocks-blogcard, li + .wp-block-cocoon-blocks-blogcard, dl + .wp-block-cocoon-blocks-blogcard, dt + .wp-block-cocoon-blocks-blogcard, dd + .wp-block-cocoon-blocks-blogcard {
+	p + .wp-block-cocoon-blocks-blogcard,
+	p + .blogcard-wrap, ul + .wp-block-cocoon-blocks-blogcard,
+	ul + .blogcard-wrap, ol + .wp-block-cocoon-blocks-blogcard,
+	ol + .blogcard-wrap, li + .wp-block-cocoon-blocks-blogcard,
+	li + .blogcard-wrap, dl + .wp-block-cocoon-blocks-blogcard,
+	dl + .blogcard-wrap, dt + .wp-block-cocoon-blocks-blogcard,
+	dt + .blogcard-wrap, dd + .wp-block-cocoon-blocks-blogcard,
+	dd + .blogcard-wrap {
 		margin-top: 46px;
 	}
 	.blogcard-wrap {

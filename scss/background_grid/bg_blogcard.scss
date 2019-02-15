@@ -5,13 +5,14 @@
 .wp-block-embed__wrapper {}
 
 $footer_size: round($font_size * 0.4) * 2;
-$blogcard_class: '.wp-block-cocoon-blocks-blogcard';
+$blogcard_block_class: '.wp-block-cocoon-blocks-blogcard';
 
-#{$blogcard_class} {
+#{$blogcard_block_class} {
   margin-top:$line_space;
   margin-bottom: $line_space;
 }
-#{$blogcard_class} {
+#{$blogcard_block_class},
+.blogcard-wrap {
   + {
    #{$str_tags} {
      margin-top:$str_inner_margin_bottom + $line_height_px;
@@ -20,7 +21,8 @@ $blogcard_class: '.wp-block-cocoon-blocks-blogcard';
 }
 #{$str_tags} {
   + {
-    #{$blogcard_class} {
+    #{$blogcard_block_class},
+    .blogcard-wrap {
       margin-top:$line_space + $line_height_px;
     }
   }
