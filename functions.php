@@ -84,29 +84,29 @@ endif;
 //HSLAを変調
 if ( !function_exists( 'hsla_modulation' ) ):
 function hsla_modulation(
-  $hsl,
+  $hsla,
   $hue = 0,
   $saturation = 1.0,
   $lightness = 1.0,
   $opacity = 1.0)
 {
-  $hsla['h'] = $hsl['h'] + $hue;
+  $hsla['h'] += $hue;
 
   $s = (mb_substr($saturation, -1) == '%')
     ? mb_substr($saturation, 0, -1) / 100
-    : $hsl['s'] * $saturation;
+    : $hsla['s'] * $saturation;
   //$s == 0の時、何故か'%'が付加されない
   if ($s == 0) $s = 0.01;
   $hsla['s'] = $s;
 
   $l = (mb_substr($lightness, -1) == '%')
     ? mb_substr($lightness, 0, -1) / 100
-    : $hsl['l'] * $lightness;
+    : $hsla['l'] * $lightness;
   $hsla['l'] = $l;
 
   $a = (mb_substr($opacity, -1) == '%')
     ? mb_substr($opacity, 0, -1) / 100
-    : $hsl['a'] * $opacity;
+    : $hsla['a'] * $opacity;
   $hsla['a'] = $a;
   return $hsla;
 }
