@@ -58,7 +58,8 @@ endif;
 //HSLをHSLAのCSSコードに変換
 if ( !function_exists( 'hsl_to_hsla_css_code' ) ):
 function hsl_to_hsla_css_code($hsl, $lightness = 1.0, $opacity = 1.0){
-  $h = $hsl['h'];
+  $hsla = hsl_to_hsla($hsl, $lightness, $opacity);
+/*  $h = $hsl['h'];
   //$hsl['s'] == 0の時、何故か'%'が付加されない
   if ($hsl['s'] == 0) {
     $hsl['s'] = 0.01;
@@ -69,14 +70,20 @@ function hsl_to_hsla_css_code($hsl, $lightness = 1.0, $opacity = 1.0){
   } else {
     $l = round($hsl['l'] * 100 * $lightness);
   }
-  return 'hsla('.$h.', '.$s.'%, '.$l.'%, '.$opacity.')';
+  return 'hsla('.$h.', '.$s.'%, '.$l.'%, '.$opacity.')';*/
+  $h = $hsla['h'];
+  $s = $hsla['s'] * 100;
+  $l = $hsla['l'] * 100;
+  $a = $hsla['a'];
+  return 'hsla('.$h.', '.$s.'%, '.$l.'%, '.$a.')';
 }
 endif;
 //カラーコードをHSLAのCSSコードに変換
 if ( !function_exists( 'colorcode_to_hsla_css_code' ) ):
 function colorcode_to_hsla_css_code($colorcode, $lightness = 1.0, $opacity = 1.0){
   $hsl = colorcode_to_hsl($colorcode);
-  $h = $hsl['h'];
+  $hsla = hsl_to_hsla($hsl, $lightness, $opacity);
+/*  $h = $hsl['h'];
   //$hsl['s'] == 0の時、何故か'%'が付加されない
   if ($hsl['s'] == 0) {
     $hsl['s'] = 0.01;
@@ -87,11 +94,16 @@ function colorcode_to_hsla_css_code($colorcode, $lightness = 1.0, $opacity = 1.0
   } else {
     $l = round($hsl['l'] * 100 * $lightness);
   }
-  return 'hsla('.$h.', '.$s.'%, '.$l.'%, '.$opacity.')';
+  return 'hsla('.$h.', '.$s.'%, '.$l.'%, '.$opacity.')';*/
+  $h = $hsla['h'];
+  $s = $hsla['s'] * 100;
+  $l = $hsla['l'] * 100;
+  $a = $hsla['a'];
+  return 'hsla('.$h.', '.$s.'%, '.$l.'%, '.$a.')';
 }
 endif;
 //カラーコードをHSLのCSSコードに変換
-if ( !function_exists( 'colorcode_to_hsl_css_code' ) ):
+/*if ( !function_exists( 'colorcode_to_hsl_css_code' ) ):
 function colorcode_to_hsl_css_code($colorcode, $lightness = 1.0){
   $hsl = colorcode_to_hsl($colorcode);
   $h = $hsl['h'];
@@ -107,16 +119,23 @@ function colorcode_to_hsl_css_code($colorcode, $lightness = 1.0){
   }
   return 'hsl('.$h.', '.$s.'%, '.$l.'%)';
 }
-endif;
+endif;*/
 //HSLをHSLAに変換
 if ( !function_exists( 'hsl_to_hsla' ) ):
 function hsl_to_hsla($hsl, $lightness = 1.0, $opacity = 1.0){
   $hsla['h'] = $hsl['h'];
-  $hsla['s'] = $hsl['s'];
-  if (mb_substr($lightness, -1) == '%') {
-    $l = mb_substr($lightness, 0, -1);
+  //$hsla['s'] == 0の時、何故か'%'が付加されない
+  if ($hsl['s'] == 0) {
+    $hsla['s'] = 0.01;
   } else {
-    $l = round($hsl['l'] * 100 * $lightness);
+    $hsla['s'] = $hsl['s'];
+  }
+  if (mb_substr($lightness, -1) == '%') {
+//    $l = mb_substr($lightness, 0, -1);
+    $l = mb_substr($lightness, 0, -1) / 100;
+  } else {
+//    $l = round($hsl['l'] * 100 * $lightness);
+    $l = $hsl['l'] * $lightness;
   }
   $hsla['l'] = $l;
   $hsla['a'] = $opacity;
