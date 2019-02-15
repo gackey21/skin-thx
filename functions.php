@@ -120,7 +120,7 @@ function hsl_to_hsla($hsl, $lightness = 1.0, $opacity = 1.0){
   }
   $hsla['l'] = $l;
   $hsla['a'] = $opacity;
-  return $hsl;
+  return $hsla;
 }
 endif;
 //カラーコードをHSLに変換
