@@ -14,23 +14,27 @@ if (get_site_key_color()){//キーカラー
 } else {
   $thx_key = '#808080';
 }
-$thx_key_hsl = colorcode_to_hsl($thx_key);
+$thx_key_hsla = colorcode_to_hsla($thx_key);
 
-$thx_key_095 = hsl_to_hsla_css_code($thx_key_hsl,'95%',1.0);
-$thx_key_080 = hsl_to_hsla_css_code($thx_key_hsl,'80%',1.0);
-$thx_key_060 = hsl_to_hsla_css_code($thx_key_hsl,'60%',1.0);
+$thx_key_095 = hsla_to_css_code($thx_key_hsla,'95%');
+$thx_key_080 = hsla_to_css_code($thx_key_hsla,'80%');
+$thx_key_060 = hsla_to_css_code($thx_key_hsla,'60%');
 
 
 
 if (get_site_key_sub_color()){//サブカラー
   $thx_sub = get_site_key_sub_color();
-  $thx_sub_hsl = colorcode_to_hsl($thx_sub);
+  $thx_sub_hsla = colorcode_to_hsla($thx_sub);
 } else {
-  $thx_sub_hsl = generate_sub_color($thx_key_hsl);
+  $thx_sub_hsla = generate_sub_color($thx_key_hsla);
+//  $thx_sub_hsla = generate_counter_color($thx_key_hsla);
 }
-$thx_sub = hsl_to_hsla_css_code($thx_sub_hsl);
-$thx_sub__050 = hsl_to_hsla_css_code($thx_sub_hsl, 1.0, 0.5);
-$thx_sub__000 = hsl_to_hsla_css_code($thx_sub_hsl, 1.0, 0.0);
+$thx_sub = hsla_to_css_code($thx_sub_hsla);
+$thx_sub__050 = hsla_to_css_code($thx_sub_hsla, 1.0, 0.5);
+$thx_sub__000 = hsla_to_css_code($thx_sub_hsla, 1.0, 0.0);
+
+$thx_counter_hsla = generate_counter_color($thx_key_hsla);
+$thx_counter = hsla_to_css_code($thx_counter_hsla);
 
 
 
