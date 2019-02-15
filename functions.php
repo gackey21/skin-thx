@@ -44,21 +44,33 @@ function thx_categories(){
   echo get_thx_categories();
 }
 endif;*/
+//キーカラーから真逆の色を作成
+if ( !function_exists( 'generate_counter_color' ) ):
+function generate_counter_color($hsla){
+  $ds = abs($hsla['s'] - 1.0) * 100;
+  $dl = abs($hsla['l'] - 1.0) * 100;
+  $ds .= '%';
+  $dl .= '%';
+  $hsla = hsla_modulation($hsla, 180, $ds, $dl);
+  return $hsla;
+}
+endif;
 //キーカラーからサブカラーを作成
 if ( !function_exists( 'generate_sub_color' ) ):
 function generate_sub_color($hsl){
   if ($hsl['l'] > 0.45) {
     $hsl['l'] -= 0.25;
   } else {
+    $hsl['s'] += 0.25;
     $hsl['l'] += 0.25;
   };
   return $hsl;
 }
 endif;
-//HSLをHSLAのCSSコードに変換
-if ( !function_exists( 'hsl_to_hsla_css_code' ) ):
-function hsl_to_hsla_css_code($hsl, $lightness = 1.0, $opacity = 1.0){
-  $hsla = hsl_to_hsla($hsl, $lightness, $opacity);
+//HSLAをCSSコードに変換
+if ( !function_exists( 'hsla_to_css_code' ) ):
+function hsla_to_css_code($hsl, $lightness = 1.0, $opacity = 1.0){
+  $hsla = hsla_modulation($hsl, 0, 1.0, $lightness, $opacity);
 /*  $h = $hsl['h'];
   //$hsl['s'] == 0の時、何故か'%'が付加されない
   if ($hsl['s'] == 0) {
@@ -79,72 +91,87 @@ function hsl_to_hsla_css_code($hsl, $lightness = 1.0, $opacity = 1.0){
 }
 endif;
 //カラーコードをHSLAのCSSコードに変換
-if ( !function_exists( 'colorcode_to_hsla_css_code' ) ):
+/*if ( !function_exists( 'colorcode_to_hsla_css_code' ) ):
 function colorcode_to_hsla_css_code($colorcode, $lightness = 1.0, $opacity = 1.0){
   $hsl = colorcode_to_hsl($colorcode);
   $hsla = hsl_to_hsla($hsl, $lightness, $opacity);
-/*  $h = $hsl['h'];
-  //$hsl['s'] == 0の時、何故か'%'が付加されない
-  if ($hsl['s'] == 0) {
-    $hsl['s'] = 0.01;
-  }
-  $s = $hsl['s'] * 100;
-  if (mb_substr($lightness, -1) == '%') {
-    $l = mb_substr($lightness, 0, -1);
-  } else {
-    $l = round($hsl['l'] * 100 * $lightness);
-  }
-  return 'hsla('.$h.', '.$s.'%, '.$l.'%, '.$opacity.')';*/
   $h = $hsla['h'];
   $s = $hsla['s'] * 100;
   $l = $hsla['l'] * 100;
   $a = $hsla['a'];
   return 'hsla('.$h.', '.$s.'%, '.$l.'%, '.$a.')';
 }
-endif;
-//カラーコードをHSLのCSSコードに変換
-/*if ( !function_exists( 'colorcode_to_hsl_css_code' ) ):
-function colorcode_to_hsl_css_code($colorcode, $lightness = 1.0){
-  $hsl = colorcode_to_hsl($colorcode);
-  $h = $hsl['h'];
-  //$hsl['s'] == 0の時、何故か'%'が付加されない
-  if ($hsl['s'] == 0) {
-    $hsl['s'] = 0.01;
-  }
-  $s = $hsl['s'] * 100;
-  if (mb_substr($lightness, -1) == '%') {
-    $l = mb_substr($lightness, 0, -1);
-  } else {
-    $l = round($hsl['l'] * 100 * $lightness);
-  }
-  return 'hsl('.$h.', '.$s.'%, '.$l.'%)';
-}
 endif;*/
-//HSLをHSLAに変換
-if ( !function_exists( 'hsl_to_hsla' ) ):
-function hsl_to_hsla($hsl, $lightness = 1.0, $opacity = 1.0){
-  $hsla['h'] = $hsl['h'];
-  //$hsla['s'] == 0の時、何故か'%'が付加されない
-  if ($hsl['s'] == 0) {
-    $hsla['s'] = 0.01;
+
+//HSLAを変調
+if ( !function_exists( 'hsla_modulation' ) ):
+function hsla_modulation(
+  $hsl,
+  $hue = 0,
+  $saturation = 1.0,
+  $lightness = 1.0,
+  $opacity = 1.0)
+{
+  $hsla['h'] = $hsl['h'] + $hue;
+
+/*  if (mb_substr($saturation, -1) == '%') {
+    $s = mb_substr($saturation, 0, -1) / 100;
   } else {
-    $hsla['s'] = $hsl['s'];
-  }
-  if (mb_substr($lightness, -1) == '%') {
+    $s = $hsl['s'] * $saturation;
+  }*/
+  $s = (mb_substr($saturation, -1) == '%')
+    ? mb_substr($saturation, 0, -1) / 100
+    : $hsl['s'] * $saturation;
+  //$s == 0の時、何故か'%'が付加されない
+  if ($s == 0) $s = 0.01;
+  $hsla['s'] = $s;
+
+/*  if (mb_substr($lightness, -1) == '%') {
 //    $l = mb_substr($lightness, 0, -1);
     $l = mb_substr($lightness, 0, -1) / 100;
   } else {
 //    $l = round($hsl['l'] * 100 * $lightness);
     $l = $hsl['l'] * $lightness;
-  }
+  }*/
+  $l = (mb_substr($lightness, -1) == '%')
+    ? mb_substr($lightness, 0, -1) / 100
+    : $hsl['l'] * $lightness;
   $hsla['l'] = $l;
-  $hsla['a'] = $opacity;
+
+  $a = (mb_substr($opacity, -1) == '%')
+    ? mb_substr($opacity, 0, -1) / 100
+    : $hsl['a'] * $opacity;
+  $hsla['a'] = $a;
   return $hsla;
 }
 endif;
-//カラーコードをHSLに変換
-if ( !function_exists( 'colorcode_to_hsl' ) ):
-function colorcode_to_hsl($colorcode){
+//HSLをHSLAに変換
+/*if ( !function_exists( 'hsl_to_hsla' ) ):
+function hsl_to_hsla($hsl, $lightness = 1.0, $opacity = 1.0)
+{
+  $hsla['h'] = $hsl['h'];
+
+  //$s == 0の時、何故か'%'が付加されない
+  if ($hsl['s'] == 0) $s = 0.01;
+  $hsla['s'] = $s;
+
+  $l = (mb_substr($lightness, -1) == '%')
+    ? mb_substr($lightness, 0, -1) / 100
+    : $hsl['l'] * $lightness;
+  $hsla['l'] = $l;
+
+  if (!$hsl['a']) $a = 1.0;
+  $a = (mb_substr($opacity, -1) == '%')
+    ? mb_substr($opacity, 0, -1) / 100
+    : $hsl['a'] * $opacity;
+  $hsla['a'] = $a;
+  return $hsla;
+}
+endif;*/
+
+//カラーコードをHSLAに変換
+if ( !function_exists( 'colorcode_to_hsla' ) ):
+function colorcode_to_hsla($colorcode){
   $rgb = colorcode_to_rgb($colorcode);
   $r = $rgb['red'] / 255;
   $g = $rgb['green'] / 255;
@@ -175,10 +202,11 @@ function colorcode_to_hsl($colorcode){
       break;
     }
   }
-  $hsl['h'] = round( $h, 0 );
-  $hsl['s'] = round( $s, 2 );
-  $hsl['l'] = round( $l, 2 );
-  return $hsl;
+  $hsla['h'] = round( $h, 0 );
+  $hsla['s'] = round( $s, 2 );
+  $hsla['l'] = round( $l, 2 );
+  $hsla['a'] = 1.0;
+  return $hsla;
 }
 endif;
 
