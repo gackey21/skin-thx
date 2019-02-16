@@ -21,7 +21,7 @@ function get_the_nolink_category($id = null, $is_display = true){
 endif;*/
 
 //設定変更CSSを読み込む
-if ( !function_exists( 'wp_add_css_custome_to_inline_style' ) ):
+/*if ( !function_exists( 'wp_add_css_custome_to_inline_style' ) ):
 function wp_add_css_custome_to_inline_style(){
   ob_start();//バッファリング
   get_template_part('tmp/css-custom');
@@ -38,7 +38,7 @@ function wp_add_css_custome_to_inline_style(){
     wp_add_inline_style( THEME_NAME.'-style', $css_custom );
   }
 }
-endif;
+endif;*/
 
 //サイトキーサブカラー
 define('OP_SITE_KEY_SUB_COLOR', 'site_key_sub_color');
