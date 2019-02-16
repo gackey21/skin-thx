@@ -7,7 +7,7 @@
  */
 if ( !defined( 'ABSPATH' ) ) exit; ?>
 
-<?php require_once get_template_directory().'/tmp/css-custom.php'; ?>
+<?php //require_once get_template_directory().'/tmp/css-custom.php'; ?>
 
 <?php
 if (get_site_key_color()){//キーカラー
@@ -23,6 +23,13 @@ $thx_key_060 = hsla_to_css_code($thx_key_hsla,'60%');
 
 
 
+//サイトキーサブカラー
+define('OP_SITE_KEY_SUB_COLOR', 'site_key_sub_color');
+if ( !function_exists( 'get_site_key_sub_color' ) ):
+function get_site_key_sub_color(){
+  return get_theme_option(OP_SITE_KEY_SUB_COLOR);
+}
+endif;
 if (get_site_key_sub_color()){//サブカラー
   $thx_sub = get_site_key_sub_color();
   $thx_sub_hsla = colorcode_to_hsla($thx_sub);

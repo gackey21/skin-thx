@@ -39,11 +39,3 @@ function wp_add_css_custome_to_inline_style(){
   }
 }
 endif;*/
-
-//サイトキーサブカラー
-define('OP_SITE_KEY_SUB_COLOR', 'site_key_sub_color');
-if ( !function_exists( 'get_site_key_sub_color' ) ):
-function get_site_key_sub_color(){
-  return get_theme_option(OP_SITE_KEY_SUB_COLOR);
-}
-endif;
