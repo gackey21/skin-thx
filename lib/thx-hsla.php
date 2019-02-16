@@ -74,8 +74,8 @@ endif;
 
 //HSLAをCSSコードに変換
 if ( !function_exists( 'hsla_to_css_code' ) ):
-function hsla_to_css_code($hsl, $lightness = 1.0, $opacity = 1.0){
-  $hsla = hsla_modulation($hsl, 0, 1.0, $lightness, $opacity);
+function hsla_to_css_code($hsla, $lightness = 1.0, $opacity = 1.0){
+  $hsla = hsla_modulation($hsla, 0, 1.0, $lightness, $opacity);
   $h = $hsla['h'];
   $s = $hsla['s'] * 100;
   $l = $hsla['l'] * 100;
