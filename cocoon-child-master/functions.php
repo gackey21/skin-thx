@@ -4,8 +4,8 @@
 add_editor_style();
 
 //以下に子テーマ用の関数を書く
-get_template_part('skins/skin-thx/lib/thx','cat-label');
-//get_template_part('skins/skin-thx/functions');
+//get_template_part('skins/skin-thx/lib/thx','cat-label');
+get_template_part('skins/skin-thx/functions');
 
 //リンクのないカテゴリーの取得
 /*if ( !function_exists( 'get_the_nolink_category' ) ):
