@@ -96,7 +96,7 @@ function hsla_modulation(
     ? mb_substr($saturation, 0, -1) / 100
     : $hsla['s'] * $saturation;
   //$s == 0の時、何故か'%'が付加されない
-  if ($s == 0) $s = 0.01;
+  if ($s == 0) $s = 0.0001;
   $hsla['s'] = $s;
 
   $l = (mb_substr($lightness, -1) == '%')
