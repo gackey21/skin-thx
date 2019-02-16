@@ -130,7 +130,10 @@
     }
   }
 }
-
+div [class^='wp-block-cocoon-'] {
+  margin-top: $line_space;
+  margin-bottom: $line_space;
+}
 /* キャプションボックス */
 .caption-box {
 }

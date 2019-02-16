@@ -1786,6 +1786,11 @@ dd + .blogcard-wrap {
 	padding-right: 15px;
 }
 
+div [class^='wp-block-cocoon-'] {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
 /* キャプションボックス */
 .caption-box-label {
 	padding: 0px;
@@ -2437,6 +2442,10 @@ p + .wp-block-columns:not(.thx), ul + .wp-block-columns:not(.thx), ol + .wp-bloc
 		border-width: 1px;
 		padding-left: 17px;
 		padding-right: 17px;
+	}
+	div [class^='wp-block-cocoon-'] {
+		margin-top: 14px;
+		margin-bottom: 14px;
 	}
 	/* キャプションボックス */
 	.caption-box-label {
@@ -3160,6 +3169,10 @@ p + .wp-block-columns:not(.thx), ul + .wp-block-columns:not(.thx), ol + .wp-bloc
 		border-width: 1px;
 		padding-left: 17px;
 		padding-right: 17px;
+	}
+	div [class^='wp-block-cocoon-'] {
+		margin-top: 14px;
+		margin-bottom: 14px;
 	}
 	/* キャプションボックス */
 	.caption-box-label {
