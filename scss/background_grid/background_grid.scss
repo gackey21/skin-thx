@@ -142,8 +142,8 @@ $grid_color: fade-out($key_sub_color, 0.75);
   @import "bg_pre";
 
 }
-@import "bg_blogcard";
 @import "bg_cocoon_box";
+@import "bg_blogcard";
 @import "bg_ruby";
 .thx-set-frost {
   @include set-frost();

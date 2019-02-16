@@ -1,4 +1,8 @@
 // cocoonボックス汎用設定
+div [class^='wp-block-cocoon-'] {
+  margin-top: $line_space;
+  margin-bottom: $line_space;
+}
 .block-box {
 //  & > :first-child#{$str_tags_exclusion} {
   & > :first-child {
@@ -129,10 +133,6 @@
       @include toggle-checkbox($font_width);
     }
   }
-}
-div [class^='wp-block-cocoon-'] {
-  margin-top: $line_space;
-  margin-bottom: $line_space;
 }
 /* キャプションボックス */
 .caption-box {
