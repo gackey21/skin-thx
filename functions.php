@@ -24,17 +24,11 @@ function is_entry_card_border_visible(){
 
 
 get_template_part('skins/skin-thx/lib/thx','hsla');
+get_template_part('skins/skin-thx/lib/thx','cat-label');
 
 
 
-//カテゴリーをID順にソート
-if ( !function_exists( 'get_the_category_orderby_id' ) ):
-function get_the_category_orderby_id( $categories ) {
-    usort( $categories, '_usort_terms_by_ID');
-    return $categories;
-}
-add_filter( 'get_the_categories', 'get_the_category_orderby_id' );
-endif;
+
 
 
 

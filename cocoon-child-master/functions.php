@@ -4,9 +4,11 @@
 add_editor_style();
 
 //以下に子テーマ用の関数を書く
+get_template_part('skins/skin-thx/lib/thx','cat-label');
+//get_template_part('skins/skin-thx/functions');
 
 //リンクのないカテゴリーの取得
-if ( !function_exists( 'get_the_nolink_category' ) ):
+/*if ( !function_exists( 'get_the_nolink_category' ) ):
 function get_the_nolink_category($id = null, $is_display = true){
   $categories = null;
   $categories = '<div class="thx_category_space">';
@@ -16,7 +18,7 @@ function get_the_nolink_category($id = null, $is_display = true){
   $categories .= '</div>';
   return $categories;
 }
-endif;
+endif;*/
 
 //設定変更CSSを読み込む
 if ( !function_exists( 'wp_add_css_custome_to_inline_style' ) ):
