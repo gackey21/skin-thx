@@ -125,12 +125,10 @@ body {
 .article .toc{
   border: 1px solid <?php echo $thx_sub; ?>;
 }
-.comment-list{
-  ul.children{
+.comment-list ul.children {
     padding: 0.6em;
     background-color: <?php echo $thx_key_095; ?>;
     border-left: 2px solid <?php echo $thx_sub; ?>;
-  }
 }
 .widget-entry-cards.ranking-visible .card-thumb::before {
   background-color: <?php echo $thx_key; ?>;
