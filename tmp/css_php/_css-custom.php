@@ -10,6 +10,7 @@ if ( !defined( 'ABSPATH' ) ) exit; ?>
 <?php //require_once get_template_directory().'/tmp/css-custom.php'; ?>
 
 <?php require '_var.php'; ?>
+<?php require 'color.php'; ?>
 
 
 
@@ -46,19 +47,12 @@ if(is_admin() && is_gutenberg_editor_enable()) ?>
 
 
 <?php //base ?>
-body {
-  background-color: <?php echo $thx_bg; ?>;
-}
 .pagination .current,
 .page-numbers.current,
 .page-numbers.dots{
   color: #fff;
   border-color: <?php echo $thx_sub; ?>;
   background: <?php echo $thx_sub; ?>;
-}
-.page-numbers,
-.pagination-next-link{
-  background: <?php echo $thx_key_095; ?>;
 }
 .page-numbers,
 .tagcloud a,
@@ -71,7 +65,6 @@ body {
 }
 .comment-list ul.children {
     padding: 0.6em;
-    background-color: <?php echo $thx_key_095; ?>;
     border-left: 2px solid <?php echo $thx_sub; ?>;
 }
 .widget-entry-cards.ranking-visible .card-thumb::before {
@@ -108,22 +101,4 @@ body {
 .article h5:hover::after,
 .article h6:hover::after {
 	color: <?php echo $thx_sub__000; ?>;
-}
-
-.go-to-top-button {
-  <?php
-  if (!get_go_to_top_background_color()) {
-    echo "background-color: ".$thx_sub.";";
-  };
-  if (!get_go_to_top_text_color()) {
-    echo "color: #ddd;";
-  };
-  ?>;
-}
-.go-to-top-button:hover {
-  <?php
-  if (!get_go_to_top_text_color()) {
-    echo "color: #fff;";
-  };
-  ?>;
 }
