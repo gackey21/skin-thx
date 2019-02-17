@@ -1,5 +1,32 @@
 <?php
 ///////////////////////////////////////
+// キーカラー
+///////////////////////////////////////
+?>
+.entry-title,
+.archive-title {
+  <?php
+  if ($thx_key_text) {
+    echo "color: ".$thx_key_text.";";
+  }else {
+    echo "color: #fff;";
+  };
+  ?>;
+  background-color: <?php echo $thx_key; ?>;
+}
+.article h3 {
+  background: linear-gradient(90deg, <?php echo $thx_key_080; ?>, #fff);
+}
+.article h4,
+.article h5,
+.article h6 {
+  border-color: <?php echo $thx_key_060; ?>;
+}
+.widget-entry-cards.ranking-visible .card-thumb::before {
+  background-color: <?php echo $thx_key; ?>;
+}
+<?php
+///////////////////////////////////////
 // 背景色
 ///////////////////////////////////////
 

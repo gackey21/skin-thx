@@ -43,26 +43,3 @@ if(is_admin() && is_gutenberg_editor_enable()) ?>
   margin-top: <?php echo $thx_ls; ?>px;
   margin-bottom: <?php echo $thx_ls; ?>px;
 }
-
-
-
-<?php //base ?>
-.widget-entry-cards.ranking-visible .card-thumb::before {
-  background-color: <?php echo $thx_key; ?>;
-}
-
-
-<?php //thx ?>
-.entry-title,
-.archive-title {
-  color: #fff;
-  background-color: <?php echo $thx_key; ?>;
-}
-.article h3 {
-  background: linear-gradient(90deg, <?php echo $thx_key_080; ?>, #fff);
-}
-.article h4,
-.article h5,
-.article h6 {
-  border-color: <?php echo $thx_key_060; ?>;
-}
