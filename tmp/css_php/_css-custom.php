@@ -47,26 +47,6 @@ if(is_admin() && is_gutenberg_editor_enable()) ?>
 
 
 <?php //base ?>
-.pagination .current,
-.page-numbers.current,
-.page-numbers.dots{
-  color: #fff;
-  border-color: <?php echo $thx_sub; ?>;
-  background: <?php echo $thx_sub; ?>;
-}
-.page-numbers,
-.tagcloud a,
-.author-box,
-.ranking-item,
-.pagination-next-link,
-.comment-reply-link,
-.article .toc{
-  border: 1px solid <?php echo $thx_sub; ?>;
-}
-.comment-list ul.children {
-    padding: 0.6em;
-    border-left: 2px solid <?php echo $thx_sub; ?>;
-}
 .widget-entry-cards.ranking-visible .card-thumb::before {
   background-color: <?php echo $thx_key; ?>;
 }
@@ -85,20 +65,4 @@ if(is_admin() && is_gutenberg_editor_enable()) ?>
 .article h5,
 .article h6 {
   border-color: <?php echo $thx_key_060; ?>;
-}
-
-.article h2::after,
-.article h3::after,
-.article h4::after,
-.article h5::after,
-.article h6::after {
-  color: <?php echo $thx_sub__050; ?>;
-}
-
-.article h2:hover::after,
-.article h3:hover::after,
-.article h4:hover::after,
-.article h5:hover::after,
-.article h6:hover::after {
-	color: <?php echo $thx_sub__000; ?>;
 }
