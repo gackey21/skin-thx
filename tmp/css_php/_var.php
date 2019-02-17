@@ -56,6 +56,7 @@ if (!$thx_sub_hsla) {
   $thx_sub_hsla = colorcode_to_hsla($thx_sub);
 }
 
+$thx_sub_090 = hsla_to_css_code($thx_sub_hsla,'90%');
 $thx_sub__050 = hsla_to_css_code($thx_sub_hsla, 1.0, 0.5);
 $thx_sub__000 = hsla_to_css_code($thx_sub_hsla, 1.0, 0.0);
 

@@ -29,3 +29,9 @@ get_template_part('skins/skin-thx/lib/thx','cat-label');
 get_template_part('skins/skin-thx/lib/thx','amp');
 get_template_part('skins/skin-thx/lib/thx','anime');
 get_template_part('skins/skin-thx/lib/thx','test');
+
+function thx_enqueue_styles() {
+  wp_enqueue_style( 'thx-style', get_stylesheet_directory_uri().'/skins/skin-thx/tmp/css_php/style.php' );
+}
+
+add_action( 'wp_enqueue_scripts', 'thx_enqueue_styles' );
