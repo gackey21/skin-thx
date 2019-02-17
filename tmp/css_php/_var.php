@@ -29,6 +29,11 @@ $thx_key_095 = hsla_to_css_code($thx_key_hsla,'95%');
 $thx_key_080 = hsla_to_css_code($thx_key_hsla,'80%');
 $thx_key_060 = hsla_to_css_code($thx_key_hsla,'60%');
 
+//キーテキストカラー
+if (get_site_key_text_color()){
+  $thx_key_text = get_site_key_text_color();
+}
+
 //サイト背景色
 if (get_site_background_color()){
   $thx_bg = get_site_background_color();
