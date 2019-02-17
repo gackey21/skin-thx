@@ -124,7 +124,20 @@ body {
 	color: <?php echo $thx_sub__000; ?>;
 }
 
-.go-to-top-button{
-  color: #fff;
-  background-color: <?php echo $thx_sub; ?>;
+.go-to-top-button {
+  <?php
+  if (!get_go_to_top_background_color()) {
+    echo "background-color: ".$thx_sub.";";
+  };
+  if (!get_go_to_top_text_color()) {
+    echo "color: #ddd;";
+  };
+  ?>;
+}
+.go-to-top-button:hover {
+  <?php
+  if (!get_go_to_top_text_color()) {
+    echo "color: #fff;";
+  };
+  ?>;
 }
