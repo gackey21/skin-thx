@@ -8,4 +8,4 @@
 if ( !defined( 'ABSPATH' ) ) exit; ?>
 
 <?php require get_template_directory().'/tmp/css-custom.php'; ?>
-<?php require get_stylesheet_directory().'/skins/skin-thx/tmp/css-custom.php'; ?>
+<?php require get_stylesheet_directory().'/skins/skin-thx/tmp/css_php/_css-custom.php'; ?>
