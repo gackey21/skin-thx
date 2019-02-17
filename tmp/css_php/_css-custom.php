@@ -14,27 +14,6 @@ if ( !defined( 'ABSPATH' ) ) exit; ?>
 
 
 <?php //打ち消し ?>
-.a-wrap:hover {
-  background-color:initial;
-}
-.blogcard-wrap:hover {
-  background-color:#fff;
-}
-
-
-
-<?php //フォントサイズ
-if (get_site_font_size()){
-  $thx_fz = get_site_font_size();
-} ?>
-
-<?php //行の高さ
-if (get_entry_content_line_hight()){
-  $thx_lh = get_entry_content_line_hight();
-  $thx_ls = round(($thx_lh - 1) * $thx_fz / 2) * 2;
-  $thx_lh_px = $thx_fz + $thx_ls;
-} ?>
-
 .entry-content > *,
 .demo .entry-content p {
   line-height: <?php echo $thx_lh_px; ?>px;
@@ -44,6 +23,13 @@ if (get_entry_content_line_hight()){
   margin-top: <?php echo $thx_ls; ?>px;
   margin-bottom: <?php echo $thx_ls; ?>px;
 }
+.a-wrap:hover {
+  background-color:initial;
+}
+.blogcard-wrap:hover {
+  background-color:#fff;
+}
+
 
 <?php //管理画面用
 if(is_admin() && is_gutenberg_editor_enable()) ?>

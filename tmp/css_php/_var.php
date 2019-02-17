@@ -58,6 +58,21 @@ $thx_sub__000 = hsla_to_css_code($thx_sub_hsla, 1.0, 0.0);
 $thx_counter_hsla = generate_counter_color($thx_key_hsla);
 $thx_counter = hsla_to_css_code($thx_counter_hsla);
 
+///////////////////////////////////////
+// 文字サイズの指定
+///////////////////////////////////////
+
+//フォントサイズ
+if (get_site_font_size()){
+  $thx_fz = get_site_font_size();
+}
+
+//行の高さ
+if (get_entry_content_line_hight()){
+  $thx_lh = get_entry_content_line_hight();
+  $thx_ls = round(($thx_lh - 1) * $thx_fz / 2) * 2;
+  $thx_lh_px = $thx_fz + $thx_ls;
+}
 
 
 ?>
