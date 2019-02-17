@@ -18,14 +18,23 @@
 .blogcard-wrap:hover {
   background-color:#fff;
 }
+@media screen and
+  (max-width: 414px) and
+  (orientation: portrait)
+{
+  .entry-content > *,
+  .demo .entry-content p {
+    line-height: 28px;
+  }
 
+}
 <?php
 ///////////////////////////////////////
 // 管理画面用
 ///////////////////////////////////////
 ?>
 <?php
-if(is_admin() && is_gutenberg_editor_enable()) ?>
+if(is_admin() && is_gutenberg_editor_enable()): ?>
 .main p,
 .main p.wp-block-paragraph {
   line-height: <?php echo $thx_lh_px; ?>px;
@@ -35,3 +44,4 @@ if(is_admin() && is_gutenberg_editor_enable()) ?>
   margin-top: <?php echo $thx_ls; ?>px;
   margin-bottom: <?php echo $thx_ls; ?>px;
 }
+<?php endif ?>
