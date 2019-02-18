@@ -4,7 +4,7 @@ header('Content-Type: text/css; charset=utf-8');
 //include_once('_var.php');
 ?>
 <?php require '_var.php'; ?>
-<?php $grid_color = $thx_sub_090; ?>
+<?php $grid_color = $thx_sub_080; ?>
 
 .thx-set-grid {
   line-height: <?php echo $thx_lh_px; ?>px;
