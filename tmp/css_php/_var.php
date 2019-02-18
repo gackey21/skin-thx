@@ -73,12 +73,40 @@ if (get_site_font_size()){
   $thx_fz = get_site_font_size();
 }
 
+//モバイルフォントサイズ
+if (get_mobile_site_font_size()){
+  $thx_mb_fz = get_mobile_site_font_size();
+}
+
 //行の高さ
 if (get_entry_content_line_hight()){
   $thx_lh = get_entry_content_line_hight();
-  $thx_ls = round(($thx_lh - 1) * $thx_fz / 2) * 2;
-  $thx_lh_px = $thx_fz + $thx_ls;
+  //$thx_ls = round(($thx_lh - 1) * $thx_fz / 2) * 2;
+  //$thx_lh_px = $thx_fz + $thx_ls;
 }
+
+//グリッド揃え用行間の設定
+if ( !function_exists( 'get_grid_line_space' ) ):
+function get_grid_line_space($fz, $lh){
+  $ls = round(($lh - 1) * $fz / 2) * 2;
+  return $ls;
+}
+endif;
+
+//グリッド揃え用line-heightの設定
+if ( !function_exists( 'get_grid_line_height' ) ):
+function get_grid_line_height($fz, $lh){
+  $ls = get_grid_line_space($fz, $lh);
+  $lh = $fz + $ls;
+  return $lh;
+}
+endif;
+
+//スマホ判別
+if (is_mobile()) $thx_fz = $thx_mb_fz;
+$thx_ls = get_grid_line_space($thx_fz, $thx_lh);
+$thx_lh_px = get_grid_line_height($thx_fz, $thx_lh);
+
 
 
 ?>
