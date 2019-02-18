@@ -18,16 +18,7 @@
 .blogcard-wrap:hover {
   background-color:#fff;
 }
-@media screen and
-  (max-width: 414px) and
-  (orientation: portrait)
-{
-  .entry-content > *,
-  .demo .entry-content p {
-    line-height: 28px;
-  }
 
-}
 <?php
 ///////////////////////////////////////
 // 管理画面用
