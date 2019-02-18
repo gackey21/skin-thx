@@ -72,13 +72,13 @@ $thx_counter = hsla_to_css_code($thx_counter_hsla);
 //フォントサイズ
 if (get_site_font_size()){
   $thx_fz_px = get_site_font_size();
-  $thx_fz = mb_substr($thx_fz_px, 0, -1);
+  $thx_fz = mb_substr($thx_fz_px, 0, -2);
 }
 
 //モバイルフォントサイズ
 if (get_mobile_site_font_size()){
   $thx_mb_fz_px = get_mobile_site_font_size();
-  $thx_mb_fz = mb_substr($thx_mb_fz_px, 0, -1);
+  $thx_mb_fz = mb_substr($thx_mb_fz_px, 0, -2);
 }
 
 //行の高さ
