@@ -1878,13 +1878,6 @@ ruby rt {
 	background: rgba(255, 255, 255, 0.8);
 }
 
-.thx-set-grid {
-	line-height: 28px;
-	background-image: linear-gradient(to bottom, rgba(41, 166, 224, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(41, 166, 224, 0.25) 0%, rgba(41, 166, 224, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(41, 166, 224, 0.25) 3%, transparent 0%, transparent 95%, rgba(41, 166, 224, 0.25) 0%);
-	background-position: top 4px left;
-	background-size: 16px 28px;
-}
-
 .entry-content {
 	margin-bottom: 68px;
 }
@@ -2519,12 +2512,6 @@ p + .wp-block-columns:not(.thx), ul + .wp-block-columns:not(.thx), ol + .wp-bloc
 	}
 	.thx-set-frost {
 		background: rgba(255, 255, 255, 0.8);
-	}
-	.thx-set-grid {
-		line-height: 32px;
-		background-image: linear-gradient(to bottom, rgba(41, 166, 224, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(41, 166, 224, 0.25) 0%, rgba(41, 166, 224, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(41, 166, 224, 0.25) 3%, transparent 0%, transparent 95%, rgba(41, 166, 224, 0.25) 0%);
-		background-position: top 5px left;
-		background-size: 18px 32px;
 	}
 	.entry-content {
 		margin-bottom: 78px;
@@ -3246,12 +3233,6 @@ p + .wp-block-columns:not(.thx), ul + .wp-block-columns:not(.thx), ol + .wp-bloc
 	}
 	.thx-set-frost {
 		background: rgba(255, 255, 255, 0.8);
-	}
-	.thx-set-grid {
-		line-height: 32px;
-		background-image: linear-gradient(to bottom, rgba(41, 166, 224, 0.25) 4%, transparent 0%, transparent 53.14286%, rgba(41, 166, 224, 0.25) 0%, rgba(41, 166, 224, 0.25) 57.14286%, #fff 0), linear-gradient(to right, rgba(41, 166, 224, 0.25) 3%, transparent 0%, transparent 95%, rgba(41, 166, 224, 0.25) 0%);
-		background-position: top 5px left;
-		background-size: 18px 32px;
 	}
 	.entry-content {
 		margin-bottom: 78px;
