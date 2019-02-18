@@ -21,11 +21,11 @@ function is_entry_card_border_visible(){
 }
 */
 
+$thx_lib = 'skins/skin-thx/lib/thx';
 
-
-get_template_part('skins/skin-thx/lib/thx','etc');
-get_template_part('skins/skin-thx/lib/thx','hsla');
-get_template_part('skins/skin-thx/lib/thx','cat-label');
-get_template_part('skins/skin-thx/lib/thx','amp');
-get_template_part('skins/skin-thx/lib/thx','anime');
-get_template_part('skins/skin-thx/lib/thx','test');
+get_template_part($thx_lib,'etc');
+get_template_part($thx_lib,'hsla');
+get_template_part($thx_lib,'cat-label');
+get_template_part($thx_lib,'amp');
+get_template_part($thx_lib,'anime');
+get_template_part($thx_lib,'test');
