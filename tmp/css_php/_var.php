@@ -57,6 +57,7 @@ if (!$thx_sub_hsla) {
 }
 
 $thx_sub_090 = hsla_to_css_code($thx_sub_hsla,'90%');
+$thx_sub_080 = hsla_to_css_code($thx_sub_hsla,'80%');
 $thx_sub__050 = hsla_to_css_code($thx_sub_hsla, 1.0, 0.5);
 $thx_sub__000 = hsla_to_css_code($thx_sub_hsla, 1.0, 0.0);
 
@@ -103,7 +104,7 @@ function get_grid_line_height($fz, $lh){
 endif;
 
 //スマホ判別
-if (is_mobile()) $thx_fz = $thx_mb_fz;
+if (is_mobile()) {$thx_fz = $thx_mb_fz;}
 $thx_ls = get_grid_line_space($thx_fz, $thx_lh);
 $thx_lh_px = get_grid_line_height($thx_fz, $thx_lh);
 
