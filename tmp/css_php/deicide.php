@@ -5,12 +5,12 @@
 ?>
 .entry-content > *,
 .demo .entry-content p {
-  line-height: <?php echo $thx_lh_px; ?>px;
+  line-height: <?php echo $thx_glh_px; ?>;
 }
 .entry-content > *,
 .demo .entry-content p {
-  margin-top: <?php echo $thx_ls; ?>px;
-  margin-bottom: <?php echo $thx_ls; ?>px;
+  margin-top: <?php echo $thx_gls_px; ?>;
+  margin-bottom: <?php echo $thx_gls_px; ?>;
 }
 .a-wrap:hover {
   background-color:initial;
@@ -28,11 +28,11 @@
 if(is_admin() && is_gutenberg_editor_enable()): ?>
 .main p,
 .main p.wp-block-paragraph {
-  line-height: <?php echo $thx_lh_px; ?>px;
+  line-height: <?php echo $thx_glh_px; ?>;
 }
 .entry-content > *,
 .demo .entry-content p {
-  margin-top: <?php echo $thx_ls; ?>px;
-  margin-bottom: <?php echo $thx_ls; ?>px;
+  margin-top: <?php echo $thx_gls_px; ?>;
+  margin-bottom: <?php echo $thx_gls_px; ?>;
 }
 <?php endif ?>

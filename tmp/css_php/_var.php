@@ -71,12 +71,14 @@ $thx_counter = hsla_to_css_code($thx_counter_hsla);
 
 //フォントサイズ
 if (get_site_font_size()){
-  $thx_fz = get_site_font_size();
+  $thx_fz_px = get_site_font_size();
+  $thx_fz = mb_substr($thx_fz_px, 0, -1);
 }
 
 //モバイルフォントサイズ
 if (get_mobile_site_font_size()){
-  $thx_mb_fz = get_mobile_site_font_size();
+  $thx_mb_fz_px = get_mobile_site_font_size();
+  $thx_mb_fz = mb_substr($thx_mb_fz_px, 0, -1);
 }
 
 //行の高さ
@@ -89,24 +91,29 @@ if (get_entry_content_line_hight()){
 //グリッド揃え用行間の設定
 if ( !function_exists( 'get_grid_line_space' ) ):
 function get_grid_line_space($fz, $lh){
-  $ls = round(($lh - 1) * $fz / 2) * 2;
-  return $ls;
+  $gls = round(($lh - 1) * $fz / 2) * 2;
+  return $gls;
 }
 endif;
 
 //グリッド揃え用line-heightの設定
 if ( !function_exists( 'get_grid_line_height' ) ):
 function get_grid_line_height($fz, $lh){
-  $ls = get_grid_line_space($fz, $lh);
-  $lh = $fz + $ls;
-  return $lh;
+  $gls = get_grid_line_space($fz, $lh);
+  $glh = $fz + $gls;
+  return $glh;
 }
 endif;
 
 //スマホ判別
-if (is_mobile()) {$thx_fz = $thx_mb_fz;}
-$thx_ls = get_grid_line_space($thx_fz, $thx_lh);
-$thx_lh_px = get_grid_line_height($thx_fz, $thx_lh);
+if (is_mobile()) {
+  $thx_fz = $thx_mb_fz;
+  $thx_fz_px = $thx_mb_fz_px;
+}
+$thx_gls = get_grid_line_space($thx_fz, $thx_lh);
+$thx_gls_px = $thx_gls.'px';
+$thx_glh = get_grid_line_height($thx_fz, $thx_lh);
+$thx_glh_px = $thx_glh.'px';
 
 
 
