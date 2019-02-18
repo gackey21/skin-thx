@@ -564,10 +564,6 @@ body {
 /*   amp 共通設定 */
 /*_/_/_/_/_/_/_/_/*/
 @media screen and (max-width: 414px) and (orientation: portrait) {
-	.page-body {
-		font-size: 16px;
-		font-weight: 300;
-	}
 	/*  .article {
     @include background-grid($font_size);
   }*/
@@ -649,10 +645,6 @@ body {
 /*   amp 共通設定 */
 /*_/_/_/_/_/_/_/_/*/
 @media screen and (min-width: 568px) and (orientation: landscape) {
-	.page-body {
-		font-size: 16px;
-		font-weight: 300;
-	}
 	/*  .article {
     @include background-grid($font_size);
   }*/
@@ -762,10 +754,6 @@ body {
 /* amp 共通設定 */
 /*_/_/_/_/_/_/_/*/
 @media screen and (min-width: 768px) and (orientation: portrait) {
-	.page-body {
-		font-size: 18px;
-		font-weight: 300;
-	}
 	/*  .article {
     @include background-grid($font_size);
   }*/
@@ -836,10 +824,6 @@ body {
 /* amp 共通設定 */
 /*_/_/_/_/_/_/_/*/
 @media screen and (min-width: 1024px) and (orientation: landscape) {
-	.page-body {
-		font-size: 18px;
-		font-weight: 300;
-	}
 	.no-scrollable-main .main {
 		width: 852px;
 		margin-left: auto;
